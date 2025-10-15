@@ -747,7 +747,30 @@ nav {
     text-align: center;
     position: relative;
 }
-
+        .mission-box  h3,.vision-box  h3{
+            position: relative;
+        }
+        .mission-box h3::after, .vision-box h3::after{
+            content:"";
+            height:8px;
+            width:18%;
+            background:var(--color-text-secondary);
+            position:absolute;
+            left:5%;
+            z-index:1;
+            border-radius:10px;
+            bottom:-8px;
+        }
+        .mission-box h3::before, .vision-box h3::before{
+            content:"";
+            height:8px;
+            width:4%;
+            background:var(--color-secondary);
+            position:absolute;
+            z-index:1;
+            border-radius:10px;
+            bottom:-8px;
+        }
 .section-header {
     margin-bottom: var(--spacing-md);
 }
@@ -783,7 +806,7 @@ nav {
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-xl);
     text-align: left;
-    height: 100%;
+    height: 60%;
 }
 
 .mission-box h3, .vision-box h3 {
@@ -1305,9 +1328,13 @@ footer {
     border-top: 1px solid rgba(255,255,255,var(--opacity-light));
     color: rgba(255,255,255,0.6);
 }
-
+@media (max-width : 1450px) {
+    .mission-box, .vision-box {
+        height: 100%;
+    }
+}
 /* Responsive */
-@media (max-width: 1024px) {
+@media (max-width: 1024px){
     .hero-slide,
     .welcome-container,
     .mission-vision-container,
@@ -1409,4 +1436,5 @@ footer {
         height: 100%;
         border-radius: 300px;
     }
+    
 }
