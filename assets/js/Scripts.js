@@ -1,9 +1,48 @@
-// Mobile Menu Toggle
-        const menuToggle = document.getElementById('menuToggle');
-        const navLinks = document.getElementById('navLinks');
+        // Mobile Menu Toggle
+        document.addEventListener("DOMContentLoaded", () => {
+        const menuToggle = document.getElementById("menuToggle");
+        const navLinks = document.getElementById("navLinks");
 
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
+        // === Offcanvas toggle ===
+        menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+            menuToggle.classList.toggle("open");
+        });
+
+        // === Dropdown toggle for mobile ===
+        function handleDropdowns() {
+            document.querySelectorAll(".has-dropdown > a, .has-submenu > a").forEach(link => {
+            link.removeEventListener("click", toggleDropdown); // prevent duplicate listeners
+            link.addEventListener("click", toggleDropdown);
+            });
+        }
+
+        function toggleDropdown(e) {
+            if (window.innerWidth <= 992) {
+            e.preventDefault();
+            const parent = e.target.closest("li");
+
+            // toggle this menu
+            parent.classList.toggle("open");
+
+            // close siblings
+            const siblings = [...parent.parentElement.children].filter(li => li !== parent);
+            siblings.forEach(sib => sib.classList.remove("open"));
+            }
+        }
+
+        handleDropdowns();
+
+        // Reset dropdowns when resizing to desktop
+        window.addEventListener("resize", () => {
+            if (window.innerWidth > 992) {
+            document.querySelectorAll(".has-dropdown, .has-submenu").forEach(item => {
+                item.classList.remove("open");
+            });
+            navLinks.classList.remove("active");
+            }
+            handleDropdowns();
+        });
         });
 
         // Hero Slider
@@ -53,7 +92,7 @@
 
 
         const counters = document.querySelectorAll('.milestone-stat h3, .stat-box h3');
-        const speed = 200;
+        const speed = 30;
 
         const animateCounter = (counter) => {
             const target = counter.innerText;

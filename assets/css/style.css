@@ -39,6 +39,18 @@
     --color-youtube-dark: #cc0000;
     --color-linkedin: #0077b5;
     --color-linkedin-dark: #0e76a8;
+     --primary-color: #0066cc;
+    --primary-dark: #004999;
+    --accent-color: #4caf50;
+    --text-color: #333;
+    --text-light: #666;
+    --background-light: #f8f9fa;
+    --background-gradient-start: #E3F5FF;
+    --background-gradient-end: #E8F5E9;
+    --white: #ffffff;
+    --nav-shadow: rgba(0, 0, 0, 0.1);
+    --card-shadow: rgba(0, 0, 0, 0.08);
+    --gradient-green: linear-gradient(135deg, #49e951 , #264ed3);
     
     /* Instagram gradient colors */
     --color-ig-1: #f09433;
@@ -47,6 +59,14 @@
     --color-ig-4: #cc2366;
     --color-ig-5: #bc1888;
     
+    /* Padding & Gap */
+    --padding-section: 5rem;
+    --padding-card: 2rem;
+    --padding-large-card: 3rem;
+    --gap-small: 1rem;
+    --gap-medium: 2rem;
+    --gap-large: 3rem;
+
     /* Spacing */
     --spacing-xs: 0.3rem;
     --spacing-sm: 0.5rem;
@@ -74,6 +94,13 @@
     --font-6xl: 2.8rem;
     --font-7xl: 3rem;
     --font-8xl: 3.5rem;
+    --font-small: 0.9rem;
+    --font-regular: 1rem;
+    --font-medium: 1.1rem;
+    --font-large: 1.3rem;
+    --font-xlarge: 2rem;
+    --font-xxlarge: 2.5rem;
+    --font-hero: 3rem;
     
     /* Border Radius */
     --radius-sm: 10px;
@@ -82,6 +109,20 @@
     --radius-xl: 25px;
     --radius-2xl: 50px;
     --radius-full: 50%;
+
+    /* Borders & Radii */
+    --radius-small: 10px;
+    --radius-medium: 15px;
+    --radius-round: 50%;
+    --border-thick: 5px;
+
+    /* Transition */
+    --transition: 0.3s ease;
+
+      /* Transitions */
+    --transition-fast: 0.3s;
+    --transition-medium: 0.5s;
+    --transition-slow: 0.8s;
     
     /* Shadows */
     --shadow-sm: 0 2px 5px rgba(0,0,0,0.1);
@@ -94,10 +135,7 @@
     --shadow-button: 0 4px 15px rgba(0,102,204,0.3);
     --shadow-button-hover: 0 6px 20px rgba(0,102,204,0.4);
     
-    /* Transitions */
-    --transition-fast: 0.3s;
-    --transition-medium: 0.5s;
-    --transition-slow: 0.8s;
+  
     
     /* Sizes */
     --size-icon-sm: 30px;
@@ -141,12 +179,33 @@
     --opacity-half: 0.5;
     --opacity-70: 0.7;
     --opacity-90: 0.9;
+
+    --gradient-1:linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-secondary-light) 100%);
+    --gradient-2: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-light) 100%);
+    --gradient-3: linear-gradient(to left, #28d4ff,#008f2b);
+    /* --gradient-3-breadcrum:linear-gradient(to right,#0153349f,#001f20e3),url(../images/breadcrum.jpg); */
+    --gradient-3-breadcrum:linear-gradient(to right,#0153349f,#001f20e3),url(../images/DoctorsforMilestone.jpeg);
+    --gradient-4-event:linear-gradient(#003b6ce7),url(../images/event.jpg);
+
 }
+:root {
+    /* Colors */
+   
+    
+    /* Font Sizes */
+   
+
+    /* Spacing */
+   
+    
+}
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    position: relative;
 }
 
 body {
@@ -306,65 +365,9 @@ body {
         font-size: var(--font-lg);
     }
 }
-
-/* Navigation */
-nav {
-    background: var(--color-white);
-    padding: var(--spacing-md) 5%;
-    box-shadow: var(--shadow-sm);
-    position: sticky;
-    top: 0;
-    z-index: var(--z-sticky);
-}
-
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: var(--container-lg);
-    margin: 0 auto;
-}
-
-.logo img {
-    height: var(--size-logo);
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: var(--spacing-2xl);
-    align-items: center;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: var(--color-text-primary);
-    font-weight: bolder;
-    text-transform: uppercase;
-    font-size: var(--font-xs);
-    transition: color var(--transition-fast);
-}
-
-.nav-links a:hover {
-    color: var(--color-secondary);
-}
-
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.menu-toggle span {
-    width: 25px;
-    height: 3px;
-    background: var(--color-text-primary);
-    margin: 3px 0;
-}
-
 /* Hero Section with Slider */
 .hero {
-    background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-secondary-light) 100%);
+    /* background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-secondary-light) 100%); */
     padding: 0 5% var(--spacing-8xl);
     position: relative;
     overflow: hidden;
@@ -373,12 +376,12 @@ nav {
 .hero::after {
     content: '';
     position: absolute;
-    bottom: -2px;
-    left: 0;
-    right: 0;
-    height: 100px;
-    background: var(--color-white);
-    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    bottom: 290px;
+    left: -200px;
+    width: 500px;
+    height: 500px;
+    background: rgba(194, 218, 444, var(--opacity-medium));
+    border-radius: var(--radius-full);
 }
 
 .hero::before {
@@ -441,9 +444,11 @@ nav {
     padding: var(--spacing-sm) var(--spacing-lg);
     border-radius: var(--radius-xl);
     font-size: var(--font-sm);
-    color: var(--color-primary);
+    color: rgb(255, 255, 255);
+    font-weight:700;
     margin-bottom: var(--spacing-lg);
     box-shadow: var(--shadow-md);
+    background:var(--gradient-3);
     animation: slideInLeft var(--transition-slow) ease-out;
 }
 
@@ -624,9 +629,10 @@ nav {
 
 /* Welcome Section */
 .welcome {
-    padding: 30px 5% 120px;
+    padding: 120px 5%;
     position: relative;
-    background: var(--color-white);
+    background:var(--gradient-1);
+    
 }
 
 .welcome-container {
@@ -749,7 +755,7 @@ nav {
 
 /* Mission & Vision */
         .mission-vision {
-            background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-secondary-light) 100%);
+            /* background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-secondary-light) 100%); */
             padding: var(--spacing-6xl) 5%;
             text-align: center;
             position: relative;
@@ -789,6 +795,7 @@ nav {
     margin-bottom: var(--spacing-sm);
     text-transform: uppercase;
     letter-spacing: var(--letter-spacing-normal);
+    text-align:center;
     font-weight: 700;
 }
 
@@ -797,6 +804,9 @@ nav {
     font-size: var(--font-xs);
     text-transform: uppercase;
     letter-spacing: var(--letter-spacing-normal);
+    width:70%;
+    margin:auto;
+    text-align:center;
 }
 
 .mission-vision-container {
@@ -870,7 +880,7 @@ nav {
 /* Departments */
 .departments {
     padding: var(--spacing-6xl) 5%;
-    background: var(--color-white);
+    background: var(--gradient-1);
     text-align: center;
 }
 
@@ -924,7 +934,7 @@ nav {
 
 /* Celebrations */
 .celebrations {
-    padding: var(--spacing-6xl) 0;
+    padding: var(--spacing-6xl) 0 0;
     text-align: center;
 }
 
@@ -937,7 +947,7 @@ nav {
 
 .celebration-card {
     position: relative;
-    height: 320px;
+    height: 350px;
     overflow: hidden;
     cursor: pointer;
 }
@@ -983,66 +993,47 @@ nav {
 
 /* Milestone */
 .milestone {
-    padding: var(--spacing-6xl) 5%;
     background: var(--color-white);
     text-align: center;
+    padding:50px 30px 90px;
 }
 
 .milestone-container {
-    max-width: var(--container-lg);
-    margin: var(--spacing-4xl) auto;
+    max-width: var(--container-xl);
+    margin: var(--spacing-2xl) auto;
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: var(--spacing-5xl);
+    grid-template-columns:1fr 1.5fr;
+    gap:var(--spacing-2xl);
     align-items: center;
 }
 
 .milestone-images {
     position: relative;
-    height: 550px;
+    height: 100%;
     width: 100%;
 }
 
 /* Large main image - Surgery Room */
 .milestone-large {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 85%;
-    height: 75%;
-    z-index: var(--z-base);
-}
-
-.milestone-large img {
-    width: 90%;
+    width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-radius: 250% 150% 200% 150%;
+    z-index: var(--z-base);
+    overflow:hidden;
+    border:10px solid white;
 }
-
-/* Small circular image overlapping bottom-right */
-.milestone-small {
-    position: absolute;
-    right: 9%;
-    bottom: 10%;
-    width: 38%;
-    height: 38%;
-    z-index: var(--z-raised);
+.milestone-images img{
+    border-radius:20%;
 }
-
-.milestone-small img {
+.milestone-large img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: var(--radius-full);
-    border: 20px solid var(--color-white);
 }
+
 
 .milestone-stats {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* gap: var(--spacing-3xl) var(--spacing-xl); */
     text-align: center;
 }
 
@@ -1056,23 +1047,20 @@ nav {
 .milestone-stat p {
     font-size: var(--font-sm);
     text-transform:uppercase;
-    color: var(--color-text-secondary);
+    font-weight:600;
+    color:#a7a7a7;
 }
 
 .milestone-stats .milestone-stat i{
-    font-size:22px;
-    background:var(--color-primary);
-    color:#ffffff;
+    font-size:42px;
+    color:var(--color-secondary);
     padding:15px 18px;
     border-radius:35px;
 }
 .milestone-stats .milestone-stat{
-    padding:30px 40px;
+    padding:30px 70px;
 }
-.milestone-stats .milestone-stat:hover{
-    background:#f8f8f8;
-    box-shadow:0px 0px 1px silver;
-}
+
 .milestone-stats .milestone-stat:nth-child(1){
     border:1px solid #e3e3e3;
     border-top:none;
@@ -1116,19 +1104,18 @@ nav {
 /* Events Slider */
 .events {
     padding: var(--spacing-6xl) 5%;
-    background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-light) 100%);
+    background:var(--gradient-4-event);
     text-align: center;
+    background-size:100%;
     color: var(--color-white);
 }
-
-.events .section-title {
-    color: var(--color-white);
+.events .section-title{
+    color:var(--color-white);
 }
 
-.events .section-subtitle {
-    color: rgba(255,255,255,var(--opacity-70));
+.events .section-subtitle{
+    color:var(--color-white);
 }
-
 .events-slider {
     max-width: var(--container-md);
     margin: var(--spacing-4xl) auto;
@@ -1141,15 +1128,11 @@ nav {
     border-radius: var(--radius-md);
     overflow: hidden;
     transition: all var(--transition-fast);
-    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    /* box-shadow: 0 5px 20px rgba(0,0,0,0.3); */
     position: relative;
     margin: 0 25px;
 }
 
-.event-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
-}
 
 .event-image {
     position: relative;
@@ -1174,8 +1157,7 @@ nav {
     position: absolute;
     top: 15px;
     left: 15px;
-    background: #03266894;
-    backdrop-filter:blur(15px);
+    background:linear-gradient(145deg,#026602,#03a003);
     color: var(--color-white);
     padding: 15px 20px;
     border-radius: var(--radius-sm);
@@ -1203,7 +1185,6 @@ nav {
     text-align: left;
     background: var(--color-white);
 }
-
 .event-info h4 {
     color: var(--color-text-primary);
     font-size: var(--font-lg);
@@ -1226,23 +1207,24 @@ nav {
 
 .swiper-button-next,
 .swiper-button-prev {
-    color: var(--color-white);
-    background: rgba(255,255,255,var(--opacity-light));
+    color: var(--color-text-primary);
+    background:#ffffff6b;
     width: var(--size-icon-md);
     height: var(--size-icon-md);
     border-radius: var(--radius-full);
     backdrop-filter: blur(10px);
 }
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background:#ffffff;
+}
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
     font-size: var(--font-xl);
+    font-weight:bolder;
 }
 
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-    background: rgba(255,255,255,var(--opacity-medium));
-}
 
 /* Testimonials */
 .testimonials {
@@ -1517,3 +1499,417 @@ footer {
     }
     
 }
+/* -----------------------------------------------
+   COMMON PAGE STYLES (for Academics, Campus, etc.)
+------------------------------------------------ */
+
+.breadcrum {
+  background:var(--gradient-3-breadcrum);
+  background-repeat:no-repeat;
+  background-size:100%;
+  padding: 120px 20px;
+  margin-top: 0px; /* adjust for fixed navbar if used */
+  position: relative;
+}
+
+.breadcrum h1{
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align:center;
+  color:#ffffff;
+}
+
+.breadcrum .subtitle{
+  display:flex;
+  font-size: 1rem;
+  color: #d6d6d6;
+  /* text-align:center; */
+  font-weight:500;
+  justify-content:center;
+  align-items:center;
+  gap:10px;
+  position:relative;
+}
+
+.breadcrum .subtitle a{
+    color:#ebebeb;
+    text-decoration:none;
+}
+.breadcrum .subtitle .round{
+    background:#ffffff83;
+    height:10px;
+    width:10px;
+    border-radius:40px;
+}
+.breadcrum .subtitle .active{
+    color:#ffffff;
+    font-weight:700;
+}
+/* -----------------------------------------------
+   PAGE CONTENT STYLING
+------------------------------------------------ */
+.page-content {
+  padding: 60px 20px;
+  background: #fafafa;
+}
+
+.page-content .container {
+  max-width: 1100px;
+  margin: auto;
+  background: #fff;
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.page-content h2 {
+  color: #004aad; /* SRM blue tone */
+  margin-top: 40px;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-left: 5px solid #004aad;
+  padding-left: 10px;
+}
+
+.page-content p,
+.page-content li {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.page-content ul,
+.page-content ol {
+  padding-left: 25px;
+  margin-bottom: 20px;
+}
+
+.page-content img.full-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+/* -----------------------------------------------
+   FOOTER
+------------------------------------------------ */
+
+
+/* -----------------------------------------------
+   RESPONSIVE DESIGN
+------------------------------------------------ */
+@media (max-width: 768px) {
+  .breadcrum {
+    padding: 80px 20px;
+  }
+
+  .breadcrum h1 {
+    font-size: 2.2rem;
+  }
+
+  .page-content .container {
+    padding: 25px 20px;
+  }
+
+  .page-content h2 {
+    font-size: 1.5rem;
+  }
+}
+.Leadership-social-icons {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.Leadership-social-icons a {
+    width: var(--size-icon-md);
+    height: var(--size-icon-md);
+    background: rgba(255,255,255,var(--text-light));
+    color: var(--text-color);
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-full);
+    transition: all var(--transition-fast);
+    font-size: var(--font-xl);
+}
+
+.Leadership-social-icons a:hover {
+    background: var(--gradient-green);
+    color: var(--white);
+    transform: translateY(-1px);
+}
+
+section {
+    padding: var(--padding-section) 5%;
+}
+
+.section-content {
+    color: var(--text-light);
+    font-size: var(--font-medium);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* =======================================================
+   Vision & Mission
+   ======================================================= */
+.vision-mission {
+    background: var(--background-light);
+    padding:150px 200px;
+} 
+
+.vm-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap-large);
+    margin-top: var(--gap-large);
+}
+
+.vm-card {
+    background: var(--white);
+    padding: var(--padding-large-card);
+    border-radius: var(--radius-medium);
+    box-shadow: 0 5px 20px var(--card-shadow);
+    border-left: var(--border-thick) solid var(--primary-color);
+}
+
+.vm-card h3 {
+    font-size: var(--font-xlarge);
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.vm-card i {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+}
+
+/* =======================================================
+   Leadership
+   ======================================================= */
+.leadership {
+    background: var(--white);
+}
+
+.leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap-large);
+    margin-top: var(--gap-large);
+}
+
+.leader-card {
+    text-align: center;
+    background: var(--white);
+    padding: var(--padding-card);
+    border-radius: var(--radius-medium);
+    box-shadow: 0 5px 20px var(--card-shadow);
+    transition: transform var(--transition);
+}
+
+.leader-card:hover {
+    transform: translateY(-10px);
+}
+
+.leader-img {
+    width: 150px;
+    height: 150px;
+    border-radius: var(--radius-round);
+    margin: 0 auto 1.5rem;
+    overflow: hidden;
+    border: var(--border-thick) solid var(--background-gradient-start);
+}
+
+.leader-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.leader-card h4 {
+    font-size: var(--font-large);
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.leader-card .position {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.leader-card p {
+    color: var(--text-light);
+    font-size: var(--font-small);
+}
+
+/* =======================================================
+   Milestones & Accreditations
+   ======================================================= */
+.milestones {
+    background: linear-gradient(135deg, var(--background-gradient-start) 0%, var(--background-gradient-end) 100%);
+}
+
+.milestone-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--gap-medium);
+    margin-top: var(--gap-large);
+}
+
+.milestone-card {
+    background: var(--white);
+    padding: var(--padding-card);
+    border-radius: var(--radius-medium);
+    text-align: center;
+    box-shadow: 0 5px 20px var(--card-shadow);
+    transition: transform var(--transition);
+}
+.milestone-card:hover{
+     transform: translateY(-10px);
+}
+
+.milestone-card i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.milestone-card h4 {
+    font-size: var(--font-large);
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.milestone-card p {
+    color: var(--text-light);
+    font-size: var(--font-small);
+}
+
+.accreditation-logos {
+    display: flex;
+    justify-content: center;
+    gap: var(--gap-large);
+    margin-top: var(--gap-large);
+    flex-wrap: wrap;
+}
+
+.accreditation-logo {
+    background: var(--white);
+    padding: var(--padding-card);
+    border-radius: var(--radius-small);
+    box-shadow: 0 3px 15px var(--nav-shadow);
+    min-width: 150px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: var(--font-large);
+    transition: transform var(--transition);
+}
+.accreditation-logo:hover{
+     transform: translateY(-10px);
+}
+/* =======================================================
+   Statutory Compliance
+   ======================================================= */
+.compliance {
+    background: var(--white);
+}
+
+.compliance-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap-medium);
+    margin-top: var(--gap-large);
+}
+
+.compliance-item {
+    background: var(--background-light);
+    padding: var(--padding-card);
+    border-radius: var(--radius-small);
+    border-left: 4px solid var(--primary-color);
+}
+
+.compliance-item h4 {
+    color: var(--primary-dark);
+    font-size: var(--font-large);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.compliance-item i {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+}
+
+.compliance-item ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.compliance-item ul li {
+    padding: 0.5rem 0;
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.compliance-item ul li::before {
+    content: '✓';
+    color: var(--accent-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+
+
+/* =======================================================
+   Responsive
+   ======================================================= */
+@media (max-width: 1024px) {
+    .vm-grid,
+    .compliance-list {
+        grid-template-columns: 1fr;
+    }
+
+    .leadership-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .milestone-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: var(--font-xlarge);
+    }
+
+   
+
+    .leadership-grid,
+    .milestone-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
+
+
+

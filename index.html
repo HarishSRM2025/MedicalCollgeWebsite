@@ -6,33 +6,16 @@
     <title>SRM Medical College Trichy</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./assets/css/Home.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/Header.css">
     <link rel="stylesheet" href="./assets/css/CursorAnimation.css">
     <link rel="fav icon" href="./assets/images/fav.png">
 </head>
 <body>
     <!-- Navigation -->
-    <nav>
-        <div class="nav-container">
-            <div class="logo">
-                <img src="./assets/images/Logo.webp" alt="SRM">
-            </div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#academics">Academics</a></li>
-                <li><a href="#campus">Campus</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#admissions">Admissions</a></li>
-                <li><a href="#facilities">Facilities</a></li>
-            </ul>
-            <div class="menu-toggle" id="menuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-
+    
+    <nav id="header"></nav>
+    <div id="floatBtn" class="floating-social-btn"></div>
     <!-- Hero Slider Section -->
     <section class="hero" id="home">
         <i class="fas fa-heartbeat floating-icons icon-1"></i>
@@ -192,28 +175,7 @@
         </div>
     </section>
 
-     <div class="floating-social-btn">
-        <button class="social-toggle-btn" id="socialToggle">
-            <i class="fas fa-plus"></i>
-        </button>
-        <div class="social-links-container" id="socialLinks">
-            <a href="https://www.facebook.com/yourpage" target="_blank" class="social-link facebook" title="Facebook">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://www.instagram.com/yourpage" target="_blank" class="social-link instagram" title="Instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.youtube.com/yourchannel" target="_blank" class="social-link youtube" title="YouTube">
-                <i class="fab fa-youtube"></i>
-            </a>
-            <a href="https://www.linkedin.com/company/yourcompany" target="_blank" class="social-link linkedin" title="LinkedIn">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="https://wa.me/919876543210" target="_blank" class="social-link whatsapp" title="WhatsApp">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-        </div>
-    </div>
+
 
     <!-- Welcome Section -->
     <section class="welcome">
@@ -400,50 +362,47 @@
                 <div class="milestone-large">
                     <img src="./assets/images/DoctorsforMilestone.jpeg" alt="Surgery Team">
                 </div>
-                <div class="milestone-small">
-                    <img src="./assets/images/DoctorforMilestone.jpg" alt="Doctor">
-                </div>
             </div>
             <div class="milestone-stats">
                 <div class="milestone-stat">
-                    <i class="fa fa-flag"></i>
+                    <i class="fa fa-list-check"></i>
                     <h3>94+</h3>
-                    <p>Ongoing Projects</p>
+                    <p>Projects</p>
                 </div>
                 <div class="milestone-stat">
-                    <i class="fa fa-flag"></i>
+                    <i class="fa fa-award"></i>
                     <h3>468+</h3>
                     <p>Accreditations</p>
                 </div>
                 <div class="milestone-stat">
-                    <i class="fa fa-flag"></i>
+                    <i class="fa fa-book-open"></i>
                     <h3>1575+</h3>
-                    <p>Core Research</p>
+                    <p>Research</p>
                 </div>
                 <div class="milestone-stat">
-                    <i class="fa fa-flag"></i>
-                    <h3>9</h3>
-                    <p>Approved Centres</p>
+                    <i class="fa fa-thumbs-up"></i>
+                    <h3>9+</h3>
+                    <p>Centres</p>
                 </div>
                 <div class="milestone-stat">
-                    <i class="fa fa-flag"></i>
+                    <i class="fa fa-trophy"></i>
                     <h3>1,199+</h3>
                     <p>Achievements</p>
                 </div>
                 <div class="milestone-stat">
-                    <i class="fa fa-flag"></i>
+                    <i class="fa fa-bed"></i>
                     <h3>400+</h3>
                     <p>Bed Capacity</p>
                 </div>
                 <div class="milestone-stat">
-                    <i class="fa fa-flag"></i>
+                    <i class="fa fa-vial-virus"></i>
                     <h3>1,250+</h3>
-                    <p>Successful Surgeries</p>
+                    <p>Surgeries</p>
                 </div>
                 <div class="milestone-stat">
-                    <i class="fa fa-flag"></i>
+                    <i class="fa fa-face-smile"></i>
                     <h3>2,250+</h3>
-                    <p>Happy Patients</p>
+                    <p>Patients</p>
                 </div>
             </div>
         </div>
@@ -591,58 +550,10 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-about">
-                 <div class="logo footer-logo">
-                    <img src="./assets/images/Logo.webp" alt="SRM Logo">
-                </div>
-                <p>SRM Medical College is dedicated to providing excellence in medical education and healthcare services. We are committed to shaping the future of healthcare.</p>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-            <div class="footer-section">
-                <h4 class="footer-title">Quick Links</h4>
-                <ul class="footer-links">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Admissions</a></li>
-                    <li><a href="#">Departments</a></li>
-                    <li><a href="#">Research</a></li>
-                    <li><a href="#">News & Events</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4 class="footer-title">Contact Us</h4>
-                <ul class="footer-links">
-                    <li><i class="fas fa-map-marker-alt"></i> Trichy, Tamil Nadu</li>
-                    <li><i class="fas fa-phone"></i> +91 431 2345678</li>
-                    <li><i class="fas fa-envelope"></i> info@srmmedical.edu.in</li>
-                    <li><i class="fas fa-clock"></i> Mon - Sat: 9AM - 6PM</li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4 class="footer-title">Newsletter</h4>
-                <p style="color: rgba(255,255,255,0.7); margin-bottom: 1rem;">Subscribe to get latest updates and news</p>
-                <div style="display: flex; gap: 0.5rem;">
-                    <input type="email" placeholder="Your email" style="padding: 0.8rem; border-radius: 25px; border: none; flex: 1;">
-                    <button class="btn-primary" style="padding: 0.8rem 1.5rem;">
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 SRM Medical College - Trichy. All Rights Reserved. | Privacy Policy | Terms of Service</p>
-        </div>
-    </footer>
+    <footer id="footer"></footer>
 
+    <script src="./assets/js/Dom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"></script>
     <script src="./assets/js/Scripts.js"></script>
-    <Script src="./assets/js/CursorAnimation.js"></Script>
 </body>
 </html>
