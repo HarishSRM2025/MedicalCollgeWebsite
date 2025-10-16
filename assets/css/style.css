@@ -186,6 +186,7 @@
     /* --gradient-3-breadcrum:linear-gradient(to right,#0153349f,#001f20e3),url(../images/breadcrum.jpg); */
     --gradient-3-breadcrum:linear-gradient(to right,#0153349f,#001f20e3),url(../images/DoctorsforMilestone.jpeg);
     --gradient-4-event:linear-gradient(#003b6ce7),url(../images/event.jpg);
+    --gradient-5-leader:linear-gradient(#000000f3),url(../images/event.jpg);
 
 }
 
@@ -1676,12 +1677,13 @@ footer {
 }
 .Leadership-social-icons {
     display: flex;
-    gap: var(--spacing-md);
     margin-top: var(--spacing-lg);
+    justify-content:center;
 }
 
 .Leadership-social-icons a {
     width: var(--size-icon-md);
+    border:1px solid #f0f0f0;
     height: var(--size-icon-md);
     background: rgba(255,255,255,var(--text-light));
     color: var(--text-color);
@@ -1689,13 +1691,12 @@ footer {
     text-decoration: none;
     align-items: center;
     justify-content: center;
-    border-radius: var(--radius-full);
     transition: all var(--transition-fast);
     font-size: var(--font-xl);
 }
 
 .Leadership-social-icons a:hover {
-    background: var(--gradient-green);
+    background:linear-gradient(135deg,#89ff44,#195701);
     color: var(--white);
     transform: translateY(-1px);
 }
@@ -1749,7 +1750,8 @@ section {
    Leadership
    ======================================================= */
 .leadership {
-    background: var(--white);
+    background:var(--gradient-1);
+    padding:10% 5%;
 }
 
 .leadership-grid {
@@ -1761,11 +1763,12 @@ section {
 
 .leader-card {
     text-align: center;
-    background: var(--white);
-    padding: var(--padding-card);
+    background:#ffffff;
+    overflow: hidden;
     border-radius: var(--radius-medium);
     box-shadow: 0 5px 20px var(--card-shadow);
     transition: transform var(--transition);
+    position:relative;
 }
 
 .leader-card:hover {
@@ -1773,12 +1776,25 @@ section {
 }
 
 .leader-img {
-    width: 150px;
-    height: 150px;
+    width:150px;
+    height:150px;
     border-radius: var(--radius-round);
     margin: 0 auto 1.5rem;
     overflow: hidden;
-    border: var(--border-thick) solid var(--background-gradient-start);
+    border:7px solid white;
+    
+}
+.leader-div-content{
+    position:relative;
+    top:19%;
+}
+.leader-div{
+    background:linear-gradient(to left,var(--color-teal-light),var(--color-green-light));
+    height:27%!important;
+    padding:10% 0;
+    border-radius:0px 0px 0 0;
+    width:100%;
+    position:relative;
 }
 
 .leader-img img {
@@ -1790,26 +1806,27 @@ section {
 .leader-card h4 {
     font-size: var(--font-large);
     color: var(--text-color);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
 }
 
 .leader-card .position {
     color: var(--primary-color);
     font-weight: 600;
     margin-bottom: 1rem;
+    text-transform:uppercase;
 }
 
 .leader-card p {
     color: var(--text-light);
     font-size: var(--font-small);
+    width:75%;
+    margin:auto;
 }
 
 /* =======================================================
    Milestones & Accreditations
    ======================================================= */
-.milestones {
-    background: linear-gradient(135deg, var(--background-gradient-start) 0%, var(--background-gradient-end) 100%);
-}
+
 
 .milestone-grid {
     display: grid;
@@ -1832,9 +1849,22 @@ section {
 
 .milestone-card i {
     font-size: 3rem;
-    color: var(--primary-color);
     margin-bottom: 1rem;
 }
+.milestone-card:nth-child(1){
+    color:var(--color-red);
+}
+
+.milestone-card:nth-child(2){
+    color:var(--color-accent-yellow);
+}
+.milestone-card:nth-child(3){
+    color:var(--color-accent-pink);
+}
+.milestone-card:nth-child(4){
+    color:var(--color-);
+}
+
 
 .milestone-card h4 {
     font-size: var(--font-large);
@@ -1846,7 +1876,9 @@ section {
     color: var(--text-light);
     font-size: var(--font-small);
 }
-
+.accreditation{
+    border-top:1px solid rgb(243, 243, 243);
+}
 .accreditation-logos {
     display: flex;
     justify-content: center;
@@ -1854,13 +1886,23 @@ section {
     margin-top: var(--gap-large);
     flex-wrap: wrap;
 }
+.accreditation-logos i{
+    font-size:55px;
+    color:var(--color-primary);
+}
+.accreditation-logos a div{
+    color:#686767;
+    margin-top:15px;
+    font-size:20px;
+}
+
 
 .accreditation-logo {
     background: var(--white);
-    padding: var(--padding-card);
+    padding: 60px var(--padding-card);
     border-radius: var(--radius-small);
     box-shadow: 0 3px 15px var(--nav-shadow);
-    min-width: 150px;
+    min-width: 350px;
     text-align: center;
     font-weight: bold;
     color: var(--primary-color);
@@ -1889,8 +1931,12 @@ section {
     padding: var(--padding-card);
     border-radius: var(--radius-small);
     border-left: 4px solid var(--primary-color);
+    box-shadow:var(--shadow-sm);
 }
-
+.compliance-item:hover{
+    box-shadow:var(--shadow-lg);
+    border-left: 4px solid var(--color-secondary);
+}
 .compliance-item h4 {
     color: var(--primary-dark);
     font-size: var(--font-large);
