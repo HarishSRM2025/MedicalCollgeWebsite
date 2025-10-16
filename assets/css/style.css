@@ -188,17 +188,7 @@
     --gradient-4-event:linear-gradient(#003b6ce7),url(../images/event.jpg);
 
 }
-:root {
-    /* Colors */
-   
-    
-    /* Font Sizes */
-   
 
-    /* Spacing */
-   
-    
-}
 
 
 * {
@@ -206,6 +196,7 @@
     padding: 0;
     box-sizing: border-box;
     position: relative;
+    text-decoration:none;
 }
 
 body {
@@ -376,11 +367,11 @@ body {
 .hero::after {
     content: '';
     position: absolute;
-    bottom: 290px;
-    left: -200px;
+    bottom: 280px;
+    left:-10%;
     width: 500px;
     height: 500px;
-    background: rgba(194, 218, 444, var(--opacity-medium));
+    background: rgba(194, 218, 444, var(--opacity-medium));    
     border-radius: var(--radius-full);
 }
 
@@ -389,7 +380,7 @@ body {
     position: absolute;
     top: -150px;
     right: -100px;
-    width: 500px;
+    width: 500px;   
     height: 500px;
     background: rgba(144, 238, 144, var(--opacity-medium));
     border-radius: var(--radius-full);
@@ -947,7 +938,7 @@ body {
 
 .celebration-card {
     position: relative;
-    height: 350px;
+    height:350px;
     overflow: hidden;
     cursor: pointer;
 }
@@ -960,7 +951,7 @@ body {
 }
 
 .celebration-card:hover img {
-    transform: scale(1.1);
+    transform: scale(1.8) translate(-40px);
 }
 
 .celebration-card:hover .celebration-overlay i {
@@ -970,21 +961,84 @@ body {
 
 .celebration-overlay {
     position: absolute;
-    bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to top, rgba(0,0,0,var(--opacity-90)), transparent);
+    top:67%;
+    transition:var(--transition-slow);
     color: var(--color-white);
-    padding: var(--spacing-2xl) var(--spacing-xl) var(--spacing-md);
     text-align: left;
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    height:100%;
+    padding:10% 4%;
+}
+.celebration-card:hover .celebration-overlay{
+    top:0%;
+    justify-content:center;
 }
 
 .celebration-overlay h3 {
     font-size: var(--font-3xl);
     margin-bottom: var(--spacing-sm);
+    position: relative;
+    text-indent:20px;
+}
+.celebration-overlay h3::before{
+    content:'';
+    height:100%;
+    width:8px;
+    border-radius:10px;
+    position:absolute;
+    left:0;
+}
+.celebration-card:nth-child(1) .celebration-overlay h3::before{
+    background:var(--color-secondary);
+}
+.celebration-card:nth-child(2) .celebration-overlay h3::before{
+    background:var(--color-primary);
+}
+.celebration-card:nth-child(3) .celebration-overlay h3::before{
+    background:#32003b;
+}
+.celebration-card:nth-child(4) .celebration-overlay h3::before{
+    background:var(--color-ig-5);
+}
+.celebration-card:nth-child(5) .celebration-overlay h3::before{
+    background:var(--color-youtube);
+}
+.celebration-card:nth-child(6) .celebration-overlay h3::before{
+    background:var(--color-accent-yellow);
+}
+
+
+.celebration-card:nth-child(1):hover .celebration-overlay{
+    top:0%;
+    background:linear-gradient(to right,#05553896,#1f4d00);
+    justify-content:center;
+}
+.celebration-card:nth-child(2):hover .celebration-overlay{
+    top:0%;
+    background:linear-gradient(to right,#053e5596,#00414d);
+    justify-content:center;
+}
+.celebration-card:nth-child(3):hover .celebration-overlay{
+    top:0%;
+    background:linear-gradient(to right,#69007e5d,#32003b);
+    justify-content:center;
+}
+.celebration-card:nth-child(4):hover .celebration-overlay{
+    top:0%;
+    background:linear-gradient(to right,#55054496,#4d0020);
+    justify-content:center;
+}
+.celebration-card:nth-child(5):hover .celebration-overlay{
+    top:0%;
+    background:linear-gradient(to right,#7e00005d,rgb(70, 0, 0));
+    justify-content:center;
+}
+.celebration-card:nth-child(6):hover .celebration-overlay{
+    top:0%;
+    background:linear-gradient(to right,#54550596,#4d4800);
+    justify-content:center;
 }
 
 .celebration-overlay i {
@@ -1022,7 +1076,7 @@ body {
     border:10px solid white;
 }
 .milestone-images img{
-    border-radius:20%;
+    border-radius:5%;
 }
 .milestone-large img {
     width: 100%;
@@ -1103,7 +1157,7 @@ body {
 }
 /* Events Slider */
 .events {
-    padding: var(--spacing-6xl) 5%;
+    padding: var(--spacing-8xl) 5%;
     background:var(--gradient-4-event);
     text-align: center;
     background-size:100%;
@@ -1229,38 +1283,43 @@ body {
 /* Testimonials */
 .testimonials {
     padding: var(--spacing-6xl) 5%;
-    background: var(--color-background-light);
-    text-align: center;
+    position: relative;
 }
 
 .testimonials-grid {
     max-width: var(--container-sm);
-    margin: var(--spacing-4xl) auto;
+    margin: var(--spacing-6xl) auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing-2xl);
+    gap: var(--spacing-4xl);
 }
 
-.testimonial-card {
-    background: var(--color-white);
-    padding: var(--spacing-3xl) var(--spacing-xl);
+.testimonial-card {    
+    position:relative;
     border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-lg);
     transition: all var(--transition-fast);
+    backdrop-filter:blur(100px);
 }
 
-.testimonial-card:hover {
-    transform: translateY(-10px);
-    box-shadow: var(--shadow-2xl);
+.testimonial-card .content{
+    border-radius:15px;
+    box-shadow: var(--shadow-lg);
+    padding: var(--spacing-xl) var(--spacing-3xl);
+    backdrop-filter:blur(100px);
+    display:flex;
+    flex-direction:column;
+    gap:8px;
 }
-
 .testimonial-avatar {
-    width: var(--size-avatar);
-    height: var(--size-avatar);
+    position:absolute;
+    top:-20%;
+    right:5%;
+    width:120px;
+    height:120px;
+    z-index: 1;
     border-radius: var(--radius-full);
-    margin: 0 auto var(--spacing-lg);
     overflow: hidden;
-    border: 5px solid var(--color-primary-light);
+    border: 5px solid #dadadaad;
 }
 
 .testimonial-avatar img {
@@ -1272,20 +1331,17 @@ body {
 .testimonial-card h4 {
     color: var(--color-text-primary);
     font-size: var(--font-2xl);
-    margin-bottom: var(--spacing-sm);
 }
 
 .testimonial-card .role {
     color: var(--color-text-light);
     font-size: var(--font-sm);
-    margin-bottom: var(--spacing-md);
 }
 
 .testimonial-card p {
     color: var(--color-text-secondary);
     font-size: var(--font-md);
     line-height: var(--line-height-loose-xl);
-    margin: var(--spacing-lg) 0;
 }
 
 .stars {
@@ -1659,10 +1715,6 @@ section {
 /* =======================================================
    Vision & Mission
    ======================================================= */
-.vision-mission {
-    background: var(--background-light);
-    padding:150px 200px;
-} 
 
 .vm-grid {
     display: grid;

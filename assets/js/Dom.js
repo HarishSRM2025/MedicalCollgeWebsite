@@ -9,7 +9,7 @@
         <li class="has-dropdown">
           <a href="./aboutus.html">About Us</a>
           <ul class="dropdown">
-            <li><a href="#">Vision & Mission</a></li>
+            <li><a href="./aboutus.html#vision">Vision & Mission</a></li>
             <li><a href="./aboutus.html#leadership">Leadership</a></li>
             <li class="has-submenu">
                 <a href="#">Milestones & Accreditations</a>
