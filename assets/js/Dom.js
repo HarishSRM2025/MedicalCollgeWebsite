@@ -49,7 +49,7 @@
           </ul>
         </li>
 
-        <li><a href="campus.html">Hospital Services</a></li>
+        <li><a href="hospital.html">Hospital Services</a></li>
         <li><a href="research.html">Research</a></li>
         <li><a href="admissions.html">Admissions</a></li>
         <li><a href="facilities.html">Facilities</a></li>
