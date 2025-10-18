@@ -151,3 +151,96 @@
                 socialLinksContainer.classList.remove('active');
             }
         });
+
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', function() {
+                const item = this.parentElement;
+                const isActive = item.classList.contains('active');
+                
+                // Close all accordion items in the same accordion
+                const accordion = this.closest('.accordion');
+                accordion.querySelectorAll('.accordion-item').forEach(accItem => {
+                    accItem.classList.remove('active');
+                });
+                
+                // Toggle current item
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // FAQ accordion functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const item = this.parentElement;
+                const isActive = item.classList.contains('active');
+                
+                // Close all FAQ items
+                document.querySelectorAll('.faq-item').forEach(faqItem => {
+                    faqItem.classList.remove('active');
+                });
+                
+                // Toggle current FAQ item (open if it wasn't active)
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+         // Initialize all swipers
+        const swiperConfigs = [
+            '.news-swiper',
+            '.social-swiper',
+            '.newsletter-swiper',
+            '.gallery-swiper',
+            '.press-swiper'
+        ];
+
+        swiperConfigs.forEach(selector => {
+            new Swiper(selector, {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: `${selector} .swiper-pagination`,
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: `${selector} .swiper-button-next`,
+                    prevEl: `${selector} .swiper-button-prev`,
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 24,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                },
+            });
+        });
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    

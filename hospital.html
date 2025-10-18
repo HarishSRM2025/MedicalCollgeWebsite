@@ -5,19 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hospital Services - SRM Medical College</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/Header.css">
     <link rel="stylesheet" href="./assets/css/CursorAnimation.css">
-    <link rel="stylesheet" href="./assets/css/Hospital.css">
-    <style>
-        
-    </style>
+    <link rel="fav icon" href="./assets/images/fav.png">
 </head>
 <body>
    
     <!-- Page Header -->
-      <nav id="header"></nav>
+    <nav id="header"></nav>
     <div id="floatBtn" class="floating-social-btn"></div>
+
+    <section class="breadcrum">
+        <h1>Hospital Services</h1>
+        <div class="subtitle">
+          <a href="index.html">Home</a>
+          <div class="round"></div>
+          <span class="active">Hospital Services</span>
+        </div>
+    </section>
 
     <!-- Hospital Services Cards -->
     <section class="section hospital-services" id="services">
@@ -76,6 +83,116 @@
         </div>
     </section>
 
+
+     <!-- OPD Schedule -->
+    <section class="opd-schedule section">
+        <!-- Decorative Elements -->
+        <div class="decorative-circle-outline" style="top: 10%; right: 5%; width: 130px; height: 130px;"></div>
+        <div class="decorative-cross" style="bottom: 15%; left: 10%;"><i class="fas fa-calendar-alt"></i></div>
+        <div class="decorative-dots-grid" style="top: 40%; left: 5%;">
+            <div class="decorative-dot"></div>
+            <div class="decorative-dot"></div>
+            <div class="decorative-dot"></div>
+            <div class="decorative-dot"></div>
+            <div class="decorative-dot"></div>
+            <div class="decorative-dot"></div>
+        </div>
+        <div class="decorative-line" style="top: 25%; right: 0; width: 70px; height: 3px;"></div>
+        
+        <div class="section-header">
+            <h2>OPD Schedule</h2>
+            <p>Outpatient department timings and consultation hours</p>
+        </div>
+        <div class="opd-grid">
+            <div class="opd-card">
+                <div class="opd-header">
+                    <div class="opd-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h4>General Medicine</h4>
+                </div>
+                <div class="opd-timing">
+                    Monday to Saturday: 9:00 AM - 5:00 PM<br>
+                    <strong>Sunday:</strong> Emergency Only
+                </div>
+            </div>
+
+            <div class="opd-card" style="border-top-color: var(--color-accent);">
+                <div class="opd-header">
+                    <div class="opd-icon" style="background: var(--color-accent-light); color: var(--color-accent);">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h4>Surgery</h4>
+                </div>
+                <div class="opd-timing">
+                    Monday to Saturday: 9:00 AM - 4:00 PM<br>
+                    <strong>Emergency:</strong> 24/7 Available
+                </div>
+            </div>
+
+            <div class="opd-card" style="border-top-color: var(--color-secondary);">
+                <div class="opd-header">
+                    <div class="opd-icon" style="background: var(--color-secondary-light); color: var(--color-secondary);">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h4>Pediatrics</h4>
+                </div>
+                <div class="opd-timing">
+                    Monday to Saturday: 10:00 AM - 5:00 PM<br>
+                    <strong>Vaccinations:</strong> All Days
+                </div>
+            </div>
+
+            <div class="opd-card" style="border-top-color: var(--color-purple);">
+                <div class="opd-header">
+                    <div class="opd-icon" style="background: var(--color-purple-light); color: var(--color-purple);">
+                        <i class="fas fa-female"></i>
+                    </div>
+                    <h4>OB & Gynecology</h4>
+                </div>
+                <div class="opd-timing">
+                    Monday to Saturday: 9:00 AM - 6:00 PM<br>
+                    <strong>Delivery:</strong> 24/7 Available
+                </div>
+            </div>
+
+            <div class="opd-card" style="border-top-color: var(--color-orange);">
+                <div class="opd-header">
+                    <div class="opd-icon" style="background: var(--color-orange-light); color: var(--color-orange);">
+                        <i class="fas fa-bone"></i>
+                    </div>
+                    <h4>Orthopedics</h4>
+                </div>
+                <div class="opd-timing">
+                    Mon, Wed, Fri: 2:00 PM - 5:00 PM<br>
+                    <strong>Fracture Clinic:</strong> Daily
+                </div>
+            </div>
+
+            <div class="opd-card" style="border-top-color: var(--color-teal);">
+                <div class="opd-header">
+                    <div class="opd-icon" style="background:var(--color-teal-light); color: var(--color-teal);">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h4>Cardiology</h4>
+                </div>
+                <div class="opd-timing">
+                    Tuesday & Thursday: 10:00 AM - 2:00 PM<br>
+                    <strong>Emergency:</strong> 24/7 Available
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem; background: white; padding: 2rem  2rem 1rem; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); max-width: 900px; margin-left: auto; margin-right: auto;">
+            <p style="color: var(--color-text-secondary); font-size: 1.05rem; margin-bottom: 1.5rem;">
+                <i class="fas fa-info-circle" style="color: var(--color-primary); margin-right: 0.5rem;"></i>
+                <strong>Note:</strong> Emergency services are available 24/7 for urgent medical needs.
+            </p>
+        </div>
+    </section>
+    
+   
+
     <!-- Stats Section -->
     <section class="stats-section">
         <div class="stats-grid">
@@ -98,11 +215,11 @@
         </div>
     </section>
 
-    <!-- Specialty Clinics -->
-    <section class="section" id="specialties" style="background: var(--color-white);">
+     <!-- Specialty Clinics -->
+    <section class="section specialties" id="specialties">
         <!-- Decorative Elements -->
-        <div class="decorative-circle-outline" style="top: 15%; left: 8%; width: 100px; height: 100px;"></div>
-        <div class="decorative-dots-grid" style="bottom: 20%; right: 10%;">
+        <div class="decorative-circle-outline"></div>
+        <div class="decorative-dots-grid">
             <div class="decorative-dot"></div>
             <div class="decorative-dot"></div>
             <div class="decorative-dot"></div>
@@ -146,6 +263,7 @@
             </div>
         </div>
     </section>
+   
 
     <!-- Health Camps & Community Outreach - Timeline View -->
     <section class="section health-camps">
@@ -166,8 +284,8 @@
         <div class="decorative-line" style="bottom: 20%; right: 0; width: 80px; height: 2px;"></div>
 
         <div class="section-header">
-            <h2>Health Camps & Community Outreach</h2>
-            <p>Empowering communities through preventive healthcare and awareness programs</p>
+            <h2 class="section-title">Health Camps & Community Outreach</h2>
+            <p class="section-subtitle">Empowering communities through preventive healthcare and awareness programs</p>
         </div>
 
         <div class="timeline-wrapper">
@@ -259,115 +377,10 @@
         </div>
     </section>
 
-    <!-- OPD Schedule -->
-    <section class="section" style="background: var(--color-background-light);">
-        <!-- Decorative Elements -->
-        <div class="decorative-circle-outline" style="top: 10%; right: 5%; width: 130px; height: 130px;"></div>
-        <div class="decorative-cross" style="bottom: 15%; left: 10%;"><i class="fas fa-calendar-alt"></i></div>
-        <div class="decorative-dots-grid" style="top: 40%; left: 5%;">
-            <div class="decorative-dot"></div>
-            <div class="decorative-dot"></div>
-            <div class="decorative-dot"></div>
-            <div class="decorative-dot"></div>
-            <div class="decorative-dot"></div>
-            <div class="decorative-dot"></div>
-        </div>
-        <div class="decorative-line" style="top: 25%; right: 0; width: 70px; height: 3px;"></div>
-        
-        <div class="section-header">
-            <h2>OPD Schedule</h2>
-            <p>Outpatient department timings and consultation hours</p>
-        </div>
-        <div class="opd-grid">
-            <div class="opd-card">
-                <div class="opd-header">
-                    <div class="opd-icon">
-                        <i class="fas fa-user-md"></i>
-                    </div>
-                    <h4>General Medicine</h4>
-                </div>
-                <div class="opd-timing">
-                    Monday to Saturday: 9:00 AM - 5:00 PM<br>
-                    <strong>Sunday:</strong> Emergency Only
-                </div>
-            </div>
-
-            <div class="opd-card" style="border-top-color: var(--color-accent);">
-                <div class="opd-header">
-                    <div class="opd-icon" style="background: rgba(255,107,107,0.1); color: var(--color-accent);">
-                        <i class="fas fa-cut"></i>
-                    </div>
-                    <h4>Surgery</h4>
-                </div>
-                <div class="opd-timing">
-                    Monday to Saturday: 9:00 AM - 4:00 PM<br>
-                    <strong>Emergency:</strong> 24/7 Available
-                </div>
-            </div>
-
-            <div class="opd-card" style="border-top-color: var(--color-secondary);">
-                <div class="opd-header">
-                    <div class="opd-icon" style="background: rgba(76,175,80,0.1); color: var(--color-secondary);">
-                        <i class="fas fa-baby"></i>
-                    </div>
-                    <h4>Pediatrics</h4>
-                </div>
-                <div class="opd-timing">
-                    Monday to Saturday: 10:00 AM - 5:00 PM<br>
-                    <strong>Vaccinations:</strong> All Days
-                </div>
-            </div>
-
-            <div class="opd-card" style="border-top-color: var(--color-purple);">
-                <div class="opd-header">
-                    <div class="opd-icon" style="background: rgba(156,39,176,0.1); color: var(--color-purple);">
-                        <i class="fas fa-female"></i>
-                    </div>
-                    <h4>OB & Gynecology</h4>
-                </div>
-                <div class="opd-timing">
-                    Monday to Saturday: 9:00 AM - 6:00 PM<br>
-                    <strong>Delivery:</strong> 24/7 Available
-                </div>
-            </div>
-
-            <div class="opd-card" style="border-top-color: var(--color-orange);">
-                <div class="opd-header">
-                    <div class="opd-icon" style="background: rgba(255,152,0,0.1); color: var(--color-orange);">
-                        <i class="fas fa-bone"></i>
-                    </div>
-                    <h4>Orthopedics</h4>
-                </div>
-                <div class="opd-timing">
-                    Mon, Wed, Fri: 2:00 PM - 5:00 PM<br>
-                    <strong>Fracture Clinic:</strong> Daily
-                </div>
-            </div>
-
-            <div class="opd-card" style="border-top-color: var(--color-teal);">
-                <div class="opd-header">
-                    <div class="opd-icon" style="background: rgba(0,150,136,0.1); color: var(--color-teal);">
-                        <i class="fas fa-heartbeat"></i>
-                    </div>
-                    <h4>Cardiology</h4>
-                </div>
-                <div class="opd-timing">
-                    Tuesday & Thursday: 10:00 AM - 2:00 PM<br>
-                    <strong>Emergency:</strong> 24/7 Available
-                </div>
-            </div>
-        </div>
-
-        <div style="text-align: center; margin-top: 3rem; background: white; padding: 2rem  2rem 1rem; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); max-width: 900px; margin-left: auto; margin-right: auto;">
-            <p style="color: var(--color-text-secondary); font-size: 1.05rem; margin-bottom: 1.5rem;">
-                <i class="fas fa-info-circle" style="color: var(--color-primary); margin-right: 0.5rem;"></i>
-                <strong>Note:</strong> Emergency services are available 24/7 for urgent medical needs.
-            </p>
-        </div>
-    </section>
+    
 
     <!-- Laboratory Services -->
-    <section class="section" style="background: var(--color-white);">
+    <section class="laboratory-services section">
         <!-- Decorative Elements -->
         <div class="decorative-circle-outline" style="top: 20%; right: 10%; width: 110px; height: 110px;"></div>
         <div class="decorative-cross" style="top: 15%; left: 8%;"><i class="fas fa-flask"></i></div>
@@ -406,7 +419,7 @@
     </section>
 
     <!-- Radiology & Imaging -->
-    <section class="section" style="background: var(--color-background-light);">
+    <section class="radiology section">
         <!-- Decorative Elements -->
         <div class="decorative-circle-outline" style="bottom: 10%; left: 8%; width: 140px; height: 140px;"></div>
         <div class="decorative-dots-grid" style="top: 25%; right: 8%;">
@@ -453,22 +466,22 @@
     </section>
 
     <!-- NABL Accreditation -->
-     <section class="section-with-decor" style="background: white;">
+     <section class="section-with-decor">
        
         <div class="decorative-circle" style="width: 180px; bottom: 10%; right: 10%;"></div>
 
         <div style="width: 90%; margin: 0 auto 5%;">
             <div class="section-header">
-                <h2>NABL Accredited Laboratory</h2>
-                <p style="color: var(--color-text-secondary); font-size: 1.1rem;">Quality assured diagnostic services with international standards</p>
+                <h2 class="section-title">NABL Accredited Laboratory</h2>
+                <p class="section-subtitle">Quality assured diagnostic services with international standards</p>
             </div>
 
             <div class="nabl-card">
-                <div style="position: absolute; top: -50px; right: -50px; width: 300px; height: 300px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
-                <div style="position: absolute; bottom: -70px; left: -70px; width: 250px; height: 250px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
+                <div class="round1"></div>
+                <div class="round2"></div>
                 
                 <div style="position: relative; z-index: 1;">
-                    <div style="font-size: 5rem; margin-bottom: 1rem;"><i class="fas fa-certificate"></i></div>
+                    <div class="icon"><i class="fas fa-certificate"></i></div>
                     <h3 style="font-size: 2.5rem; margin-bottom: 1rem;">NABL Certified</h3>
                     <p style="font-size: 1.2rem; margin-bottom: 3rem; opacity: 0.95;">ISO 15189:2012 Accredited Medical Laboratory</p>
 
@@ -510,11 +523,10 @@
     
 
     <!-- Footer -->
-   <footer id="footer"></footer>
-
+    <footer id="footer"></footer>
     <script src="./assets/js/Dom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"></script>
-
     <script src="./assets/js/Scripts.js"></script>
+
 </body>
 </html>
