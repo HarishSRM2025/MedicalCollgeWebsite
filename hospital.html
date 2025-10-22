@@ -26,6 +26,43 @@
         </div>
     </section>
 
+    <section class="hospital-hero-section">
+        <div class="hospital-hero-container">
+            <!-- LEFT: IMAGE -->
+            <div class="hospital-hero-image">
+                <img src="./assets/images/Hero.jpg" alt="Doctors at SRM Medical College">
+                <div class="hospital-badge">
+                    <i class="fas fa-certificate"></i> NABH Accredited
+                </div>
+            </div>
+
+            <!-- RIGHT: CONTENT -->
+            <div class="hospital-hero-content">
+                <h2 class="hospital-hero-title">Excellence in <span>Healthcare & Medical Education</span></h2>
+                <p class="hospital-hero-subtitle">
+                    SRM Medical College is committed to cutting-edge research, advanced clinical care, and fostering innovation in medical science.
+                </p>
+
+                <!-- Highlights -->
+                <div class="hospital-hero-highlights">
+                    <div class="hospital-highlight">
+                        <i class="fas fa-user-md"></i>
+                        <span>Expert Faculty & Clinical Excellence</span>
+                    </div>
+                    <div class="hospital-highlight">
+                        <i class="fas fa-microscope"></i>
+                        <span>Advanced Research & Innovation Labs</span>
+                    </div>
+                    <div class="hospital-highlight">
+                        <i class="fas fa-hospital"></i>
+                        <span>Modern Infrastructure & Patient Care</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <!-- Hospital Services Cards -->
     <section class="section hospital-services" id="services">
         <div class="section-header">
@@ -117,22 +154,22 @@
                 </div>
             </div>
 
-            <div class="opd-card" style="border-top-color: var(--color-accent);">
+            <div class="opd-card">
                 <div class="opd-header">
-                    <div class="opd-icon" style="background: var(--color-accent-light); color: var(--color-accent);">
+                    <div class="opd-icon">
                         <i class="fas fa-cut"></i>
                     </div>
                     <h4>Surgery</h4>
                 </div>
                 <div class="opd-timing">
-                    Monday to Saturday: 9:00 AM - 4:00 PM<br>
+                    <span>Monday to Saturday: 9:00 AM - 4:00 PM</span><br>
                     <strong>Emergency:</strong> 24/7 Available
                 </div>
             </div>
 
-            <div class="opd-card" style="border-top-color: var(--color-secondary);">
+            <div class="opd-card">
                 <div class="opd-header">
-                    <div class="opd-icon" style="background: var(--color-secondary-light); color: var(--color-secondary);">
+                    <div class="opd-icon">
                         <i class="fas fa-baby"></i>
                     </div>
                     <h4>Pediatrics</h4>
@@ -143,9 +180,9 @@
                 </div>
             </div>
 
-            <div class="opd-card" style="border-top-color: var(--color-purple);">
+            <div class="opd-card">
                 <div class="opd-header">
-                    <div class="opd-icon" style="background: var(--color-purple-light); color: var(--color-purple);">
+                    <div class="opd-icon">
                         <i class="fas fa-female"></i>
                     </div>
                     <h4>OB & Gynecology</h4>
@@ -156,9 +193,9 @@
                 </div>
             </div>
 
-            <div class="opd-card" style="border-top-color: var(--color-orange);">
+            <div class="opd-card">
                 <div class="opd-header">
-                    <div class="opd-icon" style="background: var(--color-orange-light); color: var(--color-orange);">
+                    <div class="opd-icon">
                         <i class="fas fa-bone"></i>
                     </div>
                     <h4>Orthopedics</h4>
@@ -169,9 +206,9 @@
                 </div>
             </div>
 
-            <div class="opd-card" style="border-top-color: var(--color-teal);">
+            <div class="opd-card">
                 <div class="opd-header">
-                    <div class="opd-icon" style="background:var(--color-teal-light); color: var(--color-teal);">
+                    <div class="opd-icon">
                         <i class="fas fa-heartbeat"></i>
                     </div>
                     <h4>Cardiology</h4>
@@ -183,11 +220,13 @@
             </div>
         </div>
 
-        <div style="text-align: center; margin-top: 3rem; background: white; padding: 2rem  2rem 1rem; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); max-width: 900px; margin-left: auto; margin-right: auto;">
-            <p style="color: var(--color-text-secondary); font-size: 1.05rem; margin-bottom: 1.5rem;">
-                <i class="fas fa-info-circle" style="color: var(--color-primary); margin-right: 0.5rem;"></i>
-                <strong>Note:</strong> Emergency services are available 24/7 for urgent medical needs.
-            </p>
+        <div class="notebox">
+            <marquee behavior="" direction="">
+                <p>
+                    <i class="fas fa-info-circle"></i>
+                    <strong>Note:</strong> Emergency services are available 24/7 for urgent medical needs.
+                </p>
+            </marquee>
         </div>
     </section>
     
@@ -215,9 +254,9 @@
         </div>
     </section>
 
-     <!-- Specialty Clinics -->
+    <!-- Specialty Clinics -->
     <section class="section specialties" id="specialties">
-        <!-- Decorative Elements -->
+    <!-- Decorative Elements -->
         <div class="decorative-circle-outline"></div>
         <div class="decorative-dots-grid">
             <div class="decorative-dot"></div>
@@ -230,35 +269,36 @@
             <div class="decorative-dot"></div>
             <div class="decorative-dot"></div>
         </div>
-        <div class="decorative-cross" style="top: 50%; right: 5%;"><i class="fas fa-clinic-medical"></i></div>
-        
+        <div class="decorative-cross"><i class="fas fa-clinic-medical"></i></div>
+
         <div class="section-header">
             <h2>Specialty Clinics</h2>
             <p>Expert medical consultation across diverse specialties</p>
         </div>
+
         <div class="specialty-grid">
-            <div class="specialty-card">
+            <div class="specialty-card cardiology">
                 <h4>Cardiology Clinic</h4>
                 <p>Comprehensive cardiac care including ECG, echocardiography, and advanced angiography services for heart health.</p>
             </div>
-            <div class="specialty-card" style="border-left-color: var(--color-accent);">
-                <h4 style="color: var(--color-accent);">Neurology Clinic</h4>
+            <div class="specialty-card neurology">
+                <h4>Neurology Clinic</h4>
                 <p>Expert neurological care for stroke, epilepsy, and various brain and nervous system disorders.</p>
             </div>
-            <div class="specialty-card" style="border-left-color: var(--color-secondary);">
-                <h4 style="color: var(--color-secondary);">Orthopedic Clinic</h4>
+            <div class="specialty-card orthopedic">
+                <h4>Orthopedic Clinic</h4>
                 <p>Advanced treatment for bone, joint, and spine conditions with modern surgical interventions.</p>
             </div>
-            <div class="specialty-card" style="border-left-color: var(--color-purple);">
-                <h4 style="color: var(--color-purple);">Diabetes Clinic</h4>
+            <div class="specialty-card diabetes">
+                <h4>Diabetes Clinic</h4>
                 <p>Comprehensive diabetes management with personalized diet counseling and medication guidance.</p>
             </div>
-            <div class="specialty-card" style="border-left-color: var(--color-orange);">
-                <h4 style="color: var(--color-orange);">ENT Clinic</h4>
+            <div class="specialty-card ent">
+                <h4>ENT Clinic</h4>
                 <p>Complete ear, nose, and throat care with advanced endoscopy and surgical procedures.</p>
             </div>
-            <div class="specialty-card" style="border-left-color: var(--color-teal);">
-                <h4 style="color: var(--color-teal);">Ophthalmology Clinic</h4>
+            <div class="specialty-card ophthalmology">
+                <h4>Ophthalmology Clinic</h4>
                 <p>Comprehensive eye care services including cataract surgery and advanced laser treatments.</p>
             </div>
         </div>
@@ -381,42 +421,43 @@
 
     <!-- Laboratory Services -->
     <section class="laboratory-services section">
-        <!-- Decorative Elements -->
-        <div class="decorative-circle-outline" style="top: 20%; right: 10%; width: 110px; height: 110px;"></div>
-        <div class="decorative-cross" style="top: 15%; left: 8%;"><i class="fas fa-flask"></i></div>
-        <div class="decorative-line" style="bottom: 30%; left: 0; width: 90px; height: 2px;"></div>
-        
-        <div class="section-header">
-            <h2>Laboratory Services</h2>
-            <p>NABL accredited diagnostic laboratory with comprehensive testing facilities</p>
+    <!-- Decorative Elements -->
+    <div class="decorative-circle-outline lab-circle"></div>
+    <div class="decorative-cross lab-cross"><i class="fas fa-flask"></i></div>
+    <div class="decorative-line lab-line"></div>
+
+    <div class="section-header">
+        <h2>Laboratory Services</h2>
+        <p>NABL accredited diagnostic laboratory with comprehensive testing facilities</p>
+    </div>
+
+    <div class="specialty-grid">
+        <div class="specialty-card clinical-pathology">
+            <h4>Clinical Pathology</h4>
+            <p>Complete blood count, ESR, blood grouping, and all routine pathology investigations.</p>
         </div>
-        <div class="specialty-grid">
-            <div class="specialty-card">
-                <h4>Clinical Pathology</h4>
-                <p>Complete blood count, ESR, blood grouping, and all routine pathology investigations.</p>
-            </div>
-            <div class="specialty-card" style="border-left-color: var(--color-accent);">
-                <h4 style="color: var(--color-accent);">Clinical Biochemistry</h4>
-                <p>Comprehensive metabolic panels, liver function, kidney function, and lipid profile tests.</p>
-            </div>
-            <div class="specialty-card" style="border-left-color: var(--color-secondary);">
-                <h4 style="color: var(--color-secondary);">Microbiology</h4>
-                <p>Culture sensitivity testing, antibiotic resistance, and infection diagnosis services.</p>
-            </div>
-            <div class="specialty-card" style="border-left-color: var(--color-purple);">
-                <h4 style="color: var(--color-purple);">Serology & Immunology</h4>
-                <p>Viral marker detection, immunological tests, and autoimmune disorder screening.</p>
-            </div>
-            <div class="specialty-card" style="border-left-color: var(--color-orange);">
-                <h4 style="color: var(--color-orange);">Molecular Diagnostics</h4>
-                <p>Advanced genetic testing, PCR analysis, and molecular disease detection.</p>
-            </div>
-            <div class="specialty-card" style="border-left-color: var(--color-teal);">
-                <h4 style="color: var(--color-teal);">Histopathology</h4>
-                <p>Tissue examination, biopsy analysis, and cancer screening services.</p>
-            </div>
+        <div class="specialty-card clinical-biochemistry">
+            <h4>Clinical Biochemistry</h4>
+            <p>Comprehensive metabolic panels, liver function, kidney function, and lipid profile tests.</p>
         </div>
-    </section>
+        <div class="specialty-card microbiology">
+            <h4>Microbiology</h4>
+            <p>Culture sensitivity testing, antibiotic resistance, and infection diagnosis services.</p>
+        </div>
+        <div class="specialty-card serology-immunology">
+            <h4>Serology & Immunology</h4>
+            <p>Viral marker detection, immunological tests, and autoimmune disorder screening.</p>
+        </div>
+        <div class="specialty-card molecular-diagnostics">
+            <h4>Molecular Diagnostics</h4>
+            <p>Advanced genetic testing, PCR analysis, and molecular disease detection.</p>
+        </div>
+        <div class="specialty-card histopathology">
+            <h4>Histopathology</h4>
+            <p>Tissue examination, biopsy analysis, and cancer screening services.</p>
+        </div>
+    </div>
+</section>
 
     <!-- Radiology & Imaging -->
     <section class="radiology section">
@@ -442,24 +483,24 @@
                 <h4>CT Scan</h4>
                 <p>Multi-slice CT scanner providing detailed cross-sectional imaging for accurate diagnosis.</p>
             </div>
-            <div class="specialty-card" style="border-left-color: var(--color-accent);">
-                <h4 style="color: var(--color-accent);">MRI Scan</h4>
+            <div class="specialty-card">
+                <h4>MRI Scan</h4>
                 <p>High-field MRI technology for superior soft tissue imaging and detailed brain scans.</p>
             </div>
-            <div class="specialty-card" style="border-left-color: var(--color-secondary);">
-                <h4 style="color: var(--color-secondary);">Digital X-Ray</h4>
+            <div class="specialty-card">
+                <h4>Digital X-Ray</h4>
                 <p>Quick and accurate digital radiography for bone, chest, and skeletal imaging.</p>
             </div>
-            <div class="specialty-card" style="border-left-color: var(--color-purple);">
-                <h4 style="color: var(--color-purple);">Ultrasound</h4>
+            <div class="specialty-card">
+                <h4>Ultrasound</h4>
                 <p>Color Doppler and 4D ultrasound services for obstetric and abdominal imaging.</p>
             </div>
-            <div class="specialty-card" style="border-left-color: var(--color-orange);">
-                <h4 style="color: var(--color-orange);">Mammography</h4>
+            <div class="specialty-card">
+                <h4>Mammography</h4>
                 <p>Digital mammography for early breast cancer detection and screening programs.</p>
             </div>
-            <div class="specialty-card" style="border-left-color: var(--color-teal);">
-                <h4 style="color: var(--color-teal);">Fluoroscopy</h4>
+            <div class="specialty-card">
+                <h4>Fluoroscopy</h4>
                 <p>Real-time imaging for gastrointestinal studies and dynamic examinations.</p>
             </div>
         </div>
@@ -467,10 +508,10 @@
 
     <!-- NABL Accreditation -->
      <section class="section-with-decor">
-       
-        <div class="decorative-circle" style="width: 180px; bottom: 10%; right: 10%;"></div>
+        <!-- Decorative Circle -->
+        <div class="decorative-circle nabl-circle"></div>
 
-        <div style="width: 90%; margin: 0 auto 5%;">
+        <div class="section-content">
             <div class="section-header">
                 <h2 class="section-title">NABL Accredited Laboratory</h2>
                 <p class="section-subtitle">Quality assured diagnostic services with international standards</p>
@@ -479,39 +520,39 @@
             <div class="nabl-card">
                 <div class="round1"></div>
                 <div class="round2"></div>
-                
-                <div style="position: relative; z-index: 1;">
-                    <div class="icon"><i class="fas fa-certificate"></i></div>
-                    <h3 style="font-size: 2.5rem; margin-bottom: 1rem;">NABL Certified</h3>
-                    <p style="font-size: 1.2rem; margin-bottom: 3rem; opacity: 0.95;">ISO 15189:2012 Accredited Medical Laboratory</p>
 
-                    <div class="nabl-features" style="text-align: left; margin-top: 3rem;">
-                        <div style="display: flex; gap: 1rem; align-items: start;">
-                            <div style="font-size: 1.5rem;"><i class="fas fa-check-circle"></i></div>
-                            <div>
+                <div class="nabl-card-content">
+                    <div class="icon"><i class="fas fa-certificate"></i></div>
+                    <h3 class="nabl-title">NABL Certified</h3>
+                    <p class="nabl-subtitle">ISO 15189:2012 Accredited Medical Laboratory</p>
+
+                    <div class="nabl-features">
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+                            <div class="feature-text">
                                 <strong>Accurate Results</strong><br>
-                                <span style="opacity: 0.9; font-size: 0.95rem;">International quality standards</span>
+                                <span>International quality standards</span>
                             </div>
                         </div>
-                        <div style="display: flex; gap: 1rem; align-items: start;">
-                            <div style="font-size: 1.5rem;"><i class="fas fa-check-circle"></i></div>
-                            <div>
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+                            <div class="feature-text">
                                 <strong>Quality Control</strong><br>
-                                <span style="opacity: 0.9; font-size: 0.95rem;">Regular audits and monitoring</span>
+                                <span>Regular audits and monitoring</span>
                             </div>
                         </div>
-                        <div style="display: flex; gap: 1rem; align-items: start;">
-                            <div style="font-size: 1.5rem;"><i class="fas fa-check-circle"></i></div>
-                            <div>
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+                            <div class="feature-text">
                                 <strong>Certified Staff</strong><br>
-                                <span style="opacity: 0.9; font-size: 0.95rem;">Trained laboratory professionals</span>
+                                <span>Trained laboratory professionals</span>
                             </div>
                         </div>
-                        <div style="display: flex; gap: 1rem; align-items: start;">
-                            <div style="font-size: 1.5rem;"><i class="fas fa-check-circle"></i></div>
-                            <div>
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+                            <div class="feature-text">
                                 <strong>Online Reports</strong><br>
-                                <span style="opacity: 0.9; font-size: 0.95rem;">Easy access to test results</span>
+                                <span>Easy access to test results</span>
                             </div>
                         </div>
                     </div>

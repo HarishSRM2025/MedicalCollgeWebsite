@@ -23,9 +23,50 @@
         </div>
     </section>
 
-    <div class="container">
+    <section class="media-hero-section">
+        <div class="media-hero-container">
+            <!-- LEFT: IMAGE -->
+            <div class="media-hero-image">
+                <img src="./assets/images/Hero.jpg" alt="Media Feature Image">
+                <div class="media-badge">
+                    <i class="fas fa-broadcast-tower"></i> Featured News
+                </div>
+            </div>
+
+            <!-- RIGHT: CONTENT -->
+            <div class="media-hero-content">
+                <h2 class="media-hero-title">Latest Updates &<span> Media Highlights</span></h2>
+                <p class="media-hero-subtitle">
+                    Stay informed with the latest news, events, and media coverage from our institution.
+                </p>
+
+                <!-- Highlights -->
+                <div class="media-hero-highlights">
+                    <div class="media-highlight">
+                        <i class="fas fa-newspaper"></i>
+                        <span>News & Events</span>
+                    </div>
+                    <div class="media-highlight">
+                        <i class="fab fa-twitter"></i>
+                        <span>Social Media</span>
+                    </div>
+                    <div class="media-highlight">
+                        <i class="fas fa-book"></i>
+                        <span>Newsletter</span>
+                    </div>
+                    <div class="media-highlight">
+                        <i class="fas fa-images"></i>
+                        <span>Photo Gallery</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="media">
         <!-- News & Events Section -->
-        <section id="news" class="section">
+        <section id="news" class="section news">
             <div class="section-header">
                 <h2 class="section-title">News & Events</h2>
                 <p class="section-description">Discover upcoming events and latest happenings</p>
@@ -86,13 +127,11 @@
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
             </div>
         </section>
 
         <!-- Social Media Section -->
-        <section id="social" class="section">
+        <section id="social" class="section social">
             <div class="section-header">
                 <h2 class="section-title">Social Media</h2>
                 <p class="section-description">Connect with us across all platforms</p>
@@ -102,68 +141,30 @@
                     <div class="swiper-slide">
                         <div class="card">
                             <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&q=80" alt="Instagram" class="card-image">
-                            <div class="card-content">
-                                <h3 class="card-title">Instagram</h3>
-                                <div class="card-date">📅 Updated Daily</div>
-                                <p class="card-description">Discover our latest moments, behind-the-scenes content, and community highlights shared daily on Instagram.</p>
-                                <a href="https://instagram.com" class="social-link">Visit our Instagram</a>
-                                <div class="card-footer">
-                                    <button class="btn-primary">Follow Us</button>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="card">
                             <img src="https://images.unsplash.com/photo-1611605698335-8b1569810432?w=800&q=80" alt="Twitter" class="card-image">
-                            <div class="card-content">
-                                <h3 class="card-title">Twitter</h3>
-                                <div class="card-date">📅 Real-time Updates</div>
-                                <p class="card-description">Stay informed with our latest news, announcements, and engaging conversations with our community.</p>
-                                <a href="https://twitter.com" class="social-link">Visit our Twitter</a>
-                                <div class="card-footer">
-                                    <button class="btn-primary">Follow Us</button>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="card">
                             <img src="https://images.unsplash.com/photo-1611944212129-29977ae1398c?w=800&q=80" alt="LinkedIn" class="card-image">
-                            <div class="card-content">
-                                <h3 class="card-title">LinkedIn</h3>
-                                <div class="card-date">📅 Professional Updates</div>
-                                <p class="card-description">Connect with industry professionals, explore career opportunities, and access exclusive business insights.</p>
-                                <a href="https://linkedin.com" class="social-link">Visit our LinkedIn</a>
-                                <div class="card-footer">
-                                    <button class="btn-primary">Connect</button>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="card">
                             <img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=800&q=80" alt="YouTube" class="card-image">
-                            <div class="card-content">
-                                <h3 class="card-title">YouTube</h3>
-                                <div class="card-date">📅 Weekly Videos</div>
-                                <p class="card-description">Watch tutorials, event highlights, and exclusive video content created for our community.</p>
-                                <a href="https://youtube.com" class="social-link">Visit our YouTube</a>
-                                <div class="card-footer">
-                                    <button class="btn-primary">Subscribe</button>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
+            </div>            
         </section>
 
         <!-- Newsletter Section -->
-        <section id="newsletter" class="section">
+        <section id="newsletter" class="section newsletter">
             <div class="section-header">
                 <h2 class="section-title">Newsletter</h2>
                 <p class="section-subtitle">Get the latest insights delivered to your inbox</p>
@@ -224,80 +225,115 @@
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
             </div>
         </section>
 
         <!-- Gallery Section -->
-        <section id="gallery" class="section">
-            <div class="section-header">
+        <section id="gallery" class="media-gallery-section">
+            <div class="media-gallery-header">
                 <h2 class="section-title">Gallery</h2>
-                <p class="section-description">Visual stories from our journey</p>
+                <p class="section-subtitle">Visual stories from our journey</p>
             </div>
-            <div class="swiper gallery-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80" alt="Event Highlights" class="card-image">
-                            <div class="card-content">
-                                <h3 class="card-title">Event Highlights 2025</h3>
-                                <div class="card-date">📅 Throughout 2025</div>
-                                <p class="card-description">A curated collection of memorable moments from our various events, conferences, and gatherings throughout the year.</p>
-                                <div class="card-footer">
-                                    <button class="btn-primary">View Gallery</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80" alt="Team Culture" class="card-image">
-                            <div class="card-content">
-                                <h3 class="card-title">Team & Culture</h3>
-                                <div class="card-date">📅 Updated Weekly</div>
-                                <p class="card-description">Get to know our amazing team, workplace culture, and the people who make everything possible.</p>
-                                <div class="card-footer">
-                                    <button class="btn-primary">Meet the Team</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <img src="https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?w=800&q=80" alt="Awards" class="card-image">
-                            <div class="card-content">
-                                <h3 class="card-title">Awards & Recognition</h3>
-                                <div class="card-date">📅 2024-2025</div>
-                                <p class="card-description">Celebrating our achievements, awards, and recognitions received from industry bodies and organizations.</p>
-                                <div class="card-footer">
-                                    <button class="btn-primary">View Awards</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=800&q=80" alt="Community" class="card-image">
-                            <div class="card-content">
-                                <h3 class="card-title">Community Initiatives</h3>
-                                <div class="card-date">📅 Ongoing</div>
-                                <p class="card-description">Photos and stories from our community outreach programs, volunteer activities, and social responsibility initiatives.</p>
-                                <div class="card-footer">
-                                    <button class="btn-primary">Explore More</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+            <div class="media-gallery-grid">
+                <div class="media-gallery-card">
+                <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1200&q=80" alt="Event Highlights">
+                <div class="media-overlay">
+                    <h3>Event Highlights</h3>
+                    <p>Memorable moments from our key events and programs.</p>
                 </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                </div>
+
+                <div class="media-gallery-card">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80" alt="Team Culture">
+                <div class="media-overlay">
+                    <h3>Team Culture</h3>
+                    <p>Our people, our pride — a glimpse into our workplace spirit.</p>
+                </div>
+                </div>
+
+                <div class="media-gallery-card">
+                <img src="https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?w=1200&q=80" alt="Awards">
+                <div class="media-overlay">
+                    <h3>Awards & Recognition</h3>
+                    <p>Honoring milestones and excellence achieved over the years.</p>
+                </div>
+                </div>
+
+                <div class="media-gallery-card">
+                <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1200&q=80" alt="Event Highlights">
+                <div class="media-overlay">
+                    <h3>Innovation & Research</h3>
+                    <p>Exploring new frontiers in healthcare and technology.</p>
+                </div>
+                </div>
+                <div class="media-gallery-card">
+                <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1200&q=80" alt="Event Highlights">
+                <div class="media-overlay">
+                    <h3>Event Highlights</h3>
+                    <p>Memorable moments from our key events and programs.</p>
+                </div>
+                </div>
+
+                <div class="media-gallery-card">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80" alt="Team Culture">
+                <div class="media-overlay">
+                    <h3>Team Culture</h3>
+                    <p>Our people, our pride — a glimpse into our workplace spirit.</p>
+                </div>
+                </div>
+
+                <div class="media-gallery-card">
+                <img src="https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?w=1200&q=80" alt="Awards">
+                <div class="media-overlay">
+                    <h3>Awards & Recognition</h3>
+                    <p>Honoring milestones and excellence achieved over the years.</p>
+                </div>
+                </div>
+
+                <div class="media-gallery-card">
+                <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1200&q=80" alt="Event Highlights">
+                <div class="media-overlay">
+                    <h3>Innovation & Research</h3>
+                    <p>Exploring new frontiers in healthcare and technology.</p>
+                </div>
+                </div>
+                <div class="media-gallery-card">
+                <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1200&q=80" alt="Event Highlights">
+                <div class="media-overlay">
+                    <h3>Event Highlights</h3>
+                    <p>Memorable moments from our key events and programs.</p>
+                </div>
+                </div>
+
+                <div class="media-gallery-card">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80" alt="Team Culture">
+                <div class="media-overlay">
+                    <h3>Team Culture</h3>
+                    <p>Our people, our pride — a glimpse into our workplace spirit.</p>
+                </div>
+                </div>
+
+                <div class="media-gallery-card">
+                <img src="https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?w=1200&q=80" alt="Awards">
+                <div class="media-overlay">
+                    <h3>Awards & Recognition</h3>
+                    <p>Honoring milestones and excellence achieved over the years.</p>
+                </div>
+                </div>
+
+                <div class="media-gallery-card">
+                <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1200&q=80" alt="Event Highlights">
+                <div class="media-overlay">
+                    <h3>Innovation & Research</h3>
+                    <p>Exploring new frontiers in healthcare and technology.</p>
+                </div>
+                </div>
             </div>
-        </section>
+            </section>
 
         <!-- Press Releases Section -->
-        <section id="press" class="section">
+        <section id="press" class="section press">
             <div class="section-header">
                 <h2 class="section-title">Press Releases</h2>
                 <p class="section-description">Official announcements and company news</p>
@@ -306,7 +342,6 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="card">
-                            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80" alt="Product Launch" class="card-image">
                             <div class="card-content">
                                 <h3 class="card-title">Major Product Launch Announcement</h3>
                                 <div class="card-date">📅 October 15, 2025</div>
@@ -319,7 +354,6 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="card">
-                            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80" alt="Partnership" class="card-image">
                             <div class="card-content">
                                 <h3 class="card-title">Strategic Partnership Announcement</h3>
                                 <div class="card-date">📅 October 10, 2025</div>
@@ -332,7 +366,6 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="card">
-                            <img src="https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?w=800&q=80" alt="Financial Results" class="card-image">
                             <div class="card-content">
                                 <h3 class="card-title">Record-Breaking Financial Results</h3>
                                 <div class="card-date">📅 September 28, 2025</div>
@@ -345,7 +378,6 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="card">
-                            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&q=80" alt="Sustainability" class="card-image">
                             <div class="card-content">
                                 <h3 class="card-title">Sustainability Initiative Launch</h3>
                                 <div class="card-date">📅 September 20, 2025</div>
@@ -358,8 +390,6 @@
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
             </div>
         </section>
     </div>
