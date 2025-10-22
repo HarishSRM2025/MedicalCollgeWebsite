@@ -9,6 +9,9 @@
             menuToggle.classList.toggle("open");
         });
 
+  
+
+
         // === Dropdown toggle for mobile ===
         function handleDropdowns() {
             document.querySelectorAll(".has-dropdown > a, .has-submenu > a").forEach(link => {
@@ -229,6 +232,6 @@
                 },
             });
         });
-
+     
     
     

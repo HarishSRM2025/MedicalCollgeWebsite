@@ -60,6 +60,7 @@
                 <li><a href="#">Press Releases</a></li>
             </ul>
         </li>
+        <li class="NMC-Nav" ><a href="#" style="color:#fff">NMC</a></li>
       </ul>
 
       <!-- Hamburger Icon -->
@@ -277,3 +278,13 @@
     document.getElementById("header").innerHTML=header;
     document.getElementById("floatBtn").innerHTML=floatBtn;
     document.getElementById("footer").innerHTML=footer;
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const currentPage = window.location.pathname.split("/").pop();
+            document.querySelectorAll(".nav-links a").forEach(link => {
+            if (link.getAttribute("href") === currentPage) {
+                link.classList.add("active");
+            }
+            });
+        });
+  
