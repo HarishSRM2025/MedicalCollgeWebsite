@@ -93,14 +93,14 @@ nav {
 
 
 .NMC-Nav{
-  background: var(--gradient-green);
-  padding: 10px 15px;
+  background: var(--color-secondary);
+  padding: 5px 20px;
   color: #fff !important;
-  border-radius: 10px;
-  z-index: -1;
+  border-radius: 5px;
+  position: relative;
 }
 .NMC-Nav a{
-  z-index: 0;
+  z-index:0;
 }
 /* Show dropdown on hover */
 .nav-links li:hover > .dropdown {

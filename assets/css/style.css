@@ -1187,6 +1187,12 @@ body {
     border-bottom:none;
     border-right:none;
 }
+
+@media (max-width:768px){
+    .milestone-stat{
+        border:1px solid #e3e3e3 !important;
+    }
+}
 /* Events Slider */
 .events {
     padding: var(--spacing-8xl) 5%;
@@ -4302,10 +4308,7 @@ grid-template-columns: 1fr;
     position: absolute;
     right: 5px;
 }
-.swiper-button-prev{
-    position: absolute;
-    left:-100px;
-}
+
 
 .swiper-button-next::after, .swiper-button-prev::after {
     font-size: 20px;
@@ -4706,7 +4709,8 @@ gap: var(--spacing-md);
         .ug-programs-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            margin-top: var(--spacing-3xl);
+            margin: var(--spacing-3xl) auto 0;
+            gap: 10px;
         }
 
         .ug-program-card {
