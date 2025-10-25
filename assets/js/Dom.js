@@ -1,72 +1,91 @@
     const header=`<div class="nav-container">
+    <div class="nav-wrapper">
       <div class="logo">
         <img src="./assets/images/Logo.webp" alt="SRM">
       </div>
 
-      <!-- Navigation Links -->
-      <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Home</a></li>
-        <li class="has-dropdown">
-          <a href="./aboutus.html">About Us</a>
-          <ul class="dropdown">
-            <li><a href="./aboutus.html#vision">Vision & Mission</a></li>
-            <li><a href="./aboutus.html#leadership">Leadership</a></li>
-            <li class="has-submenu">
-                <a href="#">Milestones & Accreditations</a>
-                    <ul class="sub-dropdown">
-                        <li><a href="#">NAAC</a></li>
-                        <li><a href="#">IQAC</a></li>
-                        <li><a href="#">NABH Updates</a></li>
-                        <li><a href="#">Environment & Social Initiatives</a></li>
-                        <li><a href="#">Green Campus</a></li>
-                        <li><a href="#">CSR & Sustainability</a></li>
-                    </ul>
-                </li>
-            <li><a href="#">Statutory Compliance</a></li>
-          </ul>
-        </li>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-        <li class="has-dropdown">
-          <a href="academics.html">Academics</a>
-          <ul class="dropdown">
-            <li><a href="#">Undergraduate</a></li>
-            <li><a href="#">Postgraduate</a></li>
-            <li class="has-submenu">
-              <a href="#">Departments</a>
-              <ul class="sub-dropdown">
-                <li><a href="#">MBBS</a></li>
-                <li><a href="#">Postgraduate</a></li>
-                <li><a href="#">AHS</a></li>
-                <li><a href="#">Nursing</a></li>
-                <li><a href="#">Research</a></li>
-                <li><a href="#">Basic Sciences</a></li>
-                <li><a href="#">Super-speciality</a></li>
-              </ul>
-               <li><a href="#">Curriculum & Competencies</a></li>
-               <li><a href="#">Co-curricular & Extra-curricular Activities</a></li>
-               <li><a href="#">Examination Cell</a></li>
-            </li>
-          </ul>
-        </li>
-        <li><a href="hospital.html">Hospital Services</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li class="has-dropdown"><a href="media.html">Media & OutReach</a>
+      <nav class="offcanvas-menu" id="offcanvasMenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+
+          <li class="has-dropdown" data-dropdown="about">
+            <a href="#" class="dropdown-trigger">About Us <span class="arrow">&#9654;</span></a>
             <ul class="dropdown">
-                <li><a href="#">News & Events</a></li>
-                <li><a href="#">Social Media Feed</a></li>
-                <li><a href="#">Newsletter</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Press Releases</a></li>
+              <li><a href="./aboutus.html#vision">Vision & Mission</a></li>
+              <li><a href="./aboutus.html#leadership">Leadership</a></li>
+              <li class="has-submenu" data-submenu="milestones">
+                <a href="./aboutus.html#milestones" class="submenu-trigger">Milestones & Accreditations <span class="arrow">&#9654;</span></a>
+                <ul class="sub-dropdown">
+                  <li><a href="#">NAAC</a></li>
+                  <li><a href="#">IQAC</a></li>
+                  <li><a href="#">NABH Updates</a></li>
+                  <li><a href="#">Environment & Social Initiatives</a></li>
+                  <li><a href="#">Green Campus</a></li>
+                  <li><a href="#">CSR & Sustainability</a></li>
+                </ul>
+              </li>
+              <li><a href="./aboutus.html#compliance">Statutory Compliance</a></li>
             </ul>
-        </li>
-        <li class="NMC-Nav" ><a href="#" style="color:#fff">NMC</a></li>
-      </ul>
+          </li>
 
-      <!-- Hamburger Icon -->
-      <div class="menu-toggle" id="menuToggle">
-        <span></span><span></span><span></span>
-      </div>
-    </div>`;
+          <li class="has-dropdown" data-dropdown="academics">
+            <a href="./academics.html" class="dropdown-trigger">Academics <span class="arrow">&#9654;</span></a>
+            <ul class="dropdown">
+              <li><a href="#undergraduate">Undergraduate</a></li>
+              <li><a href="#">Postgraduate</a></li>
+              <li class="has-submenu" data-submenu="departments">
+                <a href="#" class="submenu-trigger">Departments <span class="arrow">&#9654;</span></a>
+                <ul class="sub-dropdown">
+                  <li><a href="#">MBBS</a></li>
+                  <li><a href="#">Postgraduate</a></li>
+                  <li><a href="#">AHS</a></li>
+                  <li><a href="#">Nursing</a></li>
+                  <li><a href="#">Research</a></li>
+                  <li><a href="#">Basic Sciences</a></li>
+                  <li><a href="#">Super-speciality</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Curriculum & Competencies</a></li>
+              <li><a href="#">Co-curricular & Extra-curricular Activities</a></li>
+              <li><a href="#">Examination Cell</a></li>
+            </ul>
+          </li>
+
+          <li class="has-dropdown" data-dropdown="hospital">
+            <a href="#" class="dropdown-trigger">Hospital Services <span class="arrow">&#9654;</span></a>
+            <ul class="dropdown">
+              <li><a href="doctors.html">Doctor</a></li>
+            </ul>
+          </li>
+
+          <li><a href="research.html">Research</a></li>
+
+          <li class="has-dropdown" data-dropdown="media">
+            <a href="#" class="dropdown-trigger">Media & OutReach <span class="arrow">&#9654;</span></a>
+            <ul class="dropdown">
+              <li><a href="#">News & Events</a></li>
+              <li><a href="#">Social Media Feed</a></li>
+              <li><a href="#">Newsletter</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Press Releases</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#" class="nmc-nav">NMC</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="overlay" id="overlay"></div>
+
+`;
 
     const floatBtn=`<button class="social-toggle-btn" id="socialToggle">
             <i class="fas fa-plus"></i>
@@ -278,12 +297,43 @@
     document.getElementById("floatBtn").innerHTML=floatBtn;
     document.getElementById("footer").innerHTML=footer;
 
-        document.addEventListener("DOMContentLoaded", function () {
-            const currentPage = window.location.pathname.split("/").pop();
-            document.querySelectorAll(".nav-links a").forEach(link => {
-            if (link.getAttribute("href") === currentPage) {
-                link.classList.add("active");
+    document.addEventListener("DOMContentLoaded", function () {
+    const currentPage = window.location.pathname.split("/").pop();
+
+    // Select all links inside offcanvas menu
+    document.querySelectorAll("#offcanvasMenu a").forEach(link => {
+        const linkHref = link.getAttribute("href");
+
+        // Add active class if href matches current page
+        if (linkHref === currentPage || (linkHref === "./" + currentPage)) {
+            link.classList.add("active");
+
+            // If the link is inside a dropdown, also open parent dropdowns
+            let parent = link.closest(".dropdown, .sub-dropdown");
+            while (parent) {
+                const parentTrigger = parent.previousElementSibling;
+                if (parentTrigger && parentTrigger.classList.contains("dropdown-trigger") || parentTrigger.classList.contains("submenu-trigger")) {
+                    parent.style.display = "block";
+                    parentTrigger.classList.add("open"); // optional class to style arrow
+                }
+                parent = parent.parentElement.closest(".dropdown, .sub-dropdown");
             }
-            });
+        }
+    });
+
+    // Optional: toggle dropdown on click for mobile
+    document.querySelectorAll(".dropdown-trigger, .submenu-trigger").forEach(trigger => {
+        trigger.addEventListener("click", function (e) {
+            e.preventDefault();
+            const submenu = this.nextElementSibling;
+            if (submenu) {
+                submenu.style.display = submenu.style.display === "block" ? "none" : "block";
+                this.classList.toggle("open");
+            }
         });
+    });
+});
+
+
+
   
