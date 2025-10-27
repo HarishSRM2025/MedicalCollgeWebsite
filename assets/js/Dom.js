@@ -11,16 +11,20 @@
       </button>
 
       <nav class="offcanvas-menu" id="offcanvasMenu">
+      <div class="Offcanvas-logo logo">
+        <img src="./assets/images/Logo.webp" alt="SRM">
+      </div>
+
         <ul>
           <li><a href="index.html">Home</a></li>
 
           <li class="has-dropdown" data-dropdown="about">
-            <a href="#" class="dropdown-trigger">About Us <span class="arrow">&#9654;</span></a>
+            <a href="./aboutus.html">About Us <span class="arrow dropdown-trigger">&#9654;</span></a>
             <ul class="dropdown">
               <li><a href="./aboutus.html#vision">Vision & Mission</a></li>
               <li><a href="./aboutus.html#leadership">Leadership</a></li>
               <li class="has-submenu" data-submenu="milestones">
-                <a href="./aboutus.html#milestones" class="submenu-trigger">Milestones & Accreditations <span class="arrow">&#9654;</span></a>
+                <a href="#">Milestones & Accreditations <span class="arrow submenu-trigger">&#9654;</span></a>
                 <ul class="sub-dropdown">
                   <li><a href="#">NAAC</a></li>
                   <li><a href="#">IQAC</a></li>
@@ -30,17 +34,17 @@
                   <li><a href="#">CSR & Sustainability</a></li>
                 </ul>
               </li>
-              <li><a href="./aboutus.html#compliance">Statutory Compliance</a></li>
+              <li><a href="#">Statutory Compliance</a></li>
             </ul>
           </li>
 
           <li class="has-dropdown" data-dropdown="academics">
-            <a href="./academics.html" class="dropdown-trigger">Academics <span class="arrow">&#9654;</span></a>
+            <a href="./academics.html">Academics <span class="arrow dropdown-trigger">&#9654;</span></a>
             <ul class="dropdown">
-              <li><a href="#undergraduate">Undergraduate</a></li>
+              <li><a href="#">Undergraduate</a></li>
               <li><a href="#">Postgraduate</a></li>
               <li class="has-submenu" data-submenu="departments">
-                <a href="#" class="submenu-trigger">Departments <span class="arrow">&#9654;</span></a>
+                <a href="#">Departments <span class="arrow submenu-trigger">&#9654;</span></a>
                 <ul class="sub-dropdown">
                   <li><a href="#">MBBS</a></li>
                   <li><a href="#">Postgraduate</a></li>
@@ -58,7 +62,7 @@
           </li>
 
           <li class="has-dropdown" data-dropdown="hospital">
-            <a href="#" class="dropdown-trigger">Hospital Services <span class="arrow">&#9654;</span></a>
+            <a href="./hospital.html">Hospital Services <span class="arrow dropdown-trigger">&#9654;</span></a>
             <ul class="dropdown">
               <li><a href="doctors.html">Doctor</a></li>
             </ul>
@@ -67,7 +71,7 @@
           <li><a href="research.html">Research</a></li>
 
           <li class="has-dropdown" data-dropdown="media">
-            <a href="#" class="dropdown-trigger">Media & OutReach <span class="arrow">&#9654;</span></a>
+            <a href="./media.html">Media & OutReach <span class="arrow dropdown-trigger">&#9654;</span></a>
             <ul class="dropdown">
               <li><a href="#">News & Events</a></li>
               <li><a href="#">Social Media Feed</a></li>

@@ -166,6 +166,10 @@
         color: var(--color-secondary);
         padding-left: 25px;
       }
+      .Offcanvas-logo{
+        display: none;
+      }
+      
     }
 
     /* Mobile Styles */
@@ -179,7 +183,7 @@
         top: 0;
         left: -100%;
         width: 280px;
-        height: 100vh;
+        height: 100%;
         background: #fff;
         box-shadow: 2px 0 15px rgba(0,0,0,0.3);
         transition: left 0.3s ease;
@@ -192,14 +196,17 @@
         left: 0;
       }
 
- 
-
-    
-      .nav-wrapper{
-        align-items: start;
+      .has-dropdown a{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
       }
+
+     .has-dropdown {
+      padding: 0;
+     }
       .offcanvas-menu a {
-        padding: 15px 20px;
+        padding: 0px 20px;
         font-size: 15px;
         white-space: normal;
         width: 100%;
@@ -329,6 +336,10 @@
       .nmc-nav:hover {
         background: var(--color-secondary) !important;
         color: #fff !important;
+      }
+      .Offcanvas-logo{
+        display: visible;
+        margin-bottom: 50px;
       }
     }
 
