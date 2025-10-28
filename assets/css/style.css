@@ -4190,6 +4190,7 @@ grid-template-columns: 1fr;
 
   .about-content p {
     margin: 0 auto 2rem;
+    text-align: left;
   }
 
   .stats-grid {
@@ -4198,6 +4199,7 @@ grid-template-columns: 1fr;
 
   .highlights {
     align-items: center;
+    width: 100%;
   }
 
   .about-image {
@@ -4215,12 +4217,16 @@ grid-template-columns: 1fr;
   }
 
   .highlight {
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
+    width: 100%;
   }
 }
 
-
+.stat p{
+    text-align: center;
+    color: #fff;
+}
 /* Container */
 .container {
     max-width: 1400px;
@@ -4772,11 +4778,20 @@ grid-template-columns: 1fr;
         /* Programs Grid */
         .ug-programs-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             margin: var(--spacing-3xl) auto 0;
             gap: 10px;
         }
 
+        @media (max-width:768px) {
+            .ug-programs-grid {
+                display: grid;
+                grid-template-columns: 1fr; 
+                gap: 10px;
+                justify-items: center;
+            }
+
+        }
         .ug-program-card {
             background: var(--color-white);
             width:290px;
