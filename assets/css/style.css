@@ -2,9 +2,8 @@
 
 :root {
     /* Colors */
-    /* --color-primary: #0066cc; */
-    --color-primary: #2689c7;
-    --color-primary-dark: #2689c7;
+    --color-primary: #137fc1;
+    --color-primary-dark: #0052a3;
     --color-primary-light: #E3F5FF;
     --color-secondary: #53a766;
     --color-secondary-light: #E8F5E9;
@@ -21,12 +20,11 @@
     --color-text-light: #999;
     --color-white: #ffffff;
     --color-background-light: #f8f9fa;
-    /* --color-navy: #1a237e; */
-    --color-navy:var(--primary-color);
+    --color-navy: #1a237e;
     --color-navy-light: #283593;
     --color-navy-medium: #3949ab;
-    --color-green-light: #579165;
-    --color-green-olive: #a0c971;
+    --color-green-light: #66bb6a;
+    --color-green-olive: #8bc34a;
     --color-green-olive-light: #aed581;
     --color-blue-light: #2196f3;
     --color-blue-lighter: #42a5f5;
@@ -510,7 +508,7 @@ body {
 }
 
 .btn-primary {
-    background: var(--color-navy);
+    background: var(--color-primary);
     color: var(--color-white);
     padding: 12px 35px;
     border: none;
@@ -1451,7 +1449,7 @@ body {
 
 /* Footer */
 footer {
-    background: var(--color-navy);
+    background: var(--primary-color);
     color: var(--color-white);
     padding: var(--spacing-4xl) 5% var(--spacing-xl);
 }
@@ -4336,7 +4334,7 @@ grid-template-columns: 1fr;
 
 .btn-primary {
     display: inline-block;
-    background: var(--color-navy-light);
+    background: var(--color-navy);
     color: var(--color-white);
     padding: var(--spacing-sm) var(--spacing-xl);
     border-radius: 50px;
