@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
     /* Colors */
-    --color-primary: #0066cc;
-    --color-primary-dark: #0052a3;
+    /* --color-primary: #0066cc; */
+    --color-primary: #2689c7;
+    --color-primary-dark: #2689c7;
     --color-primary-light: #E3F5FF;
-    --color-secondary: #4caf50;
+    --color-secondary: #53a766;
     --color-secondary-light: #E8F5E9;
     --color-accent-pink: #ff69b4;
     --color-accent-pink-light: #ffd9ecb2;
@@ -18,11 +21,12 @@
     --color-text-light: #999;
     --color-white: #ffffff;
     --color-background-light: #f8f9fa;
-    --color-navy: #1a237e;
+    /* --color-navy: #1a237e; */
+    --color-navy:var(--primary-color);
     --color-navy-light: #283593;
     --color-navy-medium: #3949ab;
-    --color-green-light: #66bb6a;
-    --color-green-olive: #8bc34a;
+    --color-green-light: #579165;
+    --color-green-olive: #a0c971;
     --color-green-olive-light: #aed581;
     --color-blue-light: #2196f3;
     --color-blue-lighter: #42a5f5;
@@ -230,7 +234,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: "Poppins", sans-serif;
     line-height: var(--line-height-loose);
     color: var(--color-text-primary);
     overflow-x: hidden;
@@ -506,7 +510,7 @@ body {
 }
 
 .btn-primary {
-    background: var(--color-primary);
+    background: var(--color-navy);
     color: var(--color-white);
     padding: 12px 35px;
     border: none;
@@ -876,7 +880,7 @@ body {
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-xl);
     text-align: left;
-    height: 60%;
+    height: max-content;
 }
 
 .mission-box h3, .vision-box h3 {
@@ -1530,11 +1534,11 @@ footer {
     border-top: 1px solid rgba(255,255,255,var(--opacity-light));
     color: rgba(255,255,255,0.6);
 }
-@media (max-width : 1450px) {
+/* @media (max-width : 1450px) {
     .mission-box, .vision-box {
         height: 100%;
     }
-}
+} */
 /* Responsive */
 @media (max-width: 1024px){
     .hero-slide,
@@ -4332,7 +4336,7 @@ grid-template-columns: 1fr;
 
 .btn-primary {
     display: inline-block;
-    background: var(--color-primary);
+    background: var(--color-navy-light);
     color: var(--color-white);
     padding: var(--spacing-sm) var(--spacing-xl);
     border-radius: 50px;
