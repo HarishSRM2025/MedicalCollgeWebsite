@@ -4,9 +4,9 @@
     /* Colors */
     --color-primary: #137fc1;
     --color-primary-dark: #0052a3;
-    --color-primary-light: #E3F5FF;
+    --color-primary-light: #044d88;
     --color-secondary: #53a766;
-    --color-secondary-light: #E8F5E9;
+    --color-secondary-light: #79da81;
     --color-accent-pink: #ff69b4;
     --color-accent-pink-light: #ffd9ecb2;
     --color-accent-red: #f44336;
@@ -206,7 +206,7 @@
     --opacity-70: 0.7;
     --opacity-90: 0.9;
 
-    --gradient-1:linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-secondary-light) 100%);
+    --gradient-1:linear-gradient(135deg, var(--color-primary-light) 50%, var(--color-secondary-light) 100%);
     --gradient-2: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-light) 100%);
     --gradient-3: linear-gradient(to left, #28d4ff,#008f2b);
     /* --gradient-3-breadcrum:linear-gradient(to right,#0153349f,#001f20e3),url(../images/breadcrum.jpg); */
@@ -3715,7 +3715,7 @@ grid-template-columns: 1fr;
         }
 
         .nav-card {
-            background: linear-gradient(135deg, rgba(0, 102, 204, 0.05) 0%, rgba(76, 175, 80, 0.05) 100%);
+            background: var(--gradient-1);
             padding: var(--spacing-4xl);
             border-radius: var(--radius-xl);
             border: 2px solid transparent;
