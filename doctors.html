@@ -29,11 +29,9 @@
             <div class="search-bar">
                 <div class="search-input-wrapper">
                     <i class="fas fa-search"></i>
-                    <input type="text" id="searchInput" class="search-input" placeholder="Search for Doctors, Hospitals, Clinics">
+                    <input type="text" id="searchInput" class="search-input" oninput="searchDoctors()" placeholder="Search for Doctors, Hospitals, Clinics">
                 </div>
-                <button class="search-btn" onclick="searchDoctors()">
-                    <i class="fas fa-search"></i> Search
-                </button>
+                
             </div>
             <div class="results-info">
                 <div class="results-count">
