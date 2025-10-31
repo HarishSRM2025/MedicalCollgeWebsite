@@ -3,21 +3,17 @@
       <div class="logo">
         <img src="./assets/images/Logo.webp" alt="SRM">
       </div>
-
       <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
         <span></span>
         <span></span>
         <span></span>
       </button>
-
       <nav class="offcanvas-menu" id="offcanvasMenu">
       <div class="Offcanvas-logo logo">
         <img src="./assets/images/Logo.webp" alt="SRM">
       </div>
-
         <ul>
           <li><a href="index.html">Home</a></li>
-
           <li class="has-dropdown" data-dropdown="about">
             <a href="./aboutus.html">About Us <span class="arrow dropdown-trigger">&#9654;</span></a>
             <ul class="dropdown">
@@ -37,39 +33,52 @@
               <li><a href="#">Statutory Compliance</a></li>
             </ul>
           </li>
-
           <li class="has-dropdown" data-dropdown="academics">
             <a href="./academics.html">Academics <span class="arrow dropdown-trigger">&#9654;</span></a>
             <ul class="dropdown">
-              <li><a href="#">Undergraduate</a></li>
-              <li><a href="#">Postgraduate</a></li>
-              <li class="has-submenu" data-submenu="departments">
-                <a href="#">Departments <span class="arrow submenu-trigger">&#9654;</span></a>
+              <li class="has-submenu" data-submenu="courses">
+                <a href="./pre-clinical.html">Pre Clinical <span class="arrow submenu-trigger">&#9654;</span></a>
                 <ul class="sub-dropdown">
-                  <li><a href="#">MBBS</a></li>
-                  <li><a href="#">Postgraduate</a></li>
-                  <li><a href="#">AHS</a></li>
-                  <li><a href="#">Nursing</a></li>
-                  <li><a href="#">Research</a></li>
-                  <li><a href="#">Basic Sciences</a></li>
-                  <li><a href="#">Super-speciality</a></li>
+                  <li><a href="#">Anatomy</a></li>
+                  <li><a href="#">Biochemistry</a></li>
+                  <li><a href="#">Physiology</a></li>
                 </ul>
               </li>
-              <li><a href="#">Curriculum & Competencies</a></li>
-              <li><a href="#">Co-curricular & Extra-curricular Activities</a></li>
+              <li class="has-submenu" data-submenu="courses">
+                <a href="./para-clinical.html">Para Clinical <span class="arrow submenu-trigger">&#9654;</span></a>
+                <ul class="sub-dropdown">
+                  <li><a href="#">Microbiology</a></li>
+                  <li><a href="#">Pathology</a></li>
+                  <li><a href="#">Pharmacology</a></li>
+                  <li><a href="#">Social & Preventive Medicine</a></li>
+                  <li><a href="#">Forensic Medicine & Toxicology</a></li>
+                </ul>
+              </li>
+              <li class="has-submenu" data-submenu="courses">
+                <a href="#">Courses<span class="arrow submenu-trigger">&#9654;</span></a>
+                <ul class="sub-dropdown">
+                  <li><a href="#">Under Graduate</a></li>
+                  <li><a href="#">Post Graduate</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Programs & Course Outcomes</a></li>
+              <li><a href="#">Library</a></li>
+              <li><a href="#">Medical Education Unit</a></li>
               <li><a href="#">Examination Cell</a></li>
             </ul>
           </li>
-
           <li class="has-dropdown" data-dropdown="hospital">
             <a href="./hospital.html">Hospital Services <span class="arrow dropdown-trigger">&#9654;</span></a>
             <ul class="dropdown">
-              <li><a href="doctors.html">Doctor</a></li>
+              <li><a href="#">Departments</a></li>
+              <li><a href="./doctors.html">Doctor</a></li>
+              <li><a href="#">Supporting Services</a></li>
+              <li><a href="#">Health Centers</a></li>
+              <li><a href="#">Camps</a></li>
+              <li><a href="#">Blood Bank</a></li>
             </ul>
           </li>
-
           <li><a href="research.html">Research</a></li>
-
           <li class="has-dropdown" data-dropdown="media">
             <a href="./media.html">Media & OutReach <span class="arrow dropdown-trigger">&#9654;</span></a>
             <ul class="dropdown">
@@ -80,16 +89,13 @@
               <li><a href="#">Press Releases</a></li>
             </ul>
           </li>
-
           <li><a href="#" class="nmc-nav">NMC</a></li>
         </ul>
       </nav>
     </div>
   </div>
 
-  <div class="overlay" id="overlay"></div>
-
-`;
+  <div class="overlay" id="overlay"></div>`;
 
     const floatBtn=`<button class="social-toggle-btn" id="socialToggle">
             <i class="fas fa-plus"></i>
