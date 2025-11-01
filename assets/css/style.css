@@ -6447,7 +6447,7 @@ grid-template-columns: 1fr;
         }
 
         .tabs_navs .accordion-body li {
-        padding: 10px 0 0 var(--spacing-3xl);
+        padding:10px 0 0 30px;
         color: var(--color-text-secondary);
         position: relative;
         line-height: 1.7;
@@ -6458,22 +6458,7 @@ grid-template-columns: 1fr;
         color: var(--color-text-primary);
         }
 
-        .tabs_navs .accordion-body li::before {
-        content: '\f00c';
-        font-family: 'Font Awesome 6 Free';
-        font-weight: 900;
-        color: var(--dept-color);
-        position: absolute;
-        left: 0;
-        width: 24px;
-        height: 24px;
-        background: color-mix(in srgb, var(--dept-color) 10%, transparent);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: var(--font-sm);
-        }
+      
 
      
 
@@ -6635,6 +6620,7 @@ grid-template-columns: 1fr;
         @media (max-width: 768px) {
         .tabs_navs .container {
             padding: var(--spacing-2xl) var(--spacing-md);
+            display:block;
         }
 
         .tabs_navs .detail-header h2 {
@@ -6661,3 +6647,99 @@ grid-template-columns: 1fr;
             grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         }
         }
+        .tabs_navs hr{
+            height:2px;
+            border:none;
+            background:var(--background-light);
+            margin:20px 0;
+        }
+        .custom-list {
+        list-style: none;
+        counter-reset: custom-counter;
+        padding-left: 20px;
+        }
+
+        .custom-list li {
+        counter-increment: custom-counter;
+        position: relative;
+        margin-bottom: 8px;
+        padding-left: 30px;
+        }
+
+        .custom-list li::before{
+            content: "✔"; /* You can replace with any symbol or emoji */
+            position: absolute;
+            left: 0;
+            color: var(--accent-color); /* Customize color */
+            font-weight: bold;
+        }
+
+/* Wrapper */
+.responsive-table {
+  width: 100%;
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: var(--shadow-2xl);
+  overflow: hidden;
+  overflow-x: auto; /* scroll only inside container */
+}
+
+/* Table */
+.responsive-table table {
+  width: 100%;
+  border-collapse: collapse;
+  white-space: nowrap; /* prevents table from breaking */
+}
+
+/* Table Head */
+.responsive-table thead th {
+  background: var(--color-primary);
+  color: var(--white);
+  font-weight: 600;
+  padding: 12px 15px;
+  text-align: left;
+  border: none;
+}
+
+/* Table Body Cells */
+.responsive-table td {
+  padding: 12px 15px;
+  border: 1px solid #e3e3e3;
+  background: var(--white);
+}
+
+/* Hover Effect */
+.responsive-table tbody tr:hover {
+  background: var(--background-light);
+}
+
+/* Section Heading Row (colspan) */
+.responsive-table th[colspan] {
+  text-align: center;
+  background: var(--color-primary);
+  color: var(--white);
+  border: none;
+  padding: 10px;
+}
+
+/* For Rowspan cells to align top properly */
+.responsive-table td[rowspan] {
+  vertical-align: top;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .responsive-table {
+    width:300px;
+    border-radius: 6px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+  }
+    .tabs_navs{
+        --sidebar-width:200px;
+    }   
+  .responsive-table td,
+  .responsive-table th {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+}
