@@ -70,7 +70,7 @@
           <li class="has-dropdown" data-dropdown="hospital">
             <a href="./hospital.html">Hospital Services <span class="arrow dropdown-trigger">&#9654;</span></a>
             <ul class="dropdown">
-              <li><a href="#">Departments</a></li>
+              <li><a href="./clinicaldepartment.html">Departments</a></li>
               <li><a href="./doctors.html">Doctor</a></li>
               <li><a href="#">Supporting Services</a></li>
               <li><a href="#">Health Centers</a></li>
@@ -78,7 +78,7 @@
               <li><a href="#">Blood Bank</a></li>
             </ul>
           </li>
-          <li><a href="research.html">Research</a></li>
+          <li><a href="research.html">Research & Innovation</a></li>
           <li class="has-dropdown" data-dropdown="media">
             <a href="./media.html">Media & OutReach <span class="arrow dropdown-trigger">&#9654;</span></a>
             <ul class="dropdown">

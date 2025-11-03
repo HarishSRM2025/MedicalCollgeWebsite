@@ -351,7 +351,7 @@
             {
                 id: 2,
                 name: "Dr. Robert Thomas",
-                specialty: "Cardiology",
+                specialty: "Psychology",
                 gender: "male",
                 image: "https://media.istockphoto.com/id/1730222050/photo/photo-of-doctor-lady-smile-looking-at-camera-wear-stethoscope-white-uniform-isolate-white.jpg?s=612x612&w=0&k=20&c=KfZT1DzVMcGvHZZg4NnUhHwvOiI5xPYRe1AWvCwOqE4=",
                 experience: 30,
@@ -431,7 +431,7 @@
             {
                 id: 7,
                 name: "Dr. Tyrone Patrick",
-                specialty: "Cardiology",
+                specialty: "Pediatrics",
                 gender: "male",
                 image: "https://market-resized.envatousercontent.com/photodune.net/EVA/TRX/b1/cc/5a/da/b7/v1_E10/E108FXH8.jpg?auto=format&q=94&mark=https%3A%2F%2Fassets.market-storefront.envato-static.com%2Fwatermarks%2Fphoto-260724.png&opacity=0.2&cf_fit=contain&w=590&h=393&s=f76e968a92c0ed678594dff42fd011b513880bfe82f72f0598298fe1b7e3e065",
                 experience: 22,
