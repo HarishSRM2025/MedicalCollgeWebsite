@@ -1895,7 +1895,7 @@ section {
     top:15%;
 }
 .leader-div{
-    background:linear-gradient(15deg,#08295a90,#006faf),url("../images/bgc1.jpg");
+    background:linear-gradient(15deg,#08295a,#006faf);
     height:24%!important;
     padding:10% 0;
     border-radius:0px 0px 0 0;
@@ -3866,6 +3866,7 @@ grid-template-columns: 1fr;
             max-height: 0;
             overflow: hidden;
             transition: max-height var(--transition-medium) ease-out;
+            background-color:var(--color-background-light);
         }
 
         .accordion-item.active .accordion-content {
@@ -3876,6 +3877,7 @@ grid-template-columns: 1fr;
             margin: 0;
             color: var(--color-text-secondary);
             line-height: var(--line-height-loose);
+            margin: 15px var(--spacing-lg) var(--spacing-lg) ;
         }
 
         .accordion-link {
@@ -6681,105 +6683,7 @@ grid-template-columns: 1fr;
             max-width: 800px;
         }
 
-        .accordion-section {
-            background: var(--color-bg-card);
-            border-radius: var(--radius-lg);
-            margin-bottom: 1rem;
-            box-shadow: var(--shadow-sm);
-            overflow: hidden;
-            border-left: 4px solid var(--dept-color);
-        }
-
-        .accordion-header {
-            padding: 1.5rem 2rem;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: var(--transition);
-            background: var(--color-bg-card);
-        }
-
-        .accordion-header:hover {
-            background: rgba(102, 126, 234, 0.05);
-        }
-
-        .accordion-header.active {
-            background: rgba(102, 126, 234, 0.08);
-        }
-
-        .accordion-title {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--color-text-primary);
-        }
-
-        .accordion-title i {
-            color: var(--dept-color);
-        }
-
-        .accordion-icon {
-            font-size: 1.25rem;
-            color: var(--color-text-secondary);
-            transition: var(--transition);
-        }
-
-        .accordion-header.active .accordion-icon {
-            transform: rotate(180deg);
-        }
-
-        .accordion-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.4s ease;
-        }
-
-        .accordion-content.active {
-            max-height: 5000px;
-        }
-
-        .accordion-body {
-            padding: 1.5rem 2rem 2rem;
-        }
-
-        .accordion-body p {
-            color: var(--color-text-secondary);
-            line-height: 1.8;
-            margin-bottom: 1.5rem;
-        }
-
-        .accordion-body ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .accordion-body li {
-            padding: 0.75rem 0 0.75rem 2.5rem;
-            color: var(--color-text-secondary);
-            position: relative;
-            line-height: 1.7;
-            transition: var(--transition);
-        }
-
-        .accordion-body li::before {
-            content: '\f00c';
-            font-family: 'Font Awesome 6 Free';
-            font-weight: 900;
-            color: var(--dept-color);
-            position: absolute;
-            left: 0;
-            width: 24px;
-            height: 24px;
-            background: rgba(102, 126, 234, 0.1);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.75rem;
-        }
+       
 
         .tabs-container {
             background: var(--color-bg-card);
@@ -7091,4 +6995,36 @@ grid-template-columns: 1fr;
             display: grid;
             grid-template-columns: 300px 1fr;
             gap: 3rem;
+        }
+
+
+
+
+         .publication-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5rem;
+        }
+
+        .publication-table th,
+        .publication-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .publication-table th {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+            color: var(--dept-color);
+            font-weight: 700;
+            font-size: 0.95rem;
+        }
+
+        .publication-table td {
+            color: var(--color-text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .publication-table tr:hover {
+            background: rgba(102, 126, 234, 0.03);
         }
