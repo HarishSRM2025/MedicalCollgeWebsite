@@ -1895,7 +1895,7 @@ section {
     top:15%;
 }
 .leader-div{
-    background:linear-gradient(15deg,#08295a,#006faf);
+    background:linear-gradient(15deg,#08295a90,#006faf),url("../images/bgc1.jpg");
     height:24%!important;
     padding:10% 0;
     border-radius:0px 0px 0 0;
