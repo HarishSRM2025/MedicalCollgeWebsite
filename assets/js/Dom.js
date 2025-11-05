@@ -70,7 +70,7 @@
           <li class="has-dropdown" data-dropdown="hospital">
             <a href="./hospital.html">Hospital Services <span class="arrow dropdown-trigger">&#9654;</span></a>
             <ul class="dropdown">
-              <li><a href="./clinicaldepartment.html">Departments</a></li>
+              <li><a href="./boardspecialties.html">Departments</a></li>
               <li><a href="./doctors.html">Doctor</a></li>
               <li><a href="#">Supporting Services</a></li>
               <li><a href="#">Health Centers</a></li>
