@@ -380,7 +380,7 @@
                 html += `
                     <div class="tabs-container">
                         <div class="tabs-header" onclick="togglePublications(this)">
-                            <div class="tabs-title"><i class="fas fa-book-medical"></i> Publications</div>
+                            <div class="accordion-title"><i class="fas fa-book-medical"></i> Publications</div>
                             <i class="fas fa-chevron-down tabs-expand-icon"></i>
                         </div>
                         <div class="tabs-body">

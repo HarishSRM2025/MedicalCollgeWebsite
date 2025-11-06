@@ -36,24 +36,8 @@
           <li class="has-dropdown" data-dropdown="academics">
             <a href="./academics.html">Academics <span class="arrow dropdown-trigger">&#9654;</span></a>
             <ul class="dropdown">
-              <li class="has-submenu" data-submenu="courses">
-                <a href="./pre-clinical.html">Pre Clinical <span class="arrow submenu-trigger">&#9654;</span></a>
-                <ul class="sub-dropdown">
-                  <li><a href="#">Anatomy</a></li>
-                  <li><a href="#">Biochemistry</a></li>
-                  <li><a href="#">Physiology</a></li>
-                </ul>
-              </li>
-              <li class="has-submenu" data-submenu="courses">
-                <a href="./para-clinical.html">Para Clinical <span class="arrow submenu-trigger">&#9654;</span></a>
-                <ul class="sub-dropdown">
-                  <li><a href="#">Microbiology</a></li>
-                  <li><a href="#">Pathology</a></li>
-                  <li><a href="#">Pharmacology</a></li>
-                  <li><a href="#">Social & Preventive Medicine</a></li>
-                  <li><a href="#">Forensic Medicine & Toxicology</a></li>
-                </ul>
-              </li>
+              <li><a href="./pre-clinical.html">Pre Clinical</a></li>
+              <li><a href="./para-clinical.html">Para Clinical</a></li>
               <li class="has-submenu" data-submenu="courses">
                 <a href="#">Courses<span class="arrow submenu-trigger">&#9654;</span></a>
                 <ul class="sub-dropdown">
@@ -70,7 +54,15 @@
           <li class="has-dropdown" data-dropdown="hospital">
             <a href="./hospital.html">Hospital Services <span class="arrow dropdown-trigger">&#9654;</span></a>
             <ul class="dropdown">
-              <li><a href="./boardspecialties.html">Departments</a></li>
+              <li class="has-submenu" data-submenu="courses">
+                <a href="./pre-clinical.html">Departments<span class="arrow submenu-trigger">&#9654;</span></a>
+                <ul class="sub-dropdown">
+                  <li><a href="./boardspecialties.html">Medicine & Broad Specialties</a></li>
+                  <li><a href="./surgeryspecialties.html">Surgery & Broad Specialties</a></li>
+                  <li><a href="./MedicalSuperSpecialties.html">Medicine & Super Specialties</a></li>
+                  <li><a href="./SurgerySuperSpecialties.html">Surgery & Super Specialties</a></li>
+                </ul>
+              </li>
               <li><a href="./doctors.html">Doctor</a></li>
               <li><a href="#">Supporting Services</a></li>
               <li><a href="#">Health Centers</a></li>

@@ -2,9 +2,12 @@
         // Department data with comprehensive information
         const depts = [
             {
-                id: "general_medicine", name: "General Medicine", icon: "fa-user-doctor", color: "#795548", colorDark: "#5d4037",
+                id: "general_medicine", name: "General Medicine", icon:"fa-stethoscope", color: "#3558c9ff", colorDark: "#07268dff",
                 desc: "Comprehensive internal medicine care for all age groups.",
+                aim:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
+                objectives:["Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro."],
                 infra: ["OPD rooms", "Inpatient wards", "ICU", "Procedure room"],
+                faculty: [{name: "Ram", designation: "Assistant professor", exp: "5"},{name: "Sam", designation: "Assistant professor", exp: "5"},{name: "John", designation: "Assistant professor", exp: "5"}],
                 services: ["General Consultation", "Diabetes Care", "Hypertension", "Infectious Diseases", "Respiratory Medicine", "Gastroenterology", "Cardiology", "Nephrology"],
                 pubStats: [{label: "Publications", value: "30+"}],
                 pubHighlights: ["Diabetes management"],
@@ -15,9 +18,12 @@
                 gallery: [{name: "OPD", icon: "fa-clinic-medical", event: "OPD", date: "Jan 2024"}]
             },
             {
-                id: "emergency_medicine", name: "Emergency Medicine", icon: "fa-user-doctor", color: "#27ae60", colorDark: "#229954",
+                id: "emergency_medicine", name: "Emergency Medicine", icon: "fa-truck-medical", color: "#27ae60", colorDark: "#229954",
                 desc: "Comprehensive internal medicine care for all age groups.",
+                aim:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
+                objectives:["Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro."],
                 infra: ["OPD rooms", "Inpatient wards", "ICU", "Procedure room"],
+                faculty: [{name: "Ram", designation: "Assistant professor", exp: "5"},{name: "Sam", designation: "Assistant professor", exp: "5"},{name: "John", designation: "Assistant professor", exp: "5"}],
                 services: ["General Consultation", "Diabetes Care", "Hypertension", "Infectious Diseases", "Respiratory Medicine", "Gastroenterology", "Cardiology", "Nephrology"],
                 pubStats: [{label: "Publications", value: "30+"}],
                 pubHighlights: ["Diabetes management"],
@@ -31,7 +37,10 @@
             {
                 id: "pediatrics", name: "Pediatrics", icon: "fa-child", color: "#ff9800", colorDark: "#f57c00",
                 desc: "Comprehensive child healthcare with NICU and PICU facilities.",
+                aim:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
+                objectives:["Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro."],
                 infra: ["Pediatric OPD", "NICU", "PICU", "Immunization clinic"],
+                faculty: [{name: "Ram", designation: "Assistant professor", exp: "5"},{name: "Sam", designation: "Assistant professor", exp: "5"},{name: "John", designation: "Assistant professor", exp: "5"}],
                 services: ["General Pediatrics", "Neonatology", "PICU", "Immunization", "Growth Monitoring"],
                 pubStats: [{label: "Publications", value: "24+"}],
                 pubHighlights: ["Neonatal care"],
@@ -44,7 +53,10 @@
             {
                 id: "dermatology", name: "Dermatology", icon: "fa-hand-dots", color: "#e74c3c", colorDark: "#c0392b",
                 desc: "Expert care for skin, hair, and nail conditions with advanced cosmetic dermatology services.",
+                aim:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
+                objectives:["Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro."],
                 infra: ["Dermatology consultation rooms", "Laser therapy unit", "Phototherapy equipment", "Dermoscopy facility", "Minor procedure room"],
+                faculty: [{name: "Ram", designation: "Assistant professor", exp: "5"},{name: "Sam", designation: "Assistant professor", exp: "5"},{name: "John", designation: "Assistant professor", exp: "5"}],
                 services: ["General Dermatology", "Cosmetic Dermatology", "Laser Treatments", "Hair Restoration", "Acne Treatment", "Psoriasis Care", "Vitiligo Treatment", "Chemical Peels"],
                 pubStats: [{label: "Publications", value: "28+"}, {label: "International", value: "12+"}],
                 pubHighlights: ["Advances in psoriasis treatment", "Laser therapy in acne scars", "Novel vitiligo treatments"],
@@ -63,7 +75,10 @@
             {
                 id: "psychiatry", name: "Psychiatry", icon: "fa-brain", color: "#673ab7", colorDark: "#512da8",
                 desc: "Comprehensive mental health services with counseling and therapy.",
+                aim:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
+                objectives:["Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro."],
                 infra: ["Consultation rooms", "Counseling center", "De-addiction unit", "Psychology testing room"],
+                faculty: [{name: "Ram", designation: "Assistant professor", exp: "5"},{name: "Sam", designation: "Assistant professor", exp: "5"},{name: "John", designation: "Assistant professor", exp: "5"}],
                 services: ["General Psychiatry", "Depression Treatment", "Anxiety Disorders", "Addiction Treatment", "Counseling Services", "Child Psychiatry"],
                 pubStats: [{label: "Publications", value: "20+"}],
                 pubHighlights: ["Depression management"],
@@ -76,7 +91,10 @@
             {
                 id: "respiratory", name: "Respiratory Medicine", icon: "fa-lungs", color: "#26c6da", colorDark: "#00acc1",
                 desc: "Comprehensive respiratory care with pulmonary function testing.",
+                aim:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
+                objectives:["Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro."],
                 infra: ["Pulmonary function lab", "Bronchoscopy suite", "Respiratory ICU", "Sleep study lab"],
+                faculty: [{name: "Ram", designation: "Assistant professor", exp: "5"},{name: "Sam", designation: "Assistant professor", exp: "5"},{name: "John", designation: "Assistant professor", exp: "5"}],
                 services: ["Asthma Management", "COPD Care", "TB Treatment", "Bronchoscopy", "Pulmonary Function Tests", "Sleep Studies"],
                 pubStats: [{label: "Publications", value: "19+"}],
                 pubHighlights: ["COPD management"],
@@ -145,7 +163,27 @@
                     </div>
                 </div>
             `;
-            
+            if (d.aim) {
+                html += `
+                    <div class="accordion-section">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title"><i class="fas fa-building"></i> Aim & Objectives</div>
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="accordion-body">
+                                <h4>Aim</h4>
+                                <br>
+                                <ul>${d.aim}</ul>
+                                <br><br>
+                                <h4>Objectives</h4>
+                                <br>
+                                <ul>${d.objectives.map(f => `<li>${f}</li>`).join('')}</ul>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
             if (d.infra) {
                 html += `
                     <div class="accordion-section">
@@ -162,6 +200,47 @@
                     </div>
                 `;
             }
+            if (d.faculty) {
+                html += `
+                    <div class="accordion-section">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="accordion-title"><i class="fas fa-building"></i> Faculty</div>
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="accordion-body">
+                                <p>State-of-the-art facilities ensuring highest standards of patient care.</p>
+                                ${d.faculty ? `
+                                        <div class="publication-table-wrapper">
+                                            <table class="publication-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="width: 10%">S.No</th>
+                                                        <th style="width: 30%">Name of the Faculty</th>
+                                                        <th style="width: 40%">Designation</th>
+                                                        <th style="width: 20%">Experience</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    ${d.faculty.map((p,i) => `
+                                                        <tr>
+                                                            <td data-label="S.No">${i+1}</td>
+                                                            <td data-label="Name of the Faculty"><strong>${p.name}</strong></td>
+                                                            <td data-label="Designation">${p.designation}</td>
+                                                            <td data-label="Experience"><span class="year-badge">${p.exp}+ Yrs</span></td>
+                                                        </tr>
+                                                    `).join('')}
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    ` : '<p>Year-wise publication data will be updated soon.</p>'}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+
+            
             
             if (d.services) {
                 html += `
@@ -184,7 +263,7 @@
                 html += `
                     <div class="accordion-section">
                         <div class="tabs-header" onclick="toggleAccordion(this)">
-                            <div class="tabs-title"><i class="fas fa-book-medical"></i> Publications</div>
+                            <div class="accordion-title"><i class="fas fa-book-medical"></i> Publications</div>
                             <i class="fas fa-chevron-down tabs-expand-icon"></i>
                         </div>
                         <div class="tabs-body">
