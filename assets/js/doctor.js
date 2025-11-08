@@ -1,172 +1,77 @@
- const doctorsData = [
-            {
-                id: 1,
-                name: "Dr. Charles Scott",
-                specialty: "Neurology",
-                gender: "male",
-                image: "https://market-resized.envatousercontent.com/photodune.net/EVA/TRX/b1/cc/5a/da/b7/v1_E10/E108FXH8.jpg?auto=format&q=94&mark=https%3A%2F%2Fassets.market-storefront.envato-static.com%2Fwatermarks%2Fphoto-260724.png&opacity=0.2&cf_fit=contain&w=590&h=393&s=f76e968a92c0ed678594dff42fd011b513880bfe82f72f0598298fe1b7e3e065",
-                experience: 20,
-                degree: "MBBS, DNB - Neurology",
-                languages: ["English", "French"],
-                location: "Hamarby, TX",
-                videos: 252,
-                votes: 1252,
-                consultationFees: 600,
-                nextAvailable: "next available at 10:00 AM - 15 Oct, Tue",
-                rating: 4.5
-            },
-            {
-                id: 2,
-                name: "Dr. Robert Thomas",
-                specialty: "Psychology",
-                gender: "male",
-                image: "https://media.istockphoto.com/id/1730222050/photo/photo-of-doctor-lady-smile-looking-at-camera-wear-stethoscope-white-uniform-isolate-white.jpg?s=612x612&w=0&k=20&c=KfZT1DzVMcGvHZZg4NnUhHwvOiI5xPYRe1AWvCwOqE4=",
-                experience: 30,
-                degree: "MBBS, MD - Cardiology",
-                languages: ["English", "Spanish"],
-                location: "Oakland, CA",
-                videos: 270,
-                votes: 1342,
-                consultationFees: 450,
-                nextAvailable: "next available at 11:00 AM - 10 Oct, Sat",
-                rating: 4.2
-            },
-            {
-                id: 3,
-                name: "Dr. Margaret Koller",
-                specialty: "Psychology",
-                gender: "female",
-                image: "https://market-resized.envatousercontent.com/photodune.net/EVA/TRX/b1/cc/5a/da/b7/v1_E10/E108FXH8.jpg?auto=format&q=94&mark=https%3A%2F%2Fassets.market-storefront.envato-static.com%2Fwatermarks%2Fphoto-260724.png&opacity=0.2&cf_fit=contain&w=590&h=393&s=f76e968a92c0ed678594dff42fd011b513880bfe82f72f0598298fe1b7e3e065",
-                experience: 15,
-                degree: "B.S, M.S - Psychology",
-                languages: ["English", "Portuguese"],
-                location: "Killeen, TX",
-                videos: 268,
-                votes: 1288,
-                consultationFees: 700,
-                nextAvailable: "next available at 10:30 AM - 20 Oct, Tue",
-                rating: 4.5
-            },
-            {
-                id: 4,
-                name: "Dr. Cath Busick",
-                specialty: "Pediatrics",
-                gender: "female",
-                image: "https://media.istockphoto.com/id/1730222050/photo/photo-of-doctor-lady-smile-looking-at-camera-wear-stethoscope-white-uniform-isolate-white.jpg?s=612x612&w=0&k=20&c=KfZT1DzVMcGvHZZg4NnUhHwvOiI5xPYRe1AWvCwOqE4=",
-                experience: 12,
-                degree: "MBBS, MD - Pediatrics",
-                languages: ["English", "Arabic"],
-                location: "Schenectady, NY",
-                videos: 237,
-                votes: 1237,
-                consultationFees: 750,
-                nextAvailable: "next available at 02:00 PM - 04 Nov, Mon",
-                rating: 4.8
-            },
-            {
-                id: 5,
-                name: "Dr. Michael Brown",
-                specialty: "Psychology",
-                gender: "male",
-                image: "https://market-resized.envatousercontent.com/photodune.net/EVA/TRX/b1/cc/5a/da/b7/v1_E10/E108FXH8.jpg?auto=format&q=94&mark=https%3A%2F%2Fassets.market-storefront.envato-static.com%2Fwatermarks%2Fphoto-260724.png&opacity=0.2&cf_fit=contain&w=590&h=393&s=f76e968a92c0ed678594dff42fd011b513880bfe82f72f0598298fe1b7e3e065",
-                experience: 18,
-                degree: "B.S, M.S - Psychology",
-                languages: ["English", "German"],
-                location: "Minneapolis, MN",
-                videos: 228,
-                votes: 1228,
-                consultationFees: 400,
-                nextAvailable: "next available at 04:00 PM - 20 Nov, Wed",
-                rating: 4.4
-            },
-            {
-                id: 6,
-                name: "Dr. Nicholas Tallo",
-                specialty: "Pediatrics",
-                gender: "male",
-                image: "https://market-resized.envatousercontent.com/photodune.net/EVA/TRX/b1/cc/5a/da/b7/v1_E10/E108FXH8.jpg?auto=format&q=94&mark=https%3A%2F%2Fassets.market-storefront.envato-static.com%2Fwatermarks%2Fphoto-260724.png&opacity=0.2&cf_fit=contain&w=590&h=393&s=f76e968a92c0ed678594dff42fd011b513880bfe82f72f0598298fe1b7e3e065",
-                experience: 15,
-                degree: "MBBS, MD - Pediatrics",
-                languages: ["English", "Korean"],
-                location: "Ogden, IA",
-                videos: 200,
-                votes: 1200,
-                consultationFees: 400,
-                nextAvailable: "next available at 11:00 AM - 14 Nov, Thu",
-                rating: 4.4
-            },
-            {
-                id: 7,
-                name: "Dr. Tyrone Patrick",
-                specialty: "Pediatrics",
-                gender: "male",
-                image: "https://market-resized.envatousercontent.com/photodune.net/EVA/TRX/b1/cc/5a/da/b7/v1_E10/E108FXH8.jpg?auto=format&q=94&mark=https%3A%2F%2Fassets.market-storefront.envato-static.com%2Fwatermarks%2Fphoto-260724.png&opacity=0.2&cf_fit=contain&w=590&h=393&s=f76e968a92c0ed678594dff42fd011b513880bfe82f72f0598298fe1b7e3e065",
-                experience: 22,
-                degree: "MBBS, MD - Cardiology",
-                languages: ["English", "Russian"],
-                location: "Clark Fork, ID",
-                videos: 232,
-                votes: 1232,
-                consultationFees: 400,
-                nextAvailable: "next available at 06:00 PM - 28 Nov, Fri",
-                rating: 4.4
-            },
-            {
-                id: 8,
-                name: "Dr. Priya Sharma",
-                specialty: "Orthopedics",
-                gender: "female",
-                image: "https://market-resized.envatousercontent.com/photodune.net/EVA/TRX/b1/cc/5a/da/b7/v1_E10/E108FXH8.jpg?auto=format&q=94&mark=https%3A%2F%2Fassets.market-storefront.envato-static.com%2Fwatermarks%2Fphoto-260724.png&opacity=0.2&cf_fit=contain&w=590&h=393&s=f76e968a92c0ed678594dff42fd011b513880bfe82f72f0598298fe1b7e3e065",
-                experience: 16,
-                degree: "MBBS, MS - Orthopedics",
-                languages: ["English", "Hindi", "Tamil"],
-                location: "Chennai, TN",
-                videos: 315,
-                votes: 1425,
-                consultationFees: 550,
-                nextAvailable: "next available at 09:00 AM - 25 Oct, Fri",
-                rating: 4.7
-            },
-            {
-                id: 9,
-                name: "Dr. Rajesh Kumar",
-                specialty: "Dermatology",
-                gender: "male",
-                image: "https://market-resized.envatousercontent.com/photodune.net/EVA/TRX/b1/cc/5a/da/b7/v1_E10/E108FXH8.jpg?auto=format&q=94&mark=https%3A%2F%2Fassets.market-storefront.envato-static.com%2Fwatermarks%2Fphoto-260724.png&opacity=0.2&cf_fit=contain&w=590&h=393&s=f76e968a92c0ed678594dff42fd011b513880bfe82f72f0598298fe1b7e3e065",
-                experience: 14,
-                degree: "MBBS, MD - Dermatology",
-                languages: ["English", "Telugu"],
-                location: "Hyderabad, TG",
-                videos: 198,
-                votes: 1156,
-                consultationFees: 500,
-                nextAvailable: "next available at 03:00 PM - 18 Oct, Fri",
-                rating: 4.3
-            },
-            {
-                id: 10,
-                name: "Dr. Anita Reddy",
-                specialty: "Gynecology",
-                gender: "female",
-                image: "https://market-resized.envatousercontent.com/photodune.net/EVA/TRX/b1/cc/5a/da/b7/v1_E10/E108FXH8.jpg?auto=format&q=94&mark=https%3A%2F%2Fassets.market-storefront.envato-static.com%2Fwatermarks%2Fphoto-260724.png&opacity=0.2&cf_fit=contain&w=590&h=393&s=f76e968a92c0ed678594dff42fd011b513880bfe82f72f0598298fe1b7e3e065",
-                experience: 19,
-                degree: "MBBS, MD - Gynecology",
-                languages: ["English", "Kannada"],
-                location: "Bangalore, KA",
-                videos: 289,
-                votes: 1389,
-                consultationFees: 650,
-                nextAvailable: "next available at 11:30 AM - 22 Oct, Wed",
-                rating: 4.6
-            }
-        ];
+let doctorsData = [];
+let filteredDoctors = [];
+let currentPage = 1;
+const doctorsPerPage = 6;
 
-        let filteredDoctors = [...doctorsData];
-        let currentPage = 1;
-        const doctorsPerPage = 6;
+// ✅ Excel file path
+const filePath = "./assets/excel/Staff_Doctor_Details(Responses).xlsx";
 
-        // Initialize
-        function init() {
+// ✅ Load everything when DOM is ready
+document.addEventListener("DOMContentLoaded", async () => {
+  await loadDoctorsFromExcel();
+  clearAllFilters();
+});
+
+// ✅ Load & Convert Excel Data
+async function loadDoctorsFromExcel() {
+  try {
+    const response = await fetch(filePath);
+    if (!response.ok) throw new Error("Cannot fetch " + filePath);
+
+    const arrayBuffer = await response.arrayBuffer();
+    const workbook = XLSX.read(arrayBuffer, { type: "array" });
+    const sheetName = workbook.SheetNames[0];
+    const worksheet = workbook.Sheets[sheetName];
+    const json = XLSX.utils.sheet_to_json(worksheet);
+
+    // Convert Google Drive link to direct-view image
+    function convertDriveLink(url) {
+      if (!url) return "";
+      const matchFile = url.match(/\/d\/([^/]+)/);
+      if (matchFile) return `https://drive.google.com/uc?export=view&id=${matchFile[1]}`;
+      const matchOpen = url.match(/id=([^&]+)/);
+      if (matchOpen) return `https://drive.google.com/uc?export=view&id=${matchOpen[1]}`;
+      return url;
+    }
+
+    // Map Excel rows → JS objects
+    doctorsData = json.map((row, i) => {
+        // Normalize all keys in the row to lowercase for consistent access
+        const normalized = {};
+        for (const key in row) {
+            normalized[key.toLowerCase().trim()] = row[key];
+        }
+
+        return {
+            id: i + 1,
+            name: normalized["name"] || "Unknown",
+            specialty: normalized["specialization/department"] || "General",
+            gender: (normalized["gender"] || "other").toLowerCase(),
+            experience: row["Years of Experience"],
+            degree: normalized["degree"] || "",
+            languages: (normalized["languages known"] || "")
+            .split(",")
+            .map((l) => l.trim())
+            .filter((l) => l),
+            location: normalized["location"] || "",
+            videos: parseInt(normalized["videos"] || 0),
+            designation: normalized["designation"] || "",
+            consultationFees: parseInt(normalized["consultationfees"] || 0),
+            nextAvailable: normalized["nextavailable"] || "",
+            rating: parseFloat(normalized["rating"] || 0),
+            shift:row['Shift Type'],
+            ...row, // keep original fields too, in case needed
+        };
+        });
+
+    filteredDoctors = [...doctorsData];
+    init();
+    console.log("✅ Doctors loaded from Excel:", doctorsData);
+  } catch (err) {
+    console.error("❌ Failed to load data:", err);
+  }
+}
+function init() {
             populateFilters();
             displayDoctors(filteredDoctors);
             setupEventListeners();
@@ -478,7 +383,7 @@
 
             card.innerHTML = `
                 <div class="doctor-image-wrapper">
-                    <img src="${doctor.image}" alt="${doctor.name}">
+                    <img src="https://market-resized.envatousercontent.com/photodune.net/EVA/TRX/b1/cc/5a/da/b7/v1_E10/E108FXH8.jpg?auto=format&q=94&mark=https%3A%2F%2Fassets.market-storefront.envato-static.com%2Fwatermarks%2Fphoto-260724.png&opacity=0.2&cf_fit=contain&w=590&h=393&s=f76e968a92c0ed678594dff42fd011b513880bfe82f72f0598298fe1b7e3e065" alt="${doctor.name}">
                 </div>
                 <div class="doctor-info">
                     <span class="specialty-badge">${doctor.specialty}</span>
@@ -494,16 +399,17 @@
                             <span>${doctor.languages.join(', ')}</span>
                         </div>
                         <div class="detail-item">
-                            <i class="fas fa-play-circle"></i>
-                            <span>${doctor.votes}% (${doctor.videos} / ${doctor.videos + 100} Votes)</span>
-                        </div>
-                        <div class="detail-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>${doctor.location} <span class="link">Get Direction</span></span>
-                        </div>
-                        <div class="detail-item">
                             <i class="fas fa-briefcase"></i>
-                            <span>${doctor.experience} Years of Experience</span>
+                            <span>${doctor.designation}</span>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>${doctor.experience}+ Years of Experience</span>
+                        </div>
+                        <div class="detail-item" style="color:${doctor.shift !== "Regular Shift" ? "red" : "blue"}">
+                            <i class="fas fa-clock" style="color:${doctor.shift !== "Regular Shift" ? "red" : "blue"}"></i>
+                            <span>${doctor.shift}</span>
                         </div>
                     </div>
 
@@ -521,9 +427,7 @@
         // View doctor profile
         function viewDoctorProfile(doctorId) {
             const doctor = doctorsData.find(d => d.id === doctorId);
-            alert(`Viewing profile of ${doctor.name}\n\nThis would navigate to the detailed doctor profile page.`);
         }
 
         // Initialize on load
         init();
-    

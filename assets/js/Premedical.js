@@ -123,7 +123,7 @@
                 html += `
                     <div class="accordion-section">
                         <div class="accordion-header" onclick="toggleAccordion(this)">
-                            <div class="accordion-title"><i class="fas fa-building"></i> Aim & Objectives</div>
+                            <div class="accordion-title"><i class="fas fa-bullseye"></i> Aim & Objectives</div>
                             <i class="fas fa-chevron-down accordion-icon"></i>
                         </div>
                         <div class="accordion-content">
@@ -145,7 +145,7 @@
                 html += `
                     <div class="accordion-section">
                         <div class="accordion-header" onclick="toggleAccordion(this)">
-                            <div class="accordion-title"><i class="fas fa-building"></i> Infrastructure</div>
+                            <div class="accordion-title"><i class="fas fa-hospital"></i> Infrastructure</div>
                             <i class="fas fa-chevron-down accordion-icon"></i>
                         </div>
                         <div class="accordion-content">
@@ -162,7 +162,7 @@
                 html += `
                     <div class="accordion-section">
                         <div class="accordion-header" onclick="toggleAccordion(this)">
-                            <div class="accordion-title"><i class="fas fa-building"></i> Faculty</div>
+                            <div class="accordion-title"><i class="fas fa-users"></i> Faculty</div>
                             <i class="fas fa-chevron-down accordion-icon"></i>
                         </div>
                         <div class="accordion-content">
