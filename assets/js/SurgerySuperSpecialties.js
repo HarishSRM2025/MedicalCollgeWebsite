@@ -208,7 +208,7 @@
                     </div>
                 </div>
             `;
-            if (d.aim) {
+            if (d.vission) {
                 html += `
                     <div class="accordion-section">
                         <div class="accordion-header" onclick="toggleAccordion(this)">
