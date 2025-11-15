@@ -192,7 +192,7 @@
         });
 
 
-        const counters = document.querySelectorAll('.milestone-stat h3, .stat-box h3');
+        const counters = document.querySelectorAll('.stat h3, .stat-number,.stat-box h3');
         const speed = 30;
 
         const animateCounter = (counter) => {

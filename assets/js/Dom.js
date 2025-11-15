@@ -20,7 +20,7 @@
               <li><a href="./aboutus.html#vision">Vision & Mission</a></li>
               <li><a href="./aboutus.html#leadership">Leadership</a></li>
               <li class="has-submenu" data-submenu="milestones">
-                <a href="#">Milestones & Accreditations <span class="arrow submenu-trigger">&#9654;</span></a>
+                <a href="./aboutus.html#milestones">Milestones & Accreditations <span class="arrow submenu-trigger">&#9654;</span></a>
                 <ul class="sub-dropdown">
                   <li><a href="#">NAAC</a></li>
                   <li><a href="#">IQAC</a></li>
@@ -30,7 +30,7 @@
                   <li><a href="#">CSR & Sustainability</a></li>
                 </ul>
               </li>
-              <li><a href="#">Statutory Compliance</a></li>
+              <li><a href="./aboutus.html#compliance">Statutory Compliance</a></li>
             </ul>
           </li>
           <li class="has-dropdown" data-dropdown="academics">
@@ -46,7 +46,7 @@
                 </ul>
               </li>
               <li><a href="#">Programs & Course Outcomes</a></li>
-              <li><a href="#">Library</a></li>
+              <li><a href="./library.html">Library</a></li>
               <li><a href="#">Medical Education Unit</a></li>
               <li><a href="#">Examination Cell</a></li>
             </ul>
@@ -55,7 +55,7 @@
             <a href="./hospital.html">Hospital Services <span class="arrow dropdown-trigger">&#9654;</span></a>
             <ul class="dropdown">
               <li class="has-submenu" data-submenu="courses">
-                <a href="./pre-clinical.html">Departments<span class="arrow submenu-trigger">&#9654;</span></a>
+                <a href="#">Departments<span class="arrow submenu-trigger">&#9654;</span></a>
                 <ul class="sub-dropdown">
                   <li><a href="./boardspecialties.html">Medicine & Broad Specialties</a></li>
                   <li><a href="./surgeryspecialties.html">Surgery & Broad Specialties</a></li>
@@ -64,10 +64,9 @@
                 </ul>
               </li>
               <li><a href="./doctors.html">Doctor</a></li>
-              <li><a href="#">Supporting Services</a></li>
-              <li><a href="#">Health Centers</a></li>
-              <li><a href="#">Camps</a></li>
-              <li><a href="#">Blood Bank</a></li>
+              <li><a href="./hospital.html#services">Supporting Services</a></li>
+              <li><a href="./hospital.html#camps">Camps</a></li>
+              <li><a href="./bloodcamp.html">Blood Bank</a></li>
             </ul>
           </li>
           <li><a href="research.html">Research & Innovation</a></li>
@@ -127,11 +126,11 @@
             <div class="footer-section">
                 <h4 class="footer-title">Quick Links</h4>
                 <ul class="footer-links">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Admissions</a></li>
-                    <li><a href="#">Departments</a></li>
-                    <li><a href="#">Research</a></li>
-                    <li><a href="#">News & Events</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                    <li><a href="./pre-clinical.html">Departments</a></li>
+                    <li><a href="./research.html">Research</a></li>
+                    <li><a href="./media.html">News & Events</a></li>
                 </ul>
             </div>
             <div class="footer-section">
