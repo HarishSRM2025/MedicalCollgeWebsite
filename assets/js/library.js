@@ -573,7 +573,7 @@
             const mainContent = document.getElementById('libMainContent');
             
             const contentHTML = `
-                <div class="lib-library-section lib-active">
+                <div class="lib-library-section lib-active" id="${section.id}">
                     <div class="lib-section-header">
                         <div class="lib-section-header-content">
                             <h2>

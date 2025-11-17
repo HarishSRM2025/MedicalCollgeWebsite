@@ -39,16 +39,16 @@
               <li><a href="./pre-clinical.html">Pre Clinical</a></li>
               <li><a href="./para-clinical.html">Para Clinical</a></li>
               <li class="has-submenu" data-submenu="courses">
-                <a href="#">Courses<span class="arrow submenu-trigger">&#9654;</span></a>
+                <a href="./course.html">Courses<span class="arrow submenu-trigger">&#9654;</span></a>
                 <ul class="sub-dropdown">
-                  <li><a href="#">Under Graduate</a></li>
-                  <li><a href="#">Post Graduate</a></li>
+                  <li><a href="./course.html#ug-courses">Under Graduate</a></li>
+                  <li><a href="./course.html#pg-courses">Post Graduate</a></li>
                 </ul>
               </li>
-              <li><a href="#">Programs & Course Outcomes</a></li>
+              <li><a href="./programsandcourse.html">Programs & Course Outcomes</a></li>
               <li><a href="./library.html">Library</a></li>
-              <li><a href="#">Medical Education Unit</a></li>
-              <li><a href="#">Examination Cell</a></li>
+              <li><a href="./academics.html#specialties">Medical Education Unit</a></li>
+              <li><a href="./academics.html#examcell">Examination Cell</a></li>
             </ul>
           </li>
           <li class="has-dropdown" data-dropdown="hospital">
