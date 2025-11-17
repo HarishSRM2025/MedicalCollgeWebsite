@@ -132,11 +132,11 @@ function init() {
             const selectedLanguages = Array.from(document.querySelectorAll('#languagesFilter input:checked'))
                 .map(cb => cb.value);
             
-            // Get selected experience levels
-            const selectedExperience = Array.from(document.querySelectorAll('.filter-options input[type="checkbox"]:checked'))
-                .filter(cb => cb.id.startsWith('exp'))
-                .map(cb => parseInt(cb.value));
+           const selectedExperience = Array.from(
+                document.querySelectorAll('#expFilter input:checked')
+            ).map(cb => parseInt(cb.value));
 
+             
             filteredDoctors = doctorsData.filter(doctor => {
                 // Search filter
                 const matchesSearch = doctor.name.toLowerCase().includes(searchTerm) ||
@@ -155,8 +155,8 @@ function init() {
                                       selectedLanguages.some(lang => doctor.languages.includes(lang));
                 
                 // Experience filter
-                const matchesExperience = selectedExperience.length === 0 ||
-                                        selectedExperience.some(exp => doctor.experience >= exp);
+                const matchesExperience = selectedExperience.length === 0 || selectedExperience.some(exp => doctor.experience >= parseInt(exp));
+
 
                 return matchesSearch && matchesGender && matchesSpecialty && 
                        matchesLanguage && matchesExperience;
@@ -380,6 +380,7 @@ function init() {
             const card = document.createElement('div');
             card.className = 'doctor-card';
             card.onclick = () => viewDoctorProfile(doctor.id);
+            console.log(doctor)
 
             card.innerHTML = `
                 <div class="doctor-image-wrapper">
