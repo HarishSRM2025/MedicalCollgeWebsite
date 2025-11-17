@@ -9,7 +9,7 @@
                     content: [
                         {
                             type: "text",
-                            value: "The SRM Medical College Library was established in 2006, coinciding with the inception of the medical college. From its humble beginnings with a modest collection, the library has grown exponentially to become one of the premier medical libraries in the region."
+                            value: "The Trichy SRM Medical College Library was established in 2006, coinciding with the inception of the medical college. From its humble beginnings with a modest collection, the library has grown exponentially to become one of the premier medical libraries in the region."
                         },
                         {
                             type: "text",
@@ -51,7 +51,7 @@
                             designation: "Chief Librarian & Information Officer",
                             image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400",
                             bio: [
-                                "Dr. Rajesh Kumar brings over 20 years of experience in medical library management and information science. He holds a Ph.D. in Library and Information Science from Delhi University and has been instrumental in transforming the SRM Medical College Library into a modern information center.",
+                                "Dr. Rajesh Kumar brings over 20 years of experience in medical library management and information science. He holds a Ph.D. in Library and Information Science from Delhi University and has been instrumental in transforming the Trichy SRM Medical College Library into a modern information center.",
                                 "His expertise includes digital library management, research support services, and academic resource development. Under his leadership, the library has implemented cutting-edge technologies and expanded its digital collections significantly."
                             ],
                             contact: [

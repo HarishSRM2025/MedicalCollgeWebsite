@@ -114,7 +114,7 @@
                  <div class="logo footer-logo">
                     <img src="./assets/images/Logo.webp" alt="SRM Logo">
                 </div>
-                <p>SRM Medical College is dedicated to providing excellence in medical education and healthcare services. We are committed to shaping the future of healthcare.</p>
+                <p>Trichy SRM Medical College is dedicated to providing excellence in medical education and healthcare services. We are committed to shaping the future of healthcare.</p>
                 <div class="social-icons">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -154,7 +154,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 SRM Medical College - Trichy. All Rights Reserved. | Privacy Policy | Terms of Service</p>
+            <p>&copy; 2025 Trichy SRM Medical College - Trichy. All Rights Reserved. | Privacy Policy | Terms of Service</p>
         </div>`;
     (function() {
         'use strict';

@@ -1,902 +1,266 @@
- const departmentsData = {
-            departments: [
-                {
-                    id: "anatomy",
-                    name: "Anatomy",
-                    icon: "fa-person",
-                    color: "#e74c3c",
-                    colorDark: "#c0392b",
-                    description: "Understanding the Structure of Human Body",
-                    programOverview: "The Anatomy department provides comprehensive education in human body structure, covering gross anatomy, microscopic anatomy, embryology, and neuroanatomy. Our program integrates traditional dissection methods with modern imaging techniques and digital resources.",
-                    programDuration: "Teaching across all 5 years of MBBS curriculum with major focus in Phase I",
-                    courseOutcomes: [
-                        "Identify and describe the normal structure and relations of different organs of the human body",
-                        "Demonstrate basic understanding of embryological development and its clinical correlations",
-                        "Perform dissection and identify anatomical structures on cadavers",
-                        "Interpret radiological images and identify anatomical landmarks",
-                        "Correlate anatomical knowledge with clinical presentations",
-                        "Apply anatomical knowledge in surgical procedures and clinical practice"
-                    ],
-                    teachingMethods: [
-                        "Cadaveric dissection",
-                        "Histology practical sessions",
-                        "Museum specimens demonstration",
-                        "Radiology integration",
-                        "3D anatomical models",
-                        "Digital anatomy software",
-                        "Clinical correlation seminars"
-                    ],
-                    assessmentMethods: [
-                        { method: "Theory Examinations", weightage: "40%" },
-                        { method: "Practical Examinations", weightage: "40%" },
-                        { method: "Viva Voce", weightage: "10%" },
-                        { method: "Internal Assessment", weightage: "10%" }
-                    ],
-                    skills: [
-                        "Gross anatomical dissection techniques",
-                        "Microscopic examination of tissues",
-                        "Identification of anatomical specimens",
-                        "Radiological anatomy interpretation",
-                        "Surface anatomy marking",
-                        "Clinical anatomy application"
-                    ]
-                },
-                {
-                    id: "physiology",
-                    name: "Physiology",
-                    icon: "fa-heart-pulse",
-                    color: "#673ab7",
-                    colorDark: "#512da8",
-                    description: "Understanding Functions of Human Body Systems",
-                    programOverview: "The Physiology department focuses on the study of normal functions of human body systems. Our curriculum integrates basic physiological principles with clinical applications, emphasizing experimental learning and problem-based approaches.",
-                    programDuration: "18 months program in Phase I of MBBS curriculum",
-                    courseOutcomes: [
-                        "Explain the normal functioning of all organ systems of the human body",
-                        "Demonstrate the ability to perform basic physiological experiments",
-                        "Interpret physiological data and laboratory results",
-                        "Apply physiological knowledge to understand disease mechanisms",
-                        "Correlate structure-function relationships in human body",
-                        "Analyze homeostatic mechanisms and their clinical implications"
-                    ],
-                    teachingMethods: [
-                        "Interactive lectures with multimedia",
-                        "Hands-on experimental physiology",
-                        "Computer-assisted learning",
-                        "Clinical case discussions",
-                        "Problem-based learning sessions",
-                        "Demonstration of physiological instruments",
-                        "Self-directed learning modules"
-                    ],
-                    assessmentMethods: [
-                        { method: "Theory Examinations", weightage: "40%" },
-                        { method: "Practical Examinations", weightage: "40%" },
-                        { method: "Viva Voce", weightage: "10%" },
-                        { method: "Internal Assessment", weightage: "10%" }
-                    ],
-                    skills: [
-                        "Recording of vital parameters",
-                        "ECG interpretation",
-                        "Spirometry and lung function tests",
-                        "Blood pressure measurement techniques",
-                        "Hematological investigations",
-                        "Clinical correlation of physiological findings"
-                    ]
-                },
-                {
-                    id: "biochemistry",
-                    name: "Biochemistry",
-                    icon: "fa-vials",
-                    color: "#00a151",
-                    colorDark: "#0a754c",
-                    description: "Chemical Processes Within Living Organisms",
-                    programOverview: "The Biochemistry department provides fundamental knowledge of chemical processes in living organisms, focusing on biomolecules, metabolism, molecular biology, and clinical biochemistry. The program emphasizes laboratory skills and diagnostic interpretation.",
-                    programDuration: "Integrated teaching throughout MBBS with major component in Phase I",
-                    courseOutcomes: [
-                        "Describe the structure and function of biomolecules in human body",
-                        "Explain metabolic pathways and their regulations",
-                        "Perform basic biochemical investigations and interpret results",
-                        "Apply biochemical knowledge to understand disease processes",
-                        "Understand molecular basis of diseases",
-                        "Correlate biochemical parameters with clinical conditions"
-                    ],
-                    teachingMethods: [
-                        "Theory lectures with clinical correlation",
-                        "Laboratory practical sessions",
-                        "Case-based learning",
-                        "Demonstration of biochemical techniques",
-                        "Small group discussions",
-                        "Computer-aided learning",
-                        "Journal club presentations"
-                    ],
-                    assessmentMethods: [
-                        { method: "Theory Examinations", weightage: "40%" },
-                        { method: "Practical Examinations", weightage: "40%" },
-                        { method: "Viva Voce", weightage: "10%" },
-                        { method: "Internal Assessment", weightage: "10%" }
-                    ],
-                    skills: [
-                        "Blood sample collection and handling",
-                        "Biochemical test procedures",
-                        "Use of spectrophotometer and other instruments",
-                        "Quality control in laboratory",
-                        "Interpretation of biochemical reports",
-                        "Nutritional assessment"
-                    ]
-                },
-                {
-                    id: "pathology",
-                    name: "Pathology",
-                    icon: "fa-microscope",
-                    color: "#2196f3",
-                    colorDark: "#1976d2",
-                    description: "Study of Disease Mechanisms and Diagnosis",
-                    programOverview: "The Pathology department provides comprehensive training in general pathology, systemic pathology, clinical pathology, and hematology. Students learn disease mechanisms, diagnostic techniques, and interpretation of laboratory investigations.",
-                    programDuration: "Taught in Phase II of MBBS curriculum for 12 months",
-                    courseOutcomes: [
-                        "Describe basic pathological processes and disease mechanisms",
-                        "Identify microscopic features of diseased tissues",
-                        "Perform and interpret basic pathological investigations",
-                        "Correlate pathological findings with clinical presentations",
-                        "Understand principles of tumor pathology and staging",
-                        "Apply pathological knowledge in clinical decision making"
-                    ],
-                    teachingMethods: [
-                        "Didactic lectures",
-                        "Microscopy sessions",
-                        "Museum specimen study",
-                        "Autopsy demonstrations",
-                        "Hematology practicals",
-                        "Clinical pathology labs",
-                        "Case presentations and discussions"
-                    ],
-                    assessmentMethods: [
-                        { method: "Theory Examinations", weightage: "40%" },
-                        { method: "Practical Examinations", weightage: "40%" },
-                        { method: "Viva Voce", weightage: "10%" },
-                        { method: "Internal Assessment", weightage: "10%" }
-                    ],
-                    skills: [
-                        "Microscopic examination techniques",
-                        "Specimen collection and handling",
-                        "Peripheral blood smear preparation and examination",
-                        "Tissue section interpretation",
-                        "Report writing and documentation",
-                        "Communication of pathological findings"
-                    ]
-                },
-                {
-                    id: "pharmacology",
-                    name: "Pharmacology",
-                    icon: "fa-pills",
-                    color: "#ff9800",
-                    colorDark: "#f57c00",
-                    description: "Science of Drugs and Their Effects",
-                    programOverview: "The Pharmacology department teaches the science of drugs, their mechanisms of action, therapeutic uses, adverse effects, and rational drug prescribing. The curriculum integrates basic pharmacology with clinical therapeutics and pharmacovigilance.",
-                    programDuration: "Taught in Phase II for 13.5 months with clinical integration",
-                    courseOutcomes: [
-                        "Explain pharmacokinetics and pharmacodynamics of major drug groups",
-                        "Prescribe drugs rationally for common clinical conditions",
-                        "Identify and manage adverse drug reactions",
-                        "Understand principles of drug interactions",
-                        "Apply principles of pharmacovigilance",
-                        "Counsel patients regarding proper medication use"
-                    ],
-                    teachingMethods: [
-                        "Systematic lectures on drug classes",
-                        "Experimental pharmacology sessions",
-                        "Prescription writing workshops",
-                        "Clinical case discussions",
-                        "Problem-based learning",
-                        "Pharmacovigilance training",
-                        "Essential drug list familiarization"
-                    ],
-                    assessmentMethods: [
-                        { method: "Theory Examinations", weightage: "40%" },
-                        { method: "Practical Examinations", weightage: "40%" },
-                        { method: "Viva Voce", weightage: "10%" },
-                        { method: "Internal Assessment", weightage: "10%" }
-                    ],
-                    skills: [
-                        "Rational drug prescription",
-                        "ADR identification and reporting",
-                        "Drug dose calculation",
-                        "Drug information retrieval",
-                        "Patient counseling on medication",
-                        "Therapeutic drug monitoring"
-                    ]
-                },
-                {
-                    id: "microbiology",
-                    name: "Microbiology",
-                    icon: "fa-bacteria",
-                    color: "#009688",
-                    colorDark: "#00796b",
-                    description: "Study of Microorganisms and Infectious Diseases",
-                    programOverview: "The Microbiology department provides comprehensive knowledge of bacteria, viruses, fungi, and parasites, their role in causing diseases, laboratory diagnosis, and principles of antimicrobial therapy and infection control.",
-                    programDuration: "Taught in Phase II for 12 months",
-                    courseOutcomes: [
-                        "Identify and classify medically important microorganisms",
-                        "Perform microbiological investigations and interpret results",
-                        "Understand pathogenesis of infectious diseases",
-                        "Apply principles of antimicrobial therapy",
-                        "Implement infection control and prevention measures",
-                        "Understand principles of immunology and serology"
-                    ],
-                    teachingMethods: [
-                        "Theory lectures on microorganisms",
-                        "Laboratory culture techniques",
-                        "Staining and microscopy sessions",
-                        "Antimicrobial sensitivity testing",
-                        "Serology and immunology practicals",
-                        "Infection control workshops",
-                        "Clinical case studies"
-                    ],
-                    assessmentMethods: [
-                        { method: "Theory Examinations", weightage: "40%" },
-                        { method: "Practical Examinations", weightage: "40%" },
-                        { method: "Viva Voce", weightage: "10%" },
-                        { method: "Internal Assessment", weightage: "10%" }
-                    ],
-                    skills: [
-                        "Specimen collection and transport",
-                        "Bacterial culture techniques",
-                        "Gram staining and other staining methods",
-                        "Microscopic examination",
-                        "Antimicrobial susceptibility testing",
-                        "Infection control practices"
-                    ]
-                },
-                {
-                    id: "forensic",
-                    name: "Forensic Medicine",
-                    icon: "fa-user-injured",
-                    color: "#795548",
-                    colorDark: "#5d4037",
-                    description: "Medical Jurisprudence and Forensic Sciences",
-                    programOverview: "The Forensic Medicine department teaches medical aspects of law, medical ethics, autopsy procedures, toxicology, and medico-legal issues. The program prepares students to handle legal aspects of medical practice.",
-                    programDuration: "Taught in Phase II and Phase III (total 10 months)",
-                    courseOutcomes: [
-                        "Understand medico-legal aspects of medical practice",
-                        "Perform and interpret post-mortem examinations",
-                        "Identify and document injuries for legal purposes",
-                        "Apply principles of medical ethics",
-                        "Handle medico-legal cases and documentation",
-                        "Provide expert medical testimony in court"
-                    ],
-                    teachingMethods: [
-                        "Lectures on medico-legal topics",
-                        "Autopsy demonstrations",
-                        "Case-based discussions",
-                        "Mock court sessions",
-                        "Toxicology practicals",
-                        "Documentation workshops",
-                        "Ethics case discussions"
-                    ],
-                    assessmentMethods: [
-                        { method: "Theory Examinations", weightage: "50%" },
-                        { method: "Practical/Viva", weightage: "40%" },
-                        { method: "Internal Assessment", weightage: "10%" }
-                    ],
-                    skills: [
-                        "Post-mortem examination techniques",
-                        "Injury documentation and photography",
-                        "Medico-legal report writing",
-                        "Evidence collection and preservation",
-                        "Age estimation methods",
-                        "Expert witness testimony"
-                    ]
-                },
-                {
-                    id: "community-medicine",
-                    name: "Community Medicine",
-                    icon: "fa-users-medical",
-                    color: "#4caf50",
-                    colorDark: "#388e3c",
-                    description: "Preventive and Social Medicine",
-                    programOverview: "The Community Medicine department focuses on preventive healthcare, epidemiology, health management, biostatistics, and community health programs. Students learn to address health issues at population level.",
-                    programDuration: "Taught throughout Phase II and Phase III (total 18 months)",
-                    courseOutcomes: [
-                        "Apply principles of preventive and social medicine",
-                        "Conduct epidemiological studies and interpret data",
-                        "Plan and implement community health programs",
-                        "Use biostatistics in medical research",
-                        "Understand health management and administration",
-                        "Promote health education and awareness"
-                    ],
-                    teachingMethods: [
-                        "Classroom lectures",
-                        "Field visits to rural and urban health centers",
-                        "Survey and data collection exercises",
-                        "Biostatistics workshops",
-                        "Group projects on health issues",
-                        "Health education demonstrations",
-                        "Community diagnosis exercises"
-                    ],
-                    assessmentMethods: [
-                        { method: "Theory Examinations", weightage: "50%" },
-                        { method: "Practical/Field Work", weightage: "40%" },
-                        { method: "Internal Assessment", weightage: "10%" }
-                    ],
-                    skills: [
-                        "Epidemiological survey methods",
-                        "Data collection and analysis",
-                        "Health program planning",
-                        "Immunization techniques",
-                        "Health education delivery",
-                        "Community mobilization"
-                    ]
-                },
-                {
-                    id: "general-medicine",
-                    name: "General Medicine",
-                    icon: "fa-user-doctor",
-                    color: "#2196f3",
-                    colorDark: "#1565c0",
-                    description: "Diagnosis and Management of Medical Disorders",
-                    programOverview: "The General Medicine department provides clinical training in diagnosis and management of medical conditions. Students develop skills in history taking, physical examination, clinical reasoning, and patient management.",
-                    programDuration: "Major clinical posting in Phase III (12 months)",
-                    courseOutcomes: [
-                        "Obtain comprehensive medical history from patients",
-                        "Perform systematic physical examination",
-                        "Formulate differential diagnoses",
-                        "Order and interpret appropriate investigations",
-                        "Develop management plans for common medical conditions",
-                        "Recognize medical emergencies and provide initial care"
-                    ],
-                    teachingMethods: [
-                        "Ward-based teaching rounds",
-                        "Outpatient clinic sessions",
-                        "Case presentations",
-                        "Clinical skill workshops",
-                        "Emergency medicine training",
-                        "Journal club discussions",
-                        "Grand rounds participation"
-                    ],
-                    assessmentMethods: [
-                        { method: "Theory Examinations", weightage: "40%" },
-                        { method: "Clinical Examinations", weightage: "40%" },
-                        { method: "Log Book Assessment", weightage: "10%" },
-                        { method: "Internal Assessment", weightage: "10%" }
-                    ],
-                    skills: [
-                        "History taking skills",
-                        "Physical examination techniques",
-                        "Clinical reasoning",
-                        "Procedures: IV cannulation, catheterization",
-                        "ECG interpretation",
-                        "Emergency management protocols"
-                    ]
-                },
-                {
-                    id: "general-surgery",
-                    name: "General Surgery",
-                    icon: "fa-scissors",
-                    color: "#f44336",
-                    colorDark: "#c62828",
-                    description: "Surgical Principles and Practice",
-                    programOverview: "The General Surgery department provides comprehensive training in surgical principles, operative techniques, pre-operative and post-operative care, and management of surgical emergencies.",
-                    programDuration: "Major clinical posting in Phase III (12 months)",
-                    courseOutcomes: [
-                        "Assess surgical patients and plan appropriate management",
-                        "Assist in surgical procedures",
-                        "Provide pre-operative and post-operative care",
-                        "Manage surgical emergencies",
-                        "Perform basic surgical procedures",
-                        "Understand principles of asepsis and infection control"
-                    ],
-                    teachingMethods: [
-                        "Operation theatre training",
-                        "Ward rounds and bedside teaching",
-                        "Surgical skill lab sessions",
-                        "Emergency department rotations",
-                        "Minor surgery practice",
-                        "Video-assisted learning",
-                        "Surgical case discussions"
-                    ],
-                    assessmentMethods: [
-                        { method: "Theory Examinations", weightage: "40%" },
-                        { method: "Clinical/Practical Examinations", weightage: "40%" },
-                        { method: "Log Book Assessment", weightage: "10%" },
-                        { method: "Internal Assessment", weightage: "10%" }
-                    ],
-                    skills: [
-                        "Surgical scrubbing and gowning",
-                        "Suturing and knot tying",
-                        "Minor surgical procedures",
-                        "Wound management",
-                        "Catheterization and drainage",
-                        "Basic life support"
-                    ]
-                },
-                {
-                    id: "obgyn",
-                    name: "Obstetrics & Gynecology",
-                    icon: "fa-baby",
-                    color: "#e91e63",
-                    colorDark: "#c2185b",
-                    description: "Women's Health and Reproductive Medicine",
-                    programOverview: "The Obstetrics and Gynecology department provides training in antenatal care, management of labor and delivery, gynecological conditions, and reproductive health. Students develop skills in maternal and child health.",
-                    programDuration: "Clinical posting in Phase III (10 months)",
-                    courseOutcomes: [
-                        "Provide comprehensive antenatal care",
-                        "Manage normal labor and delivery",
-                        "Identify high-risk pregnancies",
-                        "Diagnose and manage common gynecological conditions",
-                        "Perform basic obstetric procedures",
-                        "Counsel patients on reproductive health"
-                    ],
-                    teachingMethods: [
-                        "Labor room training",
-                        "Antenatal and gynecology OPD",
-                        "Ward-based teaching",
-                        "Operation theatre exposure",
-                        "Skill lab for procedures",
-                        "Family planning counseling sessions",
-                        "Case-based discussions"
-                    ],
-                    assessmentMethods: [
-                        { method: "Theory Examinations", weightage: "40%" },
-                        { method: "Clinical/Practical Examinations", weightage: "40%" },
-                        { method: "Log Book Assessment", weightage: "10%" },
-                        { method: "Internal Assessment", weightage: "10%" }
-                    ],
-                    skills: [
-                        "Antenatal examination",
-                        "Normal delivery conduct",
-                        "Gynecological examination",
-                        "Episiotomy and repair",
-                        "IUD insertion",
-                        "Family planning counseling"
-                    ]
-                },
-                {
-                    id: "pediatrics",
-                    name: "Pediatrics",
-                    icon: "fa-child",
-                    color: "#ff9800",
-                    colorDark: "#ef6c00",
-                    description: "Child Health and Development",
-                    programOverview: "The Pediatrics department focuses on growth, development, and diseases of children from birth to adolescence. Students learn comprehensive child healthcare including preventive, curative, and developmental aspects.",
-                    programDuration: "Clinical posting in Phase III (10 months)",
-                    courseOutcomes: [
-                        "Assess growth and development of children",
-                        "Diagnose and manage common pediatric illnesses",
-                        "Provide immunization and preventive care",
-                        "Recognize and manage pediatric emergencies",
-                        "Counsel parents on child care",
-                        "Understand principles of pediatric nutrition"
-                    ],
-                    teachingMethods: [
-                        "Pediatric ward rounds",
-                        "Neonatal unit training",
-                        "Well-baby clinic sessions",
-                        "Immunization workshops",
-                        "NICU/PICU rotations",
-                        "Growth monitoring exercises",
-                        "Developmental assessment training"
-                    ],
-                    assessmentMethods: [
-                        { method: "Theory Examinations", weightage: "40%" },
-                        { method: "Clinical/Practical Examinations", weightage: "40%" },
-                        { method: "Log Book Assessment", weightage: "10%" },
-                        { method: "Internal Assessment", weightage: "10%" }
-                    ],
-                    skills: [
-                        "Pediatric examination techniques",
-                        "Growth assessment and plotting",
-                        "Immunization schedule",
-                        "Neonatal resuscitation",
-                        "IV cannulation in children",
-                        "Developmental assessment"
-                    ]
-                },
-                {
-                    id: "ophthalmology",
-                    name: "Ophthalmology",
-                    icon: "fa-eye",
-                    color: "#00bcd4",
-                    colorDark: "#0097a7",
-                    description: "Eye Care and Visual Health",
-                    programOverview: "The Ophthalmology department teaches diagnosis and management of eye diseases, visual system examination, and basic ophthalmic procedures. Students learn to recognize and manage common eye conditions.",
-                    programDuration: "Clinical posting in Phase III (3 weeks)",
-                    courseOutcomes: [
-                        "Perform comprehensive eye examination",
-                        "Diagnose common eye diseases",
-                        "Provide emergency eye care",
-                        "Prescribe spectacles for refractive errors",
-                        "Recognize conditions requiring specialist referral",
-                        "Promote eye health and prevention of blindness"
-                    ],
-                    teachingMethods: [
-                        "OPD-based clinical teaching",
-                        "Demonstration of ophthalmic equipment",
-                        "Refraction workshops",
-                        "Operation theatre observations",
-                        "Case discussions",
-                        "Community eye camps",
-                        "Visual acuity assessment training"
-                    ],
-                    assessmentMethods: [
-                        { method: "Theory Examinations", weightage: "50%" },
-                        { method: "Clinical/Practical Examinations", weightage: "40%" },
-                        { method: "Internal Assessment", weightage: "10%" }
-                    ],
-                    skills: [
-                        "Visual acuity testing",
-                        "Direct ophthalmoscopy",
-                        "Slit lamp examination",
-                        "Tonometry",
-                        "Eye irrigation",
-                        "Foreign body removal"
-                    ]
-                },
-                {
-                    id: "ent",
-                    name: "Otorhinolaryngology (ENT)",
-                    icon: "fa-ear-listen",
-                    color: "#9c27b0",
-                    colorDark: "#7b1fa2",
-                    description: "Ear, Nose, and Throat Care",
-                    programOverview: "The ENT department provides training in diagnosis and management of diseases of ear, nose, throat, head, and neck. Students learn examination techniques and management of common ENT conditions.",
-                    programDuration: "Clinical posting in Phase III (3 weeks)",
-                    courseOutcomes: [
-                        "Perform ENT examination using appropriate instruments",
-                        "Diagnose common ENT conditions",
-                        "Manage ENT emergencies",
-                        "Perform basic ENT procedures",
-                        "Understand principles of hearing assessment",
-                        "Recognize conditions requiring specialist referral"
-                    ],
-                    teachingMethods: [
-                        "OPD clinical sessions",
-                        "Demonstration of ENT instruments",
-                        "Endoscopy observations",
-                        "Operation theatre exposure",
-                        "Audiometry training",
-                        "Emergency procedures demonstration",
-                        "Case-based learning"
-                    ],
-                    assessmentMethods: [
-                        { method: "Theory Examinations", weightage: "50%" },
-                        { method: "Clinical/Practical Examinations", weightage: "40%" },
-                        { method: "Internal Assessment", weightage: "10%" }
-                    ],
-                    skills: [
-                        "Otoscopy",
-                        "Anterior and posterior rhinoscopy",
-                        "Indirect laryngoscopy",
-                        "Tuning fork tests",
-                        "Foreign body removal",
-                        "Nasal packing"
-                    ]
-                },
-                {
-                    id: "orthopedics",
-                    name: "Orthopedics",
-                    icon: "fa-bone",
-                    color: "#607d8b",
-                    colorDark: "#455a64",
-                    description: "Musculoskeletal System Care",
-                    programOverview: "The Orthopedics department teaches diagnosis and management of musculoskeletal conditions including fractures, joint diseases, spine disorders, and sports injuries. Students learn principles of trauma care and rehabilitation.",
-                    programDuration: "Clinical posting in Phase III (4 weeks)",
-                    courseOutcomes: [
-                        "Assess musculoskeletal injuries and conditions",
-                        "Interpret orthopedic radiographs",
-                        "Apply casts and splints",
-                        "Manage common fractures and dislocations",
-                        "Understand principles of traction and fixation",
-                        "Provide rehabilitation guidance"
-                    ],
-                    teachingMethods: [
-                        "Trauma ward rounds",
-                        "Orthopedic OPD sessions",
-                        "Plaster room training",
-                        "X-ray interpretation sessions",
-                        "Operation theatre exposure",
-                        "Rehabilitation demonstrations",
-                        "Case presentations"
-                    ],
-                    assessmentMethods: [
-                        { method: "Theory Examinations", weightage: "50%" },
-                        { method: "Clinical/Practical Examinations", weightage: "40%" },
-                        { method: "Internal Assessment", weightage: "10%" }
-                    ],
-                    skills: [
-                        "Musculoskeletal examination",
-                        "X-ray interpretation",
-                        "Plaster application",
-                        "Splint application",
-                        "Reduction of simple fractures",
-                        "Joint aspiration"
-                    ]
-                },
-                {
-                    id: "psychiatry",
-                    name: "Psychiatry",
-                    icon: "fa-brain",
-                    color: "#3f51b5",
-                    colorDark: "#283593",
-                    description: "Mental Health and Behavioral Sciences",
-                    programOverview: "The Psychiatry department focuses on diagnosis and management of mental health disorders, substance abuse, and behavioral problems. Students learn to provide holistic care including psychotherapy and counseling.",
-                    programDuration: "Clinical posting in Phase III (3 weeks)",
-                    courseOutcomes: [
-                        "Conduct psychiatric assessment and mental status examination",
-                        "Diagnose common mental health disorders",
-                        "Understand principles of psychotherapy",
-                        "Manage psychiatric emergencies",
-                        "Provide basic counseling services",
-                        "Reduce stigma associated with mental illness"
-                    ],
-                    teachingMethods: [
-                        "Psychiatric OPD sessions",
-                        "Ward-based teaching",
-                        "Case discussions",
-                        "Role-play and simulation",
-                        "Counseling skill workshops",
-                        "Community mental health visits",
-                        "Substance abuse clinic exposure"
-                    ],
-                    assessmentMethods: [
-                        { method: "Theory Examinations", weightage: "50%" },
-                        { method: "Clinical/Viva Examinations", weightage: "40%" },
-                        { method: "Internal Assessment", weightage: "10%" }
-                    ],
-                    skills: [
-                        "Psychiatric interview techniques",
-                        "Mental status examination",
-                        "Suicide risk assessment",
-                        "Basic counseling skills",
-                        "De-escalation techniques",
-                        "Patient and family psychoeducation"
-                    ]
-                },
-                {
-                    id: "dermatology",
-                    name: "Dermatology",
-                    icon: "fa-hand-dots",
-                    color: "#ff5722",
-                    colorDark: "#d84315",
-                    description: "Skin, Hair, and Nail Disorders",
-                    programOverview: "The Dermatology department provides training in diagnosis and management of skin diseases, sexually transmitted infections, and cosmetic dermatology. Students learn clinical examination and basic dermatological procedures.",
-                    programDuration: "Clinical posting in Phase III (2 weeks)",
-                    courseOutcomes: [
-                        "Diagnose common dermatological conditions",
-                        "Understand principles of dermatological therapy",
-                        "Manage sexually transmitted infections",
-                        "Perform basic dermatological procedures",
-                        "Counsel patients on skin care",
-                        "Recognize dermatological emergencies"
-                    ],
-                    teachingMethods: [
-                        "Dermatology OPD sessions",
-                        "Clinical demonstration",
-                        "Photographic case discussions",
-                        "Procedure demonstrations",
-                        "STI clinic exposure",
-                        "Leprosy clinic visits",
-                        "Teledermatology sessions"
-                    ],
-                    assessmentMethods: [
-                        { method: "Theory Examinations", weightage: "50%" },
-                        { method: "Clinical/Practical Examinations", weightage: "40%" },
-                        { method: "Internal Assessment", weightage: "10%" }
-                    ],
-                    skills: [
-                        "Dermatological examination",
-                        "KOH mount preparation",
-                        "Skin biopsy assistance",
-                        "Intralesional injection",
-                        "Wound dressing",
-                        "Patient education on skin care"
-                    ]
-                }
-            ]
-        };
+        const medicalCourses = [
+    {
+        "level": "UG",
+        "course": "MBBS",
+        "duration": "5.5 Years",
+        "eligibility": "NEET-UG",
+        "annual_intake": 150,
+        "description": "The Undergraduate (UG) medical program provides foundational training in medicine, covering basic sciences, clinical skills, and patient care. It prepares students for a career as medical professionals through structured academics and hands-on clinical exposure.",
+        "departments": [
+            "Anatomy",
+            "Physiology",
+            "Biochemistry",
+            "Pharmacology",
+            "Pathology",
+            "Microbiology",
+            "Community Medicine",
+            "General Medicine",
+            "General Surgery",
+            "Obstetrics & Gynecology",
+            "Pediatrics",
+            "ENT",
+            "Ophthalmology",
+            "Orthopaedics",
+            "Dermatology",
+            "Psychiatry",
+            "Radiology",
+            "Anaesthesiology"
+        ]
+    },
 
-        // Render Functions
-        function renderSidebar() {
-            const menu = document.getElementById('sidebarMenu');
-            menu.innerHTML = departmentsData.departments.map((dept, index) => `
+    {
+        "level": "PG",
+        "course": "MD General Medicine",
+        "duration": "3 Years",
+        "intake": 10,
+        "eligibility": "NEET-PG",
+        "description": "The Postgraduate (PG) medical programs offer advanced specialization in various medical disciplines. These courses enhance clinical expertise, research skills, and professional competency to prepare doctors for specialized and super-specialty roles."
+    },
+    {
+        "level": "PG",
+        "course": "MS General Surgery",
+        "duration": "3 Years",
+        "intake": 8,
+        "eligibility": "NEET-PG",
+        "description": "The Postgraduate (PG) medical programs offer advanced specialization in various medical disciplines. These courses enhance clinical expertise, research skills, and professional competency to prepare doctors for specialized and super-specialty roles."
+    },
+    {
+        "level": "PG",
+        "course": "MD Pediatrics",
+        "duration": "3 Years",
+        "intake": 6,
+        "eligibility": "NEET-PG",
+        "description": "The Postgraduate (PG) medical programs offer advanced specialization in various medical disciplines. These courses enhance clinical expertise, research skills, and professional competency to prepare doctors for specialized and super-specialty roles."
+    },
+    {
+        "level": "PG",
+        "course": "MD Obstetrics & Gynecology",
+        "duration": "3 Years",
+        "intake": 6,
+        "eligibility": "NEET-PG",
+        "description": "The Postgraduate (PG) medical programs offer advanced specialization in various medical disciplines. These courses enhance clinical expertise, research skills, and professional competency to prepare doctors for specialized and super-specialty roles."
+    },
+    {
+        "level": "PG",
+        "course": "MS Orthopaedics",
+        "duration": "3 Years",
+        "intake": 5,
+        "eligibility": "NEET-PG",
+        "description": "The Postgraduate (PG) medical programs offer advanced specialization in various medical disciplines. These courses enhance clinical expertise, research skills, and professional competency to prepare doctors for specialized and super-specialty roles."
+    },
+    {
+        "level": "PG",
+        "course": "MD Anesthesiology",
+        "duration": "3 Years",
+        "intake": 8,
+        "eligibility": "NEET-PG",
+        "description": "The Postgraduate (PG) medical programs offer advanced specialization in various medical disciplines. These courses enhance clinical expertise, research skills, and professional competency to prepare doctors for specialized and super-specialty roles."
+    },
+    {
+        "level": "PG",
+        "course": "MD Dermatology",
+        "duration": "3 Years",
+        "intake": 4,
+        "eligibility": "NEET-PG",
+        "description": "The Postgraduate (PG) medical programs offer advanced specialization in various medical disciplines. These courses enhance clinical expertise, research skills, and professional competency to prepare doctors for specialized and super-specialty roles."
+    },
+    {
+        "level": "PG",
+        "course": "MD Psychiatry",
+        "duration": "3 Years",
+        "intake": 3,
+        "eligibility": "NEET-PG",
+        "description": "The Postgraduate (PG) medical programs offer advanced specialization in various medical disciplines. These courses enhance clinical expertise, research skills, and professional competency to prepare doctors for specialized and super-specialty roles."
+    },
+    {
+        "level": "PG",
+        "course": "MD Radiology",
+        "duration": "3 Years",
+        "intake": 5,
+        "eligibility": "NEET-PG",
+        "description": "The Postgraduate (PG) medical programs offer advanced specialization in various medical disciplines. These courses enhance clinical expertise, research skills, and professional competency to prepare doctors for specialized and super-specialty roles."
+    }
+];
+
+
+        function renderCourseSidebar() {
+            const menu = document.getElementById("courseSidebarMenu");
+
+            const sections = [
+                { id: "ug-courses", title: "UG Courses", icon: "fa-user-graduate" },
+                { id: "pg-courses", title: "PG Courses", icon: "fa-user-md" }
+            ];
+
+            menu.innerHTML = sections.map((section, index) => `
                 <li>
-                    <a href="#${dept.id}" 
-                       onclick="showDepartment('${dept.id}')" 
-                       class="${index === 0 ? 'active' : ''}">
-                        <i class="fas ${dept.icon}"></i> ${dept.name}
+                    <a href="#${section.id}"
+                    onclick="showCourseSection('${section.id}')"
+                    class="${index === 0 ? 'lib-active' : ''}">
+                        <i class="fas ${section.icon}"></i> ${section.title}
                     </a>
                 </li>
-            `).join('');
+            `).join("");
         }
 
-        function renderDepartment(dept) {
-            return `
-                <div class="course-department-section active">
-                    <div class="course-section-header" style="--dept-color: ${dept.color}; --dept-color-dark: ${dept.colorDark};">
-                        <div class="course-section-header-content">
-                            <h2>
-                                <div class="course-icon-large"><i class="fas ${dept.icon}"></i></div>
-                                ${dept.name}
-                            </h2>
-                            <p>${dept.description}</p>
+       function renderCourseContent(item) {
+            switch (item.type) {
+                case 'table':
+                    return `
+                        <div class="lib-table-wrapper">
+                            <table>
+                                <thead>
+                                    <tr>${item.headers.map(h => `<th>${h}</th>`).join('')}</tr>
+                                </thead>
+                                <tbody>
+                                    ${item.rows
+                                        .map(row => `
+                                        <tr>${row.map((c, i) =>
+                                            `<td data-label="${item.headers[i]}">${c}</td>`
+                                        ).join('')}</tr>
+                                    `)
+                                        .join('')}
+                                </tbody>
+                            </table>
+                        </div>
+                    `;
+
+                case 'list':
+                    return `
+                        <ul class="lib-features-list">
+                            ${item.items.map(li => `<li><i class="fas fa-check-circle"></i> ${li}</li>`).join("")}
+                        </ul>
+                    `;
+
+                case 'subtitle':
+                    return `<h3>${item.value}</h3>`;
+                
+                case 'description':
+                return `
+                    <h3>Description</h3>
+                    <p>${item.value}</p>
+                `;
+
+                default:
+                    return '';
+            }
+        }
+
+       function showCourseSection(id) {
+            const main = document.getElementById("courseMainContent");
+
+            // Build sections dynamically
+            let sectionData;
+
+            if (id === "ug-courses") {
+                const ug = medicalCourses.find(c => c.level === "UG");
+
+                sectionData = {
+                    title: "UG Courses",
+                    icon: "fa-user-graduate",
+                    description: "Undergraduate medical program (MBBS).",
+                    content: [
+                        {
+                            type: "description",
+                            value: ug.description
+                        },
+                        {
+                            type: "table",
+                            headers: ["Course", "Duration", "Eligibility", "Annual Intake"],
+                            rows: [[ug.course, ug.duration, ug.eligibility, ug.annual_intake]]
+                        },
+                        {
+                            type: "subtitle",
+                            value: "Departments Included"
+                        },
+                        {
+                            type: "list",
+                            items: ug.departments
+                        }
+                    ]
+                };
+            }
+
+            else if (id === "pg-courses") {
+                const pg = medicalCourses.filter(c => c.level === "PG");
+
+                sectionData = {
+                    title: "PG Courses",
+                    icon: "fa-user-md",
+                    description: "Postgraduate medical specializations.",
+                    content: [
+                        {
+                            type: "description",
+                            value: "The Postgraduate (PG) medical programs offer advanced specialization in various medical disciplines. These courses enhance clinical expertise, research skills, and professional competency to prepare doctors for specialized and super-specialty roles."
+                        },
+                        {
+                            type: "table",
+                            headers: ["Course", "Duration", "Eligibility", "Intake"],
+                            rows: pg.map(c => [c.course, c.duration, c.eligibility, c.intake])
+                        }
+                    ]
+                };
+            }
+
+            // Build final HTML
+            const html = `
+                <div class="lib-library-section lib-active">
+                    <div class="lib-section-header">
+                        <div class="lib-section-header-content">
+                            <h2><div class="lib-icon-large"><i class="fas ${sectionData.icon}"></i></div>${sectionData.title}</h2>
+                            <p>${sectionData.description}</p>
                         </div>
                     </div>
 
-                    <!-- Program Overview -->
-                    <div class="course-accordion-section" style="--dept-color: ${dept.color};">
-                        <div class="course-accordion-header" onclick="toggleCourseAccordion(this)">
-                            <div class="course-accordion-title">
-                                <i class="fas fa-info-circle"></i> Program Overview
-                            </div>
-                            <i class="fas fa-chevron-down course-accordion-icon"></i>
-                        </div>
-                        <div class="course-accordion-content">
-                            <div class="course-accordion-body">
-                                <p>${dept.programOverview}</p>
-                                <div class="course-info-card" style="--dept-color: ${dept.color};">
-                                    <h4><i class="fas fa-clock"></i> Duration</h4>
-                                    <p>${dept.programDuration}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Course Outcomes -->
-                    <div class="course-accordion-section" style="--dept-color: ${dept.color};">
-                        <div class="course-accordion-header" onclick="toggleCourseAccordion(this)">
-                            <div class="course-accordion-title">
-                                <i class="fas fa-graduation-cap"></i> Course Outcomes
-                            </div>
-                            <i class="fas fa-chevron-down course-accordion-icon"></i>
-                        </div>
-                        <div class="course-accordion-content">
-                            <div class="course-accordion-body">
-                                <p>Upon completion of this course, students will be able to:</p>
-                                <ul class="course-outcome-list">
-                                    ${dept.courseOutcomes.map((outcome, index) => `
-                                        <li>
-                                            <span class="course-outcome-number">${index + 1}</span>
-                                            <span class="course-outcome-text">${outcome}</span>
-                                        </li>
-                                    `).join('')}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Teaching Methods -->
-                    <div class="course-accordion-section" style="--dept-color: ${dept.color};">
-                        <div class="course-accordion-header" onclick="toggleCourseAccordion(this)">
-                            <div class="course-accordion-title">
-                                <i class="fas fa-chalkboard-teacher"></i> Teaching Methods
-                            </div>
-                            <i class="fas fa-chevron-down course-accordion-icon"></i>
-                        </div>
-                        <div class="course-accordion-content">
-                            <div class="course-accordion-body">
-                                <p>We employ diverse teaching methodologies to ensure comprehensive learning:</p>
-                                <ul class="course-outcome-list">
-                                    ${dept.teachingMethods.map((method, index) => `
-                                        <li>
-                                            <span class="course-outcome-number">${index + 1}</span>
-                                            <span class="course-outcome-text">${method}</span>
-                                        </li>
-                                    `).join('')}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Assessment Methods -->
-                    <div class="course-accordion-section" style="--dept-color: ${dept.color};">
-                        <div class="course-accordion-header" onclick="toggleCourseAccordion(this)">
-                            <div class="course-accordion-title">
-                                <i class="fas fa-clipboard-check"></i> Assessment Methods
-                            </div>
-                            <i class="fas fa-chevron-down course-accordion-icon"></i>
-                        </div>
-                        <div class="course-accordion-content">
-                            <div class="course-accordion-body">
-                                <p>Students are evaluated through multiple assessment methods:</p>
-                                <div class="course-table-wrapper">
-                                    <table class="course-table">
-                                        <thead>
-                                            <tr>
-                                                <th>Assessment Method</th>
-                                                <th>Weightage</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            ${dept.assessmentMethods.map(assessment => `
-                                                <tr>
-                                                    <td>${assessment.method}</td>
-                                                    <td><strong>${assessment.weightage}</strong></td>
-                                                </tr>
-                                            `).join('')}
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Skills Acquired -->
-                    <div class="course-accordion-section" style="--dept-color: ${dept.color};">
-                        <div class="course-accordion-header" onclick="toggleCourseAccordion(this)">
-                            <div class="course-accordion-title">
-                                <i class="fas fa-tools"></i> Skills Acquired
-                            </div>
-                            <i class="fas fa-chevron-down course-accordion-icon"></i>
-                        </div>
-                        <div class="course-accordion-content">
-                            <div class="course-accordion-body">
-                                <p>Students will develop the following practical skills:</p>
-                                <ul class="course-outcome-list">
-                                    ${dept.skills.map((skill, index) => `
-                                        <li>
-                                            <span class="course-outcome-number">${index + 1}</span>
-                                            <span class="course-outcome-text">${skill}</span>
-                                        </li>
-                                    `).join('')}
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="lib-section-content">
+                        ${sectionData.content.map(item => renderCourseContent(item)).join('')}
                     </div>
                 </div>
             `;
-        }
 
-        function showDepartment(deptId) {
-            const dept = departmentsData.departments.find(d => d.id === deptId);
-            if (!dept) return;
+            main.innerHTML = html;
 
-            const mainContent = document.getElementById('mainContent');
-            mainContent.innerHTML = renderDepartment(dept);
+            // Update active menu link
+            document.querySelectorAll('#courseSidebarMenu a').forEach(a => a.classList.remove('lib-active'));
+            document.querySelector(`#courseSidebarMenu a[href="#${id}"]`).classList.add('lib-active');
 
-            // Update sidebar active state
-            document.querySelectorAll('.sidebar-nav a').forEach(link => {
-                link.classList.remove('active');
-            });
-            document.querySelector(`a[href="#${deptId}"]`)?.classList.add('active');
-
-            // Scroll to top
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        function toggleCourseAccordion(header) {
-            const isActive = header.classList.contains('active');
-            
-            // Close all accordions
-            document.querySelectorAll('.course-accordion-header').forEach(h => {
-                h.classList.remove('active');
-                h.nextElementSibling.classList.remove('active');
-            });
-            
-            // If the clicked accordion wasn't active, open it
-            if (!isActive) {
-                header.classList.add('active');
-                header.nextElementSibling.classList.add('active');
-            }
-        }
-
         // Initialize
-        document.addEventListener('DOMContentLoaded', () => {
-            renderSidebar();
-            
-            // Check for hash in URL
-            const hash = window.location.hash.slice(1);
-            if (hash && departmentsData.departments.find(d => d.id === hash)) {
-                showDepartment(hash);
-            } else {
-                showDepartment(departmentsData.departments[0].id);
-            }
-        });
+       document.addEventListener("DOMContentLoaded", () => {
+    renderCourseSidebar();
 
-        // Handle browser back/forward
-        window.addEventListener('hashchange', () => {
-            const hash = window.location.hash.slice(1);
-            if (hash && departmentsData.departments.find(d => d.id === hash)) {
-                showDepartment(hash);
-            }
-        });
+    const hash = window.location.hash.slice(1);
+    if (hash === "ug-courses" || hash === "pg-courses") {
+        showCourseSection(hash);
+    } else {
+        showCourseSection("ug-courses");
+    }
+    });
 
-        // Export data for external use
-        window.departmentsData = departmentsData;
+    window.addEventListener("hashchange", () => {
+        const hash = window.location.hash.slice(1);
+        if (hash === "ug-courses" || hash === "pg-courses") {
+            showCourseSection(hash);
+        }
+    });
