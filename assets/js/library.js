@@ -19,8 +19,6 @@
                             type: "stats",
                             items: [
                                 { icon: "fa-calendar-check", value: "2006", label: "Year Established" },
-                                { icon: "fa-book", value: "25,000+", label: "Books & Journals" },
-                                { icon: "fa-users", value: "2,000+", label: "Active Members" },
                                 { icon: "fa-trophy", value: "18+", label: "Years of Service" }
                             ]
                         },
@@ -91,8 +89,6 @@
                         {
                             type: "stats",
                             items: [
-                                { icon: "fa-book", value: "15,000+", label: "Medical Textbooks" },
-                                { icon: "fa-newspaper", value: "250+", label: "Print Journals" },
                                 { icon: "fa-globe", value: "5,000+", label: "E-Journals" },
                                 { icon: "fa-video", value: "500+", label: "Multimedia Resources" }
                             ]
@@ -305,7 +301,6 @@
                             type: "stats",
                             items: [
                                 { icon: "fa-clock", value: "24/7", label: "Digital Access" },
-                                { icon: "fa-download", value: "10,000+", label: "Downloads/Month" },
                                 { icon: "fa-laptop-code", value: "100+", label: "Workstations" },
                                 { icon: "fa-book-reader", value: "5,000+", label: "E-Books Available" }
                             ]
@@ -420,21 +415,6 @@
                                     icon: "fa-microscope",
                                     title: "Research Commons",
                                     description: "Dedicated space for research scholars with computers, printing facilities, and access to research databases."
-                                },
-                                {
-                                    icon: "fa-archive",
-                                    title: "Archives Section",
-                                    description: "Preserves institutional publications, theses, dissertations, and historical documents in climate-controlled environment."
-                                },
-                                {
-                                    icon: "fa-video",
-                                    title: "Audio-Visual Section",
-                                    description: "Houses educational DVDs, CDs, and online streaming access to medical videos and documentaries."
-                                },
-                                {
-                                    icon: "fa-user-graduate",
-                                    title: "Faculty Corner",
-                                    description: "Exclusive section for faculty with latest research journals, private study cabins, and priority borrowing privileges."
                                 }
                             ]
                         },
