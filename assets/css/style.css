@@ -6169,7 +6169,9 @@ grid-template-columns: 1fr;
             .container {
                 padding: var(--spacing-xl) var(--spacing-md);
             }
-
+            .hero-content {
+                text-align:center;
+            }
 
         }
 
