@@ -652,7 +652,7 @@ body {
 
 @media (max-width:768px) {
     .badge-top-left {
-        top: -10%;
+        top: 20%;
         left: 0%;
     }
     .profile-badge {
