@@ -1649,7 +1649,7 @@ footer {
         width: 350px;
         height: 350px;
         border-radius: 350px;
-        margin: 0 auto;
+        margin: 50px auto 0;
     }
     
     .hero-main-image img {
