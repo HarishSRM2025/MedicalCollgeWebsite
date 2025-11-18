@@ -5,10 +5,11 @@
                 id: "general_medicine", name: "General Medicine", icon:"fa-stethoscope", color: "#3558c9ff", colorDark: "#07268dff",
                 desc: "Comprehensive internal medicine care for all age groups.",
                 vision:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
-                mission:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
+                 mission:["To provide state-of-art management options for patients with respiratory diseases, according to the latest evidence-based guidelines.","Train the students with focus on bench to bedside practice through rigorous implementation of the course along with innovative teaching-learning practices and to delve into dynamic clinical research.","To create awareness among patients, their caregivers and the general public about basic Respiratory illnesses and their symptoms.","To conduct patient empowerment programs so as to reduce morbidity or mortality and arrive at early diagnosis of chest diseases at an affordable cost."],
                 objectives:["Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro."],
                 infra: ["OPD rooms", "Inpatient wards", "ICU", "Procedure room"],
                 faculty: [{name: "Ram", designation: "Assistant professor", exp: "5"},{name: "Sam", designation: "Assistant professor", exp: "5"},{name: "John", designation: "Assistant professor", exp: "5"}],
+                services_desc:"The Department offers diagnostic and consultative services for patient management across various specialties",
                 services: ["General Consultation", "Diabetes Care", "Hypertension", "Infectious Diseases", "Respiratory Medicine", "Gastroenterology", "Cardiology", "Nephrology"],
                 pubStats: [{label: "Publications", value: "30+"}],
                 pubHighlights: ["Diabetes management"],
@@ -22,10 +23,11 @@
                 id: "emergency_medicine", name: "Emergency Medicine", icon: "fa-truck-medical", color: "#27ae60", colorDark: "#229954",
                 desc: "Comprehensive internal medicine care for all age groups.",
                 vision:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
-                mission:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
+                 mission:["To provide state-of-art management options for patients with respiratory diseases, according to the latest evidence-based guidelines.","Train the students with focus on bench to bedside practice through rigorous implementation of the course along with innovative teaching-learning practices and to delve into dynamic clinical research.","To create awareness among patients, their caregivers and the general public about basic Respiratory illnesses and their symptoms.","To conduct patient empowerment programs so as to reduce morbidity or mortality and arrive at early diagnosis of chest diseases at an affordable cost."],
                 objectives:["Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro."],
                 infra: ["OPD rooms", "Inpatient wards", "ICU", "Procedure room"],
                 faculty: [{name: "Ram", designation: "Assistant professor", exp: "5"},{name: "Sam", designation: "Assistant professor", exp: "5"},{name: "John", designation: "Assistant professor", exp: "5"}],
+                services_desc:"The Department offers diagnostic and consultative services for patient management across various specialties",
                 services: ["General Consultation", "Diabetes Care", "Hypertension", "Infectious Diseases", "Respiratory Medicine", "Gastroenterology", "Cardiology", "Nephrology"],
                 pubStats: [{label: "Publications", value: "30+"}],
                 pubHighlights: ["Diabetes management"],
@@ -40,10 +42,11 @@
                 id: "pediatrics", name: "Pediatrics", icon: "fa-child", color: "#ff9800", colorDark: "#f57c00",
                 desc: "Comprehensive child healthcare with NICU and PICU facilities.",
                 vision:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
-                mission:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
+                 mission:["To provide state-of-art management options for patients with respiratory diseases, according to the latest evidence-based guidelines.","Train the students with focus on bench to bedside practice through rigorous implementation of the course along with innovative teaching-learning practices and to delve into dynamic clinical research.","To create awareness among patients, their caregivers and the general public about basic Respiratory illnesses and their symptoms.","To conduct patient empowerment programs so as to reduce morbidity or mortality and arrive at early diagnosis of chest diseases at an affordable cost."],
                 objectives:["Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro."],
                 infra: ["Pediatric OPD", "NICU", "PICU", "Immunization clinic"],
                 faculty: [{name: "Ram", designation: "Assistant professor", exp: "5"},{name: "Sam", designation: "Assistant professor", exp: "5"},{name: "John", designation: "Assistant professor", exp: "5"}],
+                services_desc:"The Department offers diagnostic and consultative services for patient management across various specialties",
                 services: ["General Pediatrics", "Neonatology", "PICU", "Immunization", "Growth Monitoring"],
                 pubStats: [{label: "Publications", value: "24+"}],
                 pubHighlights: ["Neonatal care"],
@@ -57,10 +60,11 @@
                 id: "dermatology", name: "Dermatology", icon: "fa-hand-dots", color: "#e74c3c", colorDark: "#c0392b",
                 desc: "Expert care for skin, hair, and nail conditions with advanced cosmetic dermatology services.",
                 vision:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
-                mission:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
+                 mission:["To provide state-of-art management options for patients with respiratory diseases, according to the latest evidence-based guidelines.","Train the students with focus on bench to bedside practice through rigorous implementation of the course along with innovative teaching-learning practices and to delve into dynamic clinical research.","To create awareness among patients, their caregivers and the general public about basic Respiratory illnesses and their symptoms.","To conduct patient empowerment programs so as to reduce morbidity or mortality and arrive at early diagnosis of chest diseases at an affordable cost."],
                 objectives:["Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro."],
                 infra: ["Dermatology consultation rooms", "Laser therapy unit", "Phototherapy equipment", "Dermoscopy facility", "Minor procedure room"],
                 faculty: [{name: "Ram", designation: "Assistant professor", exp: "5"},{name: "Sam", designation: "Assistant professor", exp: "5"},{name: "John", designation: "Assistant professor", exp: "5"}],
+                services_desc:"The Department offers diagnostic and consultative services for patient management across various specialties",
                 services: ["General Dermatology", "Cosmetic Dermatology", "Laser Treatments", "Hair Restoration", "Acne Treatment", "Psoriasis Care", "Vitiligo Treatment", "Chemical Peels"],
                 pubStats: [{label: "Publications", value: "28+"}, {label: "International", value: "12+"}],
                 pubHighlights: ["Advances in psoriasis treatment", "Laser therapy in acne scars", "Novel vitiligo treatments"],
@@ -80,10 +84,11 @@
                 id: "psychiatry", name: "Psychiatry", icon: "fa-brain", color: "#673ab7", colorDark: "#512da8",
                 desc: "Comprehensive mental health services with counseling and therapy.",
                 vision:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
-                mission:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
+                 mission:["To provide state-of-art management options for patients with respiratory diseases, according to the latest evidence-based guidelines.","Train the students with focus on bench to bedside practice through rigorous implementation of the course along with innovative teaching-learning practices and to delve into dynamic clinical research.","To create awareness among patients, their caregivers and the general public about basic Respiratory illnesses and their symptoms.","To conduct patient empowerment programs so as to reduce morbidity or mortality and arrive at early diagnosis of chest diseases at an affordable cost."],
                 objectives:["Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro."],
                 infra: ["Consultation rooms", "Counseling center", "De-addiction unit", "Psychology testing room"],
                 faculty: [{name: "Ram", designation: "Assistant professor", exp: "5"},{name: "Sam", designation: "Assistant professor", exp: "5"},{name: "John", designation: "Assistant professor", exp: "5"}],
+                services_desc:"The Department offers diagnostic and consultative services for patient management across various specialties",
                 services: ["General Psychiatry", "Depression Treatment", "Anxiety Disorders", "Addiction Treatment", "Counseling Services", "Child Psychiatry"],
                 pubStats: [{label: "Publications", value: "20+"}],
                 pubHighlights: ["Depression management"],
@@ -95,20 +100,42 @@
             },
             {
                 id: "respiratory", name: "Respiratory Medicine", icon: "fa-lungs", color: "#26c6da", colorDark: "#00acc1",
-                desc: "Comprehensive respiratory care with pulmonary function testing.",
-                vision:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
-                mission:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
-                objectives:["Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro."],
-                infra: ["Pulmonary function lab", "Bronchoscopy suite", "Respiratory ICU", "Sleep study lab"],
-                faculty: [{name: "Ram", designation: "Assistant professor", exp: "5"},{name: "Sam", designation: "Assistant professor", exp: "5"},{name: "John", designation: "Assistant professor", exp: "5"}],
-                services: ["Asthma Management", "COPD Care", "TB Treatment", "Bronchoscopy", "Pulmonary Function Tests", "Sleep Studies"],
-                pubStats: [{label: "Publications", value: "19+"}],
-                pubHighlights: ["COPD management"],
-                pubYearwise: [{year: "2023", title: "Asthma treatment protocols", journal: "Respiratory Medicine", type: "Research"}],
-                research: ["Asthma protocols", "TB treatment"],
-                events: ["World COPD Day"],
-                achievements: ["Excellence in Pulmonary Care"],
-                gallery: [{name: "PFT Lab", icon: "fa-wind", event: "Respiratory Lab", date: "Dec 2023"}]
+                desc: "Respiratory Medicine Department specializes in the diagnosis, treatment and prevention of diseases affecting the lungs and entire respiratory system. Our commitment is to manage a comprehensive range of conditions- from common respiratory ailments to complex, life-threatening diseases- with expertise and compassion.",
+                vision:"We provide outstanding clinical care, which is comprehensive, affordable, accessible and delivered compassionately, to the patient & nurture the students with knowledge, skills, and attitude essential to make them professional, compassionate & competent physician.",
+                mission:["To provide state-of-art management options for patients with respiratory diseases, according to the latest evidence-based guidelines.","Train the students with focus on bench to bedside practice through rigorous implementation of the course along with innovative teaching-learning practices and to delve into dynamic clinical research.","To create awareness among patients, their caregivers and the general public about basic Respiratory illnesses and their symptoms.","To conduct patient empowerment programs so as to reduce morbidity or mortality and arrive at early diagnosis of chest diseases at an affordable cost."],
+                objectives:["To conduct awareness & outreach programs to medically unreached populations.","To encourage UG & PG students for research activities in various dimension of respiratory medicine.","To create highly structured and quality respiratory care for a fully-fledged pulmonary rehabilitation program."],
+                infra: ["Spirometry and DLCO", "Flexible video Bronchoscope.", "Facilities for Thoracoscopy","Respiratory intensive care unit (RICU)","Specialty clinics and counselling rooms","Lecture Halls and seminar rooms","Department library/ e-library"],
+                faculty: [{name: "Dr.K.G.RanganathaMallan", designation: "Professor", exp: "25"},{name: "Dr.R.VelRaj", designation: "Assistant Professor", exp: "17"},{name: "Dr.A.Anusuya", designation: "Assistant Professor", exp: "11"},{name: "Dr.B.Prabhu", designation: "Senior Resident", exp: "7"},{name: "Dr.Parath Kumar.M.C", designation: "Assistant Professor", exp: "5"}],
+                services_desc:"The Department offers diagnostic and consultative services for patient management across various specialties",
+                services: ["Treatment of obstructive & restrictive airway diseases", "Treatment of dust or smoke related airway diseases", "Treatment of lung cancer and  its manifestations", "Treatment of Tuberculosis", "Treatment of Post Covid sequelae", "Treatment of sleep related diseases.","Vaccinations to prevent lung infections like Influenza  and Pneumococcal  vaccines","Breathing exercises and chest physiotherapy","Pulmonary function tests  (Spirometry  & DLCO)","Bronchial wash and lavage","Trans bronchial lung biopsy (TBLB), Endobronchial Biopsy (EBB)","Medical Thoracoscopy","Inter costal tube drainage","Ultrasound guided pleural fluid aspiration","Non- invasive ventilation","Invasive Ventilation"],
+                publication_overview:"Faculty members actively publish research papers in national and international journals, contributing to advancements in diagnostic pathology and laboratory medicine.",
+                pubStats: [
+                    {label: "Overall", value: "4"},
+                    {label: "International", value: "3"},
+                    {label: "National", value: "1"},
+
+                ],
+                pubHighlights: ["Predicting disease severity in bronchiectasis, Bronchial asthma and COPD"],
+                pubYearwise: [
+                    {year: "2025", title: "Role of serum Albumin in predicting disease severity and hospitalization in patients with Non-Cystic Fibrosis Bronchiectasis", journal: "Journal of Xidian University", type: "International journal"},
+                    {year: "2025", title: "A study on the prevalence of suboptimal peak inspiratory flow and its associated risk factors among COPD patients", journal: "Journal of Academic Medicine and Pharmacy (JAMP)", type: "International journal"},
+                    {year: "2024", title: "Prevalence and Factors Affecting the Optimal and Non-optimal Peak Inspiratory Flow Rate in Stable and Exacerbation Phases of Chronic Obstructive Pulmonary Disease and Bronchial Asthma in India", journal: "CUREUS ", type: "International journal"},
+                    {year: "2024", title: "DECAF Score and BAP-65 Score as Tools for Prediction of Clinical Outcome in Acute Exacerbation of Chronic Obstructive Pulmonary Disease", journal: "SCOPE", type: "National journal"},
+                ],
+                research_desc:"The department encourages clinical and basic research with multidisciplinary collaboration.",
+                research: ["To correlate MDCT severity score of bronchiectasis and FEV1 in spirometry.","A study on monitoring the effectiveness of Noninvasive Ventilation in Managing Type 2 Respiratory Failure"," The FEV1/ DLCO ratio as an effective predictor of severity and survival in COPD associated pulmonary hypertension","Relationship between serum vitamin D3 and forced expiratory volume in patients with Chronic Obstructive Pulmonary Disorder(COPD)","Role of serum Albumin in predicting disease severity and hospitalization in patients with Non-Cystic Fibrosis   Bronchiectasis"],
+                events: ["Lung Cancer (GUEST LECTURE)","Non-Invasive Ventilation (CME & WORKSHOP)","Smoking Cessation (GUEST LECTURE & AWARENESS PROGRAM)","TB (GUEST LECTURE & STATE LEVEL QUIZ)","Bronchial Asthma (CME & QUIZ)","Obstructive Sleep Apnoea (CME)"],
+                events_desc:"The Department conducts regular academic and community outreach programs.",
+                achievements: ["Postgraduate student’s research selected for ICMR grant."],
+                achievements_desc:"Recognition and awards for excellence in healthcare.",
+                research_desc:"The department encourages clinical and basic research with multidisciplinary collaboration.",
+
+                gallery: [
+                    {name: "World Asthma Day – Asthma Education Empowers", icon: "fa-wind", event: "Respiratory Lab",path:"Respiratory_Medicine/1.jpg", date: "07 May 2024"},
+                    {name: "CME on Tuberculosis “Pulmo Prism” for World TB day - 2025", icon: "fa-wind", event: "Respiratory Lab",path:"Respiratory_Medicine/2.jpg", date: "27 Mar 2025"},
+                    {name: "World No Tobacco Day – 2025 “Bright Products Dark Intentions, Unmasking The Appeal”", icon: "fa-wind", event: "Respiratory Lab",path:"Respiratory_Medicine/3.jpg", date: "03 Jun 2025"},
+                    {name: "Symposium on “Recent trends in the management of Lung Cancer”", icon: "fa-wind", event: "Respiratory Lab",path:"Respiratory_Medicine/4.jpg", date: "29 Aug 2025"}
+                ],
             }
         ];
 
@@ -184,7 +211,7 @@
                                 <br><br>
                                 <h4>Mission</h4>
                                 <br>
-                                <ul>${d.mission}</ul>
+                                <ul>${d.mission.map(f => `<li>${f}</li>`).join('')}</ul>
                                 <br><br>
                                 <h4>Objectives</h4>
                                 <br>
@@ -261,7 +288,7 @@
                         </div>
                         <div class="accordion-content">
                             <div class="accordion-body">
-                                <p>Comprehensive healthcare services catering to all needs.</p>
+                                <p>${d.services_desc}</p>
                                 <ul>${d.services.map(s => `<li>${s}</li>`).join('')}</ul>
                             </div>
                         </div>
@@ -359,7 +386,7 @@
                         </div>
                         <div class="accordion-content">
                             <div class="accordion-body">
-                                <p>Regular conferences, training programs, and awareness campaigns.</p>
+                                <p>${d.events_desc}</p>
                                 <ul>${d.events.map(e => `<li>${e}</li>`).join('')}</ul>
                             </div>
                         </div>
@@ -393,16 +420,15 @@
                         </div>
                         <div class="accordion-content">
                             <div class="accordion-body">
-                                <p>Visual documentation of our facilities, events, and achievements.</p>
+                                <p>${d.gallery_desc?d.gallery_desc:"Visual documentation of our facilities, events, and achievements."}</p>
                                 <div class="gallery-grid">
                                     ${d.gallery.map(img => `
                                         <div class="gallery-item">
                                             <div class="gallery-placeholder">
-                                                <i class="fas ${img.icon}"></i>
-                                                <span>${img.name}</span>
+                                                <img src="./assets/images/gallery/${img.path}">
                                             </div>
                                             <div class="gallery-overlay">
-                                                <div class="gallery-overlay-title">${img.event}</div>
+                                                <div class="gallery-overlay-title">${img.name}</div>
                                                 <div class="gallery-overlay-date"><i class="fas fa-calendar"></i> ${img.date}</div>
                                             </div>
                                         </div>
