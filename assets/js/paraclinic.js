@@ -4,7 +4,7 @@
             {
                 id: "Pathology", name: "Pathology", icon: "fa-microscope", color: "#3558c9ff", colorDark: "#07268dff",
                 desc: "Comprehensive internal medicine care for all age groups.",
-                vission:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
+                vision:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
                 mission:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
                 objectives:["Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro."],
                 infra: ["OPD rooms", "Inpatient wards", "ICU", "Procedure room"],
@@ -21,7 +21,7 @@
             {
                 id: "Microbiology", name: "Microbiology", icon: "fa-virus-covid", color: "#27ae60", colorDark: "#229954",
                 desc: "Comprehensive internal medicine care for all age groups.",
-                vission:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
+                vision:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
                 mission:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
                 objectives:["Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro."],
                 infra: ["OPD rooms", "Inpatient wards", "ICU", "Procedure room"],
@@ -39,7 +39,7 @@
             {
                 id: "Pharmacology", name: "Pharmacology", icon: "fa-pills", color: "#ff9800", colorDark: "#f57c00",
                 desc: "Comprehensive child healthcare with NICU and PICU facilities.",
-                vission:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
+                vision:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
                 mission:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
                 objectives:["Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro."],
                 infra: ["OPD rooms", "Inpatient wards", "ICU", "Procedure room"],
@@ -56,7 +56,7 @@
             {
                 id: "Forensic Medicine", name: "Forensic Medicine", icon: "fa-capsules", color: "#e74c3c", colorDark: "#c0392b",
                 desc: "Expert care for skin, hair, and nail conditions with advanced cosmetic dermatology services.",
-                vission:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
+                vision:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
                 mission:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
                 objectives:["Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro."],
                 infra: ["Dermatology consultation rooms", "Laser therapy unit", "Phototherapy equipment", "Dermoscopy facility", "Minor procedure room"],
@@ -78,7 +78,7 @@
             {
                 id: "Community Medicine", name: "Community Medicine", icon: "fa-suitcase-medical", color: "#673ab7", colorDark: "#512da8",
                 desc: "Comprehensive mental health services with counseling and therapy.",
-                vission:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
+                vision:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
                 mission:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
                 objectives:["Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro."],
                 infra: ["Consultation rooms", "Counseling center", "De-addiction unit", "Psychology testing room"],
@@ -150,18 +150,18 @@
                     </div>
                 </div>
             `;
-            if (d.vission) {
+            if (d.vision) {
                 html += `
                     <div class="accordion-section">
                         <div class="accordion-header" onclick="toggleAccordion(this)">
-                            <div class="accordion-title"><i class="fas fa-bullseye"></i> Vission & Mission</div>
+                            <div class="accordion-title"><i class="fas fa-bullseye"></i> Vision & Mission</div>
                             <i class="fas fa-chevron-down accordion-icon"></i>
                         </div>
                         <div class="accordion-content">
                             <div class="accordion-body">
-                                <h4>Vission</h4>
+                                <h4>Vision</h4>
                                 <br>
-                                <ul>${d.vission}</ul>
+                                <ul>${d.vision}</ul>
                                 <br><br>
                                 <h4>Nission</h4>
                                 <br>
