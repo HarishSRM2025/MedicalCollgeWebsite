@@ -128,7 +128,6 @@
                 events_desc:"The Department conducts regular academic and community outreach programs.",
                 achievements: ["Postgraduate student’s research selected for ICMR grant."],
                 achievements_desc:"Recognition and awards for excellence in healthcare.",
-                research_desc:"The department encourages clinical and basic research with multidisciplinary collaboration.",
 
                 gallery: [
                     {name: "World Asthma Day – Asthma Education Empowers", icon: "fa-wind", event: "Respiratory Lab",path:"Respiratory_Medicine/1.jpg", date: "07 May 2024"},
