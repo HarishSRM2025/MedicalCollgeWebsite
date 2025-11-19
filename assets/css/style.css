@@ -4418,7 +4418,12 @@ grid-template-columns: 1fr;
     width: 24px;
     border-radius: 5px;
 }
-
+.media .section{
+    background:var(--color-white);
+    margin-bottom:0;
+    width:100%;
+    padding:4% 20%;
+}
 /* Responsive */
 @media (max-width: 768px) {
     h1 {
@@ -4438,12 +4443,9 @@ grid-template-columns: 1fr;
     .social-stats {
         gap: var(--spacing-md);
     }
-}
-.media .section{
-    background:var(--color-white);
-    margin-bottom:0;
-    width:100%;
-    padding:4% 20%;
+    .media .section{
+        padding:4% 10%;
+    }
 }
 .media .section:nth-child(odd){
     background:var(--gradient-1);
