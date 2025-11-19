@@ -6878,6 +6878,7 @@ grid-template-columns: 1fr;
             border-radius: 20px;
             font-weight: 600;
             font-size: 0.85rem;
+            text-align: center;
         }
 
         .gallery-grid {

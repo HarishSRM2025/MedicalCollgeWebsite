@@ -20,22 +20,170 @@
                 gallery: [{name: "OPD", icon: "fa-clinic-medical", event: "OPD", date: "Jan 2024"}]
             },
             {
-                id: "emergency_medicine", name: "Emergency Medicine", icon: "fa-truck-medical", color: "#27ae60", colorDark: "#229954",
-                desc: "Comprehensive internal medicine care for all age groups.",
-                vision:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
-                 mission:["To provide state-of-art management options for patients with respiratory diseases, according to the latest evidence-based guidelines.","Train the students with focus on bench to bedside practice through rigorous implementation of the course along with innovative teaching-learning practices and to delve into dynamic clinical research.","To create awareness among patients, their caregivers and the general public about basic Respiratory illnesses and their symptoms.","To conduct patient empowerment programs so as to reduce morbidity or mortality and arrive at early diagnosis of chest diseases at an affordable cost."],
-                objectives:["Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro."],
-                infra: ["OPD rooms", "Inpatient wards", "ICU", "Procedure room"],
-                faculty: [{name: "Ram", designation: "Assistant professor", exp: "5"},{name: "Sam", designation: "Assistant professor", exp: "5"},{name: "John", designation: "Assistant professor", exp: "5"}],
-                services_desc:"The Department offers diagnostic and consultative services for patient management across various specialties",
-                services: ["General Consultation", "Diabetes Care", "Hypertension", "Infectious Diseases", "Respiratory Medicine", "Gastroenterology", "Cardiology", "Nephrology"],
-                pubStats: [{label: "Publications", value: "30+"}],
-                pubHighlights: ["Diabetes management"],
-                pubYearwise: [{year: "2023", title: "Diabetes protocols", journal: "Medicine Today", type: "Research"}],
-                research: ["Chronic disease management"],
-                events: ["World Diabetes Day"],
-                achievements: ["Best Medicine Dept"],
-                gallery: [{name: "OPD", icon: "fa-clinic-medical", event: "OPD", date: "Jan 2024"}]
+                "id": "emergency",
+                "name": "Emergency Medicine",
+                "icon": "fa-truck-medical",
+                "color": "#ef5350",
+                "colorDark": "#d32f2f",
+
+                "desc": "The Department of Emergency Medicine provides immediate and comprehensive emergency care with rapid assessment, stabilization, and treatment. The department ensures seamless coordination, advanced life-saving interventions and multi-disciplinary care 24/7.",
+
+                "vision": "We provide excellent, accessible and affordable emergency care to all our patients compassionately, holistic education to the future doctors and progressive research.",
+
+                "mission": [
+                    "To provide high quality and low cost emergency healthcare at international standards.",
+                    "Provide state-of-the-art education and mentorship to the future emergency physicians.",
+                    "To create awareness among patients, their caregivers and the general public about basic emergencies and first aid.",
+                    "To grow as a Centre of excellence and leader in quality emergency care."
+                ],
+
+                "objectives": [
+                    "Aims to ensure rapid triage, accurate assessment and timely stabilization of all patients using national and international compliant protocols.",
+                    "To encourage UG & PG students for research activities in various dimensions of Emergency Medicine.",
+                    "To ensure 24/7 availability of trained staff and essential services with coordinated multidisciplinary care."
+                ],
+
+                "infra_desc": "The department is equipped with state-of-the-art facilities, teaching units and diagnostic services to support comprehensive emergency care.",
+                "infra": [
+                    "40-bedded emergency care facility",
+                    "Resuscitation ICU",
+                    "Isolation ward",
+                    "Emergency ward",
+                    "Minor OT",
+                    "Emergency OT",
+                    "Dedicated X-ray and CT units",
+                    "24×7 dedicated automated laboratory services"
+                ],
+
+                "teaching_research_infra": [
+                    "Seminar rooms and demo rooms",
+                    "Department library / e-library",
+                    "Museum",
+                    "Research lab"
+                ],
+
+                "faculty_desc": "The department has a team of qualified and experienced faculty committed to academic excellence, research, and clinical service.",
+                "faculty": [
+                    {"name": "Dr.S. Srihari", "designation": "Professor", "exp": "25"},
+                    {"name": "Dr.R. Ajith Kumar", "designation": "Assistant Professor", "exp": "5"},
+                    {"name": "Dr.SU. Banu Rekha", "designation": "Senior Resident", "exp": "1"}
+                ],
+
+                "services_desc": "The Department offers diagnostic and consultative services for patient management across various specialties.",
+                "services": [
+                    "Resuscitation of emergency patients",
+                    "Management of trauma patients",
+                    "Management of acute coronary syndrome",
+                    "Management of acute stroke patients",
+                    "Central venous cannulation and intercostal drain",
+                    "Pericardiocentesis",
+                    "Point of care ultrasound",
+                    "Treatment of obstructive & restrictive airway diseases",
+                    "Treatment of sepsis and septic shock",
+                    "Management of pulmonary embolism",
+                    "Management of poisoning patients"
+                ],
+
+                "facilities": [
+                    "Point of care ultrasound",
+                    "Echocardiography",
+                    "Bronchoscopy",
+                    "Arterial blood gas analysis",
+                    "Intercostal tube drainage",
+                    "Ultrasound-guided pleural fluid aspiration",
+                    "Non-invasive ventilation",
+                    "Invasive ventilation"
+                ],
+
+                "publication_overview": "Faculty members actively publish research papers in national and international journals, contributing to advancements in emergency medicine and clinical toxicology.",
+                "pubStats": [
+                    { "label": "Overall", "value": "6" },
+                    { "label": "International", "value": "4" },
+                    { "label": "National", "value": "2" }
+                ],
+
+                "pubHighlights": [
+                    "Predicting disease severity in bronchiectasis, Bronchial asthma and COPD"
+                ],
+
+                "pubYearwise": [
+                    {
+                    "year": "2021",
+                    "title": "2,4-Dichlorophenoxyacetic Acid Poisoning Mimicking as Organophosphorus Poisoning",
+                    "journal": "Cureus",
+                    "type": "International journal"
+                    },
+                    {
+                    "year": "2024",
+                    "title": "One and Half Syndrome in a Case of Brainstem Bleed",
+                    "journal": "Cureus",
+                    "type": "International journal"
+                    },
+                    {
+                    "year": "2024",
+                    "title": "Mechanodefibrillator Dissociation due to Prolonged Sinus Arrest",
+                    "journal": "Visual Journal of Emergency Medicine",
+                    "type": "International journal"
+                    },
+                    {
+                    "year": "2024",
+                    "title": "Trembling Voice Pointing Towards Heart – The Ortner Syndrome",
+                    "journal": "Visual Journal of Emergency Medicine",
+                    "type": "International journal"
+                    },
+                    {
+                    "year": "2024",
+                    "title": "Stanford A Aortic Dissection Presenting as a Triple Mimic",
+                    "journal": "Journal of Emergency Trauma and Shock",
+                    "type": "National journal"
+                    },
+                    {
+                    "year": "2024",
+                    "title": "Curious Case of Dimethoate Poisoning with Early Onset Intermediate Syndrome",
+                    "journal": "Journal of Clinical Toxicology",
+                    "type": "National journal"
+                    }
+                ],
+
+                "research_desc": "The department encourages clinical and basic research with multidisciplinary collaboration.",
+                "research": [
+                    "Study on pattern of hospitalization of chronic kidney disease patients in the emergency department of a tertiary care hospital.",
+                    "Study on pattern and outcome of acute poisoning in a tertiary care centre."
+                ],
+
+                "events_desc": "The Department conducts regular academic and community outreach programs.",
+                "events": [
+                    "Trauma Uncovered – Radiology (Guest Lecture)",
+                    "Rapidly Changing Face of AI in Healthcare (Guest Lecture)",
+                    "CPR Awareness Programme Week (CME & Workshop)"
+                ],
+
+                "achievements_desc": "",
+                "achievements": [],
+
+                "gallery": [
+                    {
+                    "name": "Trauma Uncovered – Radiology",
+                    "icon": "fa-hospital",
+                    "event": "Emergency Medicine",
+                    "path": "Emergency_Medicine/1.jpg",
+                    "date": "02 Jul 2025"
+                    },
+                    {
+                    "name": "Rapidly Changing Face of AI in Healthcare",
+                    "icon": "fa-hospital",
+                    "event": "Emergency Medicine",
+                    "path": "Emergency_Medicine/2.jpg",
+                    "date": "02 Jul 2025"
+                    },
+                    {
+                    "name": "CPR Awareness Programme Week",
+                    "icon": "fa-hospital",
+                    "event": "Emergency Medicine",
+                    "path": "Emergency_Medicine/3.jpg",
+                    "date": "13 Jul 2025 - 17 Jul 2025"
+                    }
+                ]
             }
             ,
             {
