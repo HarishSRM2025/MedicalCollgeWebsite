@@ -77,6 +77,7 @@
               <li><a href="#">Social Media Feed</a></li>
               <li><a href="#">Newsletter</a></li>
               <li><a href="#">Gallery</a></li>
+              <li><a href="./videogallery.html">Video Gallery</a></li>
               <li><a href="#">Press Releases</a></li>
             </ul>
           </li>
