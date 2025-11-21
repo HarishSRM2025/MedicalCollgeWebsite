@@ -26,21 +26,8 @@ function loadDoctorData() {
 
     // Profile Image
     const profileImg = document.getElementById('profileImage');
-    const photoUrl = doctorData['Profile Photo (Image below 1mb )'];
 
-    if (photoUrl && photoUrl.includes('drive.google.com')) {
-        let fileId = null;
-
-        if (photoUrl.includes("id=")) {
-            fileId = photoUrl.split("id=")[1];
-        }
-
-        profileImg.src = `./assets/images/doctors/${doctorData["Contact Number"] == "9894489142" ? doctorData["Contact Number"]+".jpg" : doctorData["Contact Number"]+".JPG"}`
-            
-
-    } else {
-        profileImg.src = 'https://via.placeholder.com/180x180?text=Doctor';
-    }
+    profileImg.src = `./assets/images/doctors/${doctorData["Contact Number"] == "9894489142" ? doctorData["Contact Number"]+".jpg" : doctorData["Contact Number"]+".JPG"}`
 
     // Summary
     document.getElementById('profileSummary').textContent =

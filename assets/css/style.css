@@ -8789,6 +8789,7 @@ grid-template-columns: 1fr;
             color: var(--color-primary-dark);
             margin-bottom: 0.5rem;
             font-weight: 600;
+            text-transform: capitalize;
         }
 
         .doc-designation {
