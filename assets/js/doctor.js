@@ -94,18 +94,6 @@ function init() {
                     </div>
                 `;
             });
-
-            // Languages
-            const languages = [...new Set(doctorsData.flatMap(d => d.languages))];
-            const languagesFilter = document.getElementById('languagesFilter');
-            languages.forEach((lang, index) => {
-                languagesFilter.innerHTML += `
-                    <div class="filter-option">
-                        <input type="checkbox" id="lang${index}" value="${lang}" onchange="applyFilters()">
-                        <label for="lang${index}">${lang}</label>
-                    </div>
-                `;
-            });
         }
 
         // Setup event listeners
@@ -384,7 +372,7 @@ function init() {
 
             card.innerHTML = `
                 <div class="doctor-image-wrapper">
-                    <img src="https://market-resized.envatousercontent.com/photodune.net/EVA/TRX/b1/cc/5a/da/b7/v1_E10/E108FXH8.jpg?auto=format&q=94&mark=https%3A%2F%2Fassets.market-storefront.envato-static.com%2Fwatermarks%2Fphoto-260724.png&opacity=0.2&cf_fit=contain&w=590&h=393&s=f76e968a92c0ed678594dff42fd011b513880bfe82f72f0598298fe1b7e3e065" alt="${doctor.name}">
+                    <img src="./assets/images/doctors/${doctor["Contact Number"]}.jpg" alt="${doctor.name}">
                 </div>
                 <div class="doctor-info">
                     <span class="specialty-badge">${doctor.specialty}</span>
@@ -415,7 +403,7 @@ function init() {
                     </div>
 
                     <div class="consultation-info">
-                        <button class="view-profile-btn" onclick="event.stopPropagation(); viewDoctorProfile(${doctor.id})">
+                        <button class="view-profile-btn" onclick="viewDoctorProfile(${doctor.id})">
                             View Profile
                         </button>
                     </div>
@@ -426,9 +414,24 @@ function init() {
         }
 
         // View doctor profile
-        function viewDoctorProfile(doctorId) {
-            const doctor = doctorsData.find(d => d.id === doctorId);
+        function viewDoctorProfile(id) {
+
+            let doctor = doctorsData.find(x => x.id == id);
+
+            // Save doctor object to localStorage
+            localStorage.setItem("doctorData", JSON.stringify(doctor));
+
+            // Correct way to create anchor & trigger click
+            let anchor = document.createElement('a');
+            anchor.href = "./doctorsview.html#doc-details";
+            anchor.style.display = "none"; // hide anchor
+            document.body.appendChild(anchor);
+            anchor.click();
+            document.removeChild(anchor)
+
+            console.log(doctor);
         }
 
+
         // Initialize on load
-        init();
+        init(); 
