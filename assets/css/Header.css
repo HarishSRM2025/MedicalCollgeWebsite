@@ -121,7 +121,7 @@
 
     .sub-dropdown {
       top: 0;
-      left: 100%;
+      left: 97%;
       margin-left: 5px;
     }
 
@@ -369,7 +369,7 @@
     /* Top Bar */
 
      .top-bar {
-      background: var(--color-secondary);
+      background: var(--color-primary-dark);
       border-bottom: 1px solid var(--topbar-border);
       padding: 8px 0;
       width: 100%;
@@ -524,7 +524,7 @@
     }
 
     .quick-link.featured {
-      background: var(--color-secondary);
+      background: #000;
       color: #f0e04e;
       border-color: var(--color-secondary);
       font-weight: bolder;
