@@ -35,7 +35,7 @@ function loadDoctorData() {
             fileId = photoUrl.split("id=")[1];
         }
 
-        profileImg.src = `./assets/images/doctors/${doctorData["Contact Number"]}.jpg`
+        profileImg.src = `./assets/images/doctors/${doctorData["Contact Number"] == "9894489142" ? doctorData["Contact Number"]+".jpg" : doctorData["Contact Number"]+".JPG"}`
             
 
     } else {
