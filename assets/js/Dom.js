@@ -36,8 +36,6 @@
           <li class="has-dropdown" data-dropdown="academics">
             <a href="./academics.html">Academics <span class="arrow dropdown-trigger">&#9654;</span></a>
             <ul class="dropdown">
-              <li><a href="./pre-clinical.html">Pre Clinical</a></li>
-              <li><a href="./para-clinical.html">Para Clinical</a></li>
               <li class="has-submenu" data-submenu="courses">
                 <a href="./course.html">Courses<span class="arrow submenu-trigger">&#9654;</span></a>
                 <ul class="sub-dropdown">
@@ -46,6 +44,8 @@
                 </ul>
               </li>
               <li><a href="./programsandcourse.html">Programs & Course Outcomes</a></li>
+              <li><a href="./pre-clinical.html">Pre Clinical</a></li>
+              <li><a href="./para-clinical.html">Para Clinical</a></li>
               <li><a href="./library.html">Library</a></li>
               <li><a href="./academics.html#specialties">Medical Education Unit</a></li>
               <li><a href="./academics.html#examcell">Examination Cell</a></li>
@@ -63,10 +63,10 @@
                   <li><a href="./SurgerySuperSpecialties.html">Surgery & Super Specialties</a></li>
                 </ul>
               </li>
-              <li><a href="./doctors.html">Doctor</a></li>
+              <li><a href="./doctors.html">Doctors</a></li>
+              <li><a href="./bloodcamp.html">Blood Bank</a></li>
               <li><a href="./hospital.html#services">Supporting Services</a></li>
               <li><a href="./hospital.html#camps">Camps</a></li>
-              <li><a href="./bloodcamp.html">Blood Bank</a></li>
             </ul>
           </li>
           <li><a href="research.html">Research & Innovation</a></li>
