@@ -1,3 +1,44 @@
+    const topbar = `<div class="top-bar">
+    <div class="top-bar-wrapper">
+      <!-- Search Bar -->
+      <div class="search-container">
+        <input 
+          type="text" 
+          class="search-input" 
+          id="searchInput"
+          placeholder="Search pages, courses, departments..."
+          autocomplete="off"
+        >
+        <button class="search-btn" id="searchBtn" aria-label="Search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <div class="search-results" id="searchResults"></div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="quick-links">
+        <a href="./course.html" class="quick-link featured">
+          <svg class="quick-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
+          </svg>
+          Courses offered
+        </a>
+        <a href="tel:+919876543210" class="quick-link">
+          <svg class="quick-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+          </svg>
+          Admission
+        </a>
+        <a href="./aboutus.html#milestones" class="quick-link">
+          <svg class="quick-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+          </svg>
+          Accreditation
+        </a>
+      </div>
+    </div>
+  </div>`
+    
     const header=`<div class="nav-container">
     <div class="nav-wrapper">
       <div class="logo">
@@ -294,7 +335,7 @@
             }, { once: true });
         }
     })();
-
+    document.getElementById('topbar').innerHTML=topbar
     document.getElementById("header").innerHTML=header;
     document.getElementById("floatBtn").innerHTML=floatBtn;
     document.getElementById("footer").innerHTML=footer;
@@ -337,5 +378,96 @@
 });
 
 
+const pages = [
+      { title: 'Home', path: 'Home', url: 'index.html' },
+      { title: 'About Us', path: 'About Us', url: './aboutus.html' },
+      { title: 'Vision & Mission', path: 'About Us > Vision & Mission', url: './aboutus.html#vision' },
+      { title: 'Leadership', path: 'About Us > Leadership', url: './aboutus.html#leadership' },
+      { title: 'NAAC Accreditation', path: 'About Us > Milestones > NAAC', url: './aboutus.html#milestones' },
+      { title: 'Academics', path: 'Academics', url: './academics.html' },
+      { title: 'Under Graduate Courses', path: 'Academics > Courses > UG', url: './course.html#ug-courses' },
+      { title: 'Post Graduate Courses', path: 'Academics > Courses > PG', url: './course.html#pg-courses' },
+      { title: 'MBBS Program', path: 'Academics > Courses', url: './course.html' },
+      { title: 'Pre Clinical', path: 'Academics > Pre Clinical', url: './pre-clinical.html' },
+      { title: 'Para Clinical', path: 'Academics > Para Clinical', url: './para-clinical.html' },
+      { title: 'Library', path: 'Academics > Library', url: './library.html' },
+      { title: 'Medical Education Unit', path: 'Academics > MEU', url: './academics.html#specialties' },
+      { title: 'Hospital Services', path: 'Hospital Services', url: './hospital.html' },
+      { title: 'Medicine Specialties', path: 'Hospital > Departments > Medicine', url: './boardspecialties.html' },
+      { title: 'Surgery Specialties', path: 'Hospital > Departments > Surgery', url: './surgeryspecialties.html' },
+      { title: 'Doctors', path: 'Hospital > Doctors', url: './doctors.html' },
+      { title: 'Blood Bank', path: 'Hospital > Blood Bank', url: './bloodcamp.html' },
+      { title: 'Research & Innovation', path: 'Research', url: 'research.html' },
+      { title: 'Media & OutReach', path: 'Media', url: './media.html' },
+      { title: 'News & Events', path: 'Media > News & Events', url: './media.html#news' },
+      { title: 'Gallery', path: 'Media > Gallery', url: './media.html#gallery' },
+      { title: 'Video Gallery', path: 'Media > Video Gallery', url: './videogallery.html' },
+      { title: 'NMC Guidelines', path: 'NMC', url: '#' }
+    ];
 
-        
+    const searchInput = document.getElementById('searchInput');
+    const searchBtn = document.getElementById('searchBtn');
+    const searchResults = document.getElementById('searchResults');
+    const overlay = document.getElementById('overlay');
+
+    function performSearch(query) {
+      if (!query.trim()) {
+        searchResults.classList.remove('active');
+        return;
+      }
+
+      const results = pages.filter(page => 
+        page.title.toLowerCase().includes(query.toLowerCase()) ||
+        page.path.toLowerCase().includes(query.toLowerCase())
+      );
+
+      if (results.length > 0) {
+        searchResults.innerHTML = results.map(result => `
+          <div class="search-result-item" onclick="window.location.href='${result.url}'">
+            <div class="result-title">${result.title}</div>
+            <div class="result-path">${result.path}</div>
+          </div>
+        `).join('');
+      } else {
+        searchResults.innerHTML = '<div class="no-results">No results found</div>';
+      }
+
+      searchResults.classList.add('active');
+    }
+
+    searchInput.addEventListener('input', (e) => {
+      performSearch(e.target.value);
+    });
+
+    searchBtn.addEventListener('click', () => {
+      performSearch(searchInput.value);
+    });
+
+    searchInput.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') {
+        performSearch(searchInput.value);
+      }
+    });
+
+    // Close search results when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.search-container')) {
+        searchResults.classList.remove('active');
+      }
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const offcanvasMenu = document.getElementById('offcanvasMenu');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      offcanvasMenu.classList.toggle('active');
+      overlay.classList.toggle('active');
+    });
+
+    overlay.addEventListener('click', () => {
+      menuToggle.classList.remove('active');
+      offcanvasMenu.classList.remove('active');
+      overlay.classList.remove('active');
+    });
