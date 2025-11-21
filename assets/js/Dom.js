@@ -73,12 +73,12 @@
           <li class="has-dropdown" data-dropdown="media">
             <a href="./media.html">Media & OutReach <span class="arrow dropdown-trigger">&#9654;</span></a>
             <ul class="dropdown">
-              <li><a href="#">News & Events</a></li>
-              <li><a href="#">Social Media Feed</a></li>
-              <li><a href="#">Newsletter</a></li>
-              <li><a href="#">Gallery</a></li>
+              <li><a href="./media.html#news">News & Events</a></li>
+              <li><a href="./media.html#social">Social Media Feed</a></li>
+              <li><a href="./media.html#newsletter">Newsletter</a></li>
+              <li><a href="./media.html#gallery">Gallery</a></li>
+              <li><a href="./media.html#press">Press Releases</a></li>
               <li><a href="./videogallery.html">Video Gallery</a></li>
-              <li><a href="#">Press Releases</a></li>
             </ul>
           </li>
           <li><a href="#" class="nmc-nav">NMC</a></li>

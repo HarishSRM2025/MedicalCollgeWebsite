@@ -51,15 +51,10 @@ function loadDoctorData() {
     const expertise = doctorData['Key Areas of Expertise'];
     if (expertise) {
         const expertiseArray = expertise.split(/[,|/]/).map(i => i.trim());
-        const icons = [
-            'fa-user-md', 'fa-microscope', 'fa-heartbeat',
-            'fa-procedures', 'fa-pills', 'fa-syringe',
-            'fa-x-ray', 'fa-hospital', 'fa-stethoscope',
-            'fa-notes-medical'
-        ];
+      
         expertiseContainer.innerHTML = expertiseArray.map((exp, index) =>
             `<div class="doc-expertise-tag">
-                <i class="fas ${icons[index % icons.length]}"></i> ${exp}
+                 ${exp}
             </div>`
         ).join('');
     }
