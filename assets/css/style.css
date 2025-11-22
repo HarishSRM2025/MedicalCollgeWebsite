@@ -11,6 +11,7 @@
     --color-accent-pink-light: #ffd9ecb2;
     --color-accent-red: #f44336;
     --color-accent-red-light: #ff5252;
+    --color-accent-yellow-top: #ecb202;
     --color-accent-yellow: #ffc107;
     --color-accent-yellow-light: #fff4d49d;
     --color-gold: #cfbe25;
@@ -493,7 +494,7 @@ body {
    .admissions-section {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            background-color: #f8f8f8;
+            background-color: #ececec;
             /* max-width: 1400px; */
             width: 100%;
             margin: 0 auto;

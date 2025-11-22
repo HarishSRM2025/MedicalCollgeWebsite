@@ -526,17 +526,41 @@
     }
         
     .quick-link.featured {
-      background: #000;
-      color: #f0e04e;
+      background: #ffffff;
+      color: var(--color-primary);
       border-color: var(--color-secondary);
       font-weight: bolder;
     }
-
+    .quick-link:nth-child(3){
+      background:#da0d0d;
+      
+    }
+   .quick-link:nth-child(2){
+      background: var(--color-whatsapp-dark);
+    }
+    .quick-link:nth-child(4){
+      background: var(--color-accent-yellow-top);
+    }
    
-
     .quick-link-icon {
       width: 16px;
       height: 16px;
+      position: relative;
+    }
+    .quick-link:nth-child(2) .quick-link-icon,
+    .quick-link:nth-child(3) .quick-link-icon{
+      animation:icontb .348s infinite alternate ease-in-out;
+    }
+
+    @keyframes icontb {
+      from{
+        left:0;
+        transform:scale(1);
+      }
+      to{
+        left:-4px;
+        transform:scale(1.3);
+      }
     }
 
     
