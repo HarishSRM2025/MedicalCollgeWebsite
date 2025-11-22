@@ -2623,10 +2623,28 @@ h2 span{
 
 .specialty-card {
     background: white;
-    padding: 2rem;
+    /* padding: 2rem; */
     border-radius: 12px;
     box-shadow: 0 3px 15px rgba(0,0,0,0.08);
     transition: all 0.3s;
+    display: flex;
+    flex-direction: row;
+}
+.specialty-card div{
+    padding: 1rem;
+    overflow: hidden;
+}
+.specialty-card img{
+    max-width: 150px;
+    height: auto;
+    border-radius: 12px 0% 50% 12px;
+    transition: all 0.3s;
+}
+
+.specialty-card img:hover{
+    max-width: 150px;
+    height: auto;
+    border-radius: 12px 0% 0% 12px;
 }
 
 .specialty-grid .specialty-card:nth-child(1){
