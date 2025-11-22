@@ -531,14 +531,11 @@
       border-color: var(--color-secondary);
       font-weight: bolder;
     }
-    .quick-link:nth-child(3){
+    .quick-link:nth-child(2){
       background:#da0d0d;
       
     }
-   .quick-link:nth-child(2){
-      background: var(--color-whatsapp-dark);
-    }
-    .quick-link:nth-child(4){
+    .quick-link:nth-child(3){
       background: var(--color-accent-yellow-top);
     }
    
@@ -547,8 +544,7 @@
       height: 16px;
       position: relative;
     }
-    .quick-link:nth-child(2) .quick-link-icon,
-    .quick-link:nth-child(3) .quick-link-icon{
+    .quick-link:nth-child(2) .quick-link-icon{
       animation:icontb .348s infinite alternate ease-in-out;
     }
 
