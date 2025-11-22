@@ -204,28 +204,28 @@
                     "name": "EQUIP – Elevating Quality in Research, Publications, Patents, Copyright",
                     "icon": "fa-flask",
                     "event": "EQUIP – Elevating Quality in Research, Publications, Patents, Copyright",
-                    "path": "Biochemistry/1.PNG",
+                    "path": "Biochemistry/1.png",
                     "date": "28 Feb 2025"
                     },
                     {
                     "name": "Lab Technician Day 2025",
                     "icon": "fa-flask",
                     "event": "Lab Technician Day 2025",
-                    "path": "Biochemistry/2.PNG",
+                    "path": "Biochemistry/2.png",
                     "date": "22 Mar 2025"
                     },
                     {
                     "name": "Bio Blaze – 2025",
                     "icon": "fa-flask",
                     "event": "Bio Blaze – 2025",
-                    "path": "Biochemistry/3.PNG",
+                    "path": "Biochemistry/3.png",
                     "date": "19 Apr 2025"
                     },
                     {
                     "name": "Central Lab –Biochemistry Importance of Internal Quality Control Traning With CAPA",
                     "icon": "fa-flask",
                     "event": "Central Lab –Biochemistry Importance of Internal Quality Control Traning With CAPA",
-                    "path": "Biochemistry/4.PNG",
+                    "path": "Biochemistry/4.png",
                     "date": "19 Apr 2025"
                     }
                 ]
