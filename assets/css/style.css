@@ -489,6 +489,138 @@ body {
     from { opacity: 0; transform: translateX(-50px); }
     to { opacity: 1; transform: translateX(0); }
 }
+   
+   .admissions-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: #f8f8f8;
+            /* max-width: 1400px; */
+            width: 100%;
+            margin: 0 auto;
+            border-top: 1px solid #cfcfcf;
+            padding: 0;
+        }
+
+        .admission-card {
+            /* background-color: #fff; */
+            padding: 50px 140px;
+            /* border-radius: 8px; */
+            /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+            
+        }
+        .admission-card:nth-child(1){
+            border-right: 1px solid #cfcfcf;
+        }
+
+        .admission-card h2 {
+            font-size: 2rem;
+            color: #2d3e50;
+            margin-bottom: 20px;
+            line-height: 1.3;
+            font-weight: 600;
+        }
+
+        .admission-card p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .Admission-btn {
+            display: inline-block;
+            padding: 14px 35px;
+            background-color: #c9252d;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .Admission-btn:hover {
+            background-color: #a51e24;
+            transform: translateY(-2px);
+        }
+
+        .Admission-btn:active {
+            transform: translateY(0);
+        }
+
+        /* Tablet Styles */
+        @media (max-width: 968px) {
+            .admissions-section {
+                padding: 0px 50px;
+                gap: 30px;
+            }
+
+            .admission-card h2 {
+                font-size: 1.75rem;
+            }
+
+            .admission-card {
+                padding: 40px 30px;
+            }
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            .admissions-section {
+                grid-template-columns: 1fr;
+                padding: 30px 20px;
+                gap: 20px;
+            }
+
+            .admission-card {
+                padding: 35px 25px;
+            }
+            .admission-card:nth-child(1){
+                border-right: 0;
+                border-bottom: 1px solid #cfcfcf;
+            }
+            .admission-card h2 {
+                font-size: 1.5rem;
+                margin-bottom: 15px;
+            }
+
+            .admission-card p {
+                font-size: 0.95rem;
+                margin-bottom: 25px;
+            }
+
+            .Admission-btn {
+                padding: 12px 30px;
+                font-size: 0.95rem;
+            }
+        }
+
+        /* Small Mobile Styles */
+        @media (max-width: 480px) {
+            .admissions-section {
+                padding: 20px 15px;
+            }
+
+            .admission-card {
+                padding: 30px 20px;
+            }
+
+            .admission-card h2 {
+                font-size: 1.35rem;
+            }
+
+            .admission-card p {
+                font-size: 0.9rem;
+            }
+
+            .Admission-btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
 
 .hero-content h1 {
     font-size: var(--font-8xl);
