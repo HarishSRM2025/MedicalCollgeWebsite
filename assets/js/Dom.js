@@ -455,19 +455,3 @@ const pages = [
         searchResults.classList.remove('active');
       }
     });
-
-    // Mobile menu toggle
-    const menuToggle = document.getElementById('menuToggle');
-    const offcanvasMenu = document.getElementById('offcanvasMenu');
-
-    menuToggle.addEventListener('click', () => {
-      menuToggle.classList.toggle('active');
-      offcanvasMenu.classList.toggle('active');
-      overlay.classList.toggle('active');
-    });
-
-    overlay.addEventListener('click', () => {
-      menuToggle.classList.remove('active');
-      offcanvasMenu.classList.remove('active');
-      overlay.classList.remove('active');
-    });

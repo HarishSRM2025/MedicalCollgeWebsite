@@ -296,7 +296,7 @@
         function renderSidebar() {
             const menu = document.getElementById('sidebarMenu');
             menu.innerHTML = depts.map(d => `
-                <li><a href="#${d.id}" onclick="showDept('${d.id}');">
+                <li ><a href="#${d.id}" style="background-color:${d.color};color:#ffff"  onclick="showDept('${d.id}');">
                     <i class="fas ${d.icon}"></i> ${d.name}
                 </a></li>
             `).join('');
