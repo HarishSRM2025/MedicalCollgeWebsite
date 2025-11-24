@@ -2,22 +2,270 @@
         // Department data with comprehensive information
         const depts = [
             {
-                id: "general_surgery", name: "General Surgery", icon: `<i class="fas fa-scissors"></i>`, color: "#3558c9ff", colorDark: "#07268dff",
-                desc: "Comprehensive internal medicine care for all age groups.",
-                vision:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
-                mission:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
-                objectives:["Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro."],
-                infra: ["OPD rooms", "Inpatient wards", "ICU", "Procedure room"],
-                faculty: [{name: "Ram", designation: "Assistant professor", exp: "5"},{name: "Sam", designation: "Assistant professor", exp: "5"},{name: "John", designation: "Assistant professor", exp: "5"}],
-                services: ["General Consultation", "Diabetes Care", "Hypertension", "Infectious Diseases", "Respiratory Medicine", "Gastroenterology", "Cardiology", "Nephrology"],
-                pubStats: [{label: "Publications", value: "30+"}],
-                pubHighlights: ["Diabetes management"],
-                pubYearwise: [{year: "2023", title: "Diabetes protocols", journal: "Medicine Today", type: "Research"}],
-                research: ["Chronic disease management"],
-                events: ["World Diabetes Day"],
-                achievements: ["Best Medicine Dept"],
-                gallery: [{name: "OPD", icon: "fa-clinic-medical", event: "OPD", date: "Jan 2024"}]
-            },
+                "id": "generalsurgery",
+                "name": "General Surgery",
+                "icon": "fa-user-md",
+                "color": "#4caf50",
+                "colorDark": "#388e3c",
+
+                "desc": "The Department of General Surgery focuses on the diagnosis, pre-operative and post-operative management of a broad range of diseases and injuries, primarily in the abdomen, breasts, skin, soft tissues and endocrine system.",
+
+                "vision": [
+                    `
+                    <li>The Leading Provider of Complex Surgical care</li>
+                    <li>The Best performer in quality, safety, service and satisfaction</li>
+                    <li>An Integral Partner in the TSRMMCH & RC health system</li>
+                    <li>The Best academic department with the highest standard</li></ol>`
+                ],
+
+                "mission": "The Department of General Surgery contributes to the mission of the institution by upholding the highest standard of excellence in clinical care, education and research.",
+
+                "objectives": [
+                    "The primary objectives of the General Surgery Department are patient care, education and research.",
+                    "Deliver the highest standard of safe and comprehensive surgical care for a broad range of conditions.",
+                    "To train the next generation of competent surgeons and healthcare professionals.",
+                    "To advance surgical knowledge and improve patient outcomes globally through research."
+                ],
+
+                "infra_desc": "The department is equipped with dedicated clinical units and teaching facilities to support both academic and diagnostic activities, offering comprehensive care for various surgical conditions.",
+                "infra": [
+                    "Outpatient Department with reception & waiting area, consultation room, examination room, dressing room, minor procedure room, demo room with audio-visual aids",
+                    "In-Patient Ward with 8 surgical wards equipped with basic life-supporting facilities",
+                    "Endoscopy Suite equipped for UPPER GI Endoscopy & Colonoscopy",
+                    "Surgical ICU, Male Post-Operative Ward, Female Post-Operative Ward, Burns Ward",
+                    "Fully equipped operation theatre for open and laparoscopic surgeries",
+                    "Department library, seminar hall, museum, 8 demo rooms with audio-visual aids"
+                ],
+
+                "faculty": [
+                    {"name": "Dr.P.Karthick", "designation": "Professor & HOD", "exp": 17.4},
+                    {"name": "Dr.S.Padma", "designation": "Professor", "exp": 19.6},
+                    {"name": "Dr.T.Karunaharan", "designation": "Professor", "exp": 25.6},
+                    {"name": "Dr.C.Balamurugan", "designation": "Professor", "exp": 20.1},
+                    {"name": "Dr.A.Zahir Hussain", "designation": "Professor", "exp": 13.7},
+                    {"name": "Dr.S.K. Manoj", "designation": "Professor", "exp": 10.10},
+                    {"name": "Dr.T.K. Sowmya", "designation": "Professor", "exp": 12.8},
+                    {"name": "Dr.Solaimuthu Rajagobal", "designation": "Assistant Professor", "exp": 3.1},
+                    {"name": "Dr.DineshBabu S.G", "designation": "Assistant Professor", "exp": 2.1},
+                    {"name": "Dr.Ponprabu D.M", "designation": "Assistant Professor", "exp": 2},
+                    {"name": "Dr.Janardhan R", "designation": "Assistant Professor", "exp": 1.10},
+                    {"name": "Dr.Sivaseelan N", "designation": "Assistant Professor", "exp": 1.8},
+                    {"name": "Dr.Thivya K", "designation": "Assistant Professor", "exp": 2.3},
+                    {"name": "Dr.Vinoth Kumar P", "designation": "Assistant Professor", "exp": 2},
+                    {"name": "Dr.Divya", "designation": "Senior Resident", "exp": 0.7},
+                    {"name": "Dr.M. Akshaya", "designation": "Senior Resident", "exp": 0.5},
+                    {"name": "Dr.N.Sathish", "designation": "Senior Resident", "exp": 0.6},
+                    {"name": "Dr.Hema Bhargavi", "designation": "Senior Resident", "exp": 0.6},
+                    {"name": "Dr.R.Vignesh", "designation": "Senior Resident", "exp": 0.8}
+                ],
+
+                "services_desc": "The Department provides comprehensive diagnostic, surgical and post-operative services for conditions affecting the abdomen, digestive system, endocrine glands, breast, skin and soft tissues. It also provides trauma and emergency care.",
+                "services": [
+                    "Upper GI Endoscopy",
+                    "Colonoscopy",
+                    "ERCP",
+                    "Open Surgeries",
+                    "Laparoscopic Procedures",
+                    "Minimally Invasive Procedures"
+                ],
+
+                "publication_overview": "Faculty members actively publish research papers in national and international journals, contributing to advancements in the surgical field.",
+                "pubStats": [
+                    {"label": "Overall", "value": "19"},
+                    {"label": "International", "value": "19"},
+                    {"label": "National", "value": "0"}
+                ],
+
+                "pubYearwise": [
+                    {
+                    "year": "2023",
+                    "title": "Thickness of subcutaneous fat in the right iliac fossa as a predictor of surgical site infection in open appendicectomy – a single centre prospective study.",
+                    "journal": "International Surgery Journal",
+                    "type":"International"
+                    },
+                    {
+                    "year": "2023",
+                    "title": "Comparing the efficacy of vacuum assisted closure therapy with conventional dressing on wound healing in patients with diabetic foot ulcer.",
+                    "journal": "International Journal of Dental and Medical Sciences Research",
+                    "type":"International"
+                    },
+                    {
+                    "year": "2023",
+                    "title": "Clinical and histopathological characteristics of breast cancer and their epidemiological trends in Trichy, Tamilnadu.",
+                    "journal": "International Surgery Journal",
+                    "type":"International"
+                    },
+                    {
+                    "year": "2023",
+                    "title": "Comparative study of conventional dressing vs. topical heparin dressing in lower limb diabetic ulcers.",
+                    "journal": "International Surgery Journal",
+                    "type":"International"
+                    },
+                    {
+                    "year": "2023",
+                    "title": "A prospective study on vertical mattress suture and subcuticular suture skin closure techniques in inguinal hernia repair cases.",
+                    "journal": "International Surgery Journal",
+                    "type":"International"
+                    },
+                    {
+                    "year": "2023",
+                    "title": "A study of upper gastrointestinal endoscopy in patients presenting with dyspepsia.",
+                    "journal": "International Journal of Academic Medicine and Pharmacy",
+                    "type":"International"
+                    },
+                    {
+                    "year": "2023",
+                    "title": "A comparative prospective study on open and closed hemorrhoidectomy among 2nd and 3rd degree hemorrhoids.",
+                    "journal": "International Journal of Academic Medicine and Pharmacy",
+                    "type":"International"
+                    },
+                    {
+                    "year": "2023",
+                    "title": "Prevalence & pattern of inguinal hernia among adults.",
+                    "journal": "International Surgery Journal",
+                    "type":"International"
+                    },
+                    {
+                    "year": "2024",
+                    "title": "Evaluation of adherence to guidelines in antibiotic prophylaxis use in elective surgery.",
+                    "journal": "International Journal of Academic Medicine and Pharmacy",
+                    "type":"International"
+                    },
+                    {
+                    "year": "2024",
+                    "title": "Clinical and ultrasound examination and correlation with MRCP in gallstone disease.",
+                    "journal": "International Journal of Academic Medicine and Pharmacy",
+                    "type":"International"
+                    },
+                    {
+                    "year": "2024",
+                    "title": "Pattern of injuries and findings in blunt injury abdomen: a prospective study.",
+                    "journal": "International Journal of Academic Medicine and Pharmacy",
+                    "type":"International"
+                    },
+                    {
+                    "year": "2024",
+                    "title": "Comparison between skin suture and stapler approximation of skin in surgical incision.",
+                    "journal": "International Journal of Academic Medicine and Pharmacy",
+                    "type":"International"
+                    },
+                    {
+                    "year": "2024",
+                    "title": "Health education to prevent foot ulcers in diabetic patients.",
+                    "journal": "International Journal of Academic Medicine and Pharmacy",
+                    "type":"International"
+                    },
+                    {
+                    "year": "2024",
+                    "title": "Serum lactate and sodium in predicting severity and prognosis in necrotizing soft tissue infection.",
+                    "journal": "International Journal of Academic Medicine and Pharmacy",
+                    "type":"International"
+                    },
+                    {
+                    "year": "2024",
+                    "title": "Comparison of Centchroman, tamoxifen & evening primrose oil in regression of mastalgia.",
+                    "journal": "International Journal of Academic Medicine and Pharmacy",
+                    "type":"International"
+                    },
+                    {
+                    "year": "2025",
+                    "title": "Quality of life assessment in carcinoma breast patients after adjuvant chemotherapy.",
+                    "journal": "International Journal of Academic Medicine and Pharmacy",
+                    "type":"International"
+                    },
+                    {
+                    "year": "2025",
+                    "title": "Pattern of lower gastrointestinal diseases by colonoscopy in bleeding per rectum.",
+                    "journal": "International Journal of Academic Medicine and Pharmacy",
+                    "type":"International"
+                    },
+                    {
+                    "year": "2025",
+                    "title": "Rouviere’s Sulcus: A companion for safe laparoscopic cholecystectomy.",
+                    "journal": "International Journal of Academic Medicine and Pharmacy",
+                    "type":"International"
+                    },
+                    {
+                    "year": "2025",
+                    "title": "Outcome of lower limb varicose vein surgeries – A clinical study.",
+                    "journal": "International Journal of Academic Medicine and Pharmacy",
+                    "type":"International"
+                    }
+                ],
+
+                "research_desc": "The department encourages clinical and basic research with multidisciplinary collaboration.",
+                "research": [
+                    "22 ongoing research projects across various fields of surgery.",
+                    "Cholecystectomy, hernia repair, breast surgery research.",
+                    "Studies focusing on clinical patterns & management outcomes.",
+                    "Advanced wound care and dressing technique evaluations.",
+                    "Strengthening evidence-based surgical practice.",
+                    "Faculty and residents regularly contribute to clinical studies."
+                ],
+
+                "events_desc": "The Department conducts regular academic and community outreach programs.",
+                "events": [
+                    "UG & PG Surgical Skill Course Workshop",
+                    "SURGIBASE-2025 – CRMI Basic Skill Training Programme",
+                    "UG-RAPISURG-2025",
+                    "PG-RAPISURG-2025",
+                    "PG-Bowel Anastomosis & Endotrainer – Hands-On Workshop 2025",
+                    "PINK OCTOBER-2025 – Breast Cancer Awareness Programme",
+                    "Academy of Surgery Science – PG Integrated Teaching",
+                    "OPSURG-2025",
+                    "UG & PG Medal Exam"
+                ],
+
+                "achievements_desc": "Recognition and awards for excellence in surgical care and training.",
+                "achievements": [
+                    "PG student received the ‘Top Notch’ Award in Advanced Laparoscopic Surgical Skill Course (CATALYST) by Kavery Hospital, Trichy."
+                ],
+
+                "gallery": [
+                    {
+                    "name": "UG & PG Surgical Skill Course Workshop",
+                    "icon": "fa-image",
+                    "event": "Surgery Department",
+                    "path": "General_Surgery/1.jpg",
+                    "date": "25 Apr 2025 – 26 Apr 2025"
+                    },
+                    {
+                    "name": "SURGIBASE-2025 – CRMI Basic Skill Training Programme",
+                    "icon": "fa-image",
+                    "event": "Surgery Department",
+                    "path": "General_Surgery/2.jpg",
+                    "date": "31 Jul 2025"
+                    },
+                    {
+                    "name": "PG-RAPISURG-2025",
+                    "icon": "fa-image",
+                    "event": "Surgery Department",
+                    "path": "General_Surgery/3.jpg",
+                    "date": "18 Aug 2025 – 20 Aug 2025"
+                    },
+                    {
+                    "name": "PG-Bowel Anastomosis & Endotrainer Workshop 2025",
+                    "icon": "fa-image",
+                    "event": "Surgery Department",
+                    "path": "General_Surgery/4.jpg",
+                    "date": "18 Sep 2025"
+                    },
+                    {
+                    "name": "PINK OCTOBER-2025 – Breast Cancer Awareness Programme",
+                    "icon": "fa-image",
+                    "event": "Surgery Department",
+                    "path": "General_Surgery/5.jpg",
+                    "date": "31 Oct 2025"
+                    },
+                    {
+                    "name": "Academy of Surgery Science – PG Integrated Teaching",
+                    "icon": "fa-image",
+                    "event": "Surgery Department",
+                    "path": "General_Surgery/6.jpg",
+                    "date": "15 Nov 2025"
+                    }
+                ]
+                },
             {
                 id: "orthopaedics", name: "Orthopaedicse", icon:`<i class="material-symbols-outlined">foot_bones</i>`, color: "#27ae60", colorDark: "#229954",
                 desc: "Comprehensive internal medicine care for all age groups.",
@@ -146,333 +394,4 @@
             }
         ];
 
-        let currentDept = null;
-
-        document.addEventListener('DOMContentLoaded', function() {
-            renderSidebar();
-            showDept(depts[0].id);
-        });
-
-        function renderSidebar() {
-            const menu = document.getElementById('sidebarMenu');
-            menu.innerHTML = depts.map(d => `
-                <li><a href="#${d.id}" onclick="showDept('${d.id}');">
-                    ${d.icon} ${d.name}
-                </a></li>
-            `).join('');
-        }
-
-        function showDept(id) {
-            const d = depts.find(x => x.id === id);
-            if (!d) return;
-            
-            currentDept = id;
-            
-            const det = document.getElementById('departmentDetail');
-            det.classList.remove('hidden');
-            det.classList.add('active');
-            
-            updateSidebarActive(id);
-            renderDetail(d);
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-
-        function updateSidebarActive(id) {
-            document.querySelectorAll('.sidebar-nav a').forEach(a => a.classList.remove('active'));
-            const d = depts.find(x => x.id === id);
-            if (d) {
-                document.querySelectorAll('.sidebar-nav a').forEach(a => {
-                    if (a.textContent.trim().includes(d.name)) a.classList.add('active');
-                });
-            }
-        }
-
-        function renderDetail(d) {
-            const container = document.getElementById('departmentDetail');
-            container.style.setProperty('--dept-color', d.color);
-            container.style.setProperty('--dept-color-dark', d.colorDark);
-            
-            let html = `
-                <div class="detail-header" id="${d.id}">
-                    <div class="detail-header-content">
-                        <h2>
-                            <div class="icon-large">${d.icon}</div>
-                            ${d.name}
-                        </h2>
-                        <p>${d.desc}</p>
-                    </div>
-                </div>
-            `;
-            if (d.vision) {
-                html += `
-                    <div class="accordion-section">
-                        <div class="accordion-header" onclick="toggleAccordion(this)">
-                            <div class="accordion-title"><i class="fas fa-bullseye"></i> Vision & Mission</div>
-                            <i class="fas fa-chevron-down accordion-icon"></i>
-                        </div>
-                        <div class="accordion-content">
-                            <div class="accordion-body">
-                               <h4>Vision</h4>
-                                <br>
-                                <ul>${d.vision}</ul>
-                                <br><br>
-                                <h4>Nission</h4>
-                                <br>
-                                <ul>${d.mission}</ul>
-                                <br><br>
-                                <h4>Objectives</h4>
-                                <br>
-                                <ul>${d.objectives.map(f => `<li>${f}</li>`).join('')}</ul>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            }
-            
-
-            if (d.infra) {
-                html += `
-                    <div class="accordion-section">
-                        <div class="accordion-header" onclick="toggleAccordion(this)">
-                            <div class="accordion-title"><i class="fas fa-hospital"></i> Infrastructure</div>
-                            <i class="fas fa-chevron-down accordion-icon"></i>
-                        </div>
-                        <div class="accordion-content">
-                            <div class="accordion-body">
-                                <p>State-of-the-art facilities ensuring highest standards of patient care.</p>
-                                <ul>${d.infra.map(f => `<li>${f}</li>`).join('')}</ul>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            }
-            if (d.faculty) {
-                html += `
-                    <div class="accordion-section">
-                        <div class="accordion-header" onclick="toggleAccordion(this)">
-                            <div class="accordion-title"><i class="fas fa-users"></i> Faculty</div>
-                            <i class="fas fa-chevron-down accordion-icon"></i>
-                        </div>
-                        <div class="accordion-content">
-                            <div class="accordion-body">
-                                <p>State-of-the-art facilities ensuring highest standards of patient care.</p>
-                                ${d.faculty ? `
-                                        <div class="publication-table-wrapper">
-                                            <table class="publication-table">
-                                                <thead>
-                                                    <tr>
-                                                        <th style="width: 10%">S.No</th>
-                                                        <th style="width: 30%">Name of the Faculty</th>
-                                                        <th style="width: 40%">Designation</th>
-                                                        <th style="width: 20%">Experience</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    ${d.faculty.map((p,i) => `
-                                                        <tr>
-                                                            <td data-label="S.No">${i+1}</td>
-                                                            <td data-label="Name of the Faculty"><strong>${p.name}</strong></td>
-                                                            <td data-label="Designation">${p.designation}</td>
-                                                            <td data-label="Experience"><span class="year-badge">${p.exp}+ Yrs</span></td>
-                                                        </tr>
-                                                    `).join('')}
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    ` : '<p>Year-wise publication data will be updated soon.</p>'}
-                            </div>
-                        </div>
-                    </div>
-                `;
-            }
-            
-            if (d.services) {
-                html += `
-                    <div class="accordion-section">
-                        <div class="accordion-header" onclick="toggleAccordion(this)">
-                            <div class="accordion-title"><i class="fas fa-hand-holding-medical"></i> Services</div>
-                            <i class="fas fa-chevron-down accordion-icon"></i>
-                        </div>
-                        <div class="accordion-content">
-                            <div class="accordion-body">
-                                <p>Comprehensive healthcare services catering to all needs.</p>
-                                <ul>${d.services.map(s => `<li>${s}</li>`).join('')}</ul>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            }
-            
-            if (d.pubStats) {
-                html += `
-                    <div class="accordion-section">
-                        <div class="tabs-header" onclick="toggleAccordion(this)">
-                            <div class="accordion-title"><i class="fas fa-book-medical"></i> Publications</div>
-                            <i class="fas fa-chevron-down tabs-expand-icon"></i>
-                        </div>
-                        <div class="tabs-body">
-                            <div class="tabs-content-wrapper">
-                                <div class="tabs-nav">
-                                    <button class="tab-button active" onclick="switchTab(event, 'overview-${d.id}')">Overview</button>
-                                    <button class="tab-button" onclick="switchTab(event, 'yearwise-${d.id}')">Year-wise</button>
-                                </div>
-                                
-                                <div id="overview-${d.id}" class="tab-content active">
-                                    <p>Significant contributions to medical literature and research.</p>
-                                    <div class="stats-grid">
-                                        ${d.pubStats.map(s => `
-                                            <div class="stat-card">
-                                                <h4>${s.value}</h4>
-                                                <p>${s.label}</p>
-                                            </div>
-                                        `).join('')}
-                                    </div>
-                                    ${d.pubHighlights ? `
-                                        <h4 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--color-text-primary);">Key Research Highlights</h4>
-                                        <ul class="accordion-body" style="padding: 0;list-style:none;">
-                                            ${d.pubHighlights.map(p => `<li>${p}</li>`).join('')}
-                                        </ul>
-                                    ` : ''}
-                                </div>
-                                
-                                <div id="yearwise-${d.id}" class="tab-content">
-                                    ${d.pubYearwise ? `
-                                        <div class="publication-table-wrapper">
-                                            <table class="publication-table">
-                                                <thead>
-                                                    <tr>
-                                                        <th style="width: 10%">Year</th>
-                                                        <th style="width: 45%">Title</th>
-                                                        <th style="width: 30%">Journal</th>
-                                                        <th style="width: 15%">Type</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    ${d.pubYearwise.map(p => `
-                                                        <tr>
-                                                            <td data-label="Year"><span class="year-badge">${p.year}</span></td>
-                                                            <td data-label="Title"><strong>${p.title}</strong></td>
-                                                            <td data-label="Journal">${p.journal}</td>
-                                                            <td data-label="Type"><span class="year-badge">${p.type}</span></td>
-                                                        </tr>
-                                                    `).join('')}
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    ` : '<p>Year-wise publication data will be updated soon.</p>'}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            }
-            
-            if (d.research) {
-                html += `
-                    <div class="accordion-section">
-                        <div class="accordion-header" onclick="toggleAccordion(this)">
-                            <div class="accordion-title"><i class="fas fa-microscope"></i> Research</div>
-                            <i class="fas fa-chevron-down accordion-icon"></i>
-                        </div>
-                        <div class="accordion-content">
-                            <div class="accordion-body">
-                                <p>Cutting-edge research advancing medical science.</p>
-                                <ul>${d.research.map(r => `<li>${r}</li>`).join('')}</ul>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            }
-            
-            if (d.events) {
-                html += `
-                    <div class="accordion-section">
-                        <div class="accordion-header" onclick="toggleAccordion(this)">
-                            <div class="accordion-title"><i class="fas fa-calendar-alt"></i> Events</div>
-                            <i class="fas fa-chevron-down accordion-icon"></i>
-                        </div>
-                        <div class="accordion-content">
-                            <div class="accordion-body">
-                                <p>Regular conferences, training programs, and awareness campaigns.</p>
-                                <ul>${d.events.map(e => `<li>${e}</li>`).join('')}</ul>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            }
-            
-            if (d.achievements) {
-                html += `
-                    <div class="accordion-section">
-                        <div class="accordion-header" onclick="toggleAccordion(this)">
-                            <div class="accordion-title"><i class="fas fa-trophy"></i> Achievements</div>
-                            <i class="fas fa-chevron-down accordion-icon"></i>
-                        </div>
-                        <div class="accordion-content">
-                            <div class="accordion-body">
-                                <p>Recognition and awards for excellence in healthcare.</p>
-                                <ul>${d.achievements.map(a => `<li>${a}</li>`).join('')}</ul>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            }
-            
-            if (d.gallery) {
-                html += `
-                    <div class="accordion-section">
-                        <div class="accordion-header" onclick="toggleAccordion(this)">
-                            <div class="accordion-title"><i class="fas fa-images"></i> Gallery</div>
-                            <i class="fas fa-chevron-down accordion-icon"></i>
-                        </div>
-                        <div class="accordion-content">
-                            <div class="accordion-body">
-                                <p>Visual documentation of our facilities, events, and achievements.</p>
-                                <div class="gallery-grid">
-                                    ${d.gallery.map(img => `
-                                        <div class="gallery-item">
-                                            <div class="gallery-placeholder">
-                                                <i class="fas ${img.icon}"></i>
-                                                <span>${img.name}</span>
-                                            </div>
-                                            <div class="gallery-overlay">
-                                                <div class="gallery-overlay-title">${img.event}</div>
-                                                <div class="gallery-overlay-date"><i class="fas fa-calendar"></i> ${img.date}</div>
-                                            </div>
-                                        </div>
-                                    `).join('')}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            }
-            
-            container.innerHTML = html;
-        }
-
-        
-
-    function toggleAccordion(header) {
-            const isActive = header.classList.contains('active');
-            
-            // Close all accordions (including publications)
-            document.querySelectorAll('.accordion-header, .tabs-header').forEach(h => {
-                h.classList.remove('active');
-                h.nextElementSibling.classList.remove('active');
-            });
-            
-            // If the clicked accordion wasn't active, open it
-            if (!isActive) {
-                header.classList.add('active');
-                header.nextElementSibling.classList.add('active');
-            }
-        }
-
-        function switchTab(event, tabId) {
-            const container = event.target.closest('.tabs-content-wrapper');
-            container.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
-            container.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
-            event.target.classList.add('active');
-            document.getElementById(tabId).classList.add('active');
-        }
+       

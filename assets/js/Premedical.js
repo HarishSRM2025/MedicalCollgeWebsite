@@ -2,28 +2,176 @@
         // Department data with comprehensive information
         const depts = [
             {
-                id: "Anatomy", name: "Anatomy", icon: "fa-person", color: "#e74c3c", colorDark: "#c0392b",
-                desc: "Expert care for skin, hair, and nail conditions with advanced cosmetic dermatology services.",
-                vision:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
-                mission:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
-                objectives:["Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro."],
-                infra: ["OPD rooms", "Inpatient wards", "ICU", "Procedure room"],
-                faculty: [{name: "Ram", designation: "Assistant professor", exp: "5"},{name: "Sam", designation: "Assistant professor", exp: "5"},{name: "John", designation: "Assistant professor", exp: "5"}],
-                services: ["General Dermatology", "Cosmetic Dermatology", "Laser Treatments", "Hair Restoration", "Acne Treatment", "Psoriasis Care", "Vitiligo Treatment", "Chemical Peels"],
-                pubStats: [{label: "Publications", value: "28+"}, {label: "International", value: "12+"}],
-                pubHighlights: ["Advances in psoriasis treatment", "Laser therapy in acne scars", "Novel vitiligo treatments"],
-                pubYearwise: [
-                    {year: "2024", title: "Biologic therapy in psoriasis", journal: "Dermatology International", type: "Research"},
-                    {year: "2023", title: "Fractional CO2 laser in acne scars", journal: "Aesthetic Dermatology", type: "Clinical Study"}
+                "id": "anatomy",
+                "name": "Anatomy",
+                "icon": "fa-person", 
+                "color": "#e74c3c", 
+                "colorDark": "#c0392b",
+                "desc": "The Department of Anatomy is passionate about teaching and advancing the understanding of human structure and development, aiming to provide in-depth knowledge of all subdivisions of Human Anatomy. This foundation supports meaningful application in clinical practice, research and related scientific fields.",
+
+                "vision": "To make the students acquire scientific knowledge about the structure of the human body to be used in the academic and research activities and its application in clinical practice.",
+
+                "mission": [
+                    "To provide comprehensive knowledge of Gross Anatomy, Microscopic structure and Development of the human body.",
+                    "To provide an anatomical basis for understanding the clinical correlation of different organ systems and its application in research activities."
                 ],
-                research: ["Novel vitiligo treatments", "Laser therapy advances", "Immunotherapy in skin diseases"],
-                events: ["Skin Cancer Screening Camp", "World Psoriasis Day"],
-                achievements: ["Excellence in Cosmetic Dermatology"],
-                gallery: [
-                    {name: "Consultation Room", icon: "fa-stethoscope", event: "Derma OPD", date: "Jan 20, 2024"},
-                    {name: "Laser Unit", icon: "fa-bolt", event: "Laser Therapy Center", date: "Feb 14, 2024"}
+
+                "objectives": [
+                    "Describe the macroscopic and microscopic features of various organs of the human body.",
+                    "Define the basic embryological processes associated with development of the various components and systems of the human body.",
+                    "Identify the osteology of the human skeleton in both the gross specimen and through medical imaging.",
+                    "Correlate the anatomical knowledge in clinical practice.",
+                    "Demonstrate professional and ethical behavior."
+                ],
+
+                "infra_desc": "The department is fully equipped to support excellence in academics and research.",
+                "infra": [
+                    "Dissection hall with cadaver storage facilities",
+                    "Histology lab with microscopy units and tissue processing facilities",
+                    "Neurology laboratory with diverse neurology specimens",
+                    "Research laboratory",
+                    "Museum with rich human dissected specimen collection",
+                    "Department library with diverse books",
+                    "Demonstration Rooms with audio visual system (90 students capacity)"
+                ],
+
+                "faculty_desc": "A dedicated team of teaching faculty supports and guides students in their pursuit of academic excellence and research.",
+                "faculty": [
+                    { "name": "Dr.C.Gnanavelraja", "designation": "Professor & HOD", "exp": "18" },
+                    { "name": "Dr.M.Sivakumar", "designation": "Professor", "exp": "24" },
+                    { "name": "Dr.E.Kamala", "designation": "Professor", "exp": "16" },
+                    { "name": "Dr.R.Arjun", "designation": "Professor", "exp": "11" },
+                    { "name": "Dr.S.Sundari", "designation": "Associate Professor", "exp": "10" },
+                    { "name": "Dr.P.Veena lakshmi", "designation": "Associate Professor", "exp": "6" },
+                    { "name": "Dr.K.N.Manju shree", "designation": "Assistant Professor", "exp": "1" },
+                    { "name": "Mr.M.Veeramuthu", "designation": "Assistant Professor", "exp": "13" },
+                    { "name": "Dr.Joselyn poogodi", "designation": "Senior Resident", "exp": "0.5" }
+                ],
+
+                "services_desc": "The department provides a strong foundation in knowledge about human body structure, preparing students to excel in clinical practice and research.",
+                "services": [
+                    "Lectures and demonstrations on macroscopic and microscopic features of organs",
+                    "Teaching basic embryological developmental processes",
+                    "Training in osteology of human skeleton and radiological imaging",
+                    "Clinical correlation of anatomical knowledge",
+                    "Professional and ethical behavior training",
+                    "Active contribution to basic science research"
+                ],
+
+                "publication_overview": "The faculty members of the department have contributed various publications in national and international journals.",
+                "pubStats": [
+                    { "label": "Overall", "value": "4" },
+                    { "label": "International", "value": "4" },
+                    { "label": "National", "value": "0" }
+                ],
+
+                "pubHighlights": [
+                    "E-Learning platform in formative assessment",
+                    "Variations of coeliac trunk"
+                ],
+
+                "pubYearwise": [
+                    {
+                    "year": "2024",
+                    "title": "Role of E-learning Platform in Formative Assessment of Undergraduate Students",
+                    "journal": "International Journal of Health Sciences and Research",
+                    "type": "International"
+                    },
+                    {
+                    "year": "2024",
+                    "title": "Study of Efficacy of a Novel Formative Assessment Tool: Keywords Recall",
+                    "journal": "Cureus 16(9): e69881",
+                    "type": "International"
+                    },
+                    {
+                    "year": "2025",
+                    "title": "Stakeholders' Perceptions of Medical Leadership in Indian Medical Schools: A Thematic Analysis",
+                    "journal": "Cureus 17(3): e81375",
+                    "type": "International"
+                    },
+                    {
+                    "year": "2025",
+                    "title": "Variations in the Origin and Branching Pattern of Celiac Trunk in Cadavers of South India",
+                    "journal": "International Journal of Pharmaceutical Quality Assurance",
+                    "type": "International"
+                    }
+                ],
+
+                "research_desc": "The department has contributed to research in various fields related to anatomy.",
+                "research": [
+                    "Human pancreatic islets dimension and its impact on beta cells in Indian population",
+                    "Significance of dermatoglyphics pattern in carcinoma of mammary glands with micronucleus assay",
+                    "Anatomy and its variants of Osteomeatal complex",
+                    "Exploring reflective writing among undergraduate medical educators"
+                ],
+
+                "events_desc": "The department has hosted events to expose students to various areas of anatomy and extracurricular skills.",
+                "events": [
+                    "Medal exam for undergraduate Ist MBBS",
+                    "World Anatomy Day 2025",
+                    "Academic Extravaganza",
+                    "Anatomy CME 2025 – “Virtopsy Unlocked”"
+                ],
+
+                "achievements_desc": "The department continues to gain recognition for its contributions, student success, and academic excellence.",
+                "achievements": [
+                    "AASAAN’24 award to Dr.C.Gnanavelraja by IMA Tamil Nadu",
+                    "Distinguished Teacher of Anatomy award to Dr.M.Sivakumar by SOCA 2023",
+                    "Doctors Day Excellence Award 2025 by IMA SRM Irungalur",
+                    "Certificate of Appreciation for MED-AI-THON 2025 organization"
+                ],
+
+                "gallery": [
+                    { 
+                      "name": "TAAP24 - CME", 
+                      "event": "Anatomy", 
+                      "path": "Anatomy/1.jpg", 
+                      "date": "June 2024" 
+                    },
+                    { 
+                      "name": "Academic Extravaganza", 
+                      "event": "Anatomy", 
+                      "path": "Anatomy/2.jpg", 
+                      "date": "Oct 2024" 
+                    },
+                    { 
+                      "name": "Medal exam for Ist MBBS", 
+                      "event": "Anatomy", 
+                      "path": "Anatomy/3.jpg", 
+                      "date": "Sep 2025" 
+                    },
+                    { 
+                      "name": "World Anatomy Day", 
+                      "event": "Anatomy", 
+                      "path": "Anatomy/4.jpg", 
+                      "date": "Oct 2025" 
+                    },
+                    { 
+                      "name": "Anatomy CME – Virtopsy Unlocked", 
+                      "event": "Anatomy", 
+                      "path": "Anatomy/5.jpg", 
+                      "date": "29 Nov 2025" 
+                    },
+                    { 
+                      "name": "SOCA Award", 
+                      "event": "Anatomy", 
+                      "path": "Anatomy/6.jpg", 
+                      "date": "Feb 2023" 
+                    },
+                    { 
+                      "name": "AASAAN Award", 
+                      "event": "Anatomy", 
+                      "path": "Anatomy/7.jpg", 
+                      "date": "Sep 2024" 
+                    },
+                    { 
+                      "name": "Doctors Day Excellence Award", 
+                      "event": "Anatomy", 
+                      "path": "Anatomy/8.jpg", 
+                      "date": "2025"
+                    }
                 ]
-            },
+                },
             {
                 id: "Physiology", name: "Physiology", icon: "fa-heart-pulse", color: "#673ab7", colorDark: "#512da8",
                 desc: "Comprehensive mental health services with counseling and therapy.",
@@ -120,55 +268,55 @@
                     "year": "2025",
                     "title": "Factors determining the yield of lymph node in colorectal carcinoma: a cross sectional study from a tertiary care hospital",
                     "journal": "Journal of Clinical and Diagnostic Research",
-                    "type": "International journal"
+                    "type": "International"
                     },
                     {
                     "year": "2025",
                     "title": "Comparison of sodium and potassium values in arterial and venous blood samples",
                     "journal": "MGM Journal of Medical Science",
-                    "type": "International journal"
+                    "type": "International"
                     },
                     {
                     "year": "2025",
                     "title": "Screening of TPO Gene A2173C Polymorphism and Thyroperoxidase Antibodies in Subclinical Hypothyroidism",
                     "journal": "International Journal of Academic Medicine and Pharmacy",
-                    "type": "International journal"
+                    "type": "International"
                     },
                     {
                     "year": "2025",
                     "title": "Influence of hypothyroidism in serum calcium levels in postmenopausal women",
                     "journal": "Journal of Indian Medical Association",
-                    "type": "National journal"
+                    "type": "National"
                     },
                     {
                     "year": "2025",
                     "title": "Correlation of Atherogenic Index of Plasma and Castelli Risk Indices with HbA1c in Type II Diabetes Mellitus Patients",
                     "journal": "International Journal of Medicine and Public Health",
-                    "type": "International journal"
+                    "type": "International"
                     },
                     {
                     "year": "2023",
                     "title": "Relationship Between Depression and Thyroid Dysfunction in Patients Attending a Tertiary Care Hospital",
                     "journal": "International Journal of Pharmaceutical and Clinical Research",
-                    "type": "International journal"
+                    "type": "International"
                     },
                     {
                     "year": "2023",
                     "title": "Assessment of Nutritional Risk Index and Prevalence of Malnutrition in Elderly Hospitalized Patients: A Prospective Study",
                     "journal": "International Journal of Pharmaceutical and Clinical Research",
-                    "type": "International journal"
+                    "type": "International"
                     },
                     {
                     "year": "2021",
                     "title": "Evaluation of Serum Cholinesterase Levels Among Farm Workers Exposed to Chemical Pesticides",
                     "journal": "International Journal of Medical Science and Applied Research",
-                    "type": "International journal"
+                    "type": "International"
                     },
                     {
                     "year": "2020",
                     "title": "A Study on C-Reactive Protein and Liver Function Test in RT-PCR Positive COVID-19 Patients – A Retrospective Study",
                     "journal": "International Journal of Current Research and Review",
-                    "type": "International journal"
+                    "type": "International"
                     }
                 ],
 
@@ -231,335 +379,3 @@
                 ]
             }
         ];
-
-        let currentDept = null;
-
-        document.addEventListener('DOMContentLoaded', function() {
-            renderSidebar();
-            showDept(depts[0].id);
-        });
-
-        function renderSidebar() {
-            const menu = document.getElementById('sidebarMenu');
-            menu.innerHTML = depts.map(d => `
-                <li><a href="#${d.id}" onclick="showDept('${d.id}');">
-                    <i class="fas ${d.icon}"></i> ${d.name}
-                </a></li>
-            `).join('');
-        }
-
-        function showDept(id) {
-            const d = depts.find(x => x.id === id);
-            if (!d) return;
-            
-            currentDept = id;
-            
-            const det = document.getElementById('departmentDetail');
-            det.classList.remove('hidden');
-            det.classList.add('active');
-            
-            updateSidebarActive(id);
-            renderDetail(d);
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-
-        function updateSidebarActive(id) {
-            document.querySelectorAll('.sidebar-nav a').forEach(a => a.classList.remove('active'));
-            const d = depts.find(x => x.id === id);
-            if (d) {
-                document.querySelectorAll('.sidebar-nav a').forEach(a => {
-                    if (a.textContent.trim().includes(d.name)) a.classList.add('active');
-                });
-            }
-        }
-
-        function renderDetail(d) {
-            const container = document.getElementById('departmentDetail');
-            container.style.setProperty('--dept-color', d.color);
-            container.style.setProperty('--dept-color-dark', d.colorDark);
-            
-            let html = `
-                <div class="detail-header" id="${d.id}">
-                    <div class="detail-header-content">
-                        <h2>
-                            <div class="icon-large"><i class="fas ${d.icon}"></i></div>
-                            ${d.name}
-                        </h2>
-                        <p>${d.desc}</p>
-                    </div>
-                </div>
-            `;
-            if (d.vision) {
-                html += `
-                    <div class="accordion-section">
-                        <div class="accordion-header" onclick="toggleAccordion(this)">
-                            <div class="accordion-title"><i class="fas fa-bullseye"></i> Vision & Mission</div>
-                            <i class="fas fa-chevron-down accordion-icon"></i>
-                        </div>
-                        <div class="accordion-content">
-                            <div class="accordion-body">
-                                <h4>Vision</h4>
-                                <br>
-                                <ul>${d.vision}</ul>
-                                <br><br>
-                                <h4>Nission</h4>
-                                <br>
-                                <ul>${d.mission}</ul>
-                                <br><br>
-                                <h4>Objectives</h4>
-                                <br>
-                                <ul>${d.objectives.map(f => `<li>${f}</li>`).join('')}</ul>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            }
-
-            if (d.infra) {
-                html += `
-                    <div class="accordion-section">
-                        <div class="accordion-header" onclick="toggleAccordion(this)">
-                            <div class="accordion-title"><i class="fas fa-hospital"></i> Infrastructure</div>
-                            <i class="fas fa-chevron-down accordion-icon"></i>
-                        </div>
-                        <div class="accordion-content">
-                            <div class="accordion-body">
-                                <p>State-of-the-art facilities ensuring highest standards of patient care.</p>
-                                <ul>${d.infra.map(f => `<li>${f}</li>`).join('')}</ul>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            }
-            
-            if (d.faculty) {
-                html += `
-                    <div class="accordion-section">
-                        <div class="accordion-header" onclick="toggleAccordion(this)">
-                            <div class="accordion-title"><i class="fas fa-users"></i> Faculty</div>
-                            <i class="fas fa-chevron-down accordion-icon"></i>
-                        </div>
-                        <div class="accordion-content">
-                            <div class="accordion-body">
-                                <p>State-of-the-art facilities ensuring highest standards of patient care.</p>
-                                ${d.faculty ? `
-                                        <div class="publication-table-wrapper">
-                                            <table class="publication-table">
-                                                <thead>
-                                                    <tr>
-                                                        <th style="width: 10%">S.No</th>
-                                                        <th style="width: 30%">Name of the Faculty</th>
-                                                        <th style="width: 40%">Designation</th>
-                                                        <th style="width: 20%">Experience</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    ${d.faculty.map((p,i) => `
-                                                        <tr>
-                                                            <td data-label="S.No">${i+1}</td>
-                                                            <td data-label="Name of the Faculty"><strong>${p.name}</strong></td>
-                                                            <td data-label="Designation">${p.designation}</td>
-                                                            <td data-label="Experience"><span class="year-badge">${p.exp}+ Yrs</span></td>
-                                                        </tr>
-                                                    `).join('')}
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    ` : '<p>Year-wise publication data will be updated soon.</p>'}
-                            </div>
-                        </div>
-                    </div>
-                `;
-            }
-
-            
-            
-            if (d.services) {
-                html += `
-                    <div class="accordion-section">
-                        <div class="accordion-header" onclick="toggleAccordion(this)">
-                            <div class="accordion-title"><i class="fas fa-hand-holding-medical"></i> Services</div>
-                            <i class="fas fa-chevron-down accordion-icon"></i>
-                        </div>
-                        <div class="accordion-content">
-                            <div class="accordion-body">
-                                <p>Comprehensive healthcare services catering to all needs.</p>
-                                <ul>${d.services.map(s => `<li>${s}</li>`).join('')}</ul>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            }
-            
-            if (d.pubStats) {
-                html += `
-                    <div class="accordion-section">
-                        <div class="tabs-header" onclick="toggleAccordion(this)">
-                            <div class="accordion-title"><i class="fas fa-book-medical"></i> Publications</div>
-                            <i class="fas fa-chevron-down tabs-expand-icon"></i>
-                        </div>
-                        <div class="tabs-body">
-                            <div class="tabs-content-wrapper">
-                                <div class="tabs-nav">
-                                    <button class="tab-button active" onclick="switchTab(event, 'overview-${d.id}')">Overview</button>
-                                    <button class="tab-button" onclick="switchTab(event, 'yearwise-${d.id}')">Year-wise</button>
-                                </div>
-                                
-                                <div id="overview-${d.id}" class="tab-content active">
-                                    <p>Significant contributions to medical literature and research.</p>
-                                    <div class="stats-grid">
-                                        ${d.pubStats.map(s => `
-                                            <div class="stat-card">
-                                                <h4>${s.value}</h4>
-                                                <p>${s.label}</p>
-                                            </div>
-                                        `).join('')}
-                                    </div>
-                                    ${d.pubHighlights ? `
-                                        <h4 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--color-text-primary);">Key Research Highlights</h4>
-                                        <ul class="accordion-body" style="padding: 0;list-style:none;">
-                                            ${d.pubHighlights.map(p => `<li>${p}</li>`).join('')}
-                                        </ul>
-                                    ` : ''}
-                                </div>
-                                
-                                <div id="yearwise-${d.id}" class="tab-content">
-                                    ${d.pubYearwise ? `
-                                        <div class="publication-table-wrapper">
-                                            <table class="publication-table">
-                                                <thead>
-                                                    <tr>
-                                                        <th style="width: 10%">Year</th>
-                                                        <th style="width: 45%">Title</th>
-                                                        <th style="width: 30%">Journal</th>
-                                                        <th style="width: 15%">Type</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    ${d.pubYearwise.map(p => `
-                                                        <tr>
-                                                            <td data-label="Year"><span class="year-badge">${p.year}</span></td>
-                                                            <td data-label="Title"><strong>${p.title}</strong></td>
-                                                            <td data-label="Journal">${p.journal}</td>
-                                                            <td data-label="Type"><span class="year-badge">${p.type}</span></td>
-                                                        </tr>
-                                                    `).join('')}
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    ` : '<p>Year-wise publication data will be updated soon.</p>'}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            }
-            
-            if (d.research) {
-                html += `
-                    <div class="accordion-section">
-                        <div class="accordion-header" onclick="toggleAccordion(this)">
-                            <div class="accordion-title"><i class="fas fa-microscope"></i> Research</div>
-                            <i class="fas fa-chevron-down accordion-icon"></i>
-                        </div>
-                        <div class="accordion-content">
-                            <div class="accordion-body">
-                                <p>Cutting-edge research advancing medical science.</p>
-                                <ul>${d.research.map(r => `<li>${r}</li>`).join('')}</ul>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            }
-            
-            if (d.events) {
-                html += `
-                    <div class="accordion-section">
-                        <div class="accordion-header" onclick="toggleAccordion(this)">
-                            <div class="accordion-title"><i class="fas fa-calendar-alt"></i> Events</div>
-                            <i class="fas fa-chevron-down accordion-icon"></i>
-                        </div>
-                        <div class="accordion-content">
-                            <div class="accordion-body">
-                                <p>Regular conferences, training programs, and awareness campaigns.</p>
-                                <ul>${d.events.map(e => `<li>${e}</li>`).join('')}</ul>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            }
-            
-            if (d.achievements) {
-                html += `
-                    <div class="accordion-section">
-                        <div class="accordion-header" onclick="toggleAccordion(this)">
-                            <div class="accordion-title"><i class="fas fa-trophy"></i> Achievements</div>
-                            <i class="fas fa-chevron-down accordion-icon"></i>
-                        </div>
-                        <div class="accordion-content">
-                            <div class="accordion-body">
-                                <p>Recognition and awards for excellence in healthcare.</p>
-                                <ul>${d.achievements.map(a => `<li>${a}</li>`).join('')}</ul>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            }
-            
-            if (d.gallery) {
-                html += `
-                    <div class="accordion-section">
-                        <div class="accordion-header" onclick="toggleAccordion(this)">
-                            <div class="accordion-title"><i class="fas fa-images"></i> Gallery</div>
-                            <i class="fas fa-chevron-down accordion-icon"></i>
-                        </div>
-                        <div class="accordion-content">
-                            <div class="accordion-body">
-                                <p>Visual documentation of our facilities, events, and achievements.</p>
-                                <div class="gallery-grid">
-                                    ${d.gallery.map(img => `
-                                        <div class="gallery-item">
-                                            <div class="gallery-placeholder">
-                                                <img src="./assets/images/gallery/${img.path}">
-                                            </div>
-                                            <div class="gallery-overlay">
-                                                <div class="gallery-overlay-title">${img.event}</div>
-                                                <div class="gallery-overlay-date"><i class="fas fa-calendar"></i> ${img.date}</div>
-                                            </div>
-                                        </div>
-                                    `).join('')}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            }
-            
-            container.innerHTML = html;
-        }
-
-        
-
-    function toggleAccordion(header) {
-            const isActive = header.classList.contains('active');
-            
-            // Close all accordions (including publications)
-            document.querySelectorAll('.accordion-header, .tabs-header').forEach(h => {
-                h.classList.remove('active');
-                h.nextElementSibling.classList.remove('active');
-            });
-            
-            // If the clicked accordion wasn't active, open it
-            if (!isActive) {
-                header.classList.add('active');
-                header.nextElementSibling.classList.add('active');
-            }
-        }
-
-        function switchTab(event, tabId) {
-            const container = event.target.closest('.tabs-content-wrapper');
-            container.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
-            container.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
-            event.target.classList.add('active');
-            document.getElementById(tabId).classList.add('active');
-        }
