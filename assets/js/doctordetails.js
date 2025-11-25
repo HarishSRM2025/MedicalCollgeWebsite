@@ -85,7 +85,7 @@ function loadDoctorData() {
         document.getElementById("doc-awards-section").style.display="none"
         awardsContainer.innerHTML = '<p style="color: var(--color-text-secondary);">No awards listed</p>';
     }
-    console.log(doctorData['Contact Number'],doctorData['Email ID (Professional)'])
+    // console.log(doctorData['Contact Number'],doctorData['Email ID (Professional)'])
 
     // Email Button
     const emailBtn = document.getElementById('emailBtn');

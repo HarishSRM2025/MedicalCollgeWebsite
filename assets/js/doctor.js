@@ -66,7 +66,7 @@ async function loadDoctorsFromExcel() {
 
     filteredDoctors = [...doctorsData];
     init();
-    console.log("✅ Doctors loaded from Excel:", doctorsData);
+    // console.log("✅ Doctors loaded from Excel:", doctorsData);
   } catch (err) {
     console.error("❌ Failed to load data:", err);
   }
@@ -122,7 +122,7 @@ function init() {
                 document.querySelectorAll('#expFilter input:checked')
             ).map(cb => parseInt(cb.value));
 
-            console.log(selectedSpecialties)
+            // console.log(selectedSpecialties)
             filteredDoctors = doctorsData.filter(doctor => {
                 // Search filter
                 const matchesSearch = doctor.name.toLowerCase().includes(searchTerm) ||
@@ -355,8 +355,7 @@ function init() {
             const card = document.createElement('div');
             card.className = 'doctor-card';
             card.onclick = () => viewDoctorProfile(doctor.id);
-            console.log(doctor)
-
+            // console.log(doctor)
             card.innerHTML = `
                 <div class="doctor-image-wrapper">
                 </div>
@@ -415,7 +414,7 @@ function init() {
             anchor.click();
             document.removeChild(anchor)
 
-            console.log(doctor);
+            // console.log(doctor);
         }
 
 
