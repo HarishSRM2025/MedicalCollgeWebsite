@@ -98,7 +98,7 @@ function init() {
 
         // Setup event listeners
         function setupEventListeners() {
-            document.getElementById('searchInput').addEventListener('input', applyFilters);
+            document.getElementById('searchInput-doc').addEventListener('input', applyFilters);
             document.querySelectorAll('input[name="gender"]').forEach(radio => {
                 radio.addEventListener('change', applyFilters);
             });
@@ -109,7 +109,7 @@ function init() {
 
         // Apply all filters
         function applyFilters() {
-            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const searchTerm = document.getElementById('searchInput-doc').value.toLowerCase();
             const selectedGender = document.querySelector('input[name="gender"]:checked').value;
             
             // Get selected specialties
@@ -228,7 +228,7 @@ function init() {
 
         // Clear all filters
         function clearAllFilters() {
-            document.getElementById('searchInput').value = '';
+            document.getElementById('searchInput-doc').value = '';
             document.getElementById('genderAll').checked = true;
             document.querySelectorAll('.filter-options input[type="checkbox"]').forEach(cb => {
                 cb.checked = false;
