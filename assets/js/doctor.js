@@ -47,7 +47,7 @@ async function loadDoctorsFromExcel() {
             name: normalized["name"] || "Unknown",
             specialty: normalized["specialization/department"] || "General",
             gender: (normalized["gender"] || "other").toLowerCase(),
-            experience: row["Years of Experience"],
+            experience: parseInt(row["Years of Experience"] || 0),
             degree: normalized["degree"] || "",
             languages: (normalized["languages known"] || "")
             .split(",")
@@ -102,9 +102,10 @@ function init() {
             document.querySelectorAll('input[name="gender"]').forEach(radio => {
                 radio.addEventListener('change', applyFilters);
             });
-            document.querySelectorAll('#experienceFilter input[type="checkbox"]').forEach(checkbox => {
+            document.querySelectorAll('#expFilter input[type="checkbox"]').forEach(checkbox => {
                 checkbox.addEventListener('change', applyFilters);
             });
+
         }
 
         // Apply all filters
@@ -116,15 +117,12 @@ function init() {
             const selectedSpecialties = Array.from(document.querySelectorAll('#specialitiesFilter input:checked'))
                 .map(cb => cb.value);
             
-            // Get selected languages
-            const selectedLanguages = Array.from(document.querySelectorAll('#languagesFilter input:checked'))
-                .map(cb => cb.value);
             
            const selectedExperience = Array.from(
                 document.querySelectorAll('#expFilter input:checked')
             ).map(cb => parseInt(cb.value));
 
-             
+            console.log(selectedSpecialties)
             filteredDoctors = doctorsData.filter(doctor => {
                 // Search filter
                 const matchesSearch = doctor.name.toLowerCase().includes(searchTerm) ||
@@ -138,19 +136,16 @@ function init() {
                 const matchesSpecialty = selectedSpecialties.length === 0 || 
                                        selectedSpecialties.includes(doctor.specialty);
                 
-                // Language filter
-                const matchesLanguage = selectedLanguages.length === 0 ||
-                                      selectedLanguages.some(lang => doctor.languages.includes(lang));
                 
                 // Experience filter
-                const matchesExperience = selectedExperience.length === 0 || selectedExperience.some(exp => doctor.experience >= parseInt(exp));
+                const matchesExperience =  selectedExperience.length === 0 ||  selectedExperience.some(exp => parseInt(doctor.experience) >= exp);
+
                 
 
-                return matchesSearch && matchesGender && matchesSpecialty && 
-                       matchesLanguage && matchesExperience;
+                return matchesSearch && matchesGender && matchesSpecialty && matchesExperience;
                        
             });
-
+             filteredDoctors.sort((a, b) => b.experience - a.experience);
             currentPage = 1; // Reset to first page
             displayDoctors(filteredDoctors);
         }
@@ -164,17 +159,7 @@ function init() {
         function sortDoctors() {
             const sortBy = document.getElementById('sortSelect').value;
 
-            filteredDoctors.sort((a, b) => {
-                switch(sortBy) {
-                    case 'name':
-                        return a.name.localeCompare(b.name);
-                    case 'experience':
-                        return b.experience - a.experience;
-                    default:
-                        return 0;
-                }
-            });
-
+             filteredDoctors.sort((a, b) => b.experience - a.experience);
             displayDoctors(filteredDoctors);
         }
 
@@ -235,6 +220,7 @@ function init() {
             });
             filteredDoctors = [...doctorsData];
             currentPage = 1;
+            filteredDoctors.sort((a, b) => b.experience - a.experience);
             displayDoctors(filteredDoctors);
         }
 
@@ -246,7 +232,7 @@ function init() {
             const noResults = document.getElementById('noResults');
             const resultsCount = document.getElementById('resultsCount');
             const paginationWrapper = document.getElementById('paginationWrapper');
-
+            
             grid.innerHTML = '';
 
             if (doctors.length === 0) {
