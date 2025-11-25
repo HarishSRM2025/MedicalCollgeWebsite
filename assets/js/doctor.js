@@ -358,6 +358,7 @@ function init() {
             // console.log(doctor)
             card.innerHTML = `
                 <div class="doctor-image-wrapper">
+                    <img src="./assets/images/doctors/${doctor["Contact Number"] == "9894489142" ? doctor["Contact Number"]+".jpg" : doctor["Contact Number"]+".JPG"}" alt="${doctor.name}">
                 </div>
                 <div class="doctor-info">
                     <span class="specialty-badge">${doctor.specialty}</span>
