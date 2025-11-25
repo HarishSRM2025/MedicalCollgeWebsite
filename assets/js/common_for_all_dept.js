@@ -297,7 +297,11 @@
                                             </div>
                                             <div class="gallery-overlay">
                                                 <div class="gallery-overlay-title">${img.name}</div>
-                                                <div class="gallery-overlay-date"><i class="fas fa-calendar"></i> ${img.date}</div>
+                                                    ${
+                                                    img.date !== '' || img.date === undefined
+                                                        ? `<div class="gallery-overlay-date"><i class="fas fa-calendar"></i> ${img.date}</div>`
+                                                        : ''
+                                                    }
                                             </div>
                                         </div>
                                     `).join('')}
