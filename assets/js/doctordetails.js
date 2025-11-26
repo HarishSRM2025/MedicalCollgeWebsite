@@ -37,8 +37,14 @@ function loadDoctorData() {
     const expertiseContainer = document.getElementById('expertiseTags');
     const expertise = doctorData['Key Areas of Expertise'];
     if (expertise) {
-        const expertiseArray = expertise.split(/[,|/]/).map(i => i.trim());
-      
+        const expertiseArray = expertise
+        .trim()
+        .split(/[,|/]/)
+        .map(i => i.trim())
+        .filter(i => i.length > 0);
+
+        console.log(expertiseArray);
+        
         expertiseContainer.innerHTML = expertiseArray.map((exp, index) =>
             `<div class="doc-expertise-tag">
                  ${exp}

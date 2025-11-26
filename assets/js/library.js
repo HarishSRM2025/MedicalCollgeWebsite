@@ -27,18 +27,54 @@
                     "value": "Milestones in Our Journey"
                     },
                     {
-                    "type": "list",
-                    "items": [
-                        "2009: Library inaugurated with 2980 books and 24 print journals.",
-                        "2010: Partially automated using Integrated Library Management System.",
-                        "2010: Access to WHO Global Subscriptions.",
-                        "2013: Access to Dr.MGR Medical University E-Consortium.",
-                        "2018: Access to DELNET E-Resources.",
-                        "2022: Fully automated with KOHA software with RFID Technology.",
-                        "2023: Access to international journals from ProQuest and BMJ.",
-                        "2024: Access to BMJ E-Journals, Research to Publications, and Best Practice.",
-                        "2025: Collection expanded to 16314 Books, 50 international print journals, and 65 Indian print journals."
-                    ]
+                        "type": "resources",
+                        "items": [
+                            {
+                                "icon": "fa-building",
+                                "title": "2009",
+                                "description": "Library inaugurated with 2,980 books and 24 print journals."
+                            },
+                            {
+                                "icon": "fa-cogs",
+                                "title": "2010",
+                                "description": "Partially automated using the Integrated Library Management System."
+                            },
+                            {
+                                "icon": "fa-globe",
+                                "title": "2010",
+                                "description": "Access to WHO Global Subscriptions enabled."
+                            },
+                            {
+                                "icon": "fa-university",
+                                "title": "2013",
+                                "description": "Gained access to Dr. MGR Medical University E-Consortium."
+                            },
+                            {
+                                "icon": "fa-network-wired",
+                                "title": "2018",
+                                "description": "Access to DELNET E-Resources introduced."
+                            },
+                            {
+                                "icon": "fa-microchip",
+                                "title": "2022",
+                                "description": "Fully automated with KOHA software integrated with RFID technology."
+                            },
+                            {
+                                "icon": "fa-book",
+                                "title": "2023",
+                                "description": "Access to international journals from ProQuest and BMJ."
+                            },
+                            {
+                                "icon": "fa-file-medical",
+                                "title": "2024",
+                                "description": "Access to BMJ E-Journals, Research to Publications, and Best Practice."
+                            },
+                            {
+                                "icon": "fa-chart-line",
+                                "title": "2025",
+                                "description": "Collection expanded to 16,314 books, 50 international print journals, and 65 Indian print journals."
+                            }
+                        ]
                     }
                 ]
                 },
@@ -151,13 +187,21 @@
                 "icon": "fa-book-open",
                 "description": "Unique Knowledge Resources",
                 "content": [
-                    {
-                    "type": "list",
-                    "items": [
-                        "Archives-related books donated by faculty from OG, MCH Division, Dermatology, Community Health.",
-                        "Yoga books and Tamil literature collections."
-                    ]
-                    }
+                   {
+                            type: "info-cards",
+                            items: [
+                                {
+                                    icon: "fa-box",
+                                    title: "Archives Section",
+                                    description: "Archives-related books donated by faculty from OG, MCH Division, Dermatology, Community Health."
+                                },
+                                {
+                                    icon: "fa-book",
+                                    title: "Yoga books",
+                                    description: "Yoga books and Tamil literature collections."
+                                }
+                            ]
+                        }
                 ]
                 },
 
@@ -168,16 +212,40 @@
                 "description": "Digital Academic Resources",
                 "content": [
                     {
-                    "type": "list",
-                    "items": [
-                        "BMJ Best Practice",
-                        "Research to Publication",
-                        "Clinical Key",
-                        "Elsevier Journals Collection",
-                        "DELNET",
-                        "Dr. MGR Medical University E-Consortium"
-                    ]
-                    }
+                            type: "resources",
+                            items: [
+                                {
+                                    icon: "fa-database",
+                                    title: "BMJ Best Practice",
+                                    description: "It helps healthcare professionals make informed decisions at the point of care with regularly updated, trusted information."
+                                },
+                                {
+                                    icon: "fa-microscope",
+                                    title: "Research to Publication",
+                                    description: "It supports students, faculty, and researchers in producing high-quality, ethical, and publishable scientific work."
+                                },
+                                {
+                                    icon: "fa-key",
+                                    title: "Clinical Key",
+                                    description: "It helps healthcare professionals make informed decisions by providing fast, reliable, and updated medical knowledge."
+                                },
+                                {
+                                    icon: "fa-book-reader",
+                                    title: "Elsevier Journals Collection.",
+                                    description: "It supports learning, research, and clinical practice with reliable, up-to-date scholarly content."
+                                },
+                                {
+                                    icon: "fa-graduation-cap",
+                                    title: "DELNET",
+                                    description: "(Developing Library Network) provides access to a vast network of libraries, offering shared resources, union catalogues, and interlibrary loan services."
+                                },
+                                {
+                                    icon: "fa-building",
+                                    title: "E-Consortium",
+                                    description: "Dr. MGR Medical University E-Consortium supports academic excellence by providing reliable, curriculum-aligned content for students, faculty, and researchers"
+                                }
+                            ]
+                        }
                 ]
                 },
 
@@ -196,30 +264,57 @@
                     "type": "subtitle",
                     "value": "Digital Library Features"
                     },
-                    {
-                    "type": "list",
-                    "items": [
-                        "High-speed internet and computer systems",
-                        "Air-conditioned environment",
-                        "WiFi connection",
-                        "Printing facilities available"
+                        {
+                            type: "info-cards",
+                            items: [
+                            
+                                {
+                                    icon: "fa-wifi",
+                                    title: "High-Speed Wi-Fi",
+                                    description: "High-speed internet and computer systems"
+                                },
+                                {
+                                    icon: "fa-print",
+                                    title: "Printing facilities available",
+                                    description: "Modern printing, scanning, and photocopying facilities with digital document management."
+                                },
+                                {
+                                    icon: "fa-film",
+                                    title: "WiFi connection",
+                                    description: "Dedicated space for viewing educational videos, documentaries, and medical procedures."
+                                },
+                                {
+                                    icon: "fa-tablet-alt",
+                                    title: "Air-conditioned environment",
+                                    description: "Lending service for tablets and e-readers preloaded with medical textbooks and journals."
+                                }
+                            ]
+                        },
+                        {
+                            type: "subtitle",
+                            value: "Digital Services"
+                        },
+                        {
+                            type: "list",
+                            items: [
+                                "Online Catalogue (OPAC) Search books",
+                                "Mobile App -  Access Library E-resources"
+                            ]
+                        },
+                        {
+                        "type": "subtitle",
+                        "value": "Facility Details"
+                        },
+                        {
+                        "type": "table",
+                        "headers": ["Feature", "Description"],
+                        "rows": [
+                            ["Audio Visual Room", "With projector"],
+                            ["Conference Hall", ""],
+                            ["Multimedia Room", "Viewing educational CDs and medical procedures"]
+                        ]
+                        }
                     ]
-                    },
-
-                    {
-                    "type": "subtitle",
-                    "value": "Facility Details"
-                    },
-                    {
-                    "type": "table",
-                    "headers": ["Feature", "Description"],
-                    "rows": [
-                        ["Audio Visual Room", "With projector"],
-                        ["Conference Hall", ""],
-                        ["Multimedia Room", "Viewing educational CDs and medical procedures"]
-                    ]
-                    }
-                ]
                 },
 
                 {
@@ -233,13 +328,29 @@
                     "value": "Regular Programs"
                     },
                     {
-                    "type": "list",
-                    "items": [
-                        "The Dr.MGR Medical University e-Consortium meeting (June)",
-                        "National Librarian Day (August)",
-                        "Library Orientation for new students (October)",
-                        "National Library Week celebrations (November)"
-                    ]
+                        "type": "resources",
+                        "items": [
+                            {
+                                "icon": "fa-calendar-check",
+                                "title": "e-Consortium Meeting",
+                                "description": "The Dr. MGR Medical University e-Consortium meeting conducted in June."
+                            },
+                            {
+                                "icon": "fa-user-graduate",
+                                "title": "National Librarian Day",
+                                "description": "Celebration of National Librarian Day every August."
+                            },
+                            {
+                                "icon": "fa-book-reader",
+                                "title": "Library Orientation",
+                                "description": "Orientation program for new students held in October."
+                            },
+                            {
+                                "icon": "fa-calendar-week",
+                                "title": "National Library Week",
+                                "description": "National Library Week celebrations organized in November."
+                            }
+                        ]
                     }
                 ]
                 },
@@ -251,16 +362,44 @@
                 "description": "Well-Organized Reading Spaces",
                 "content": [
                     {
-                    "type": "list",
-                    "items": [
-                        "Inside Reading Section – 250 Seats",
-                        "Outside Reading Section – 250 Seats",
-                        "Faculty Reading Section – 50 Seats",
-                        "PG Reading Section – 50 Seats",
-                        "Journal Section – 32 Seats",
-                        "Back Volume Section",
-                        "Browsing Section"
-                    ]
+                        "type": "info-cards",
+                        "items": [
+                            {
+                                "icon": "fa-chair",
+                                "title": "Inside Reading Section",
+                                "description": "Seating capacity of 250 for students and readers."
+                            },
+                            {
+                                "icon": "fa-chair",
+                                "title": "Outside Reading Section",
+                                "description": "Outdoor reading space with 250 seats."
+                            },
+                            {
+                                "icon": "fa-user-tie",
+                                "title": "Faculty Reading Section",
+                                "description": "Dedicated reading area for faculty with 50 seats."
+                            },
+                            {
+                                "icon": "fa-user-graduate",
+                                "title": "PG Reading Section",
+                                "description": "Exclusive reading space for postgraduate students with 50 seats."
+                            },
+                            {
+                                "icon": "fa-book-open",
+                                "title": "Journal Section",
+                                "description": "Journal reading area with 32 seats."
+                            },
+                            {
+                                "icon": "fa-archive",
+                                "title": "Back Volume Section",
+                                "description": "Section dedicated to archived and back-volume journals."
+                            },
+                            {
+                                "icon": "fa-desktop",
+                                "title": "Browsing Section",
+                                "description": "Computer-enabled browsing and reference area."
+                            }
+                        ]
                     },
 
                     {
@@ -268,19 +407,59 @@
                     "value": "Library Timings & Rules"
                     },
                     {
-                    "type": "list",
-                    "items": [
-                        "Working Hours: 8:00 AM to 8:00 PM (Open on Sundays and holidays)",
-                        "Wear your ID card always.",
-                        "ID card scanning required at E-Gate.",
-                        "Maintain silence inside the library.",
-                        "Follow dress code.",
-                        "No food or drinks allowed.",
-                        "Leave books on the table after reading.",
-                        "Damaging books will lead to disciplinary action.",
-                        "Avoid mobile phone use.",
-                        "Provide suggestions for improvement."
-                    ]
+                        "type": "resources",
+                        "items": [
+                            {
+                                "icon": "fa-clock",
+                                "title": "Working Hours",
+                                "description": "8:00 AM to 8:00 PM. Library remains open on Sundays and holidays."
+                            },
+                            {
+                                "icon": "fa-id-card",
+                                "title": "ID Card Requirement",
+                                "description": "Wear your ID card at all times inside the library."
+                            },
+                            {
+                                "icon": "fa-barcode",
+                                "title": "E-Gate Scanning",
+                                "description": "ID card scanning is mandatory at the E-Gate."
+                            },
+                            {
+                                "icon": "fa-volume-mute",
+                                "title": "Maintain Silence",
+                                "description": "Silence must be maintained inside the library premises."
+                            },
+                            {
+                                "icon": "fa-tshirt",
+                                "title": "Dress Code",
+                                "description": "All users must follow the prescribed dress code."
+                            },
+                            {
+                                "icon": "fa-ban",
+                                "title": "Food & Drinks Prohibited",
+                                "description": "No food or beverages are allowed inside the library."
+                            },
+                            {
+                                "icon": "fa-book",
+                                "title": "Book Handling",
+                                "description": "Leave books on the table after use; do not reshelve them."
+                            },
+                            {
+                                "icon": "fa-exclamation-triangle",
+                                "title": "Book Safety",
+                                "description": "Damaging library materials will result in disciplinary action."
+                            },
+                            {
+                                "icon": "fa-mobile-alt",
+                                "title": "Mobile Usage",
+                                "description": "Avoid using mobile phones to maintain a quiet environment."
+                            },
+                            {
+                                "icon": "fa-comment-dots",
+                                "title": "Suggestions Welcome",
+                                "description": "Users are encouraged to provide suggestions for improvement."
+                            }
+                        ]
                     }
                 ]
                 }
