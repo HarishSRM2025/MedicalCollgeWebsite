@@ -110,6 +110,7 @@
               <li><a href="./hospital.html#camps">Camps</a></li>
             </ul>
           </li>
+          <li><a href="infrastructure.html">Infrastructure</a></li>
           <li><a href="research.html">Research & Innovation</a></li>
           <li class="has-dropdown" data-dropdown="media">
             <a href="./media.html">Media & OutReach <span class="arrow dropdown-trigger">&#9654;</span></a>

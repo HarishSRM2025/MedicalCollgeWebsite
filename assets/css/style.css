@@ -9224,3 +9224,755 @@ grid-template-columns: 1fr;
             font-weight:500;
             color:var(--color-text-light);
         }
+
+
+        /* Infrastructure */
+
+          /* Stats Bar */
+        .infra-stats-bar {
+            background: var(--color-white);
+            box-shadow: var(--shadow-lg);
+            border-radius: var(--radius-lg);
+            margin: -3rem auto 4rem;
+            max-width: 1200px;
+            padding: 2rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .infra-stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+            gap: var(--gap-medium);
+            text-align: center;
+        }
+
+        .infra-stat-item {
+            padding: 1rem;
+        }
+
+        .infra-stat-number {
+            font-size: var(--font-4xl);
+            font-weight: 700;
+            color: var(--color-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .infra-stat-label {
+            font-size: var(--font-sm);
+            color: var(--color-text-secondary);
+        }
+
+      
+
+        /* Section */
+        .infra-section {
+            margin-bottom: 5rem;
+        }
+
+        .infra-section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .infra-section-title {
+            font-size: var(--font-4xl);
+            color: var(--color-primary-dark);
+            margin-bottom: var(--spacing-lg);
+            font-weight: 700;
+        }
+
+        .infra-section-description {
+            font-size: var(--font-lg);
+            color: var(--color-text-secondary);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Hostel Cards Grid */
+        .infra-hostel-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .infra-hostel-main {
+            position: relative;
+            height: 500px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+
+        .infra-hostel-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .infra-hostel-main:hover .infra-hostel-image {
+            transform: scale(1.05);
+        }
+
+        .infra-hostel-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(48,43,109,0.95) 0%, transparent 100%);
+            padding: 40px;
+            color: white;
+        }
+
+        .infra-hostel-overlay h3 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .infra-hostel-overlay p {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .infra-hostel-feature-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+            transition: all 0.4s;
+        }
+
+        .infra-hostel-feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 45px rgba(48,43,109,0.2);
+        }
+
+        .infra-hostel-feature-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .infra-hostel-feature-content {
+            padding: 25px;
+        }
+
+        .infra-hostel-feature-content h4 {
+            font-size: 22px;
+            color: #302b6d;
+            margin-bottom: 12px;
+        }
+
+        .infra-hostel-feature-content p {
+            color: #666;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        .infra-hostel-amenities {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 50px;
+        }
+
+        .infra-feature-list {
+            list-style: none;
+        }
+
+        .infra-feature-item {
+            padding: 0.5rem 0;
+            color: var(--color-text-secondary);
+            position: relative;
+            padding-left: 1.5rem;
+            font-size: var(--font-sm);
+        }
+
+        .infra-feature-item::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--color-secondary);
+            font-weight: bold;
+        }
+
+        /* Icon Grid */
+        .infra-icon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: var(--spacing-xl);
+            margin-top: 3rem;
+        }
+
+        .infra-icon-card {
+            background: var(--color-white);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            text-align: center;
+            box-shadow: var(--shadow-lg);
+            transition: all var(--transition);
+            border: 1px solid #f0f0f0;
+        }
+
+        .infra-icon-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .infra-icon-image {
+            width: 50px;
+            height: 50px;
+            margin: 0 auto var(--spacing-md);
+            background: var(--color-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-white);
+            font-size: 1.3rem;
+        }
+
+        .infra-icon-title {
+            font-size: var(--font-base);
+            color: var(--color-text-primary);
+            font-weight: 600;
+        }
+
+        /* Sports Gallery */
+        .infra-sports-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--spacing-xl);
+        }
+
+        .infra-sports-large {
+            grid-row: span 2;
+        }
+
+        .infra-sports-card {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            box-shadow: var(--shadow-lg);
+            transition: all var(--transition);
+        }
+
+        .infra-sports-card:hover {
+            transform: scale(1.05);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .infra-sports-image {
+            width: 100%;
+            height: 100%;
+            min-height: 250px;
+            background: linear-gradient(135deg, #43a047 0%, #66bb6a 100%);
+            position: relative;
+        }
+
+        .infra-sports-large .infra-sports-image {
+            min-height: 520px;
+        }
+
+        .infra-sports-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .infra-sports-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.85));
+            padding: 2rem;
+            color: var(--color-white);
+        }
+
+        .infra-sports-badge {
+            display: inline-block;
+            background: var(--color-white);
+            color: var(--color-primary);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: var(--font-sm);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .infra-sports-title {
+            font-size: var(--font-xl);
+            font-weight: 600;
+        }
+
+        /* Gym Section */
+         /* Gym Section */
+        .infra-gym-section {
+            padding: 80px 20px;
+            background: white;
+        }
+
+        .infra-gym-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .infra-gym-showcase {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 50px;
+            align-items: start;
+        }
+
+        .infra-gym-main-image {
+            position: relative;
+            height: 100%;
+            min-height: 500px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            position: sticky;
+            top: 100px;
+        }
+
+        .infra-gym-features {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .infra-gym-feature-box {
+            background: linear-gradient(135deg, rgba(48,43,109,0.05), rgba(220,20,60,0.05));
+            padding:15px 35px;
+            border-radius: 15px;
+            border-left: 5px solid var(--color-primary);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .infra-gym-feature-box:hover,
+        .infra-gym-feature-box.active {
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            color: white;
+            border-left-color: white;
+            transform: translateX(10px);
+        }
+
+        .infra-gym-feature-icon {
+            font-size: 35px;
+            color: var(--color-primary);
+            margin-bottom: 15px;
+            transition: color 0.3s;
+        }
+
+        .infra-gym-feature-box:hover .infra-gym-feature-icon,
+        .infra-gym-feature-box.active .infra-gym-feature-icon {
+            color: white;
+        }
+
+        .infra-gym-feature-box h4 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .infra-gym-feature-box p {
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        /* Transport Section */
+        .infra-transport-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--gap-medium);
+        }
+
+        .infra-transport-card {
+            background: var(--color-white);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            transition: all var(--transition);
+        }
+
+        .infra-transport-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .infra-transport-image {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(135deg, #1e88e5 0%, #42a5f5 100%);
+        }
+
+        .infra-transport-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .infra-transport-content {
+            padding: var(--padding-card);
+        }
+
+        .infra-transport-badge {
+            display: inline-block;
+            background: var(--color-primary);
+            color: var(--color-white);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: var(--font-sm);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .infra-transport-title {
+            font-size: var(--font-xl);
+            color: var(--color-primary-dark);
+            margin-bottom: var(--spacing-md);
+            font-weight: 600;
+        }
+
+        /* Dining Section */
+        .infra-dining-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--gap-medium);
+        }
+
+        .infra-dining-card {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            position: relative;
+            box-shadow: var(--shadow-lg);
+            transition: all var(--transition);
+            cursor: pointer;
+        }
+
+        .infra-dining-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .infra-dining-image {
+            width: 100%;
+            height: 280px;
+            background: linear-gradient(135deg, #fb8c00 0%, #ffa726 100%);
+        }
+
+        .infra-dining-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .infra-dining-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.85));
+            padding: 1.5rem;
+            color: var(--color-white);
+        }
+
+        .infra-dining-icon {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .infra-dining-title {
+            font-size: var(--font-lg);
+            font-weight: 600;
+        }
+
+        /* Library Section */
+        .infra-library-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--gap-medium);
+            align-items: center;
+        }
+
+        .infra-library-image {
+            width: 100%;
+            height: 450px;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .infra-library-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .infra-library-content {
+            padding: 2rem;
+        }
+
+        .infra-library-title {
+            font-size: var(--font-4xl);
+            color: var(--color-primary-dark);
+            margin-bottom: var(--spacing-lg);
+            font-weight: 700;
+        }
+
+        .infra-library-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--spacing-xl);
+            margin-top: 2rem;
+        }
+
+        .infra-library-stat {
+            text-align: center;
+            padding: 1.5rem;
+            background: var(--color-background-light);
+            border-radius: var(--radius-md);
+        }
+
+        .infra-library-stat-number {
+            font-size: var(--font-4xl);
+            font-weight: 700;
+            color: var(--color-primary);
+        }
+
+        .infra-library-stat-label {
+            font-size: var(--font-base);
+            color: var(--color-text-secondary);
+            margin-top: 0.5rem;
+        }
+
+        /* Medical Section */
+        .infra-medical-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--gap-medium);
+            align-items: center;
+        }
+
+        .infra-medical-content {
+            padding: 2rem;
+        }
+
+        .infra-medical-title {
+            font-size: var(--font-4xl);
+            color: var(--color-primary-dark);
+            margin-bottom: var(--spacing-lg);
+            font-weight: 700;
+        }
+
+        .infra-medical-features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--spacing-xl);
+            margin-top: 2rem;
+        }
+
+        .infra-medical-feature {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .infra-medical-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--color-teal);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-white);
+            flex-shrink: 0;
+            font-size: 1.3rem;
+        }
+
+        .infra-medical-feature-title {
+            font-size: var(--font-base);
+            font-weight: 600;
+            color: var(--color-text-primary);
+            margin-bottom: 0.3rem;
+        }
+
+        .infra-medical-feature-text {
+            font-size: var(--font-sm);
+            color: var(--color-text-secondary);
+        }
+
+        .infra-medical-image {
+            width: 100%;
+            height: 450px;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .infra-medical-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Research Labs Section */
+        .infra-research-section {
+            background: linear-gradient(135deg, #6B1B9A 0%, #D81B60 100%);
+            color: var(--color-white);
+            padding: 4rem 2rem;
+            border-radius: var(--radius-lg);
+            margin: 4rem 0;
+        }
+
+        .infra-research-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .infra-research-title {
+            font-size: var(--font-4xl);
+            margin-bottom: var(--spacing-lg);
+            font-weight: 700;
+        }
+
+        .infra-research-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--gap-medium);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .infra-research-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: all var(--transition);
+        }
+
+        .infra-research-card:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-5px);
+        }
+
+        .infra-research-icon {
+            font-size: 2.5rem;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .infra-research-card-title {
+            font-size: var(--font-lg);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .infra-research-card-text {
+            font-size: var(--font-sm);
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        .infra-footer {
+            background: #1a1a1a;
+            color: var(--color-white);
+            padding: 3rem 2rem 1rem;
+            margin-top: 5rem;
+        }
+
+        .infra-footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--gap-medium);
+            margin-bottom: 2rem;
+        }
+
+        .infra-footer-section h3 {
+            margin-bottom: var(--spacing-lg);
+            font-size: var(--font-lg);
+        }
+
+        .infra-footer-section p,
+        .infra-footer-section a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: var(--font-sm);
+        }
+
+        .infra-footer-section a:hover {
+            color: var(--color-white);
+        }
+
+        .infra-footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.5);
+            font-size: var(--font-sm);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .infra-sports-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .infra-gym-layout,
+            .infra-library-layout,
+            .infra-medical-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .infra-transport-grid,
+            .infra-dining-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .infra-nav-links {
+                display: none;
+            }
+
+            .infra-hero h1 {
+                font-size: 2rem;
+            }
+
+            .infra-hero-subtitle {
+                font-size: var(--font-base);
+            }
+
+            .infra-section-title {
+                font-size: 1.5rem;
+            }
+
+            .infra-hostel-grid,
+            .infra-sports-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .infra-sports-large .infra-sports-image {
+                min-height: 250px;
+            }
+
+            .infra-container {
+                padding: 0 1rem 3rem;
+            }
+
+            .infra-stats-bar {
+                margin: -2rem 1rem 3rem;
+            }
+        }
