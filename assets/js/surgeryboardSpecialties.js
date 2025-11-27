@@ -376,22 +376,148 @@
                 gallery: [{name: "PFT Lab", icon: "fa-wind", event: "Respiratory Lab", date: "Dec 2023"}]
             },
             {
-                id: "dentistry", name: "Dentistry", icon: `<i class="fas fa-tooth"></i>`, color: "#da26a4ff", colorDark: "#ac0379ff",
-                desc: "Comprehensive respiratory care with pulmonary function testing.",
-                vision:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
-                mission:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
-                objectives:["Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro."],
-                infra: ["OPD rooms", "Inpatient wards", "ICU", "Procedure room"],
-                faculty: [{name: "Ram", designation: "Assistant professor", exp: "5"},{name: "Sam", designation: "Assistant professor", exp: "5"},{name: "John", designation: "Assistant professor", exp: "5"}],
-                services: ["Asthma Management", "COPD Care", "TB Treatment", "Bronchoscopy", "Pulmonary Function Tests", "Sleep Studies"],
-                pubStats: [{label: "Publications", value: "19+"}],
-                pubHighlights: ["COPD management"],
-                pubYearwise: [{year: "2023", title: "Asthma treatment protocols", journal: "Respiratory Medicine", type: "Research"}],
-                research: ["Asthma protocols", "TB treatment"],
-                events: ["World COPD Day"],
-                achievements: ["Excellence in Pulmonary Care"],
-                gallery: [{name: "PFT Lab", icon: "fa-wind", event: "Respiratory Lab", date: "Dec 2023"}]
+                id: "dentistry",
+                name: "Dentistry",
+                icon: "fa-tooth",
+                color: "#50b5efff",
+                colorDark: "#0c95b8ff",
+
+                desc: "The Department of Dentistry focuses on the scientific study of disease processes through laboratory investigations, tissue diagnosis, and research. It plays a crucial role in patient care, providing the best dental treatment at affordable cost.",
+
+                vision: "To create a competent and socially responsible system by providing quality oral health care and progressive research.",
+
+                mission: [
+                    "To improve oral health, functionality and esthetics of people with quality dental care, in order to improve their nutrition, confidence and quality of life.",
+                    "To pursue collaborative research in the field of oral health."
+                ],
+
+                objectives: [
+                    "To provide multidisciplinary oral health care for a wide variety of patients including patients with special needs.",
+                    "To function effectively with care and compassion and in harmony with interdisciplinary health care teams.",
+                    "To utilize the values of professional ethics, lifelong learning and adaptability."
+                ],
+
+                infra_desc: "The Dental Department functions in an area of 5350 sq.ft. It includes reception, patient waiting area, OPD, four specialty clinics, IOPA room, CBCT Room with console, Minor OT with recovery area, prosthetic laboratory, and sterilization room.",
+                infra: [
+                    "Reception and patient waiting area",
+                    "Outpatient Department (OPD)",
+                    "4 Specialty Dental Clinics",
+                    "IOPA Room",
+                    "CBCT Room with Console",
+                    "Minor OT with Recovery Area",
+                    "Prosthetic Laboratory",
+                    "Sterilization Room"
+                ],
+
+                faculty_desc: "The department has a team of qualified and experienced faculty committed to academic excellence, research, and clinical service.",
+                faculty: [
+                    { name: "Dr. U. Jayasimha Raj MDS", designation: "Professor and HOD", exp: 28 },
+                    { name: "Dr. J. Asha MDS", designation: "Associate Professor", exp: 9 },
+                    { name: "Dr. V. Sri Ram MDS", designation: "Assistant Professor", exp: 6 },
+                    { name: "Dr. G. Bharath MDS", designation: "Assistant Professor", exp: 3 },
+                    { name: "Dr. K. Iswarya MDS", designation: "Assistant Professor", exp: 2 },
+                    { name: "Dr. G. Aarthi MDS", designation: "Senior Resident", exp: 1 },
+                    { name: "Dr. B. Nandini MDS", designation: "Senior Resident", exp: 1 }
+                ],
+
+                services_desc: "The department embraces multiple dental specialties and provides a wide range of diagnostic and therapeutic services.",
+                services: [
+                    "Extractions including trans-alveolar extraction and impacted tooth removal",
+                    "Periapical surgeries",
+                    "Biopsy and histopathological reporting",
+                    "Incision and drainage",
+                    "Restorations – Silver Amalgam, Glass Ionomer, Composite",
+                    "Root canal treatment",
+                    "Partial dentures – removable and fixed",
+                    "Complete dentures including implant-supported dentures",
+                    "Crowns – Metal, Metal Ceramic, High-quality Metal Ceramic, All Ceramic, CAD/CAM full contour, Acrylic crowns",
+                    "Scaling and root planing",
+                    "Curettage and flap surgeries",
+                    "Removable orthodontic appliances",
+                    "Fixed orthodontic appliances – Straight wire, Lingual, Self-ligating, Clear aligners, Ceramic braces",
+                    "Orthopedic appliances",
+                    "Intraoral periapical radiographs, orthopantomogram & lateral cephalogram",
+                    "Splinting and retainers",
+                    "Smile designing",
+                    "Esthetic dental restorations",
+                    "Pulp therapy and crowns for deciduous teeth",
+                    "Bleaching",
+                    "Post and core build-up",
+                    "Intermaxillary fixation / ORIF",
+                    "Advanced maxillofacial trauma management",
+                    "Dental implants and prosthetic rehabilitation",
+                    "Preventive pediatric dental procedures",
+                    "Myofunctional appliances",
+                    "Avulsed tooth management",
+                    "Maxillofacial prosthesis – ocular prosthesis, obturators",
+                    "Cleft lip and palate repair (Nasoalveolar molding)",
+                    "Orthognathic surgeries",
+                    "3D CBCT"
+                ],
+
+                publication_overview: "The department has a strong publication record across national and international journals.",
+                pubStats: [
+                    { label: "Overall", value: 23 },
+                    { label: "International", value: 17 },
+                    { label: "National", value: 6 }
+                ],
+
+                pubHighlights: [],
+
+                pubYearwise: [],
+
+                research_desc: "The department promotes active research in dental and oral health sciences.",
+                research: [
+                    "Prevalence of dental caries and its association with oral hygiene practices in children attending dental outpatient department of Trichy SRM Medical College Hospital & Research Centre, Tamil Nadu"
+                ],
+
+                events_desc: "The department conducts regular academic and community outreach programs.",
+                events: [
+                    "Oral health for all – Oral health awareness programme",
+                    "Oral hygiene screening (22.04.2025)",
+                    "Hands-on workshop (25.04.2025)",
+                    "CME on Conscious Sedation (25.04.2025)"
+                ],
+
+                achievements_desc: "The department continuously upgrades its clinical and diagnostic facilities.",
+                achievements: [
+                    "Installation of new 3D CBCT unit in June 2025"
+                ],
+
+                gallery: [
+                    {
+                    name: "CBCT Inauguration Photos",
+                    event: "CBCT Inauguration",
+                    path: "Dentistry/1.jpg",
+                    date: "06/06/2025"
+                    },
+                    {
+                    name: "Oral Health for All",
+                    event: "Awareness Programme",
+                    path: "Dentistry/2.jpg",
+                    date: "22/04/2025"
+                    },
+                    {
+                    name: "CME on Conscious Sedation",
+                    event: "CME 2025",
+                    path: "Dentistry/3.jpg",
+                    date: "25/04/2025"
+                    },
+                    {
+                    name: "Dental Camp",
+                    event: "CAMP",
+                    path: "Dentistry/4.jpg",
+                    date: "31/01/2025"
+                    },
+                    {
+                    name: "Dental Camp",
+                    event: "CAMP",
+                    path: "Dentistry/5.jpg",
+                    date: "18/07/2025"
+                    }
+                ]
             }
+
         ];
 
        

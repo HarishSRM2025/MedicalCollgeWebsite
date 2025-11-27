@@ -271,7 +271,7 @@
                     "Rational use of drugs in special populations such as Pediatrics, Geriatrics, Pregnancy and Nursing mothers."
                 ],
 
-                objectives: ["Yet to be given"],
+                objectives: ["Explain the general principles of pharmacology","Describe the pharmacology of drugs used in all the body systems","Explain principles of rational and essential drug therapy","Explain drug regulations and ethics","Prescribe rationally and safely","Interpret clinical data","Perform essential Pharmacology-related skills","Practice ethical prescription writing","Promote patient safety","Respect professional values"],
                 infra_desc:"The department has made visible efforts to meet and exceed spatial norms—a positive sign in terms of infrastructure and planning.",
                 infra: [
                     "Departmental space & demo rooms",
@@ -526,25 +526,128 @@
                 ]
             },
             {
-                id: "Forensic Medicine", name: "Forensic Medicine", icon: "fa-capsules", color: "#e74c3c", colorDark: "#c0392b",
-                desc: "Expert care for skin, hair, and nail conditions with advanced cosmetic dermatology services.",
-                vision:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
-                mission:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
-                objectives:["Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro."],
-                infra: ["Dermatology consultation rooms", "Laser therapy unit", "Phototherapy equipment", "Dermoscopy facility", "Minor procedure room"],
-                services: ["General Dermatology", "Cosmetic Dermatology", "Laser Treatments", "Hair Restoration", "Acne Treatment", "Psoriasis Care", "Vitiligo Treatment", "Chemical Peels"],
-                pubStats: [{label: "Publications", value: "28+"}, {label: "International", value: "12+"}],
-                pubHighlights: ["Advances in psoriasis treatment", "Laser therapy in acne scars", "Novel vitiligo treatments"],
-                pubYearwise: [
-                    {year: "2024", title: "Biologic therapy in psoriasis", journal: "Dermatology International", type: "Research"},
-                    {year: "2023", title: "Fractional CO2 laser in acne scars", journal: "Aesthetic Dermatology", type: "Clinical Study"}
+                id: "ForensicMedicine",
+                name: "Forensic Medicine & Toxicology",
+                icon: "fa-gavel",
+                color: "#607d8b",
+                colorDark: "#455a64",
+
+                desc: "The Department of Forensic Medicine & Toxicology trains undergraduate MBBS students and CRMI interns to understand medico-legal responsibilities, ethical medical practice, and forensic procedures essential for justice administration.",
+
+                vision: "To produce skilled and informed doctors capable of making accurate observations, deductions, and medico-legal conclusions, ensuring ethical and legally sound medical practice.",
+
+                mission: [
+                    "To train UG students as per National Medical Commission and University guidelines.",
+                    "To encourage research activities in forensic medicine and toxicology.",
+                    "To familiarize students with recent amendments in medical law.",
+                    "To inculcate ethical and responsible medical practice.",
+                    "To equip students with the knowledge and skills required for medico-legal work."
                 ],
-                research: ["Novel vitiligo treatments", "Laser therapy advances", "Immunotherapy in skin diseases"],
-                events: ["Skin Cancer Screening Camp", "World Psoriasis Day"],
-                achievements: ["Excellence in Cosmetic Dermatology"],
+
+                objectives: [
+                    "Perform medico-legal autopsy.",
+                    "Issue medico-legal certificates.",
+                    "Serve as an expert witness in the court of law.",
+                    "Aid police investigations for administration of justice.",
+                    "Collect, preserve and dispatch medico-legal specimens to FSL and pathology.",
+                    "Maintain proper medico-legal records.",
+                    "Prepare and issue medical certificates."
+                ],
+
+                infra_desc: "The Department is equipped with modern facilities including research laboratories, museum sections, smart demo rooms, mortuary block, and a departmental library to support teaching and research.",
+                infra: [
+                    "Research laboratory and museum with preserved specimens",
+                    "Two demo rooms with smart classroom facilities",
+                    "Mortuary block",
+                    "Department library cum seminar room"
+                ],
+
+                faculty: [
+                    { name: "Dr. RAJENDRA KUMAR R", designation: "Professor & Head", exp: 22 },
+                    { name: "Dr. A. DOMINIC INFANT RAJ", designation: "Professor", exp: 10 },
+                    { name: "Dr. A. ASWATH", designation: "Assistant Professor", exp: 6 },
+                    { name: "Dr. S. VIGNESHWARAN", designation: "Assistant Professor", exp: "2 Years 8 Months" },
+                    { name: "Dr. PRABHA K", designation: "Assistant Professor", exp: "4 Years 3 Months" },
+                    { name: "Dr. VIJAYARAGAVAN M", designation: "Assistant Professor", exp: "2 Years 2 Months" },
+                    { name: "Dr. PITCHAI MUTHU N", designation: "Assistant Professor", exp: "1 Year 5 Months" },
+                    { name: "Dr. SAKTHIMANI", designation: "Senior Resident", exp: "3 Months" }
+                ],
+
+                services: [
+                    "Medico-legal autopsy services",
+                    "Medico-legal certification",
+                    "Expert witness services for court",
+                    "Support for police investigations",
+                    "Specimen collection and preservation for FSL",
+                    "Medico-legal training for CRMI"
+                ],
+
+                pubStats: [
+                    { label: "Overall", value: 6 },
+                    { label: "International", value: 6 },
+                    { label: "National", value: 0 }
+                ],
+
+                pubHighlights: [
+                    "Analysis of Fatal Blunt Force Head Injuries in Road Traffic Accidents",
+                    "Epidemiological Study of Pediatric & Adolescent Poisoning Cases",
+                    "Case series on sanitizer misuse during lockdown"
+                ],
+
+                pubYearwise: [
+                    {
+                        year: 2024,
+                        title: "Analysis of Fatal Blunt Force Head Injuries in cases of Road Traffic Accidents",
+                        journal: "Indian Journal of Forensic Medicine & Toxicology, 19(1), 122-127",
+                        type: "International"
+                    },
+                    {
+                        year: 2024,
+                        title: "Epidemiological Study of Pediatric and Adolescent Poisoning Cases in a Rural Tertiary Care Centre in South India",
+                        journal: "Indian Journal of Forensic Medicine & Toxicology, 18(4), 55-58",
+                        type: "International"
+                    },
+                    {
+                        year: 2024,
+                        title: "Correlation of Stature and Hand Dimension Among Medical Students of South Tamil Nadu",
+                        journal: "Indian Journal of Forensic Medicine & Toxicology, Vol. 18 No. 4",
+                        type: "International"
+                    },
+                    {
+                        year: 2025,
+                        title: "Sanitizer a lockdown hooch! – A Case Series",
+                        journal: "Indian Journal of Forensic Medicine & Toxicology, 19(2), 1–6",
+                        type: "International"
+                    }
+                ],
+
+                research: [
+                    "KAP study on medical negligence awareness among students and interns (ICMR Project)",
+                    "Study on mental health & hematological manifestations among gas station workers (ICMR Project)"
+                ],
+
+                events: [
+                    "Student seminars and role play sessions",
+                    "Anti-ragging awareness week",
+                    "World Bioethics Day celebrations"
+                ],
+
+                achievements: [
+                    "Undergraduate student research selected for ICMR",
+                    "First place (Reels) – INDICIA’25, Thanjavur Medical College"
+                ],
+
                 gallery: [
-                    {name: "Consultation Room", icon: "fa-stethoscope", event: "Derma OPD", date: "Jan 20, 2024"},
-                    {name: "Laser Unit", icon: "fa-bolt", event: "Laser Therapy Center", date: "Feb 14, 2024"}
+                    {
+                        name: "Anti-ragging awareness week program",
+                        date: "14/08/2024",
+                        path: "Forensic/1.jpg"
+                    },
+                    {
+                        name: "World Bioethics Day",
+                        date: "18/10/2024",
+                        path: "Forensic/2.jpg"
+                    }
                 ]
             },
             {

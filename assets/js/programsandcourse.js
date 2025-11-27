@@ -247,43 +247,128 @@
                         ]
                     },
                     {
-                        id: "forensic",
-                        name: "Forensic Medicine",
-                        icon: "fa-user-injured",
-                        color: "#795548",
-                        colorDark: "#5d4037",
-                        description: "Medical Jurisprudence and Forensic Sciences",
-                        programOverview: "The Forensic Medicine department teaches medical aspects of law, medical ethics, autopsy procedures, toxicology, and medico-legal issues. The program prepares students to handle legal aspects of medical practice.",
-                        programDuration: "Taught in Phase II and Phase III (total 10 months)",
-                        courseOutcomes: [
-                            "Understand medico-legal aspects of medical practice",
-                            "Perform and interpret post-mortem examinations",
-                            "Identify and document injuries for legal purposes",
-                            "Apply principles of medical ethics",
-                            "Handle medico-legal cases and documentation",
-                            "Provide expert medical testimony in court"
+                        id: "ForensicMedicine",
+                        name: "Forensic Medicine & Toxicology",
+                        icon: "fa-gavel",
+                        color: "#607d8b",
+                        colorDark: "#455a64",
+
+                        desc: "The Department of Forensic Medicine & Toxicology trains undergraduate MBBS students and CRMI interns to understand medico-legal responsibilities, ethical medical practice, and forensic procedures essential for justice administration.",
+
+                        vision: "To produce skilled and informed doctors capable of making accurate observations, deductions, and medico-legal conclusions, ensuring ethical and legally sound medical practice.",
+
+                        mission: [
+                            "To train UG students as per National Medical Commission and University guidelines.",
+                            "To encourage research activities in forensic medicine and toxicology.",
+                            "To familiarize students with recent amendments in medical law.",
+                            "To inculcate ethical and responsible medical practice.",
+                            "To equip students with the knowledge and skills required for medico-legal work."
                         ],
-                        teachingMethods: [
-                            "Lectures on medico-legal topics",
-                            "Autopsy demonstrations",
-                            "Case-based discussions",
-                            "Mock court sessions",
-                            "Toxicology practicals",
-                            "Documentation workshops",
-                            "Ethics case discussions"
+
+                        objectives: [
+                            "Perform medico-legal autopsy.",
+                            "Issue medico-legal certificates.",
+                            "Serve as an expert witness in the court of law.",
+                            "Aid police investigations for administration of justice.",
+                            "Collect, preserve and dispatch medico-legal specimens to FSL and pathology.",
+                            "Maintain proper medico-legal records.",
+                            "Prepare and issue medical certificates."
                         ],
-                        assessmentMethods: [
-                            { method: "Theory Examinations", weightage: "50%" },
-                            { method: "Practical/Viva", weightage: "40%" },
-                            { method: "Internal Assessment", weightage: "10%" }
+
+                        infra_desc: "The Department is equipped with modern facilities including research laboratories, museum sections, smart demo rooms, mortuary block, and a departmental library to support teaching and research.",
+                        infra: [
+                            "Research laboratory and museum with preserved specimens",
+                            "Two demo rooms with smart classroom facilities",
+                            "Mortuary block",
+                            "Department library cum seminar room"
                         ],
-                        skills: [
-                            "Post-mortem examination techniques",
-                            "Injury documentation and photography",
-                            "Medico-legal report writing",
-                            "Evidence collection and preservation",
-                            "Age estimation methods",
-                            "Expert witness testimony"
+
+                        faculty: [
+                            { name: "Dr. RAJENDRA KUMAR R", designation: "Professor & Head", exp: 22 },
+                            { name: "Dr. A. DOMINIC INFANT RAJ", designation: "Professor", exp: 10 },
+                            { name: "Dr. A. ASWATH", designation: "Assistant Professor", exp: 6 },
+                            { name: "Dr. S. VIGNESHWARAN", designation: "Assistant Professor", exp: "2 Years 8 Months" },
+                            { name: "Dr. PRABHA K", designation: "Assistant Professor", exp: "4 Years 3 Months" },
+                            { name: "Dr. VIJAYARAGAVAN M", designation: "Assistant Professor", exp: "2 Years 2 Months" },
+                            { name: "Dr. PITCHAI MUTHU N", designation: "Assistant Professor", exp: "1 Year 5 Months" },
+                            { name: "Dr. SAKTHIMANI", designation: "Senior Resident", exp: "3 Months" }
+                        ],
+
+                        services: [
+                            "Medico-legal autopsy services",
+                            "Medico-legal certification",
+                            "Expert witness services for court",
+                            "Support for police investigations",
+                            "Specimen collection and preservation for FSL",
+                            "Medico-legal training for CRMI"
+                        ],
+
+                        pubStats: [
+                            { label: "Overall", value: 6 },
+                            { label: "International", value: 6 },
+                            { label: "National", value: 0 }
+                        ],
+
+                        pubHighlights: [
+                            "Analysis of Fatal Blunt Force Head Injuries in Road Traffic Accidents",
+                            "Epidemiological Study of Pediatric & Adolescent Poisoning Cases",
+                            "Case series on sanitizer misuse during lockdown"
+                        ],
+
+                        pubYearwise: [
+                            {
+                                year: 2024,
+                                title: "Analysis of Fatal Blunt Force Head Injuries in cases of Road Traffic Accidents",
+                                journal: "Indian Journal of Forensic Medicine & Toxicology, 19(1), 122-127",
+                                type: "International"
+                            },
+                            {
+                                year: 2024,
+                                title: "Epidemiological Study of Pediatric and Adolescent Poisoning Cases in a Rural Tertiary Care Centre in South India",
+                                journal: "Indian Journal of Forensic Medicine & Toxicology, 18(4), 55-58",
+                                type: "International"
+                            },
+                            {
+                                year: 2024,
+                                title: "Correlation of Stature and Hand Dimension Among Medical Students of South Tamil Nadu",
+                                journal: "Indian Journal of Forensic Medicine & Toxicology, Vol. 18 No. 4",
+                                type: "International"
+                            },
+                            {
+                                year: 2025,
+                                title: "Sanitizer a lockdown hooch! – A Case Series",
+                                journal: "Indian Journal of Forensic Medicine & Toxicology, 19(2), 1–6",
+                                type: "International"
+                            }
+                        ],
+
+                        research: [
+                            "KAP study on medical negligence awareness among students and interns (ICMR Project)",
+                            "Study on mental health & hematological manifestations among gas station workers (ICMR Project)"
+                        ],
+
+                        events: [
+                            "Student seminars and role play sessions",
+                            "Anti-ragging awareness week",
+                            "World Bioethics Day celebrations"
+                        ],
+
+                        achievements: [
+                            "Undergraduate student research selected for ICMR",
+                            "First place (Reels) – INDICIA’25, Thanjavur Medical College"
+                        ],
+
+                        gallery: [
+                            {
+                                name: "Anti-ragging awareness week program",
+                                date: "14/08/2024",
+                                path: "Forensic/1.jpg"
+                            },
+                            {
+                                name: "World Bioethics Day",
+                                date: "18/10/2024",
+                                path: "Forensic/2.jpg"
+                            }
                         ]
                     },
                     {
