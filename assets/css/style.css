@@ -9547,7 +9547,7 @@ grid-template-columns: 1fr;
         }
 
         .infra-gym-feature-box {
-            background: linear-gradient(135deg, rgba(48,43,109,0.05), rgba(220,20,60,0.05));
+            background: linear-gradient(135deg, rgba(48,43,109,0.05), rgba(20, 140, 220, 0.05));
             padding:15px 35px;
             border-radius: 15px;
             border-left: 5px solid var(--color-primary);
@@ -9588,7 +9588,7 @@ grid-template-columns: 1fr;
         /* Transport Section */
         .infra-transport-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: var(--gap-medium);
         }
 
