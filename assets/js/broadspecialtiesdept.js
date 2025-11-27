@@ -229,15 +229,69 @@
                 ]
             },
             {
-                id: "psychiatry", name: "Psychiatry", icon: "fa-brain", color: "#673ab7", colorDark: "#512da8",
-                desc: "Comprehensive mental health services with counseling and therapy.",
-                vision:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
-                 mission:["To provide state-of-art management options for patients with respiratory diseases, according to the latest evidence-based guidelines.","Train the students with focus on bench to bedside practice through rigorous implementation of the course along with innovative teaching-learning practices and to delve into dynamic clinical research.","To create awareness among patients, their caregivers and the general public about basic Respiratory illnesses and their symptoms.","To conduct patient empowerment programs so as to reduce morbidity or mortality and arrive at early diagnosis of chest diseases at an affordable cost."],
-                objectives:["Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro."],
-                infra: ["Consultation rooms", "Counseling center", "De-addiction unit", "Psychology testing room"],
-                faculty: [{name: "Ram", designation: "Assistant professor", exp: "5"},{name: "Sam", designation: "Assistant professor", exp: "5"},{name: "John", designation: "Assistant professor", exp: "5"}],
+                id: "psychiatry", 
+                name: "Psychiatry", 
+                icon: "fa-brain", color: "#673ab7", colorDark: "#512da8",
+                desc: "The Department of Psychiatry is committed to excellence in mental health care, education, and research. We provide comprehensive, evidence-based assessment and treatment for psychiatric disorders across the lifespan, while training competent, ethical mental health professionals.",
+                vision:"To improve the quality of life of individuals with mental illness through excellence in medical education, impactful research, promoting awareness and compassionate clinical care.",
+                 mission:["To create structured, empathetic and comprehensive mental health care services rooted in the bio-psycho-social model. To offer fine educational training and research activities imparting psychiatric knowledge, scientific temper, and universal ethical values."],
+                objectives:[ "To impart knowledge and skills enabling UG, CRMI, and PG students to diagnose and treat psychiatric disorders, promote awareness, and understand research and psychosocial aspects of mental illnesses with excellence in confidential interviewing and use of advanced diagnostic tools."],
+                infra: [
+                    "Separate OPD rooms ensuring privacy/confidentiality.",
+                    "Well-equipped demonstration rooms for teaching students in OP & Ward.",
+                    "30-bedded ward for male & female with Deaddiction ward.",
+                    "Department library/e-library with internet facility.",
+                    "ECT Treatment Room – Modified Brief Pulse ECT.",
+                    "Psychology Lab – Biofeedback Therapy.",
+                    "Psychometric Instruments (Adults & Children): Intelligence tests, Personality tests, Rating scales, Neuropsychological battery.",
+                    "Electroencephalogram (EEG).",
+                    "Aversion Apparatus.",
+                    "Alcohol Breath Analyzer."
+                ],
+                faculty: [
+                        {
+                        "name": "Dr. S. Sivaraman",
+                        "designation": "Professor & HOD",
+                        "exp": 15
+                        },
+                        {
+                        "name": "Dr. K. Ronald Roy",
+                        "designation": "Professor",
+                        "exp": 10
+                        },
+                        {
+                        "name": "Dr. Dana Prabagaran",
+                        "designation": "Assistant Professor",
+                        "exp": 2
+                        },
+                        {
+                        "name": "Dr. K. Sandhya",
+                        "designation": "Assistant Professor",
+                        "exp": 1
+                        },
+                        {
+                        "name": "Dr. P. Fidal Hastro",
+                        "designation": "Senior Resident",
+                        "exp": 0
+                        },
+                        {
+                        "name": "Mrs. Kirthana",
+                        "designation": "Clinical Psychologist",
+                        "exp": 0
+                        }
+                ],
                 services_desc:"The Department offers diagnostic and consultative services for patient management across various specialties",
-                services: ["General Psychiatry", "Depression Treatment", "Anxiety Disorders", "Addiction Treatment", "Counseling Services", "Child Psychiatry"],
+                services: [
+                    "Outpatient services with private consultation rooms.",
+                    "30-bedded inpatient services including deaddiction care.",
+                    "Psychopharmacological, psychotherapy and psychosocial management.",
+                    "Modified Electroconvulsive Therapy.",
+                    "Biofeedback Therapy.",
+                    "All forms of Psychotherapies.",
+                    "Psychometric Assessments: Intelligence, Personality, Neuropsychological.",
+                    "Specialty Clinics: Child & Adolescent, Geriatric, De-addiction, Psychomotor & Memory, Marital & Sex Therapy, Suicide Prevention."
+                ],
+                publication_overview: "The department has strong research output including clinical studies, epidemiology, neurobiology, and psychotherapeutic interventions.",
                 pubStats: [{label: "Publications", value: "20+"}],
                 pubHighlights: ["Depression management"],
                 pubYearwise: [{year: "2023", title: "Mental health interventions", journal: "Psychiatry Review", type: "Research"}],

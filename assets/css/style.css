@@ -9361,7 +9361,7 @@ grid-template-columns: 1fr;
 
         .infra-hostel-feature-content h4 {
             font-size: 22px;
-            color: #302b6d;
+            color: var(--color-primary);
             margin-bottom: 12px;
         }
 
@@ -9786,7 +9786,7 @@ grid-template-columns: 1fr;
         .infra-medical-icon {
             width: 50px;
             height: 50px;
-            background: var(--color-teal);
+            background: var(--color-secondary);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -9975,4 +9975,13 @@ grid-template-columns: 1fr;
             .infra-stats-bar {
                 margin: -2rem 1rem 3rem;
             }
+        }
+        .lib-link i{
+            transform:rotate(0deg);
+            color: var(--primary-dark) !important;
+            transition:.1s;
+        }
+        .lib-link:hover i{
+            transition:.8s;
+            transform:rotate(-90deg);
         }
