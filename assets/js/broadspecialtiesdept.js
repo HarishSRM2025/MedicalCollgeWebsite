@@ -158,9 +158,6 @@
                     "CPR Awareness Programme Week (CME & Workshop)"
                 ],
 
-                "achievements_desc": "",
-                "achievements": [],
-
                 "gallery": [
                     {
                     "name": "Trauma Uncovered – Radiology",

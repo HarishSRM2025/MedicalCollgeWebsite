@@ -283,6 +283,8 @@
             }
             
             if (d.achievements) {
+                console.log(d.achievements);
+                
                 html += `
                     <div class="accordion-section">
                         <div class="accordion-header" onclick="toggleAccordion(this)">
