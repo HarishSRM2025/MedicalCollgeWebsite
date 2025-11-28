@@ -234,20 +234,29 @@
                 icon: "fa-brain", color: "#673ab7", colorDark: "#512da8",
                 desc: "The Department of Psychiatry is committed to excellence in mental health care, education, and research. We provide comprehensive, evidence-based assessment and treatment for psychiatric disorders across the lifespan, while training competent, ethical mental health professionals.",
                 vision:"To improve the quality of life of individuals with mental illness through excellence in medical education, impactful research, promoting awareness and compassionate clinical care.",
-                 mission:["To create structured, empathetic and comprehensive mental health care services rooted in the bio-psycho-social model. To offer fine educational training and research activities imparting psychiatric knowledge, scientific temper, and universal ethical values."],
-                objectives:[ "To impart knowledge and skills enabling UG, CRMI, and PG students to diagnose and treat psychiatric disorders, promote awareness, and understand research and psychosocial aspects of mental illnesses with excellence in confidential interviewing and use of advanced diagnostic tools."],
+                mission:["To create structured, empathetic and comprehensive MENTAL   health care services with appropriate socio-cultural context intended to reach medically unreached rooted in BIO-PSYCHO-SOCIAL model.","To commit to offer fine educational training and research activities aiming at imparting fundamental psychiatric knowledge, encouraging Scientific Temper, and upholding universal ethical values in shaping an integrated Mental Health Professional."],
+                objectives:[ "To impart such knowledge and skills that may enable an Undergraduate student/CRMI AND Post Graduate to Promote awareness, diagnose and treat common psychiatric disorders, and to gain an in depth knowledge on research aspects and Psychosocial aspects of various mental illnesses.","To ensure excellent patient care with confidential interviewing utilizing pharmacological, Psychological and alternative treatment modalities including use of advanced equipment (ECT, Psychometric instruments, Biofeedback) for diagnostic and therapeutic management."],
+                infra_desc:"The Department is equipped with modern outpatient and inpatient facilities, dedicated psychotherapy and de-addiction unit, and advanced diagnostic services supporting comprehensive clinical care, academic training, and multidisciplinary research in mental health.",
                 infra: [
-                    "Separate OPD rooms ensuring privacy/confidentiality.",
-                    "Well-equipped demonstration rooms for teaching students in OP & Ward.",
-                    "30-bedded ward for male & female with Deaddiction ward.",
-                    "Department library/e-library with internet facility.",
-                    "ECT Treatment Room – Modified Brief Pulse ECT.",
-                    "Psychology Lab – Biofeedback Therapy.",
-                    "Psychometric Instruments (Adults & Children): Intelligence tests, Personality tests, Rating scales, Neuropsychological battery.",
-                    "Electroencephalogram (EEG).",
-                    "Aversion Apparatus.",
-                    "Alcohol Breath Analyzer."
-                ],
+                    "Separate OPD rooms ensuring privacy/confidentiality",
+                    "Well-equipped demonstration rooms for teaching students in OP & WARD",
+                    "30 bedded ward - separate for male & female with basic facilities including a Deaddiction ward",
+                    "Department library / e-library with internet facility",
+                    "ECT Treatment Room - Modified Electroconvulsive Therapy - Brief pulse ECT",
+                    "Psychology Lab - Bio-Feedback Therapy",
+                    "Seguin Form Board Test (SFBT)",
+                    "Binet Kamath Test of Intelligence (BKT)",
+                    "Mains Intelligence Test for Indian Children (MISIC)",
+                    "Wechsler Adult Intelligence Test",
+                    "Rorschach Ink Blot Test",
+                    "Thematic Apperception Test",
+                    "Child Apperception Test",
+                    "Rating scales and questionnaires for objective assessment",
+                    "Neuropsychological battery of tests",
+                    "Electroencephalogram (EEG)",
+                    "Aversion Apparatus",
+                    "Alcohol Breath Analyzer"
+                    ],
                 faculty: [
                         {
                         "name": "Dr. S. Sivaraman",
@@ -280,25 +289,181 @@
                         "exp": 0
                         }
                 ],
-                services_desc:"The Department offers diagnostic and consultative services for patient management across various specialties",
+                services_desc:"The Department offers comprehensive psychiatric services including outpatient, inpatient, emergency, and consultation-liaison care. Specialized clinics provide focused interventions in areas such as child psychiatry, addiction medicine, and geriatric mental healthx",
                 services: [
-                    "Outpatient services with private consultation rooms.",
-                    "30-bedded inpatient services including deaddiction care.",
-                    "Psychopharmacological, psychotherapy and psychosocial management.",
-                    "Modified Electroconvulsive Therapy.",
-                    "Biofeedback Therapy.",
-                    "All forms of Psychotherapies.",
-                    "Psychometric Assessments: Intelligence, Personality, Neuropsychological.",
-                    "Specialty Clinics: Child & Adolescent, Geriatric, De-addiction, Psychomotor & Memory, Marital & Sex Therapy, Suicide Prevention."
+                   "Out Patient Department with separate consultation rooms ensuring patient privacy and confidentiality",
+                    "30 bedded In Patient Department including Deaddiction ward with treatment including psychopharmacological, psychotherapy & psychosocial management using recent treatment modalities",
+                    "Modified Electro Convulsive Therapy",
+                    "Biofeedback Therapy",
+                    "All forms of Psychotherapies",
+                    "Psychometric Assessment",
+                    "Intelligence Assessment",
+                    "Personality Assessment",
+                    "Neuro-Psychological Assessment",
+                    "Specialty Clinics"
+                ],
+                services_table:[
+                    {
+                        "s_no": 1,
+                        "day": "monday",
+                        "speciality_clinic": "child & adolescent guidance clinic"
+                    },
+                    {
+                        "s_no": 2,
+                        "day": "tuesday",
+                        "speciality_clinic": "geriatric & neuropsychiatry clinic"
+                    },
+                    {
+                        "s_no": 3,
+                        "day": "wednesday",
+                        "speciality_clinic": "de-addiction clinic"
+                    },
+                    {
+                        "s_no": 4,
+                        "day": "thursday",
+                        "speciality_clinic": "psychomotor & memory clinic"
+                    },
+                    {
+                        "s_no": 5,
+                        "day": "friday",
+                        "speciality_clinic": "marital and sex therapy clinic"
+                    },
+                    {
+                        "s_no": 6,
+                        "day": "all working days",
+                        "speciality_clinic": "suicide prevention clinic"
+                    }
                 ],
                 publication_overview: "The department has strong research output including clinical studies, epidemiology, neurobiology, and psychotherapeutic interventions.",
-                pubStats: [{label: "Publications", value: "20+"}],
-                pubHighlights: ["Depression management"],
-                pubYearwise: [{year: "2023", title: "Mental health interventions", journal: "Psychiatry Review", type: "Research"}],
-                research: ["Mental health awareness", "Addiction treatment"],
-                events: ["World Mental Health Day"],
-                achievements: ["Excellence in Mental Health"],
-                gallery: [{name: "Consultation Room", icon: "fa-couch", event: "Psychiatry Dept", date: "Oct 2024"}]
+                pubStats: [{label: "Overall", value: "22"},{label: "International", value: "4"}, {label: "National", value: "18"}],
+                pubHighlights: [
+                    "Focused work on mental health in special populations including children, adolescents, and the elderly.",
+                    "Implementation and outcome measurement of integrated behavioral health and quality improvement initiatives.",
+                    "Innovative studies on trauma, stress, and caregiver burden in major mental illnesses.",
+                    "Pioneering research in psychosocial factors underlying psychiatric illnesses.",
+                    "Translational and clinical research in addiction, autism spectrum disorders, and behavioral neuroscience."
+                ],
+                pubYearwise: [
+                    {
+                        "year": 2025,
+                        "title": "Keerthana A, Sivaraman S, Ronald Roy - Relationship between Spiritual Wellbeing and Marital Satisfaction to Severity of Depression- A Cross Sectional Observational Study.",
+                        "journal": "SCOPE Journal",
+                        "type": "Original Research Article"
+                    },
+                    {
+                        "year": 2025,
+                        "title": "Sivaranjiny S, Kumar R, Partheeban M - Autogenic Relaxation Therapy: A Pilot Study on its Multidimensional Effects.",
+                        "journal": "Journal of Pioneering Medical Sciences",
+                        "type": "Original Research Article"
+                    },
+                    {
+                        "year": 2024,
+                        "title": "Sivaraman S, Ronald Roy, Sandhya K - ENCHANT Enhancing Psychiatric History Taking: A Comprehensive Approach.",
+                        "journal": "Indian Journal of Mental Health and Neurosciences",
+                        "type": "Review Article"
+                    },
+                    {
+                        "year": 2024,
+                        "title": "Aruna R, Muruganandam P, Niveatha - Eating habit, body image, and gender – is there any association? – A comparative study among medical students from southern India.",
+                        "journal": "Journal of Education and Health Promotion",
+                        "type": "Original Research Article"
+                    },
+                    {
+                        "year": 2024,
+                        "title": "Sivanandhini R, Sivaraman S, Ronald Roy K - Prevalence of Intimate Partner Violence in Spouses of Patients with Alcohol Dependence Syndrome.",
+                        "journal": "Journal-Innovations",
+                        "type": "Original Research Article"
+                    },
+                    {
+                        "year": 2024,
+                        "title": "Nithish SM, Ronald Roy K, Sivaraman - Patterns of nicotine use among adult patients with chronic obstructive pulmonary disease and Association with its severity.",
+                        "journal": "Journal of Xidian University",
+                        "type": "Original Research Article"
+                    },
+                    {
+                        "year": 2024,
+                        "title": "Vidhya A, Sivaraman S, Ronald Roy K - Review on Negative Symptoms of Schizophrenia.",
+                        "journal": "International Journal of Scientific Development and Research",
+                        "type": "Systematic Review"
+                    },
+                    {
+                        "year": 2024,
+                        "title": "Vidhya A, Sivaraman S, Ronald Roy K - An Observational study on Facebook feedback, its association with self-esteem and its influence on the purpose in life among medical students.",
+                        "journal": "International Journal of Scientific Development and Research",
+                        "type": "Original Research Article"
+                    },
+                    {
+                        "year": 2024,
+                        "title": "Vidhya A, Sivaraman S, Ronald Roy K - Comparative Study on Cognitive Functions between Early Onset Vs Late Onset Alcohol Dependence Patients.",
+                        "journal": "International Journal of Scientific Development and Research",
+                        "type": "Original Research Article"
+                    }
+                ],
+                research: [
+                        "We are being involved in ICMR (Indian Council of Medical Research) and IPS (Indian Psychiatric Society) based multicentric projects currently.",
+                        "This includes basic neuroscience, clinical trials, epidemiological studies, and health services research aimed at improving diagnosis, treatment outcomes, and prevention strategies.",
+                        "Active research areas encompass addiction, mood and anxiety disorders, neurodevelopment conditions, behavioral neuroscience, and integrated mental health care.",
+                        "Faculty collaborate across disciplines to translate scientific discoveries into innovative therapies and enhanced patient care, fostering academic growth and community impact.",
+                        "Clinical research trials and quality improvement initiatives further ensure evidence-based practice and progressive mental health services."
+                    ],
+                research_desc:"The Department of Psychiatry is dedicated to advancing the understanding and treatment of mental health disorders through a broad spectrum of research. ",
+                events: [
+                    "International Day against Drug Abuse and Illicit Trafficking 2025",
+                    "UG Psychiatry Quiz Prelims and Finals",
+                    "World Schizophrenia Day 2025",
+                    "World Mental Health Day UG Debate 2025",
+                    "Word Suicide Prevention day 2035 - Student Awareness program",
+                    "World Bipolar day - Public awareness program"
+                ],
+                events_desc:"The Department organizes a variety of academic events throughout the year, including CLINICAL seminars, mental health awareness programs, and Postgraduate CME and observation of International Mental Health days.",
+                achievements: [
+                    "World Mental Health Day program for Students and general public",
+                    "World Suicide Prevention Day Student awareness program",
+                    "World Schizophrenia Day programs",
+                    "World Bipolar Day Program",
+                    "World No Tobacco day program",
+                    "Mental Health Awareness Programs, Screening Camps"
+                ],
+                achievements_desc:"The department has achieved significant recognition in 2025 through various programs, including accolades for clinical excellence, and leadership and observation and celebration of International Mental health related days",
+                gallery_desc:"The psychiatry department gallery showcases the vibrant academic, clinical, and community activities throughout the year. It highlights moments from conferences, workshops, outreach programs, and departmental celebrations, reflecting the collaborative spirit and achievements of faculty, students, and staff",
+                gallery: [
+                    {
+                        "s_no": 1,
+                        "path": "Psychiatry/1.jpg",
+                        "name": "World Bipolar Day",
+                        "date": "29 March 2025"
+                    },
+                    {
+                        "s_no": 2,
+                        "path": "Psychiatry/2.jpg",
+                        "name": "International Day against Drug Abuse and Illicit Trafficking 2025",
+                        "date": "26 June 2025"
+                    },
+                    {
+                        "s_no": 3,
+                        "path": "Psychiatry/3.jpg",
+                        "name": "World Mental Health Day",
+                        "date": "10 October 2025"
+                    },
+                    {
+                        "s_no": 4,
+                        "path": "Psychiatry/4.jpg",
+                        "name": "World Schizophrenia Day",
+                        "date": "26 May 2025"
+                    },
+                    {
+                        "s_no": 5,
+                        "path": "Psychiatry/5.jpg",
+                        "name": "World Suicide Prevention Day",
+                        "date": "17 September 2025"
+                    },
+                    {
+                        "s_no": 6,
+                        "path": "Psychiatry/6.jpg",
+                        "name": "UG QUIZ 2025",
+                        "date": "23 April 2025"
+                    }
+                ]
             },
             {
                 id: "respiratory", name: "Respiratory Medicine", icon: "fa-lungs", color: "#26c6da", colorDark: "#00acc1",

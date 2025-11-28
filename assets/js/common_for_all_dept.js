@@ -158,6 +158,26 @@
                             <div class="accordion-body">
                                 <p>${d.services_desc ? d.services_desc :"Comprehensive healthcare services catering to all needs."}</p>
                                 <ul>${d.services.map(s => `<li>${s}</li>`).join('')}</ul>
+                                ${d.services_table ? `<div class="publication-table-wrapper">
+                                            <table class="publication-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="width: 10%">S.No</th>
+                                                        <th style="width: 45%">Title</th>
+                                                        <th style="width: 30%">Journal</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                ${d.services_table.map(p => `
+                                                <tr>
+                                                    <td data-label="Year" class='si_no'>${p.s_no}</td>
+                                                    <td data-label="Title" class='clinic'><strong>${p.speciality_clinic}</strong></td>
+                                                    <td data-label="Journal" class='day'><span class='year-badge'>${p.day}</span></td>
+                                                </tr>
+                                            `).join('')}
+                                        </tbody>
+                                    </table>
+                                </div>`:""}
                             </div>
                         </div>
                     </div>

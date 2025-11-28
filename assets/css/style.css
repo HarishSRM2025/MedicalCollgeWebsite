@@ -9985,3 +9985,7 @@ grid-template-columns: 1fr;
             transition:.8s;
             transform:rotate(-90deg);
         }
+
+        .si_no,.clinic,.day{
+            text-transform:capitalize;
+        }
