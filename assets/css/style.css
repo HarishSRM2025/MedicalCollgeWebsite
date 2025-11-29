@@ -9969,11 +9969,12 @@ grid-template-columns: 1fr;
         .lib-link i{
             transform:rotate(0deg);
             color: var(--primary-dark) !important;
+            transform:rotate(-90deg);
             transition:.1s;
         }
         .lib-link:hover i{
             transition:.8s;
-            transform:rotate(-90deg);
+            transform:rotate(-130deg);
         }
 
         .si_no,.clinic,.day{

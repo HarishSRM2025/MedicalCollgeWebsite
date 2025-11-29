@@ -110,7 +110,15 @@
               <li><a href="./hospital.html#camps">Camps</a></li>
             </ul>
           </li>
-          <li><a href="infrastructure.html">Infrastructure</a></li>
+           <li class="has-dropdown" data-dropdown="media">
+            <a href="infrastructure.html">Infrastructure <span class="arrow dropdown-trigger">&#9654;</span></a>
+            <ul class="dropdown">
+              <li><a href="infrastructure.html#hostel">Hostel</a></li>
+              <li><a href="infrastructure.html#sports">Sports</a></li>
+              <li><a href="infrastructure.html#transport">Transport</a></li>
+              <li><a href="infrastructure.html#gym">Gym</a></li>
+            </ul>
+          </li>
           <li><a href="research.html">Research & Innovation</a></li>
           <li class="has-dropdown" data-dropdown="media">
             <a href="./media.html">Media & OutReach <span class="arrow dropdown-trigger">&#9654;</span></a>
