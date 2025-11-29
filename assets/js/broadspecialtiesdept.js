@@ -2,22 +2,218 @@
         // Department data with comprehensive information
         const depts = [
             {
-                id: "general_medicine", name: "General Medicine", icon:"fa-stethoscope", color: "#3558c9ff", colorDark: "#07268dff",
-                desc: "Comprehensive internal medicine care for all age groups.",
-                vision:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
-                 mission:["To provide state-of-art management options for patients with respiratory diseases, according to the latest evidence-based guidelines.","Train the students with focus on bench to bedside practice through rigorous implementation of the course along with innovative teaching-learning practices and to delve into dynamic clinical research.","To create awareness among patients, their caregivers and the general public about basic Respiratory illnesses and their symptoms.","To conduct patient empowerment programs so as to reduce morbidity or mortality and arrive at early diagnosis of chest diseases at an affordable cost."],
-                objectives:["Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro."],
-                infra: ["OPD rooms", "Inpatient wards", "ICU", "Procedure room"],
-                faculty: [{name: "Ram", designation: "Assistant professor", exp: "5"},{name: "Sam", designation: "Assistant professor", exp: "5"},{name: "John", designation: "Assistant professor", exp: "5"}],
-                services_desc:"The Department offers diagnostic and consultative services for patient management across various specialties",
-                services: ["General Consultation", "Diabetes Care", "Hypertension", "Infectious Diseases", "Respiratory Medicine", "Gastroenterology", "Cardiology", "Nephrology"],
-                pubStats: [{label: "Publications", value: "30+"}],
-                pubHighlights: ["Diabetes management"],
-                pubYearwise: [{year: "2023", title: "Diabetes protocols", journal: "Medicine Today", type: "Research"}],
-                research: ["Chronic disease management"],
-                events: ["World Diabetes Day"],
-                achievements: ["Best Medicine Dept"],
-                gallery: [{name: "OPD", icon: "fa-clinic-medical", event: "OPD", date: "Jan 2024"}]
+                "id": "general_medicine",
+                "name": "General Medicine",
+                "icon": "fa-stethoscope",
+                "color": "#3498db",
+                "colorDark": "#2c81ba",
+
+                "desc": "The Department of General Medicine provides comprehensive, evidence-based care for adults with acute and chronic medical conditions. We emphasize accurate diagnosis, holistic patient management and preventive health. We actively involved in teaching and mentoring Undergraduates and Postgraduates as part of our commitment to academic excellence.",
+
+                "vision": "To become a leading centre of excellence in patient care, medical education and clinical research, setting the highest standards in Internal Medicine for the region and beyond.",
+
+                "mission": [
+                    "To provide excellence in clinical services, promote preventive healthcare and uphold the highest ethical standards.",
+                    "To provide advance medical education and fostering research while training Undergraduates and Postgraduates to make them to become skilled, caring medical professional."
+                ],
+
+                "objectives": [
+                    "To provide high quality, evidence based care for patients",
+                    "To strengthen medical education by offering structured teaching, clinical training and mentorship",
+                    "To promote preventive healthcare through community awareness, lifestyle modification and early diagnosis.",
+                    "To encourage clinical research and innovation"
+                ],
+
+                "infra_desc": "The department of General Medicine is equipped with well organized outpatient and inpatient facilities, supported by fully functional ICU and emergency services.",
+                "infra": [
+                    "Outpatient department with spacious consultation areas, dedicated examination rooms and comfortable waiting hall.",
+                    "General Ward inpatient facilities with 8 wards of 30 beds each (240 beds total).",
+                    "ICU & CCU facilities with 40 beds equipped with advanced monitoring and life-support systems.",
+                    "Well-equipped procedure rooms for bone marrow aspiration, pleural aspiration and lumbar puncture.",
+                    "Dedicated teaching spaces, seminar halls, demo halls and library for UG & PG training."
+                ],
+
+                "faculty_desc": "The department has a team of qualified and experienced faculty committed to academic excellence, research and clinical service.",
+                "faculty": [
+                    { "name": "Dr. K. SIVAKUMAR", "designation": "Professor & HOD", "exp": "16" },
+                    { "name": "Dr. N.K. SENTHILNATHAN", "designation": "Professor", "exp": "22" },
+                    { "name": "Dr.S.PRABHU SHANKAR", "designation": "Professor", "exp": "21" },
+                    { "name": "Dr.N.RAMYA", "designation": "Professor", "exp": "15" },
+                    { "name": "Dr.GANESH BABU", "designation": "Professor", "exp": "20" },
+                    { "name": "Dr.C.DHARMARAJ", "designation": "Professor", "exp": "24" },
+                    { "name": "Dr. S. SHEELA SAMINI SEELAN", "designation": "Associate Professor", "exp": "12" },
+                    { "name": "Dr. P. LAWRENCE", "designation": "Associate Professor", "exp": "10" },
+                    { "name": "Dr. M. PRAVEEN KUMAR", "designation": "Associate Professor", "exp": "10" },
+                    { "name": "Dr. M. ARUN KARKI", "designation": "Associate Professor", "exp": "9" },
+                    { "name": "Dr.P.T.PRABAKARAN", "designation": "Associate Professor", "exp": "7" },
+                    { "name": "Dr. P.MANOJ KUMAR", "designation": "Associate Professor", "exp": "10" },
+                    { "name": "Dr.SANTHOSH CHAKARAVARTHY", "designation": "Associate Professor", "exp": "0" },
+                    { "name": "Dr.M.MOHAMMAD INAAMUL HASSAN", "designation": "Assistant Professor", "exp": "6" },
+                    { "name": "Dr.R.GOBINATH", "designation": "Assistant Professor", "exp": "5" },
+                    { "name": "Dr.V.VIKNESH", "designation": "Assistant Professor", "exp": "4" },
+                    { "name": "Dr.K.SRIRAM", "designation": "Assistant Professor", "exp": "3" },
+                    { "name": "Dr.G.RAMANUJAM", "designation": "Assistant Professor", "exp": "3" },
+                    { "name": "Dr.S.KARTHIKEYAN", "designation": "Assistant Professor", "exp": "4" },
+                    { "name": "Dr.TANZEEM", "designation": "Assistant Professor", "exp": "3" },
+                    { "name": "Dr.R.RAGU", "designation": "Assistant Professor", "exp": "2" },
+                    { "name": "Dr.B.VASANTH", "designation": "Assistant Professor", "exp": "3" },
+                    { "name": "Dr.S.VIGNESHWARAN", "designation": "Assistant Professor", "exp": "2" },
+                    { "name": "Dr.GOWTHAM THOMAS RAJA", "designation": "Assistant Professor", "exp": "2" },
+                    { "name": "Dr.S.KAPIL", "designation": "Assistant Professor", "exp": "2" },
+                    { "name": "Dr.R.ARAVIND ADITHIYA", "designation": "Senior Resident", "exp": "2" },
+                    { "name": "Dr.RINU CHITRA", "designation": "Senior Resident", "exp": "1" },
+                    { "name": "Dr.S.GAYATHRI", "designation": "Senior Resident", "exp": "1" },
+                    { "name": "Dr.MUTHUKUMARASAMY", "designation": "Senior Resident", "exp": "0" },
+                    { "name": "Dr.KAVYAASHREE.K.M", "designation": "Senior Resident", "exp": "0" },
+                    { "name": "Dr.KAWYA.K", "designation": "Senior Resident", "exp": "0" },
+                    { "name": "Dr.MAHESWARAN", "designation": "Senior Resident", "exp": "0" },
+                    { "name": "Dr.R.SABARINATHAN", "designation": "Senior Resident", "exp": "0" },
+                    { "name": "Dr.N.SAKTHIVEL", "designation": "Senior Resident", "exp": "0" },
+                    { "name": "Dr.M.AJITH KANNAN", "designation": "Senior Resident", "exp": "0" },
+                    { "name": "Dr.A.JEFFREY FRANCIS ROY", "designation": "Senior Resident", "exp": "0" }
+                ],
+
+                "services_desc": "The Department Of General Medicine provides comprehensive care for adults with acute and chronic medical conditions.",
+                "services": [
+                    "Outpatient Consultation",
+                    "Speciality Clinics – Cardiology, Nephrology, Haematology, Geriatrics, Neurology, Medical Gastroenterology, Diabetes, Hypertension, Rheumatology",
+                    "Inpatient management across multiple wards",
+                    "ICU and CCU service",
+                    "Teaching and Training of Undergraduates and Postgraduates"
+                ],
+
+                "publication_overview": "The Department of General Medicine actively engages in academic research and regularly publishes in national and international journals.",
+                "pubStats": [
+                    { "label": "Overall", "value": "174" },
+                    { "label": "International", "value": "102" },
+                    { "label": "National", "value": "72" }
+                ],
+
+                "pubHighlights": [
+                    "Research on early diagnosis and prognostic markers",
+                    "Studies on cardiovascular diseases, diabetes and hypertension",
+                    "Stroke and chronic kidney disease research",
+                    "Critical Care and Sepsis studies"
+                ],
+
+                "pubYearwise": [
+                    {
+                    "year": "2025",
+                    "title": "A Study Of Clinico Bacteriological Profile Of Urinary Tract Infection",
+                    "journal": "International Journal of Academic Medicine and Pharmacy",
+                    "type": "International"
+                    },
+                    {
+                    "year": "2025",
+                    "title": "Correlation Between Thyroid Profile And Type II Diabetes Mellitus",
+                    "journal": "International Journal of Academic Medicine and Pharmacy",
+                    "type": "International"
+                    },
+                    {
+                    "year": "2025",
+                    "title": "Monocyte Count to HDL Ratio in Predicting Severity of Acute Ischemic Stroke",
+                    "journal": "International Journal of Academic Medicine and Pharmacy",
+                    "type": "International"
+                    },
+                    {
+                    "year": "2025",
+                    "title": "Effect of Iron Deficiency Anemia on HbA1c in Non-diabetic Patients",
+                    "journal": "National Journal of Physiology, Pharmacy and Pharmacology",
+                    "type": "National"
+                    },
+                    {
+                    "year": "2024",
+                    "title": "Comparison of Sodium and Potassium in Arterial and Venous Samples",
+                    "journal": "MGM Journal of Medical Sciences",
+                    "type": "National"
+                    },
+                    {
+                    "year": "2024",
+                    "title": "Platelet to Lymphocyte Ratio in Acute Myocardial Infarction",
+                    "journal": "Asian Journal of Pharmaceutical and Clinical Research",
+                    "type": "International"
+                    },
+                    {
+                    "year": "2024",
+                    "title": "Serum Magnesium & Short-term Outcome in Acute Ischemic Stroke",
+                    "journal": "International Journal of Academic Medicine and Pharmacy",
+                    "type": "International"
+                    },
+                    {
+                    "year": "2024",
+                    "title": "NAFLD among Hypothyroidism Patients",
+                    "journal": "International Journal of Academic Medicine and Pharmacy",
+                    "type": "International"
+                    },
+                    {
+                    "year": "2024",
+                    "title": "Serum Sodium Levels in Liver Cirrhosis",
+                    "journal": "International Journal of Academic Medicine and Pharmacy",
+                    "type": "International"
+                    },
+                    {
+                    "year": "2024",
+                    "title": "Hypothyroidism in Chronic Kidney Disease Patients",
+                    "journal": "National Board of Examinations",
+                    "type": "National"
+                    }
+                ],
+
+                "research_desc": "Department of General Medicine is actively engaged in clinical research and contributes to high-quality publications and interdisciplinary projects.",
+                "research": [
+                    "Ongoing projects on Chronic Kidney Disease",
+                    "Research in acute ischemic stroke and Alcoholic Liver Disease",
+                    "Studies on Sepsis",
+                    "Studies on Myocardial Infarction and Diabetes Mellitus"
+                ],
+
+                "events_desc": "The Department conducts regular academic and community outreach programs.",
+                "events": [
+                    "Annual CME on Diabetes, Heart Disease and Stroke",
+                    "Workshops on Continuous Insulin Pump Therapy",
+                    "Student seminars and quiz competitions",
+                    "World Diabetes, Hypertension & Heart Day awareness programs",
+                    "Medical camps for major public health days"
+                ],
+
+                "achievements_desc": "The Department Of General Medicine has made significant progress in patient care, academic excellence and research initiatives.",
+                "achievements": [
+                    "PG Dr. Siddhart – First prize in state-level medal exam by API TN Chapter",
+                    "PG Dr. Nagadeepan – Third prize in Neurology quiz at CMC Vellore"
+                ],
+
+                "gallery": [
+                    {
+                    "name": "Poster/Painting & Model Making Competition",
+                    "event": "General Medicine",
+                    "path": "GeneralMedicine/1.jpg",
+                    "date": "30.04.2025"
+                    },
+                    {
+                    "name": "Medical Camp – World Hypertension Day",
+                    "event": "General Medicine",
+                    "path": "GeneralMedicine/2.jpg",
+                    "date": "17.05.2025"
+                    },
+                    {
+                    "name": "Guest Lecture – Dr. Vivek Sundaram",
+                    "event": "General Medicine",
+                    "path": "GeneralMedicine/3.jpg",
+                    "date": "19.05.2025"
+                    },
+                    {
+                    "name": "CME on Arrhythmia Update",
+                    "event": "General Medicine",
+                    "path": "GeneralMedicine/4.jpg",
+                    "date": "26.09.2025"
+                    },
+                    {
+                    "name": "Guest Lecture – Dr. Rajarajan (World Kidney Day)",
+                    "event": "General Medicine",
+                    "path": "GeneralMedicine/5.jpg",
+                    "date": "15.03.2024"
+                    }
+                ]
             },
             {
                 "id": "emergency",
