@@ -800,13 +800,6 @@
                     }
                 ],
 
-                research: [
-                    "All faculties are skilled in research methodology and statistical analysis",
-                    "Multiple funded projects from internal and external agencies",
-                    "Active student involvement in community-oriented research",
-                    "Health system and public health program evaluations"
-                ],
-
                 events: [
                     "Celebration of various health days with rallies, health education and screening activities",
                     "Quiz, art poster, video reels, debates and other extracurricular activities for UG students"
