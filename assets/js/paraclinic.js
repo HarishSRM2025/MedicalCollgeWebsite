@@ -651,20 +651,209 @@
                 ]
             },
             {
-                id: "Community Medicine", name: "Community Medicine", icon: "fa-suitcase-medical", color: "#673ab7", colorDark: "#512da8",
-                desc: "Comprehensive mental health services with counseling and therapy.",
-                vision:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
-                mission:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
-                objectives:["Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro."],
-                infra: ["Consultation rooms", "Counseling center", "De-addiction unit", "Psychology testing room"],
-                services: ["General Psychiatry", "Depression Treatment", "Anxiety Disorders", "Addiction Treatment", "Counseling Services", "Child Psychiatry"],
-                pubStats: [{label: "Publications", value: "20+"}],
-                pubHighlights: ["Depression management"],
-                pubYearwise: [{year: "2023", title: "Mental health interventions", journal: "Psychiatry Review", type: "Research"}],
-                research: ["Mental health awareness", "Addiction treatment"],
-                events: ["World Mental Health Day"],
-                achievements: ["Excellence in Mental Health"],
-                gallery: [{name: "Consultation Room", icon: "fa-couch", event: "Psychiatry Dept", date: "Oct 2024"}]
+                id: "CommunityMedicine",
+                name: "Community Medicine",
+                icon: "fa-users",
+                color: "#824cafff",
+                colorDark: "#52388eff",
+
+                desc: "The Department of Community Medicine focuses on teaching preventive, promotive, and social aspects of health. It trains undergraduate and postgraduate students in epidemiology, public health programs, biostatistics, research methods, and community-based care with strong emphasis on field practice and primary healthcare.",
+
+                vision: "To provide medical education to students that is sensitive to the changing health needs of the community and health care delivery system.",
+
+                mission: [
+                    "To focus on health care and education through community initiatives.",
+                    "To train the students so as to enable them to provide primary care to the community."
+                ],
+
+                objectives: [
+                    "To enable budding doctors to understand health problems and means to tackle the same by empowering them with comprehensive and adequate epidemiological and community health skills",
+                    "To expose students to family health care programme through surveys and community-based activities to ensure involvement of community as a teaching and training tool for the students",
+                    "To develop and adopt innovative methods like participatory learning to achieve better learning outcomes.",
+                    "To ensure participation of students in outreach activities including health communication and national health programmes at all levels.",
+                    "To sensitize, conduct and promote student research activities on priority health needs of the community"
+                ],
+
+                infra_desc: "The department provides comprehensive training infrastructure through field practice areas, laboratories, museum and lecture halls to support community-based learning.",
+
+                infra: [
+                    "Three primary health centers at Sangeethi, Samayapuram & Valadi for training UG, interns and PGs",
+                    "Two demo halls, one museum, PG & UG labs and a lecture hall for teaching purposes"
+                ],
+
+                faculty: [
+                    { name: "Dr. Hemalatha. K", designation: "Professor & HOD", exp: "12 years 4 months" },
+                    { name: "Dr. Suguna", designation: "Professor", exp: "9 years 3 months" },
+                    { name: "Dr. Prabha Thangaraj", designation: "Associate Professor", exp: "8 years" },
+                    { name: "Dr. Divya Rajasekaran", designation: "Associate Professor", exp: "" },
+                    { name: "Dr. Hariharan. S", designation: "Associate Professor", exp: "6 years 7 months" },
+                    { name: "Dr. Sowmiya", designation: "Assistant Professor", exp: "2 years 4 months 16 days" },
+                    { name: "Dr. Mohamed Aarif", designation: "Assistant Professor", exp: "2 years 27 days" },
+                    { name: "Dr. KB Sharavanakumaran", designation: "Assistant Professor", exp: "1 year 11 months 25 days" },
+                    { name: "Dr. Ramees M. Sali", designation: "Assistant Professor", exp: "2 years" },
+                    { name: "Dr. Bhavani. R", designation: "Assistant Professor", exp: "1 year 6 months" },
+                    { name: "Dr. M. Arutperumjothi", designation: "Senior Resident", exp: "1 year" },
+                    { name: "Dr. Sakthivel", designation: "Senior Resident", exp: "1 year" },
+                    { name: "Dr. Thirumagal", designation: "Senior Resident", exp: "8 months" },
+                    { name: "Dr. Nagaveni", designation: "Senior Resident", exp: "6 months" },
+                    { name: "Mr. Bharathi", designation: "Statistician / Tutor", exp: "2 years 6 months" }
+                ],
+
+                services: [
+                    "School health screening at various government and private schools",
+                    "Awareness programs on various health issues in the community",
+                    "Referral services from primary health centers to SRM hospital",
+                    "Sponsored free nutritious food supplements for tuberculosis patients"
+                ],
+
+                pubStats: [
+                    { label: "Overall", value: 13 },
+                    { label: "International", value: 10 },
+                    { label: "National", value: 3 }
+                ],
+
+                pubHighlights: [
+                    "Community-based epidemiological research",
+                    "Studies on public health nutrition and disease burden",
+                    "Research on occupational health and preventive strategies",
+                    "Assessment of health program effectiveness"
+                ],
+
+                pubYearwise: [
+                    {
+                        year: 2024,
+                        title: "Does Pictorial Health Warnings on Tobacco Products Promote its Cessation?",
+                        journal: "Journal of Medical Sciences and Health",
+                        type: "International"
+                    },
+                    {
+                        year: 2024,
+                        title: "Exploring gender disparities in unpaid household care labor: A mixed methods study from rural South India",
+                        journal: "National Journal of Physiology, Pharmacy and Pharmacology",
+                        type: "National"
+                    },
+                    {
+                        year: 2024,
+                        title: "Prevalence of Asymptomatic Gallstone during Routine Ultrasonography and its Associated Factors",
+                        journal: "GAIMS Journal of Medical Sciences",
+                        type: "International"
+                    },
+                    {
+                        year: 2024,
+                        title: "Comparison of sodium and potassium values in arterial and venous blood samples",
+                        journal: "MGM Journal of Medical Sciences",
+                        type: "International"
+                    },
+                    {
+                        year: 2024,
+                        title: "Knowledge and attitude toward formative assessment among teaching faculties of medical institutions",
+                        journal: "MRIMS Journal of Health Sciences",
+                        type: "National"
+                    },
+                    {
+                        year: 2024,
+                        title: "Readiness, acceptability, and feasibility of differentiated TB care for COVID positive pulmonary tuberculosis patients",
+                        journal: "Journal of Family Medicine and Primary Care",
+                        type: "National"
+                    },
+                    {
+                        year: 2024,
+                        title: "Correlation of Stature and Hand Dimension Among Medical Students of South Tamil Nadu, India",
+                        journal: "Indian Journal of Forensic Medicine & Toxicology",
+                        type: "International"
+                    },
+                    {
+                        year: 2024,
+                        title: "Epidemiological study of Pediatric and adolescent poisoning cases in a Rural Tertiary Care Centre",
+                        journal: "Indian Journal of Forensic Medicine & Toxicology",
+                        type: "International"
+                    },
+                    {
+                        year: 2024,
+                        title: "Assessment of Nutritional Status Among Elderly Population in a Rural Area of a Teaching Hospital in Trichy",
+                        journal: "Journal of Xidian University",
+                        type: "International"
+                    },
+                    {
+                        year: 2024,
+                        title: "Prevalence of Postpartum Depression and its associated factors among postnatal mothers in Trichy",
+                        journal: "Journal of Xidian University",
+                        type: "International"
+                    },
+                    {
+                        year: 2024,
+                        title: "Respiratory Symptom Profile in the Sugar Industry Workforce",
+                        journal: "International Journal of Academic Medicine and Pharmacy",
+                        type: "International"
+                    },
+                    {
+                        year: 2024,
+                        title: "Pulmonary Function Impairment Among Sugar Industry Workers: A Regional Study Of Tamil Nadu",
+                        journal: "International Journal of Medicine and Public Health",
+                        type: "International"
+                    },
+                    {
+                        year: 2024,
+                        title: "Effectiveness Of Combined Non-pharmacological Interventions For Neonatal Pain Management",
+                        journal: "International Journal of Medicine and Public Health",
+                        type: "International"
+                    }
+                ],
+
+                research: [
+                    "All faculties are skilled in research methodology and statistical analysis",
+                    "Multiple funded projects from internal and external agencies",
+                    "Active student involvement in community-oriented research",
+                    "Health system and public health program evaluations"
+                ],
+
+                events: [
+                    "Celebration of various health days with rallies, health education and screening activities",
+                    "Quiz, art poster, video reels, debates and other extracurricular activities for UG students"
+                ],
+
+                achievements: [
+                    "The department has achieved more than 98% pass in undergraduate and 100% pass in postgraduate students for the past three consecutive years.",
+                    "The department holds the pride of having the maximum number of funded research projects."
+                ],
+
+                gallery: [
+                    {
+                        name: "QUIZ - IAPSM World Health Day QUIZ-UG 2025",
+                        date: "02/04/2025",
+                        path: "CommunityMedicine/1.jpg"
+                    },
+                    {
+                        name: "Reels and Short film competition - World Health Day 2025",
+                        date: "22/04/2025",
+                        path: "CommunityMedicine/2.jpg"
+                    },
+                    {
+                        name: "QUIZ - World Immunization Day",
+                        date: "11/11/2025",
+                        path: "CommunityMedicine/3.jpg"
+                    },
+                    {
+                        name: "Health Day - World Diabetes Day",
+                        date: "14/11/2025",
+                        path: "CommunityMedicine/4.jpg"
+                    },
+                    {
+                        name: "IEC poster competition – World Cancer Day",
+                        date: "04/02/2025",
+                        path: "CommunityMedicine/5.jpg"
+                    },
+                    {
+                        name: "Guest Lecture - Preventive Oncology",
+                        date: "22/04/2025",
+                        path: "CommunityMedicine/6.jpg"
+                    },
+                    {
+                        name: "Capability Enhancement Program - Basics in Research",
+                        date: "07/06/2024",
+                        path: "CommunityMedicine/7.jpg"
+                    }
+                ]
             }
         ];
 
