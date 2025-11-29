@@ -799,7 +799,11 @@
                         type: "International"
                     }
                 ],
-
+                research: [
+                    "Community Medicine departments have significantly advanced research on non-communicable diseases through community-based prevalence studies, risk-factor assessment, and early screening initiatives",
+                    "They emphasize prevention, health education, and primary-care integration, targeting vulnerable populations.",
+                    "Their work guides policy, strengthens public-health programs, and supports cost-effective strategies for reducing disease burden."
+                ],
                 events: [
                     "Celebration of various health days with rallies, health education and screening activities",
                     "Quiz, art poster, video reels, debates and other extracurricular activities for UG students"
