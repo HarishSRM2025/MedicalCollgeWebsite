@@ -1,7 +1,7 @@
 
-        // Department data with comprehensive information
-        const depts = [
-            {
+// Department data with comprehensive information
+ const depts = [
+     {
                 "id": "pathology",
                 "name": "Pathology",
                 "icon": "fa-microscope",
@@ -235,8 +235,8 @@
                     "date": "21 Nov 2025"
                     }
                 ]
-                },
-            {
+     },
+     {
                 id: "Microbiology", name: "Microbiology", icon: "fa-virus-covid", color: "#27ae60", colorDark: "#229954",
                 desc: "Comprehensive internal medicine care for all age groups.",
                 vision:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
@@ -252,8 +252,8 @@
                 events: ["World Diabetes Day"],
                 achievements: ["Best Medicine Dept"],
                 gallery: [{name: "OPD", icon: "fa-clinic-medical", event: "OPD", date: "Jan 2024"}]
-            },
-            {
+     },
+     {
                 id: "Pharmacology",
                 name: "Pharmacology",
                 icon: "fa-pills",
@@ -524,8 +524,8 @@
                         "path": "Pharmacology/24.jpg"
                     }
                 ]
-            },
-            {
+     },
+     {
                 id: "ForensicMedicine",
                 name: "Forensic Medicine & Toxicology",
                 icon: "fa-gavel",
@@ -649,8 +649,8 @@
                         path: "Forensic/2.jpg"
                     }
                 ]
-            },
-            {
+     },
+     {
                 id: "CommunityMedicine",
                 name: "Community Medicine",
                 icon: "fa-users",
@@ -847,7 +847,5 @@
                         path: "CommunityMedicine/7.jpg"
                     }
                 ]
-            }
-        ];
-
-       
+     }
+ ];
