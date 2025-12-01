@@ -2675,6 +2675,7 @@ h2 span{
     border-radius: 20px;
     border-top:none;
     transition: all 0.3s;
+    object-fit:cover;
 }
 
 
