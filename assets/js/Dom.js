@@ -41,9 +41,11 @@
     
     const header=`<div class="nav-container">
     <div class="nav-wrapper">
-      <div class="logo">
-        <img src="./assets/images/Logo.webp" alt="SRM">
-      </div>
+      <a href='index.html'>
+        <div class="logo">
+          <img src="./assets/images/Logo.webp" alt="SRM">
+        </div>
+      </a>
       <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
         <span></span>
         <span></span>
