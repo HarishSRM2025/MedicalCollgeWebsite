@@ -87,22 +87,21 @@
               <li><a href="./programsandcourse.html">Programs & Course Outcomes</a></li>
               <li><a href="./pre-clinical.html">Pre Clinical</a></li>
               <li><a href="./para-clinical.html">Para Clinical</a></li>
-              <li><a href="./library.html">Library</a></li>
               <li><a href="./academics.html#specialties">Medical Education Unit</a></li>
               <li><a href="./academics.html#examcell">Examination Cell</a></li>
-            </ul>
-          </li>
-          <li class="has-dropdown" data-dropdown="hospital">
-            <a href="./hospital.html">Hospital Services <span class="arrow dropdown-trigger">&#9654;</span></a>
-            <ul class="dropdown">
+              </ul>
+              </li>
+              <li class="has-dropdown" data-dropdown="hospital">
+              <a href="./hospital.html">Hospital Services <span class="arrow dropdown-trigger">&#9654;</span></a>
+              <ul class="dropdown">
               <li class="has-submenu" data-submenu="courses">
-                <a href="#">Departments<span class="arrow submenu-trigger">&#9654;</span></a>
-                <ul class="sub-dropdown">
-                  <li><a href="./boardspecialties.html">Medicine & Broad Specialties</a></li>
-                  <li><a href="./surgeryspecialties.html">Surgery & Broad Specialties</a></li>
-                  <li><a href="./MedicalSuperSpecialties.html">Medicine & Super Specialties</a></li>
-                  <li><a href="./SurgerySuperSpecialties.html">Surgery & Super Specialties</a></li>
-                </ul>
+              <a href="#">Departments<span class="arrow submenu-trigger">&#9654;</span></a>
+              <ul class="sub-dropdown">
+              <li><a href="./boardspecialties.html">Medicine & Broad Specialties</a></li>
+              <li><a href="./surgeryspecialties.html">Surgery & Broad Specialties</a></li>
+              <li><a href="./MedicalSuperSpecialties.html">Medicine & Super Specialties</a></li>
+              <li><a href="./SurgerySuperSpecialties.html">Surgery & Super Specialties</a></li>
+              </ul>
               </li>
               <li><a href="./doctors.html">Doctors</a></li>
               <li><a href="./bloodcamp.html">Blood Bank</a></li>

@@ -124,6 +124,11 @@
                 "title": "Library Collection",
                 "icon": "fa-book",
                 "description": "Vast Academic Resources",
+                "image":[
+                    "6.jpg",
+                    "5.jpg"
+                ],
+                "imgtitle":"Our Library Collection",
                 "content": [
                     {
                     "type": "stats",
@@ -133,7 +138,6 @@
                         { "icon": "fa-globe", "value": "E-Resources", "label": "BMJ, DELNET, E-Consortium" }
                     ]
                     },
-
                     {
                     "type": "subtitle",
                     "value": "Statistical Collection"
@@ -210,6 +214,7 @@
                 "title": "E-Resources",
                 "icon": "fa-laptop",
                 "description": "Digital Academic Resources",
+
                 "content": [
                     {
                             type: "resources",
@@ -322,6 +327,13 @@
                 "title": "Library Activities",
                 "icon": "fa-calendar-alt",
                 "description": "Programs & Annual Activities",
+                "image":[
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg"
+                ],
+                "imgtitle":"Our Library Activities",
                 "content": [
                     {
                     "type": "subtitle",
@@ -488,6 +500,8 @@
                 case 'subtitle':
                     return `<h3>${item.value}</h3>`;
                 
+          
+                
                 case 'stats':
                     return `
                         <div class="lib-stats-grid">
@@ -597,9 +611,30 @@
                             <p>${section.description}</p>
                         </div>
                     </div>
-                    <div class="lib-section-content">
-                        ${section.content.map(item => renderContent(item)).join('')}
-                    </div>
+                    ${ Array.isArray(section.image) && section.image.length > 0
+                        ? 
+                        `
+                            <div class='library-overall'>
+                                <h2>${section.imgtitle}</h2>
+                                <div class="library-grid">
+                                    ${
+                                        section.image.map(img => `
+                                            <div class="library-item">
+                                                <div class="library-placeholder">
+                                                    <img src="./assets/images/library/${img}" />
+                                                </div>
+                                            </div>
+                                        `).join('')
+                                    }
+                                </div>
+                            </div>
+                        `
+                        : ''
+                    }
+                    
+                        <div class="lib-section-content">
+                            ${section.content.map(item => renderContent(item)).join('')}
+                        </div>
                 </div>
             `;
             
