@@ -362,7 +362,7 @@ function init() {
             }`;
             let img = new Image();
             img.onload = () => renderCard(imagePath);      // Image exists
-            img.onerror = () => renderCard("https://secure.gravatar.com/avatar/1962be2b9c3442642b74413746563450/?s=48&d=https://images.binaryfortress.com/General/UnknownUser1024.png");  // Image missing
+            img.onerror = () => renderCard("");  // Image missing
             img.src = imagePath;
             const card = document.createElement('div');
             card.className = 'doctor-card';
