@@ -225,7 +225,7 @@ function init() {
         }
 
         document.addEventListener("DOMContentLoaded",clearAllFilters)
-
+        var cardShow = false
         // Display doctors with pagination
         function displayDoctors(doctors) {
             const grid = document.getElementById('doctorsGrid');
@@ -256,8 +256,12 @@ function init() {
             // Display doctors for current page
             paginatedDoctors.forEach(doctor => {
                 const card = createDoctorCard(doctor);
-                grid.appendChild(card);
+                grid.appendChild(card)                            
             });
+
+            if(grid.innerHTML==''){
+                console.log(grid.innerHTML);
+            }
 
             // Show/hide pagination
             if (totalPages > 1) {
@@ -352,13 +356,21 @@ function init() {
 
         // Create doctor card
         function createDoctorCard(doctor) {
+            let imagePath = `/assets/images/doctors/${doctor["Contact Number"] == "9894489142"
+                ? doctor["Contact Number"] + ".jpg"
+                : doctor["Contact Number"] + ".JPG"
+            }`;
+            let img = new Image();
+            img.onload = () => renderCard(imagePath);      // Image exists
+            img.onerror = () => renderCard("https://secure.gravatar.com/avatar/1962be2b9c3442642b74413746563450/?s=48&d=https://images.binaryfortress.com/General/UnknownUser1024.png");  // Image missing
+            img.src = imagePath;
             const card = document.createElement('div');
             card.className = 'doctor-card';
-            card.onclick = () => viewDoctorProfile(doctor.id);
-            // console.log(doctor)
-            card.innerHTML = `
+
+            function renderCard(finalImg) {
+                card.innerHTML = `
                 <div class="doctor-image-wrapper">
-                    <img src="./assets/images/doctors/${doctor["Contact Number"] == "9894489142" ? doctor["Contact Number"]+".jpg" : doctor["Contact Number"]+".JPG"}" alt="${doctor.name}">
+                    <img src="${finalImg}" alt="${doctor.name}">
                 </div>
                 <div class="doctor-info">
                     <span class="specialty-badge">${doctor.specialty}</span>
@@ -380,8 +392,9 @@ function init() {
                         
                         <div class="detail-item">
                             <i class="fas fa-calendar"></i>
-                            <span>${doctor.experience}+ Years of Experience</span>
+                            <span>${doctor.experience}+ Years</span>
                         </div>
+
                         <div class="detail-item" style="color:${doctor.shift !== "Regular Shift" ? "red" : "blue"}">
                             <i class="fas fa-clock" style="color:${doctor.shift !== "Regular Shift" ? "red" : "blue"}"></i>
                             <span>${doctor.shift}</span>
@@ -395,7 +408,7 @@ function init() {
                     </div>
                 </div>
             `;
-
+            }
             return card;
         }
 
