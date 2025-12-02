@@ -12,58 +12,58 @@ document.addEventListener("DOMContentLoaded", async () => {
   clearAllFilters();
 });
 
-// ✅ Load & Convert Excel Data
-async function loadDoctorsFromExcel() {
-  try {
-    const response = await fetch(filePath);
-    if (!response.ok) throw new Error("Cannot fetch " + filePath);
+        // ✅ Load & Convert Excel Data
+        async function loadDoctorsFromExcel() {
+        try {
+            const response = await fetch(filePath);
+            if (!response.ok) throw new Error("Cannot fetch " + filePath);
 
-    const arrayBuffer = await response.arrayBuffer();
-    const workbook = XLSX.read(arrayBuffer, { type: "array" });
-    const sheetName = workbook.SheetNames[0];
-    const worksheet = workbook.Sheets[sheetName];
-    const json = XLSX.utils.sheet_to_json(worksheet);
+            const arrayBuffer = await response.arrayBuffer();
+            const workbook = XLSX.read(arrayBuffer, { type: "array" });
+            const sheetName = workbook.SheetNames[0];
+            const worksheet = workbook.Sheets[sheetName];
+            const json = XLSX.utils.sheet_to_json(worksheet);
 
- 
+        
 
-    // Map Excel rows → JS objects
-    doctorsData = json.map((row, i) => {
-        // Normalize all keys in the row to lowercase for consistent access
-        const normalized = {};
-        for (const key in row) {
-            normalized[key.toLowerCase().trim()] = row[key];
+            // Map Excel rows → JS objects
+            doctorsData = json.map((row, i) => {
+                // Normalize all keys in the row to lowercase for consistent access
+                const normalized = {};
+                for (const key in row) {
+                    normalized[key.toLowerCase().trim()] = row[key];
+                }
+
+                return {
+                    id: i + 1,
+                    name: normalized["name"] || "Unknown",
+                    specialty: normalized["specialization/department"] || "General",
+                    gender: (normalized["gender"] || "other").toLowerCase(),
+                    experience: parseInt(row["Years of Experience"] || 0),
+                    degree: normalized["degree"] || "",
+                    languages: (normalized["languages known"] || "")
+                    .split(",")
+                    .map((l) => l.trim())
+                    .filter((l) => l),
+                    location: normalized["location"] || "",
+                    videos: parseInt(normalized["videos"] || 0),
+                    designation: normalized["designation"] || "",
+                    consultationFees: parseInt(normalized["consultationfees"] || 0),
+                    nextAvailable: normalized["nextavailable"] || "",
+                    rating: parseFloat(normalized["rating"] || 0),
+                    shift:row['Shift Type'],
+                    ...row, // keep original fields too, in case needed
+                };
+                });
+
+            filteredDoctors = [...doctorsData];
+            init();
+            // console.log("✅ Doctors loaded from Excel:", doctorsData);
+        } catch (err) {
+            console.error("❌ Failed to load data:", err);
         }
-
-        return {
-            id: i + 1,
-            name: normalized["name"] || "Unknown",
-            specialty: normalized["specialization/department"] || "General",
-            gender: (normalized["gender"] || "other").toLowerCase(),
-            experience: parseInt(row["Years of Experience"] || 0),
-            degree: normalized["degree"] || "",
-            languages: (normalized["languages known"] || "")
-            .split(",")
-            .map((l) => l.trim())
-            .filter((l) => l),
-            location: normalized["location"] || "",
-            videos: parseInt(normalized["videos"] || 0),
-            designation: normalized["designation"] || "",
-            consultationFees: parseInt(normalized["consultationfees"] || 0),
-            nextAvailable: normalized["nextavailable"] || "",
-            rating: parseFloat(normalized["rating"] || 0),
-            shift:row['Shift Type'],
-            ...row, // keep original fields too, in case needed
-        };
-        });
-
-    filteredDoctors = [...doctorsData];
-    init();
-    // console.log("✅ Doctors loaded from Excel:", doctorsData);
-  } catch (err) {
-    console.error("❌ Failed to load data:", err);
-  }
-}
-function init() {
+        }
+        function init() {
             populateFilters();
             displayDoctors(filteredDoctors);
             setupEventListeners();
@@ -245,13 +245,17 @@ function init() {
             const endIndex = startIndex + doctorsPerPage;
             const paginatedDoctors = doctors.slice(startIndex, endIndex);
 
+
+            const mainDiv = document.querySelector('.doctors-content'); 
+            const childDivs = mainDiv.querySelectorAll('.doctor-card');
             // Display doctors for current page
             paginatedDoctors.forEach(doctor => {
-                const card = createDoctorCard(doctor);
+                const card = createDoctorCard(doctor);                
+                
                 grid.appendChild(card);
             });
 
-            // Show/hide pagination
+            
             if (totalPages > 1) {
                 paginationWrapper.style.display = 'flex';
                 renderPagination(totalPages);
@@ -347,47 +351,53 @@ function init() {
             const card = document.createElement('div');
             card.className = 'doctor-card';
             card.onclick = () => viewDoctorProfile(doctor.id);
-            // console.log(doctor)
-            card.innerHTML = `
-                <div class="doctor-image-wrapper">
-                    <img src="./assets/images/doctors/${doctor["Contact Number"] == "9894489142" ? doctor["Contact Number"]+".jpg" : doctor["Contact Number"]+".JPG"}" alt="${doctor.name}">
-                </div>
-                <div class="doctor-info">
-                    <span class="specialty-badge">${doctor.specialty}</span>
-                    <h3 class="doctor-name">
-                        ${doctor.name}
-                        <i class="fas fa-check-circle verified-icon"></i>
-                    </h3>
-                    <p class="doctor-degree">${doctor.degree}</p>
-                    
-                    <div class="doctor-details">
-                        <div class="detail-item">
-                            <i class="fas fa-globe"></i>
-                            <span>${doctor.languages.join(', ')}</span>
-                        </div>
-                        <div class="detail-item">
-                            <i class="fas fa-briefcase"></i>
-                            <span>${doctor.designation}</span>
-                        </div>
-                        
-                        <div class="detail-item">
-                            <i class="fas fa-calendar"></i>
-                            <span>${doctor.experience}+ Years of Experience</span>
-                        </div>
-                        <div class="detail-item" style="color:${doctor.shift !== "Regular Shift" ? "red" : "blue"}">
-                            <i class="fas fa-clock" style="color:${doctor.shift !== "Regular Shift" ? "red" : "blue"}"></i>
-                            <span>${doctor.shift}</span>
-                        </div>
-                    </div>
+            let imgPath = `./assets/images/doctors/${doctor["Contact Number"] == "9894489142" ? doctor["Contact Number"]+".jpg" : doctor["Contact Number"]+".JPG"}`;
 
-                    <div class="consultation-info">
-                        <button class="view-profile-btn" onclick="viewDoctorProfile(${doctor.id})">
-                            View Profile
-                        </button>
-                    </div>
-                </div>
-            `;
+            function checkImage(url, callback) {
+                const img = new Image();
+                img.onload = () => callback(true);  // Image exists
+                img.onerror = () => callback(false); // Image does not exist
+                img.src = url;
+            }
 
+            // Usage
+            checkImage(imgPath, exists => {
+                card.innerHTML = `
+                    <div class="doctor-image-wrapper">
+                        <img src="${exists?imgPath:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGG7erz9q0Rya1nPGFfbz6LVLjyU-7md7hOQ&s"}" alt="${doctor.name}">
+                    </div>
+                    <div class="doctor-info">
+                        <span class="specialty-badge">${doctor.specialty}</span>
+                        <h3 class="doctor-name">
+                            ${doctor.name}
+                            <i class="fas fa-check-circle verified-icon"></i>
+                        </h3>
+                        <p class="doctor-degree">${doctor.degree}</p>    
+                        <div class="doctor-details">
+                            <div class="detail-item">
+                                <i class="fas fa-globe"></i>
+                                <span>${doctor.languages.join(', ')}</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-briefcase"></i>
+                                <span>${doctor.designation}</span>
+                            </div>    
+                            <div class="detail-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>${doctor.experience}+ Years of Experience</span>
+                            </div>
+                            <div class="detail-item" style="color:${doctor.shift !== "Regular Shift" ? "red" : "blue"}">
+                                <i class="fas fa-clock" style="color:${doctor.shift !== "Regular Shift" ? "red" : "blue"}"></i>
+                                <span>${doctor.shift}</span>
+                            </div>
+                        </div>
+                        <div class="consultation-info">
+                            <button class="view-profile-btn" onclick="viewDoctorProfile(${doctor.id})">
+                                View Profile
+                            </button>
+                        </div>
+                    </div>`;
+            });
             return card;
         }
 
@@ -412,4 +422,4 @@ function init() {
 
 
         // Initialize on load
-        init(); 
+        init();
