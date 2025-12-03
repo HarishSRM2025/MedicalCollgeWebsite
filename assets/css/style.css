@@ -9944,6 +9944,9 @@ grid-template-columns: 1fr;
             .infra-library-layout,
             .infra-medical-layout {
                 grid-template-columns: 1fr;
+                width: 80%;
+                margin: 0;
+                padding: auto;
             }
 
             .infra-transport-grid,
@@ -9968,12 +9971,30 @@ grid-template-columns: 1fr;
             .infra-section-title {
                 font-size: 1.5rem;
             }
+            .infra-gym-main-image{
+             position: static;
+            }
+            .infra-library-stats,.infra-medical-features{
+                grid-template-columns: 1fr;
 
+            }
+            .infra-medical-content,.infra-library-content{
+                padding: 0;
+            }
+            .infra-library-title,.infra-gym-description,.infra-medical-title{
+                text-align: center;
+            }
+            .infra-library-image,.infra-medical-image{
+                height: 300px;
+            }
+            .infra-gym-showcase,
             .infra-hostel-grid,
             .infra-sports-grid {
                 grid-template-columns: 1fr;
             }
-
+            .infra-gym-layout, .infra-library-layout, .infra-medical-layout{
+                width: 100%;
+            }
             .infra-sports-large .infra-sports-image {
                 min-height: 250px;
             }
