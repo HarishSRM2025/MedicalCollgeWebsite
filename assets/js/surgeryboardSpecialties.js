@@ -325,22 +325,194 @@
                 ]
             },
             {
-                id: "obstetrics_gynaecology", name: "Obstetrics & Gynaecology", icon: `<i class="material-symbols-outlined">pregnant_woman</i>`, color: "#673ab7", colorDark: "#512da8",
-                desc: "Comprehensive mental health services with counseling and therapy.",
-                vision:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
-                mission:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
-                objectives:["Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro."],
-                infra: ["OPD rooms", "Inpatient wards", "ICU", "Procedure room"],
-                faculty: [{name: "Ram", designation: "Assistant professor", exp: "5"},{name: "Sam", designation: "Assistant professor", exp: "5"},{name: "John", designation: "Assistant professor", exp: "5"}],
-                services: ["General Psychiatry", "Depression Treatment", "Anxiety Disorders", "Addiction Treatment", "Counseling Services", "Child Psychiatry"],
-                pubStats: [{label: "Publications", value: "20+"}],
-                pubHighlights: ["Depression management"],
-                pubYearwise: [{year: "2023", title: "Mental health interventions", journal: "Psychiatry Review", type: "Research"}],
-                research: ["Mental health awareness", "Addiction treatment"],
-                events: ["World Mental Health Day"],
-                achievements: ["Excellence in Mental Health"],
-                gallery: [{name: "Consultation Room", icon: "fa-couch", event: "Psychiatry Dept", date: "Oct 2024"}]
-            },
+                "id": "obstetrics_gynaecology",
+                "name": "Obstetrics & Gynaecology",
+                "icon": "fa-user-md",
+                "color": "#e91e63",
+                "colorDark": "#c2185b",
+
+                "desc": "The Department of Obstetrics & Gynaecology provides comprehensive reproductive healthcare, covering antenatal, intrapartum, postnatal care, as well as advanced gynaecological services. It is committed to women’s health through clinical excellence, research, and education.",
+
+                "vision": "To provide exceptional care to each and every women approaching our door step. To champion the women’s health care system. To achieve excellence and advancement in women’s obstetrical and gynecological health, teaching the future specialty leaders. To be leaders and advocates in the pursuit of excellence in women’s health care.",
+
+                "mission": [
+                    "To help women and babies achieve optimal health outcomes.",
+                    "Support women to have empowering and magnificent birth experience.",
+                    "To deliver evidence-based care in a safe and welcoming atmosphere characterized by cultural humility and diversity.",
+                    "To be innovative, clinically excellent and contribute to research.",
+                    "Teach while you work and create future maternity care providers.",
+                    "Reflect values of excellence, compassion, community and social justice."
+                ],
+
+                "objectives": [
+                    "Dedicated to the pursuit of excellence in women’s health care.",
+                    "To provide highest quality service to patients.",
+                    "To continuously evaluate patient-centric outcomes.",
+                    "To promote involvement of all faculty and staff in problem solving.",
+                    "To continue a strong research program advancing medical science.",
+                    "To be enthusiastic and think positively."
+                ],
+
+                "infra_desc": "The department is equipped with modern labour rooms, neonatal care units, operation theatres, and ultrasonography facilities.",
+                "infra": [
+                    "Dedicated labour ward with fetal monitoring systems",
+                    "Emergency obstetric care unit",
+                    "Modular OT for obstetric & gynaecologic surgeries",
+                    "Colposcopy & Endoscopy units",
+                    "Ultrasound & Doppler facilities"
+                ],
+
+                "faculty_desc": "Highly Qualified Faculty with Extensive Clinical and Academic Experience.",
+                "faculty": [
+                    { "name": "Dr.Dhivya Sethuraman", "designation": "Professor & HOD", "exp": "14" },
+                    { "name": "Dr.S.Revwathy", "designation": "Professor & Director", "exp": "35" },
+                    { "name": "Dr.J.Shankar", "designation": "Professor", "exp": "31" },
+                    { "name": "Dr.S.Banumathy", "designation": "Associate Professor", "exp": "7" },
+                    { "name": "Dr.Lakshmi Swapna Dourvasala", "designation": "Associate Professor", "exp": "7" },
+                    { "name": "Dr.T.Dhiviya Narbhavi", "designation": "Associate Professor", "exp": "7" },
+                    { "name": "Dr.Shaik Salma", "designation": "Associate Professor", "exp": "7" },
+                    { "name": "Dr.Swarna Priya", "designation": "Associate Professor", "exp": "16" },
+                    { "name": "Dr.T.Harini", "designation": "Associate Professor", "exp": "17" },
+                    { "name": "Dr.P.Pradeepa", "designation": "Assistant Professor", "exp": "11" },
+                    { "name": "Dr.J.Jovita Deepthy", "designation": "Assistant Professor", "exp": "8" },
+                    { "name": "Dr.Sushma.M S", "designation": "Assistant Professor", "exp": "1" },
+                    { "name": "Dr.Sangeetha Janani", "designation": "Assistant Professor", "exp": "3" },
+                    { "name": "Dr.Raja Suganya", "designation": "Assistant Professor", "exp": "2" },
+                    { "name": "Dr.Kohila Devi", "designation": "Assistant Professor", "exp": "1" },
+                    { "name": "Dr.B.Saranya", "designation": "Assistant Professor", "exp": "12" },
+                    { "name": "Dr.Revathy.MC", "designation": "Assistant Professor", "exp": "6" },
+                    { "name": "Dr.M.Ramalakshmi", "designation": "Senior Resident", "exp": "5" },
+                    { "name": "Dr.Noorul Fazila", "designation": "Senior Resident", "exp": "1" },
+                    { "name": "Dr.A.Emaya", "designation": "Senior Resident", "exp": "0" },
+                    { "name": "Dr.Vandhana Beera", "designation": "Senior Resident", "exp": "0" },
+                    { "name": "Dr.S.Dhivyaa", "designation": "Senior Resident", "exp": "0" },
+                    { "name": "Dr.Madhumitha", "designation": "Senior Resident", "exp": "0" }
+                ],
+
+                "services_desc": "The Department offers Round-The-Clock Obstetric and Gynaecological Services.",
+                "services": [
+                    "Antenatal & postnatal clinics",
+                    "High-risk pregnancy management",
+                    "Labour & delivery services",
+                    "Gynaecology OPD & surgical services",
+                    "Infertility evaluation & counselling",
+                    "Family planning services"
+                ],
+
+                "publication_overview": "The Department has contributed to National and International Journals through ongoing research.",
+                "pubStats": [
+                    { "label": "Overall", "value": "7" },
+                    { "label": "International", "value": "7" },
+                    { "label": "National", "value": "-" }
+                ],
+
+                "pubHighlights": [
+                    "Effective management in Post-partum hemorrhage",
+                    "Screening of high-risk pregnancy"
+                ],
+
+                "pubYearwise": [
+                    {
+                        "year": "2022",
+                        "title": "Comparative study of blood loss in C-section with IV oxytocin vs IM methergine.",
+                        "journal": "Journal of Cardiovascular Disease Research",
+                        "type": "International"
+                    },
+                    {
+                        "year": "2022",
+                        "title": "Safety and effectiveness of Oral Misoprostol for Induction of Labour.",
+                        "journal": "International Journal of Pharmaceutical and Clinical Research",
+                        "type": "International"
+                    },
+                    {
+                        "year": "2022",
+                        "title": "Effectiveness of chlorhexidine cleansing in C-Section preparation.",
+                        "journal": "International Journal of Obstetrics and Gynaecology",
+                        "type": "International"
+                    },
+                    {
+                        "year": "2024",
+                        "title": "Screening & management of anemia in adolescent girls.",
+                        "journal": "International Journal of Pharmaceutical and Clinical Research",
+                        "type": "International"
+                    },
+                    {
+                        "year": "2024",
+                        "title": "Role of Tranexamic Acid in PPH prophylaxis & treatment.",
+                        "journal": "Scopus Innovation",
+                        "type": "International"
+                    },
+                    {
+                        "year": "2024",
+                        "title": "Validity of OGTT (75g) for screening & diagnosing GDM.",
+                        "journal": "Journal of Xidian University",
+                        "type": "International"
+                    },
+                    {
+                        "year": "2024",
+                        "title": "Biogenic amine tryptamine & vaginal probiotic isolates.",
+                        "journal": "Scientific Reports (Scopus, PubMed)",
+                        "type": "International"
+                    }
+                ],
+
+                "research_desc": "The Department Actively Engages In Clinical And Academic Research To Advance Women’s Health.",
+                "research": [
+                    "Risk factors and fetomaternal outcomes in meconium stained liquor",
+                    "Isolated gestational proteinuria as predictor for preeclampsia",
+                    "Incidence of atonic postpartum hemorrhage and its management",
+                    "Additional interventions for PPH control among high-risk women",
+                    "Serum uric acid levels as predictor for preeclampsia",
+                    "Correlation between Ultrasound and Histopathology in Adenomyosis",
+                    "Effectiveness of induction using Foley + Misoprostol",
+                    "Comparison of spontaneous vs induced labour",
+                    "Incidence and outcomes of late-onset fetal growth restriction"
+                ],
+
+                "events_desc": "Regular CMEs, Workshops, and Awareness Programs are conducted.",
+                "events": [
+                    "Guest lecture on Aneuploidy screening during Pregnancy",
+                    "CME on Ethicon (Medical Ethics)",
+                    "CME on Carcinoma Cervix",
+                    "Workshop on 6P’s",
+                    "Guest Lecture on Hyperandrogenism",
+                    "Awareness programme on PNPCDT Act"
+                ],
+
+                "achievements_desc": "Recognized for excellence in maternal health services and academic contributions.",
+                "achievements": [
+                    "Best Performer award from Indian Medical Association",
+                    "Best Doctor Award",
+                    "Best Department Award"
+                ],
+
+                "gallery": [
+                    {
+                        "name": "CME on Ethicon (Medical Ethics)",
+                        "event": "Obstetrics & Gynaecology",
+                        "path": "Obstetrics_gynaecology/1.jpg",
+                        "date": "20.01.2024"
+                    },
+                    {
+                        "name": "Workshop on 6P’s",
+                        "event": "Obstetrics & Gynaecology",
+                        "path": "Obstetrics_gynaecology/2.jpg",
+                        "date": "11.09.2024"
+                    },
+                    {
+                        "name": "CME on Prevention of Cancer Cervix",
+                        "event": "Obstetrics & Gynaecology",
+                        "path": "Obstetrics_gynaecology/3.jpg",
+                        "date": "14.12.2024"
+                    },
+                    {
+                        "name": "Guest Lecture on Aneuploidy",
+                        "event": "Obstetrics & Gynaecology",
+                        "path": "Obstetrics_gynaecology/4.jpg",
+                        "date": "28.02.2025"
+                    }
+                ]
+            },  
             {
                 id: "anaesthesiology", name: "Anaesthesiology", icon: `<i class="material-symbols-outlined">masks</i>`, color: "#26c6da", colorDark: "#00acc1",
                 desc: "Comprehensive respiratory care with pulmonary function testing.",
