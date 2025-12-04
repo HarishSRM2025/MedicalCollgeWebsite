@@ -547,7 +547,90 @@
     .quick-link:nth-child(2) .quick-link-icon{
       animation:icontb .348s infinite alternate ease-in-out;
     }
+    footer {
+        background: var(--primary-color);
+        color: var(--color-white);
+        padding: var(--spacing-4xl) 5% var(--spacing-xl);
+    }
 
+    .footer-container {
+        max-width: var(--container-lg);
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        gap: var(--spacing-4xl);
+        margin-bottom: var(--spacing-3xl);
+    }
+
+    .footer-logo {
+        background-color: var(--color-white);
+        border-radius: var(--radius-sm);
+        padding-top: 5px;
+        width: 145px;
+        margin: var(--spacing-sm) 0;
+    }
+
+    .footer-about p {
+        color: rgba(255,255,255,var(--opacity-70));
+        line-height: var(--line-height-loose-2xl);
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .footer-title {
+        font-size: var(--font-xl);
+        margin-bottom: var(--spacing-lg);
+        font-weight: 600;
+    }
+
+    .footer-links {
+        list-style: none;
+    }
+
+    .footer-links li {
+        margin-bottom: 0.8rem;
+    }
+
+    .footer-links a {
+        color: rgba(255,255,255,var(--opacity-70));
+        text-decoration: none;
+        transition: color var(--transition-fast);
+    }
+
+    .footer-links a:hover {
+        color: var(--color-secondary);
+    }
+
+    .social-icons {
+        display: flex;
+        gap: var(--spacing-md);
+        margin-top: var(--spacing-lg);
+    }
+
+    .social-icons a {
+        width: var(--size-icon-md);
+        height: var(--size-icon-md);
+        background: rgba(255,255,255,var(--opacity-light));
+        color: var(--color-white);
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        border-radius: var(--radius-full);
+        transition: all var(--transition-fast);
+        font-size: var(--font-xl);
+    }
+
+    .social-icons a:hover {
+        background: var(--color-secondary);
+        transform: translateY(-3px);
+    }
+
+    .footer-bottom {
+        text-align: center;
+        padding-top: var(--spacing-xl);
+        border-top: 1px solid rgba(255,255,255,var(--opacity-light));
+        color: rgba(255,255,255,0.6);
+    }
     @keyframes icontb {
       from{
         left:0;
@@ -611,7 +694,9 @@
         background-color: #fff;
         color: #0052a3;
       }
-
+       .footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
       
     }
 

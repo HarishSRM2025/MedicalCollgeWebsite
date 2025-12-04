@@ -1,266 +1,318 @@
-        const medicalCourses = [
-    {
-        "level": "UG",
-        "course": "MBBS",
-        "duration": "5.5 Years",
-        "eligibility": "NEET-UG",
-        "annual_intake": 150,
-        "description": "The Undergraduate (UG) medical program provides foundational training in medicine, covering basic sciences, clinical skills, and patient care. It prepares students for a career as medical professionals through structured academics and hands-on clinical exposure.",
-        "departments": [
-            "Anatomy",
-            "Physiology",
-            "Biochemistry",
-            "Pharmacology",
-            "Pathology",
-            "Microbiology",
-            "Community Medicine",
-            "General Medicine",
-            "General Surgery",
-            "Obstetrics & Gynecology",
-            "Pediatrics",
-            "ENT",
-            "Ophthalmology",
-            "Orthopaedics",
-            "Dermatology",
-            "Psychiatry",
-            "Radiology",
-            "Anaesthesiology"
-        ]
-    },
-
-    {
-        "level": "PG",
-        "course": "MD General Medicine",
-        "duration": "3 Years",
-        "intake": 10,
-        "eligibility": "NEET-PG",
-        "description": "The Postgraduate (PG) medical programs offer advanced specialization in various medical disciplines. These courses enhance clinical expertise, research skills, and professional competency to prepare doctors for specialized and super-specialty roles."
-    },
-    {
-        "level": "PG",
-        "course": "MS General Surgery",
-        "duration": "3 Years",
-        "intake": 8,
-        "eligibility": "NEET-PG",
-        "description": "The Postgraduate (PG) medical programs offer advanced specialization in various medical disciplines. These courses enhance clinical expertise, research skills, and professional competency to prepare doctors for specialized and super-specialty roles."
-    },
-    {
-        "level": "PG",
-        "course": "MD Pediatrics",
-        "duration": "3 Years",
-        "intake": 6,
-        "eligibility": "NEET-PG",
-        "description": "The Postgraduate (PG) medical programs offer advanced specialization in various medical disciplines. These courses enhance clinical expertise, research skills, and professional competency to prepare doctors for specialized and super-specialty roles."
-    },
-    {
-        "level": "PG",
-        "course": "MD Obstetrics & Gynecology",
-        "duration": "3 Years",
-        "intake": 6,
-        "eligibility": "NEET-PG",
-        "description": "The Postgraduate (PG) medical programs offer advanced specialization in various medical disciplines. These courses enhance clinical expertise, research skills, and professional competency to prepare doctors for specialized and super-specialty roles."
-    },
-    {
-        "level": "PG",
-        "course": "MS Orthopaedics",
-        "duration": "3 Years",
-        "intake": 5,
-        "eligibility": "NEET-PG",
-        "description": "The Postgraduate (PG) medical programs offer advanced specialization in various medical disciplines. These courses enhance clinical expertise, research skills, and professional competency to prepare doctors for specialized and super-specialty roles."
-    },
-    {
-        "level": "PG",
-        "course": "MD Anesthesiology",
-        "duration": "3 Years",
-        "intake": 8,
-        "eligibility": "NEET-PG",
-        "description": "The Postgraduate (PG) medical programs offer advanced specialization in various medical disciplines. These courses enhance clinical expertise, research skills, and professional competency to prepare doctors for specialized and super-specialty roles."
-    },
-    {
-        "level": "PG",
-        "course": "MD Dermatology",
-        "duration": "3 Years",
-        "intake": 4,
-        "eligibility": "NEET-PG",
-        "description": "The Postgraduate (PG) medical programs offer advanced specialization in various medical disciplines. These courses enhance clinical expertise, research skills, and professional competency to prepare doctors for specialized and super-specialty roles."
-    },
-    {
-        "level": "PG",
-        "course": "MD Psychiatry",
-        "duration": "3 Years",
-        "intake": 3,
-        "eligibility": "NEET-PG",
-        "description": "The Postgraduate (PG) medical programs offer advanced specialization in various medical disciplines. These courses enhance clinical expertise, research skills, and professional competency to prepare doctors for specialized and super-specialty roles."
-    },
-    {
-        "level": "PG",
-        "course": "MD Radiology",
-        "duration": "3 Years",
-        "intake": 5,
-        "eligibility": "NEET-PG",
-        "description": "The Postgraduate (PG) medical programs offer advanced specialization in various medical disciplines. These courses enhance clinical expertise, research skills, and professional competency to prepare doctors for specialized and super-specialty roles."
-    }
-];
-
-
-        function renderCourseSidebar() {
-            const menu = document.getElementById("courseSidebarMenu");
-
-            const sections = [
-                { id: "ug-courses", title: "UG Courses", icon: "fa-user-graduate" },
-                { id: "pg-courses", title: "PG Courses", icon: "fa-user-md" }
-            ];
-
-            menu.innerHTML = sections.map((section, index) => `
-                <li>
-                    <a href="#${section.id}"
-                    onclick="showCourseSection('${section.id}')"
-                    class="${index === 0 ? 'lib-active' : ''}">
-                        <i class="fas ${section.icon}"></i> ${section.title}
-                    </a>
-                </li>
-            `).join("");
-        }
-
-       function renderCourseContent(item) {
-            switch (item.type) {
-                case 'table':
-                    return `
-                        <div class="lib-table-wrapper">
-                            <table>
-                                <thead>
-                                    <tr>${item.headers.map(h => `<th>${h}</th>`).join('')}</tr>
-                                </thead>
-                                <tbody>
-                                    ${item.rows
-                                        .map(row => `
-                                        <tr>${row.map((c, i) =>
-                                            `<td data-label="${item.headers[i]}">${c}</td>`
-                                        ).join('')}</tr>
-                                    `)
-                                        .join('')}
-                                </tbody>
-                            </table>
-                        </div>
-                    `;
-
-                case 'list':
-                    return `
-                        <ul class="lib-features-list">
-                            ${item.items.map(li => `<li><i class="fas fa-check-circle"></i> ${li}</li>`).join("")}
-                        </ul>
-                    `;
-
-                case 'subtitle':
-                    return `<h3>${item.value}</h3>`;
-                
-                case 'description':
-                return `
-                    <h3>Description</h3>
-                    <p>${item.value}</p>
-                `;
-
-                default:
-                    return '';
+ const courseData = {
+            ug: {
+                curriculum: [
+                    {
+                        title: "Phase 1 Curriculum",
+                        year: "First Year",
+                        file: "phase1_curriculum.pdf",
+                        icon: "fas fa-book"
+                    },
+                    {
+                        title: "Phase 2 Curriculum",
+                        year: "Second Year",
+                        file: "phase2_curriculum.pdf",
+                        icon: "fas fa-book"
+                    },
+                    {
+                        title: "Phase 3 Part 1 Curriculum",
+                        year: "Third Year",
+                        file: "phase3_part1_curriculum.pdf",
+                        icon: "fas fa-book"
+                    },
+                    {
+                        title: "Phase 3 Part 2 Curriculum",
+                        year: "Final Year Part 1",
+                        file: "phase3_part2_curriculum.pdf",
+                        icon: "fas fa-book"
+                    }
+                ],
+                timetable: [
+                    {
+                        title: "Phase 1 Timetable",
+                        semester: "Semester 1 & 2",
+                        file: "phase1_timetable.pdf",
+                        icon: "fas fa-clock"
+                    },
+                    {
+                        title: "Phase 2 Timetable",
+                        semester: "Semester 3 & 4",
+                        file: "phase2_timetable.pdf",
+                        icon: "fas fa-clock"
+                    },
+                    {
+                        title: "Phase 3 Part 1 Timetable",
+                        semester: "Semester 5, 6 & 7",
+                        file: "phase3_part1_timetable.pdf",
+                        icon: "fas fa-clock"
+                    },
+                    {
+                        title: "Phase 3 Part 2 Timetable",
+                        semester: "Semester 8 & 9",
+                        file: "phase3_part2_timetable.pdf",
+                        icon: "fas fa-clock"
+                    }
+                ],
+                calendar: [
+                    {
+                        title: "Academic Calendar 2024-25",
+                        year: "Current Year",
+                        file: "academic_calendar_2024.pdf",
+                        icon: "fas fa-calendar-alt"
+                    },
+                    {
+                        title: "Examination Schedule",
+                        year: "2024-25",
+                        file: "exam_schedule_2024.pdf",
+                        icon: "fas fa-calendar-check"
+                    },
+                    {
+                        title: "Holiday List",
+                        year: "2024-25",
+                        file: "holiday_list_2024.pdf",
+                        icon: "fas fa-calendar-day"
+                    }
+                ],
+                phases: [
+                    {
+                        name: "Phase 1",
+                        duration: "1 Year",
+                        departments: [
+                            "Anatomy",
+                            "Physiology",
+                            "Biochemistry",
+                            "Community Medicine",
+                            "Foundation Course"
+                        ]
+                    },
+                    {
+                        name: "Phase 2",
+                        duration: "1 Year",
+                        departments: [
+                            "Pathology",
+                            "Pharmacology",
+                            "Microbiology",
+                            "Forensic Medicine & Toxicology",
+                            "Community Medicine"
+                        ]
+                    },
+                    {
+                        name: "Phase 3 Part 1",
+                        duration: "1.5 Years",
+                        departments: [
+                            "General Medicine",
+                            "General Surgery",
+                            "Obstetrics & Gynaecology",
+                            "Paediatrics",
+                            "Orthopaedics",
+                            "ENT",
+                            "Ophthalmology",
+                            "Community Medicine",
+                            "Dermatology, Venereology & Leprosy",
+                            "Psychiatry",
+                            "Radiodiagnosis",
+                            "Respiratory Medicine",
+                            "Emergency Medicine"
+                        ]
+                    },
+                    {
+                        name: "Phase 3 Part 2",
+                        duration: "1 Year (Internship)",
+                        departments: [
+                            "General Medicine",
+                            "General Surgery",
+                            "Obstetrics & Gynaecology",
+                            "Paediatrics",
+                            "Orthopaedics",
+                            "Anaesthesiology",
+                            "Emergency Medicine",
+                            "Community Medicine"
+                        ]
+                    }
+                ]
+            },
+            pg: {
+                curriculum: [
+                    {
+                        title: "MD General Medicine",
+                        duration: "3 Years",
+                        file: "md_medicine_curriculum.pdf",
+                        icon: "fas fa-file-medical"
+                    },
+                    {
+                        title: "MS General Surgery",
+                        duration: "3 Years",
+                        file: "ms_surgery_curriculum.pdf",
+                        icon: "fas fa-file-medical"
+                    },
+                    {
+                        title: "MD Paediatrics",
+                        duration: "3 Years",
+                        file: "md_paediatrics_curriculum.pdf",
+                        icon: "fas fa-file-medical"
+                    },
+                    {
+                        title: "MD Anaesthesiology",
+                        duration: "3 Years",
+                        file: "md_anaesthesia_curriculum.pdf",
+                        icon: "fas fa-file-medical"
+                    }
+                ],
+                timetable: [
+                    {
+                        title: "PG Academic Timetable",
+                        semester: "All Years",
+                        file: "pg_timetable.pdf",
+                        icon: "fas fa-clock"
+                    },
+                    {
+                        title: "Clinical Posting Schedule",
+                        semester: "Rotation Based",
+                        file: "pg_clinical_schedule.pdf",
+                        icon: "fas fa-clock"
+                    }
+                ],
+                calendar: [
+                    {
+                        title: "PG Academic Calendar 2024-25",
+                        year: "Current Year",
+                        file: "pg_academic_calendar_2024.pdf",
+                        icon: "fas fa-calendar-alt"
+                    },
+                    {
+                        title: "PG Examination Schedule",
+                        year: "2024-25",
+                        file: "pg_exam_schedule_2024.pdf",
+                        icon: "fas fa-calendar-check"
+                    }
+                ],
+                departments: [
+                    "General Medicine",
+                    "General Surgery",
+                    "Obstetrics & Gynaecology",
+                    "Paediatrics",
+                    "Orthopaedics",
+                    "Anaesthesiology",
+                    "Radiology",
+                    "Pathology",
+                    "Microbiology",
+                    "Pharmacology",
+                    "Community Medicine",
+                    "Dermatology",
+                    "Psychiatry",
+                    "ENT",
+                    "Ophthalmology",
+                    "Emergency Medicine",
+                    "Respiratory Medicine"
+                ]
             }
-        }
+        };
 
-       function showCourseSection(id) {
-            const main = document.getElementById("courseMainContent");
-
-            // Build sections dynamically
-            let sectionData;
-
-            if (id === "ug-courses") {
-                const ug = medicalCourses.find(c => c.level === "UG");
-
-                sectionData = {
-                    title: "UG Courses",
-                    icon: "fa-user-graduate",
-                    description: "Undergraduate medical program (MBBS).",
-                    content: [
-                        {
-                            type: "description",
-                            value: ug.description
-                        },
-                        {
-                            type: "table",
-                            headers: ["Course", "Duration", "Eligibility", "Annual Intake"],
-                            rows: [[ug.course, ug.duration, ug.eligibility, ug.annual_intake]]
-                        },
-                        {
-                            type: "subtitle",
-                            value: "Departments Included"
-                        },
-                        {
-                            type: "list",
-                            items: ug.departments
-                        }
-                    ]
-                };
-            }
-
-            else if (id === "pg-courses") {
-                const pg = medicalCourses.filter(c => c.level === "PG");
-
-                sectionData = {
-                    title: "PG Courses",
-                    icon: "fa-user-md",
-                    description: "Postgraduate medical specializations.",
-                    content: [
-                        {
-                            type: "description",
-                            value: "The Postgraduate (PG) medical programs offer advanced specialization in various medical disciplines. These courses enhance clinical expertise, research skills, and professional competency to prepare doctors for specialized and super-specialty roles."
-                        },
-                        {
-                            type: "table",
-                            headers: ["Course", "Duration", "Eligibility", "Intake"],
-                            rows: pg.map(c => [c.course, c.duration, c.eligibility, c.intake])
-                        }
-                    ]
-                };
-            }
-
-            // Build final HTML
-            const html = `
-                <div class="lib-library-section lib-active">
-                    <div class="lib-section-header">
-                        <div class="lib-section-header-content">
-                            <h2><div class="lib-icon-large"><i class="fas ${sectionData.icon}"></i></div>${sectionData.title}</h2>
-                            <p>${sectionData.description}</p>
-                        </div>
+        // Render Document Cards
+        function renderDocuments(data, containerId) {
+            const container = document.getElementById(containerId);
+            container.innerHTML = data.map(doc => `
+                <div class="document-card">
+                    <div class="document-icon">
+                        <i class="${doc.icon}"></i>
                     </div>
+                    <div class="document-title">${doc.title}</div>
+                    <div class="document-meta">
+                        ${doc.year || doc.semester || doc.duration}
+                    </div>
+                    <a href="#" class="document-link">
+                        Download PDF <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            `).join('');
+        }
 
-                    <div class="lib-section-content">
-                        ${sectionData.content.map(item => renderCourseContent(item)).join('')}
+        // Render UG Phases
+        function renderUGPhases() {
+            const container = document.getElementById('ug-phases-container');
+            container.innerHTML = courseData.ug.phases.map((phase, index) => `
+                <div class="phase-card">
+                    <div class="phase-header" onclick="togglePhase(${index})">
+                        <div class="phase-title">
+                            <i class="fas fa-layer-group"></i>
+                            ${phase.name}
+                        </div>
+                        <i class="fas fa-chevron-down phase-toggle" id="phase-toggle-${index}"></i>
+                    </div>
+                    <div class="phase-content" id="phase-content-${index}">
+                        <div class="department-grid">
+                            ${phase.departments.map(dept => `
+                                <div class="department-item">
+                                    <div class="department-name">
+                                        <a href="pre-clinical.html?dept=Physiology">${dept}</a>
+                                        
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
                     </div>
                 </div>
-            `;
-
-            main.innerHTML = html;
-
-            // Update active menu link
-            document.querySelectorAll('#courseSidebarMenu a').forEach(a => a.classList.remove('lib-active'));
-            document.querySelector(`#courseSidebarMenu a[href="#${id}"]`).classList.add('lib-active');
-
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            `).join('');
         }
+
+        // Render PG Departments
+        function renderPGDepartments() {
+            const container = document.getElementById('pg-departments-grid');
+            container.innerHTML = courseData.pg.departments.map(dept => `
+                <div class="department-item" style="background-color: var(--color-background-light);">
+                    <div class="department-name">
+                         <a href="pre-clinical.html?dept=Physiology">${dept}</a>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Toggle Phase
+        function togglePhase(index) {
+            const content = document.getElementById(`phase-content-${index}`);
+            const toggle = document.getElementById(`phase-toggle-${index}`);
+            
+            content.classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+
+        // Main Tab Navigation
+        document.querySelectorAll('.nav-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                const tabName = this.dataset.tab;
+                
+                document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                
+                document.querySelectorAll('.content-section').forEach(s => s.classList.remove('active'));
+                document.getElementById(`${tabName}-section`).classList.add('active');
+            });
+        });
+
+        // Sub Navigation
+        document.querySelectorAll('.sub-nav-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const panel = this.dataset.panel;
+                const parentSection = this.closest('.content-section');
+                
+                parentSection.querySelectorAll('.sub-nav-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                parentSection.querySelectorAll('.content-panel').forEach(p => p.classList.remove('active'));
+                document.getElementById(panel).classList.add('active');
+            });
+        });
 
         // Initialize
-       document.addEventListener("DOMContentLoaded", () => {
-    renderCourseSidebar();
+        document.addEventListener('DOMContentLoaded', function() {
+            // Render UG Content
+            renderDocuments(courseData.ug.curriculum, 'ug-curriculum-grid');
+            renderDocuments(courseData.ug.timetable, 'ug-timetable-grid');
+            renderDocuments(courseData.ug.calendar, 'ug-calendar-grid');
+            renderUGPhases();
 
-    const hash = window.location.hash.slice(1);
-    if (hash === "ug-courses" || hash === "pg-courses") {
-        showCourseSection(hash);
-    } else {
-        showCourseSection("ug-courses");
-    }
-    });
-
-    window.addEventListener("hashchange", () => {
-        const hash = window.location.hash.slice(1);
-        if (hash === "ug-courses" || hash === "pg-courses") {
-            showCourseSection(hash);
-        }
-    });
+            // Render PG Content
+            renderDocuments(courseData.pg.curriculum, 'pg-curriculum-grid');
+            renderDocuments(courseData.pg.timetable, 'pg-timetable-grid');
+            renderDocuments(courseData.pg.calendar, 'pg-calendar-grid');
+            renderPGDepartments();
+        });
