@@ -72,63 +72,51 @@
                         icon: "fas fa-calendar-day"
                     }
                 ],
-                phases: [
+               phases: [
                     {
                         name: "Phase 1",
                         duration: "1 Year",
                         departments: [
-                            "Anatomy",
-                            "Physiology",
-                            "Biochemistry",
-                            "Community Medicine",
-                            "Foundation Course"
+                            { name: "Anatomy", path: "pre-clinical.html?dept=anatomy" },
+                            { name: "Physiology", path: "pre-clinical.html?dept=physiology" },
+                            { name: "Biochemistry", path: "pre-clinical.html?dept=biochemistry" },
+                            { name: "Community Medicine", path: "para-clinical.html?dept=community_medicine" }
                         ]
                     },
                     {
                         name: "Phase 2",
                         duration: "1 Year",
                         departments: [
-                            "Pathology",
-                            "Pharmacology",
-                            "Microbiology",
-                            "Forensic Medicine & Toxicology",
-                            "Community Medicine"
+                            { name: "Pathology", path: "para-clinical.html?dept=pathology" },
+                            { name: "Pharmacology", path: "para-clinical.html?dept=Pharmacology" },
+                            { name: "Microbiology", path: "para-clinical.html?dept=Microbiology" },
+                            { name: "Forensic Medicine & Toxicology", path: "para-clinical.html?dept=ForensicMedicine" },
+                            { name: "Community Medicine", path: "para-clinical.html?dept=CommunityMedicine" }
                         ]
                     },
                     {
                         name: "Phase 3 Part 1",
                         duration: "1.5 Years",
                         departments: [
-                            "General Medicine",
-                            "General Surgery",
-                            "Obstetrics & Gynaecology",
-                            "Paediatrics",
-                            "Orthopaedics",
-                            "ENT",
-                            "Ophthalmology",
-                            "Community Medicine",
-                            "Dermatology, Venereology & Leprosy",
-                            "Psychiatry",
-                            "Radiodiagnosis",
-                            "Respiratory Medicine",
-                            "Emergency Medicine"
+                            { name: "General Medicine", path: "boardspecialties.html?dept=general_medicine" },
+                            { name: "General Surgery", path: "surgeryspecialties.html?dept=generalsurgery" },
+                            { name: "Obstetrics & Gynaecology", path: "surgeryspecialties.html?dept=obstetrics_gynaecology" },
+                            { name: "Paediatrics", path: "boardspecialties.html?dept=paediatrics" }
                         ]
                     },
                     {
                         name: "Phase 3 Part 2",
                         duration: "1 Year (Internship)",
                         departments: [
-                            "General Medicine",
-                            "General Surgery",
-                            "Obstetrics & Gynaecology",
-                            "Paediatrics",
-                            "Orthopaedics",
-                            "Anaesthesiology",
-                            "Emergency Medicine",
-                            "Community Medicine"
+                            { name: "Community Medicine", path: "para-clinical.html?dept=CommunityMedicine" },
+                            { name: "Orthopaedics", path: "surgeryspecialties.html?dept=orthopaedics" },
+                            { name: "Ophthalmology", path: "surgeryspecialties.html?dept=ophthalmology" },
+                            { name: "Dermatology, Venereology & Leprosy", path: "boardspecialties.html?dept=dermatology" },
+                            { name: "Psychiatry", path: "boardspecialties.html?dept=psychiatry" },
                         ]
                     }
                 ]
+
             },
             pg: {
                 curriculum: [
@@ -186,23 +174,20 @@
                     }
                 ],
                 departments: [
-                    "General Medicine",
-                    "General Surgery",
-                    "Obstetrics & Gynaecology",
-                    "Paediatrics",
-                    "Orthopaedics",
-                    "Anaesthesiology",
-                    "Radiology",
-                    "Pathology",
-                    "Microbiology",
-                    "Pharmacology",
-                    "Community Medicine",
-                    "Dermatology",
-                    "Psychiatry",
-                    "ENT",
-                    "Ophthalmology",
-                    "Emergency Medicine",
-                    "Respiratory Medicine"
+                    { name: "Pathology", path: "para-clinical.html?dept=pathology" },
+                    { name: "Pharmacology", path: "para-clinical.html?dept=Pharmacology" },
+                    { name: "Microbiology", path: "para-clinical.html?dept=Microbiology" },
+                    { name: "Forensic Medicine & Toxicology", path: "para-clinical.html?dept=ForensicMedicine" },
+                    { name: "Community Medicine", path: "para-clinical.html?dept=CommunityMedicine" },
+                    { name: "Community Medicine", path: "para-clinical.html?dept=CommunityMedicine" },
+                    { name: "Orthopaedics", path: "surgeryspecialties.html?dept=orthopaedics" },
+                    { name: "Ophthalmology", path: "surgeryspecialties.html?dept=ophthalmology" },
+                    { name: "Dermatology, Venereology & Leprosy", path: "boardspecialties.html?dept=dermatology" },
+                    { name: "Psychiatry", path: "boardspecialties.html?dept=psychiatry" },
+                    { name: "General Medicine", path: "boardspecialties.html?dept=general_medicine" },
+                    { name: "General Surgery", path: "surgeryspecialties.html?dept=generalsurgery" },
+                    { name: "Obstetrics & Gynaecology", path: "surgeryspecialties.html?dept=obstetrics_gynaecology" },
+                    { name: "Paediatrics", path: "boardspecialties.html?dept=paediatrics" }
                 ]
             }
         };
@@ -243,7 +228,7 @@
                             ${phase.departments.map(dept => `
                                 <div class="department-item">
                                     <div class="department-name">
-                                        <a href="pre-clinical.html?dept=Physiology">${dept}</a>
+                                        <a href="${dept.path}">${dept.name}</a>
                                         
                                     </div>
                                 </div>
@@ -260,7 +245,7 @@
             container.innerHTML = courseData.pg.departments.map(dept => `
                 <div class="department-item" style="background-color: var(--color-background-light);">
                     <div class="department-name">
-                         <a href="pre-clinical.html?dept=Physiology">${dept}</a>
+                       <a href="${dept.path}">${dept.name}</a>
                     </div>
                 </div>
             `).join('');

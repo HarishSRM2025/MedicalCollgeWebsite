@@ -410,9 +410,7 @@ a{
         .section-title {
             font-size: var(--font-3xl);
             color: var(--color-primary);
-            margin-bottom: var(--spacing-xl);
             padding-bottom: var(--spacing-lg);
-            border-bottom: 3px solid var(--color-primary-light);
         }
 
         .description {
@@ -443,14 +441,14 @@ a{
         }
 
         .sub-nav-btn:hover {
-            border-color: var(--color-primary);
-            color: var(--color-primary);
+            border-color: var(--color-secondary);
+            color: var(--color-secondary);
         }
 
         .sub-nav-btn.active {
-            background: var(--color-primary);
+            background: var(--color-secondary);
             color: var(--color-white);
-            border-color: var(--color-primary);
+            border-color: var(--color-secondary);
         }
 
         /* Content Panels */
