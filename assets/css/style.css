@@ -1000,7 +1000,7 @@ body {
     max-width: var(--container-lg);
     margin: var(--spacing-4xl) auto 0;
     display: grid;
-    grid-template-columns: 1fr 1.2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: var(--spacing-3xl);
     align-items: center;
 }
@@ -10060,3 +10060,15 @@ grid-template-columns: 1fr;
         }
 
         
+
+        .team-image {
+            max-width: 430px;
+            height: 550px;
+        }
+        .team-image video{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+            overflow: hidden;
+        }
