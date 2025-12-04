@@ -377,139 +377,25 @@
                     "date": "13 Jul 2025 - 17 Jul 2025"
                     }
                 ]
-            },
+            }
+            ,
             {
-                "id": "paediatrics",
-                "name": "Paediatrics",
-                "icon": "fa-baby",
-                "color": "#2E86C1",
-                "colorDark": "#1A5276",
-
-                "desc": "The Department of Paediatrics provides comprehensive, evidence-based care for children with acute and chronic medical conditions, emphasizing accurate diagnosis, holistic management, preventive health, and excellence in undergraduate and postgraduate medical education.",
-
-                "vision": "To be one among the centers of academic excellence in UG and PG Paediatric education and excellence in pediatric patient care.",
-
-                "mission": "To educate undergraduate and postgraduate medical students and improve child health through world-class excellence in patient care, education, and research.",
-
-                "objectives": [
-                    "To achieve our mission and vision in a timely manner without compromising quality.",
-                    "To provide high-quality, evidence-based care for patients.",
-                    "To strengthen medical education with structured teaching, clinical training, and mentorship.",
-                    "To promote preventive healthcare through awareness, lifestyle modification, and early diagnosis."
-                ],
-
-                "infrastructure": [
-                    "Well-organized outpatient and inpatient facilities supported by fully functional PICU and emergency services.",
-                    "Outpatient department with multiple spacious consultation areas, dedicated examination rooms, and a comfortable waiting hall.",
-                    "General ward with 4 wards having a total capacity of 120 beds for paediatric medical care.",
-                    "PICU with 20 beds equipped with advanced monitoring systems, ventilators, and life support technologies.",
-                    "Procedure rooms for bone marrow aspiration, pleural aspiration, and lumbar puncture.",
-                    "Dedicated teaching spaces including seminar halls, demo halls, and library facilities."
-                ],
-
-                "faculty": [
-                    { "name": "Dr. Sirajuddin Nazeer", "designation": "Professor & HOD", "exp": "21" },
-                    { "name": "Dr. D. Saminathan", "designation": "Professor", "exp": "28" },
-                    { "name": "Dr. R. Belgin Premkumar", "designation": "Professor", "exp": "10" },
-                    { "name": "Dr. T.R.R. Ananthy Shri", "designation": "Professor", "exp": "24" },
-                    { "name": "Dr. A. Agneeswaraan", "designation": "Associate Professor", "exp": "9" },
-                    { "name": "Dr. B. Muthuvel", "designation": "Associate Professor", "exp": "7" },
-                    { "name": "Dr. Bennie Christene James", "designation": "Assistant Professor", "exp": "7" },
-                    { "name": "Dr. Sugapradha", "designation": "Assistant Professor", "exp": "3" },
-                    { "name": "Dr. Dinesh Kumar", "designation": "Assistant Professor", "exp": "4" },
-                    { "name": "Dr. Ramkumar", "designation": "Assistant Professor", "exp": "2" },
-                    { "name": "Dr. Brindha", "designation": "Assistant Professor", "exp": "2" },
-                    { "name": "Dr. Parthiban", "designation": "Senior Resident", "exp": "3" },
-                    { "name": "Dr. Eslavath Shiva", "designation": "Senior Resident", "exp": "1" },
-                    { "name": "Dr. A. Vinothini", "designation": "Senior Resident", "exp": "1" },
-                    { "name": "Dr. Hamritha", "designation": "Senior Resident", "exp": "0" }
-                ],
-
-                "services": [
-                    "Routine OP",
-                    "Immunization OP",
-                    "Inpatient Care & PICU",
-                    "Neonatal Intensive Care (NICU)",
-                    "Specialty Clinics: Child Guidance, Nephrology, Neurology, Cardiology, Asthma, Endocrinology, Thalassemia, Well Baby Clinic, Nutrition, Adolescent Clinic, Developmental Assessment Clinic, Genetics"
-                ],
-		"pubStats": [
-                    { "label": "Overall", "value": "17" },
-                    { "label": "International", "value": "12" },
-                    { "label": "National", "value": "5" }
-                ],
-                    "pubHighlights": [
-                        "Neonatal health",
-                        "Pediatric biomarkers & prognosis",
-                        "Childhood nutrition & health associations",
-                        "Childhood behavioral & environmental risk factors",
-                        "Therapeutic & preventive strategies in childhood diseases"
-                    ],
-
-                    "pubYearwise": [
-                    { "year": 2025, "title": "Comparison Study of Cord Lipid Profile in Normal and Low Birth Weight Neonates", "journal": "National Journal", "type": "National" },
-                    { "year": 2025, "title": "Clinic-epidemiological Profile of Lower Respiratory Tract Infection in Children 1 Month–5 Years", "journal": "National Journal", "type": "National" },
-                    { "year": 2025, "title": "Correlation of AIOS with Radiological & Pulse Oximetry Findings in Acute Respiratory Illness", "journal": "International Journal", "type": "International" },
-                    { "year": 2025, "title": "Calcium & Sodium Changes Following Phototherapy in Neonatal Hyperbilirubinemia", "journal": "National Journal", "type": "National" },
-                    { "year": 2025, "title": "Accuracy of Transcutaneous Bilirubinometry vs Serum Bilirubin in Term Neonates", "journal": "National Journal", "type": "National" },
-                    { "year": 2025, "title": "Assessment of Physical & Physiological Characteristics of Term Newborns", "journal": "International Journal", "type": "International" },
-                    { "year": 2025, "title": "LDH as Prognostic Tool in Neonates with Respiratory Distress", "journal": "National Journal", "type": "National" },
-                    { "year": 2025, "title": "Neonatal Hypoglycemia & Bradycardia Linked to Maternal Beta Blocker Use", "journal": "National Journal", "type": "National" },
-                    { "year": 2025, "title": "Early Neonatal Outcome in Gestational Diabetes Mellitus", "journal": "International Journal", "type": "International" },
-                    { "year": 2025, "title": "Effectiveness of CAN Score in Assessing Fetal Nutrition", "journal": "National Journal", "type": "National" },
-                    { "year": 2025, "title": "Barriers of Exclusive Breastfeeding", "journal": "National Journal", "type": "National" },
-                    { "year": 2025, "title": "Cord Blood Glucose & HbA1c Correlation with Neonatal Hypoglycemia in IDM", "journal": "International Journal", "type": "International" }
-                    ],
-
-                "research": [
-                    "Outcome of Late Preterm & Term Newborns with Respiratory Distress – Dr. Kanakatara K",
-                    "Anxiety in School Students & Screen Time Association – Dr. Kanakatara K",
-                    "NLR as Predictor of Disease Severity in Bronchiolitis – Dr. Kanakatara K",
-                    "Nutritional Status & Sleep Problems in School Children – Dr. Taniya",
-                    "Risk Factors of Anemia in Children 6 Months–5 Years – Dr. Bala Vignesh",
-                    "Incidence of Physiological Jaundice Requiring Phototherapy – Dr. Joan",
-                    "Umbilical Cord Serum Vitamin D & TTNB Correlation – Dr. Joan",
-                    "Risk Factors for Recurrent Respiratory Infections in Children – Dr. Joan",
-                    "Nebulized Salbutamol vs Normal Saline for TTNB – Dr. Harinie",
-                    "CRP as Prognostic Marker in PICU Patients – Dr. Nandhini",
-                    "Alternate Day vs Daily Iron Therapy in Pediatric Anemia – Dr. Aravindh",
-                    "KAP on Childhood Immunization Among Parents – Dr. Bala Seshadri"
-                ],
-
-                "events": [
-                    "Obesity in Children Awareness Programme",
-                    "Down Syndrome Day",
-                    "Vacci-Quiz",
-                    "Hemophilia Day",
-                    "Emergency in Paediatric Surgery – Guest Lecture",
-                    "Add-on Course",
-                    "Neonatal Resuscitation Program",
-                    "CRMI Induction Program",
-                    "Paediatric Quiz for UG & PG Students",
-                    "Breastfeeding Week Celebration",
-                    "Parent Teachers Meeting",
-                    "PG Clinics in Adolescence"
-                ],
-
-                "achievements": [
-                    "Improved inpatient outcomes through timely diagnosis and advanced protocols.",
-                    "Undergraduate Quiz Winners: Dr. Alaghu Krishnan Karthick, Dr. Guru Prasath",
-                    "Postgraduate Quiz Winners: Dr. Sneka, Dr. Kanakatara"
-                ],
-                "gallery": [
-                    { "name": "Obesity in Children Awareness Programme", "date": "04-03-2025", "path": "Pediatrics/1.jpg" },
-                    { "name": "Down Syndrome Day", "date": "21-03-2025", "path": "Pediatrics/2.jpg" },
-                    { "name": "Vacci Quiz", "date": "12-04-2025", "path": "Pediatrics/3.jpg" },
-                    { "name": "Hemophilia Day", "date": "29-04-2025", "path": "Pediatrics/4.jpg" },
-                    { "name": "Emergency in Paediatric Surgery – Guest Lecture", "date": "16-05-2025", "path": "Pediatrics/5.jpg" },
-                    { "name": "Add-on Course", "date": "22-05-2024 to 23-05-2024", "path": "Pediatrics/6.jpg" },
-                    { "name": "Neonatal Resuscitation Program", "date": "26-05-2025", "path": "Pediatrics/7.jpg" },
-                    { "name": "CRMI Induction Program", "date": "26-05-2025", "path": "Pediatrics/8.jpg" },
-                    { "name": "Paediatric Quiz Program", "date": "27-06-2025", "path": "Pediatrics/9.jpg" },
-                    { "name": "Breastfeeding Week", "date": "01-08-2025 to 07-08-2025", "path": "Pediatrics/10.jpg" },
-                    { "name": "Parent Teachers Meeting", "date": "22-09-2025 to 25-09-2025", "path": "Pediatrics/11.jpg" },
-                    { "name": "PG Clinics in Adolescence", "date": "22-11-2025", "path": "Pediatrics/12.jpg" }
-                ]
-
+                id: "pediatrics", name: "Pediatrics", icon: "fa-child", color: "#ff9800", colorDark: "#f57c00",
+                desc: "Comprehensive child healthcare with NICU and PICU facilities.",
+                vision:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
+                 mission:["To provide state-of-art management options for patients with respiratory diseases, according to the latest evidence-based guidelines.","Train the students with focus on bench to bedside practice through rigorous implementation of the course along with innovative teaching-learning practices and to delve into dynamic clinical research.","To create awareness among patients, their caregivers and the general public about basic Respiratory illnesses and their symptoms.","To conduct patient empowerment programs so as to reduce morbidity or mortality and arrive at early diagnosis of chest diseases at an affordable cost."],
+                objectives:["Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro."],
+                infra: ["Pediatric OPD", "NICU", "PICU", "Immunization clinic"],
+                faculty: [{name: "Ram", designation: "Assistant professor", exp: "5"},{name: "Sam", designation: "Assistant professor", exp: "5"},{name: "John", designation: "Assistant professor", exp: "5"}],
+                services_desc:"The Department offers diagnostic and consultative services for patient management across various specialties",
+                services: ["General Pediatrics", "Neonatology", "PICU", "Immunization", "Growth Monitoring"],
+                pubStats: [{label: "Publications", value: "24+"}],
+                pubHighlights: ["Neonatal care"],
+                pubYearwise: [{year: "2023", title: "Neonatal protocols", journal: "Pediatrics", type: "Research"}],
+                research: ["Neonatal outcomes"],
+                events: ["Children's Day"],
+                achievements: ["Best NICU"],
+                gallery: [{name: "NICU", icon: "fa-baby", event: "NICU Setup", date: "Jan 2024"}]
             },
             {
                 id: "dermatology", name: "Dermatology", icon: "fa-hand-dots", color: "#e74c3c", colorDark: "#c0392b",

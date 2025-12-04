@@ -302,217 +302,193 @@
                 gallery: [{name: "NICU", icon: "fa-baby", event: "NICU Setup", date: "Jan 2024"}]
             },
             {
-                id: "ophthalmology", name: "Ophthalmology", icon: `<i class="fas fa-eye"></i>`, color: "#e74c3c", colorDark: "#c0392b",
-                desc: "Expert care for skin, hair, and nail conditions with advanced cosmetic dermatology services.",
-                vision:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
-                mission:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
-                objectives:["Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro."],
-                infra: ["OPD rooms", "Inpatient wards", "ICU", "Procedure room"],
-                faculty: [{name: "Ram", designation: "Assistant professor", exp: "5"},{name: "Sam", designation: "Assistant professor", exp: "5"},{name: "John", designation: "Assistant professor", exp: "5"}],
-                services: ["General Dermatology", "Cosmetic Dermatology", "Laser Treatments", "Hair Restoration", "Acne Treatment", "Psoriasis Care", "Vitiligo Treatment", "Chemical Peels"],
-                pubStats: [{label: "Publications", value: "28+"}, {label: "International", value: "12+"}],
-                pubHighlights: ["Advances in psoriasis treatment", "Laser therapy in acne scars", "Novel vitiligo treatments"],
-                pubYearwise: [
-                    {year: "2024", title: "Biologic therapy in psoriasis", journal: "Dermatology International", type: "Research"},
-                    {year: "2023", title: "Fractional CO2 laser in acne scars", journal: "Aesthetic Dermatology", type: "Clinical Study"}
-                ],
-                research: ["Novel vitiligo treatments", "Laser therapy advances", "Immunotherapy in skin diseases"],
-                events: ["Skin Cancer Screening Camp", "World Psoriasis Day"],
-                achievements: ["Excellence in Cosmetic Dermatology"],
-                gallery: [
-                    {name: "Consultation Room", icon: "fa-stethoscope", event: "Derma OPD", date: "Jan 20, 2024"},
-                    {name: "Laser Unit", icon: "fa-bolt", event: "Laser Therapy Center", date: "Feb 14, 2024"}
-                ]
-            },
-            {
-                "id": "obstetrics_gynaecology",
-                "name": "Obstetrics & Gynaecology",
-                "icon": "fa-user-md",
-                "color": "#e91e63",
-                "colorDark": "#c2185b",
-
-                "desc": "The Department of Obstetrics & Gynaecology provides comprehensive reproductive healthcare, covering antenatal, intrapartum, postnatal care, as well as advanced gynaecological services. It is committed to women’s health through clinical excellence, research, and education.",
-
-                "vision": "To provide exceptional care to each and every women approaching our door step. To champion the women’s health care system. To achieve excellence and advancement in women’s obstetrical and gynecological health, teaching the future specialty leaders. To be leaders and advocates in the pursuit of excellence in women’s health care.",
+                id: "ophthalmology", 
+                name: "Ophthalmology", 
+                icon: `<i class="fas fa-eye"></i>`, 
+                color: "#e74c3c", 
+                colorDark: "#c0392b",
+                "desc": "The  Department of ophthalmology  focuses on the quality services for holistic eye care through specialty clinics in OPD. It plays crucial role in community eye care through rural eye camps and School camps. It also emphasises the research activities related to eye care through multidisciplinary  approach. ",
+                "vision": "Endeavour to be a center of excellence providing advanced and affordable tertiary eye care while maintaining high standards of teaching and training.",
 
                 "mission": [
-                    "To help women and babies achieve optimal health outcomes.",
-                    "Support women to have empowering and magnificent birth experience.",
-                    "To deliver evidence-based care in a safe and welcoming atmosphere characterized by cultural humility and diversity.",
-                    "To be innovative, clinically excellent and contribute to research.",
-                    "Teach while you work and create future maternity care providers.",
-                    "Reflect values of excellence, compassion, community and social justice."
+                    "Providing vision is our mission."
                 ],
 
                 "objectives": [
-                    "Dedicated to the pursuit of excellence in women’s health care.",
-                    "To provide highest quality service to patients.",
-                    "To continuously evaluate patient-centric outcomes.",
-                    "To promote involvement of all faculty and staff in problem solving.",
-                    "To continue a strong research program advancing medical science.",
-                    "To be enthusiastic and think positively."
+                    "Recognise the importance of Ophthalmology in the context of the health needs of the community and national priorities in the health sector.",
+                    "Demonstrate sufficient understanding of the basic sciences relevant to research and practice of Ophthalmology.",
+                    "Have sound theoretical and practical knowledge to manage illnesses medically and surgically based on principles of Evidence Based Medicine (EBM).",
+                    "Identify the abnormal conditions of the eye.",
+                    "Diagnose various eye diseases prevalent in the country.",
+                    "Manage eye conditions like conjunctivitis, stye, chalazion, and foreign body.",
+                    "Recognise and give medical treatment of anterior segment diseases.",
+                    "Identify national objectives and actively participate in the national programme for prevention and control of blindness.",
+                    "Recognise ophthalmic manifestations of systemic diseases."
                 ],
 
-                "infra_desc": "The department is equipped with modern labour rooms, neonatal care units, operation theatres, and ultrasonography facilities.",
+                "infra_desc": "The Department is equipped with state-of-the-art OPD, OT facilities, teaching and research equipment to support academic and diagnostic activities.",
+
                 "infra": [
-                    "Dedicated labour ward with fetal monitoring systems",
-                    "Emergency obstetric care unit",
-                    "Modular OT for obstetric & gynaecologic surgeries",
-                    "Colposcopy & Endoscopy units",
-                    "Ultrasound & Doppler facilities"
+                    "Refraction unit with LED vision charts",
+                    "Diagnostic equipment: OCT, CCT, B-Scan, A-Scan, Fundus camera, Perimetry, Green laser, YAG laser, anterior segment imaging system",
+                    "Well-equipped wet lab for Postgraduates",
+                    "Well-equipped OT with higher end microscopes and Amo Intuitive Phaco machine",
+                    "Advanced research lab and updated museum",
+                    "Lecture hall with smart classroom facilities"
                 ],
 
-                "faculty_desc": "Highly Qualified Faculty with Extensive Clinical and Academic Experience.",
+                "faculty_desc": "The department has a team of qualified and experienced faculty committed to academic excellence, research, and clinical service.",
+
                 "faculty": [
-                    { "name": "Dr.Dhivya Sethuraman", "designation": "Professor & HOD", "exp": "14" },
-                    { "name": "Dr.S.Revwathy", "designation": "Professor & Director", "exp": "35" },
-                    { "name": "Dr.J.Shankar", "designation": "Professor", "exp": "31" },
-                    { "name": "Dr.S.Banumathy", "designation": "Associate Professor", "exp": "7" },
-                    { "name": "Dr.Lakshmi Swapna Dourvasala", "designation": "Associate Professor", "exp": "7" },
-                    { "name": "Dr.T.Dhiviya Narbhavi", "designation": "Associate Professor", "exp": "7" },
-                    { "name": "Dr.Shaik Salma", "designation": "Associate Professor", "exp": "7" },
-                    { "name": "Dr.Swarna Priya", "designation": "Associate Professor", "exp": "16" },
-                    { "name": "Dr.T.Harini", "designation": "Associate Professor", "exp": "17" },
-                    { "name": "Dr.P.Pradeepa", "designation": "Assistant Professor", "exp": "11" },
-                    { "name": "Dr.J.Jovita Deepthy", "designation": "Assistant Professor", "exp": "8" },
-                    { "name": "Dr.Sushma.M S", "designation": "Assistant Professor", "exp": "1" },
-                    { "name": "Dr.Sangeetha Janani", "designation": "Assistant Professor", "exp": "3" },
-                    { "name": "Dr.Raja Suganya", "designation": "Assistant Professor", "exp": "2" },
-                    { "name": "Dr.Kohila Devi", "designation": "Assistant Professor", "exp": "1" },
-                    { "name": "Dr.B.Saranya", "designation": "Assistant Professor", "exp": "12" },
-                    { "name": "Dr.Revathy.MC", "designation": "Assistant Professor", "exp": "6" },
-                    { "name": "Dr.M.Ramalakshmi", "designation": "Senior Resident", "exp": "5" },
-                    { "name": "Dr.Noorul Fazila", "designation": "Senior Resident", "exp": "1" },
-                    { "name": "Dr.A.Emaya", "designation": "Senior Resident", "exp": "0" },
-                    { "name": "Dr.Vandhana Beera", "designation": "Senior Resident", "exp": "0" },
-                    { "name": "Dr.S.Dhivyaa", "designation": "Senior Resident", "exp": "0" },
-                    { "name": "Dr.Madhumitha", "designation": "Senior Resident", "exp": "0" }
+                    { "name": "Dr.Ilango", "designation": "Prof & HoD", "exp": "24" },
+                    { "name": "Dr.Revathi", "designation": "Professor", "exp": "20" },
+                    { "name": "Dr.Vinnarasi", "designation": "Associate Professor", "exp": "7" },
+                    { "name": "Dr.Meenadevi", "designation": "Associate Professor", "exp": "9" },
+                    { "name": "Dr.Dhyan", "designation": "Assistant Professor", "exp": "4" },
+                    { "name": "Dr.Aiswarya", "designation": "Assistant Professor", "exp": "1" },
+                    { "name": "Dr.Divyapriya", "designation": "Senior Resident", "exp": "0.9" },
+                    { "name": "Dr.Suchieta Jennil", "designation": "Senior Resident", "exp": "0.8" },
+                    { "name": "Dr.Alhana Begam", "designation": "Senior Resident", "exp": "0.7" },
+                    { "name": "Dr.Kiruba", "designation": "Senior Resident", "exp": "0.5" }
                 ],
 
-                "services_desc": "The Department offers Round-The-Clock Obstetric and Gynaecological Services.",
+                "services_desc": "The department provides comprehensive diagnostic and consultative services across multiple ophthalmic specialties.",
+
                 "services": [
-                    "Antenatal & postnatal clinics",
-                    "High-risk pregnancy management",
-                    "Labour & delivery services",
-                    "Gynaecology OPD & surgical services",
-                    "Infertility evaluation & counselling",
-                    "Family planning services"
+                    "Glaucoma services",
+                    "Retina & Uvea services",
+                    "Cornea services",
+                    "Paediatric Ophthalmology services"
                 ],
 
-                "publication_overview": "The Department has contributed to National and International Journals through ongoing research.",
+                "publication_overview": "Faculty members have contributed various national and international publications.",
+
                 "pubStats": [
-                    { "label": "Overall", "value": "7" },
-                    { "label": "International", "value": "7" },
-                    { "label": "National", "value": "-" }
-                ],
-
-                "pubHighlights": [
-                    "Effective management in Post-partum hemorrhage",
-                    "Screening of high-risk pregnancy"
+                    { "label": "Overall", "value": "14" },
+                    { "label": "International", "value": "6" },
+                    { "label": "National", "value": "8" }
                 ],
 
                 "pubYearwise": [
                     {
-                        "year": "2022",
-                        "title": "Comparative study of blood loss in C-section with IV oxytocin vs IM methergine.",
-                        "journal": "Journal of Cardiovascular Disease Research",
+                        "year": "2025",
+                        "title": "Effect of Panretinal Photocoagulation on Macular and Disc Vasculature using Optical Coherence Tomography Angiography",
+                        "journal": "Journal of Xidian University",
                         "type": "International"
                     },
                     {
-                        "year": "2022",
-                        "title": "Safety and effectiveness of Oral Misoprostol for Induction of Labour.",
-                        "journal": "International Journal of Pharmaceutical and Clinical Research",
-                        "type": "International"
-                    },
-                    {
-                        "year": "2022",
-                        "title": "Effectiveness of chlorhexidine cleansing in C-Section preparation.",
-                        "journal": "International Journal of Obstetrics and Gynaecology",
-                        "type": "International"
-                    },
-                    {
-                        "year": "2024",
-                        "title": "Screening & management of anemia in adolescent girls.",
-                        "journal": "International Journal of Pharmaceutical and Clinical Research",
-                        "type": "International"
-                    },
-                    {
-                        "year": "2024",
-                        "title": "Role of Tranexamic Acid in PPH prophylaxis & treatment.",
-                        "journal": "Scopus Innovation",
-                        "type": "International"
-                    },
-                    {
-                        "year": "2024",
-                        "title": "Validity of OGTT (75g) for screening & diagnosing GDM.",
+                        "year": "2025",
+                        "title": "Association of Chorioretinal thickness with Chronic Kidney disease",
                         "journal": "Journal of Xidian University",
                         "type": "International"
                     },
                     {
                         "year": "2024",
-                        "title": "Biogenic amine tryptamine & vaginal probiotic isolates.",
-                        "journal": "Scientific Reports (Scopus, PubMed)",
+                        "title": "Prevalence of ocular manifestations in HIV patients",
+                        "journal": "Indian Journal of Clinical and Experimental Ophthalmology",
+                        "type": "National"
+                    },
+                    {
+                        "year": "2024",
+                        "title": "Intra Orbital Foreign Body; A Case Series",
+                        "journal": "TNOA Journal of Ophthalmic Science and Research",
+                        "type": "National"
+                    },
+                    {
+                        "year": "2024",
+                        "title": "Correlation Between Central Foveal Thickness and HbA1c in Patients with Diabetes Mellitus",
+                        "journal": "Journal of Xidian University",
                         "type": "International"
+                    },
+                    {
+                        "year": "2024",
+                        "title": "Comprehensive Analysis of Ocular Injuries in Road Traffic Accidents in a Tertiary care setting",
+                        "journal": "Journal of Xidian University",
+                        "type": "International"
+                    },
+                    {
+                        "year": "2023",
+                        "title": "Visual Outcome Profile In Sutured Scleral Fixated Intra Ocular Implantation",
+                        "journal": "International Journal of Academic Medicine and Pharmacy",
+                        "type": "International"
+                    },
+                    {
+                        "year": "2023",
+                        "title": "Microbiological Profile and Visual Recovery in Endophthalmitis",
+                        "journal": "Journal of Clinical and Diagnostic Research",
+                        "type": "National"
                     }
                 ],
 
-                "research_desc": "The Department Actively Engages In Clinical And Academic Research To Advance Women’s Health.",
+                "research_desc": "The department actively conducts research in various ophthalmology-related areas.",
+
                 "research": [
-                    "Risk factors and fetomaternal outcomes in meconium stained liquor",
-                    "Isolated gestational proteinuria as predictor for preeclampsia",
-                    "Incidence of atonic postpartum hemorrhage and its management",
-                    "Additional interventions for PPH control among high-risk women",
-                    "Serum uric acid levels as predictor for preeclampsia",
-                    "Correlation between Ultrasound and Histopathology in Adenomyosis",
-                    "Effectiveness of induction using Foley + Misoprostol",
-                    "Comparison of spontaneous vs induced labour",
-                    "Incidence and outcomes of late-onset fetal growth restriction"
+                    "Comparative study on morphological characteristics of the optic nerve head in high myopia vs emmetropia",
+                    "Correlation between central macular thickness using OCT and best corrected visual acuity in diabetic macular edema",
+                    "Prevalence of Primary open angle glaucoma and association with type 2 diabetes mellitus",
+                    "Analysing systemic risk factors affecting diabetic retinopathy among type 2 diabetic patients"
                 ],
 
-                "events_desc": "Regular CMEs, Workshops, and Awareness Programs are conducted.",
+                "events_desc": "The Department conducts academic and community programs.",
+
                 "events": [
-                    "Guest lecture on Aneuploidy screening during Pregnancy",
-                    "CME on Ethicon (Medical Ethics)",
-                    "CME on Carcinoma Cervix",
-                    "Workshop on 6P’s",
-                    "Guest Lecture on Hyperandrogenism",
-                    "Awareness programme on PNPCDT Act"
+                    "CME - Decoding Diabetic Retinopathy",
+                    "Inter Collegiate Quiz",
+                    "Eye Donation Awareness Programme"
                 ],
 
-                "achievements_desc": "Recognized for excellence in maternal health services and academic contributions.",
+                "achievements_desc": "Faculty have received recognition for their contributions and community service.",
+
                 "achievements": [
-                    "Best Performer award from Indian Medical Association",
-                    "Best Doctor Award",
-                    "Best Department Award"
+                    "Mahashabde Gold Medal Award in National conference for Best Work in Community Ophthalmology - Dr.K.Ilango",
+                    "Best Ophthalmology Postgraduate Award of Guru Sangam - Dr.K.Ilango",
+                    "Association of Community Ophthalmologists West Bengal State Chapter Oration Award - Dr.K.Ilango",
+                    "Honoured by WHO as Technical Consultant for Low Vision - Dr.K.Ilango",
+                    "Travel Grant Award for International Conference on Low Vision at Melbourne, Australia - Dr.K.Ilango",
+                    "Invited Professor at Wenchon Medical College, Wenchon University, China - Dr.K.Ilango",
+                    "Speaker at National and International Conferences on Low Vision - Dr.K.Ilango",
+                    "Conducted Instruction Courses at State and National Conferences on Low Vision - Dr.K.Ilango",
+                    "Established the first Low Vision Clinic at Aravind Eye Hospital Network - Dr.K.Ilango"
                 ],
 
                 "gallery": [
                     {
-                        "name": "CME on Ethicon (Medical Ethics)",
-                        "event": "Obstetrics & Gynaecology",
-                        "path": "Obstetrics_gynaecology/1.jpg",
-                        "date": "20.01.2024"
+                        "name": "Decoding Diabetic Retinopathy",
+                        "event": "Ophthalmology",
+                        "path": "Ophthalmology/1.jpg",
+                        "date": "03.01.2024"
                     },
                     {
-                        "name": "Workshop on 6P’s",
-                        "event": "Obstetrics & Gynaecology",
-                        "path": "Obstetrics_gynaecology/2.jpg",
-                        "date": "11.09.2024"
+                        "name": "Quiz",
+                        "event": "Ophthalmology",
+                        "path": "Ophthalmology/2.jpg",
+                        "date": "28.09.2025"
                     },
                     {
-                        "name": "CME on Prevention of Cancer Cervix",
-                        "event": "Obstetrics & Gynaecology",
-                        "path": "Obstetrics_gynaecology/3.jpg",
-                        "date": "14.12.2024"
-                    },
-                    {
-                        "name": "Guest Lecture on Aneuploidy",
-                        "event": "Obstetrics & Gynaecology",
-                        "path": "Obstetrics_gynaecology/4.jpg",
-                        "date": "28.02.2025"
+                        "name": "Eye Donation Awareness Programme",
+                        "event": "Ophthalmology",
+                        "path": "Ophthalmology/3.jpg",
+                        "date": "29.09.2025"
                     }
                 ]
-            },  
+            },
+            {
+                id: "obstetrics_gynaecology", name: "Obstetrics & Gynaecology", icon: `<i class="material-symbols-outlined">pregnant_woman</i>`, color: "#673ab7", colorDark: "#512da8",
+                desc: "Comprehensive mental health services with counseling and therapy.",
+                vision:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
+                mission:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
+                objectives:["Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro."],
+                infra: ["OPD rooms", "Inpatient wards", "ICU", "Procedure room"],
+                faculty: [{name: "Ram", designation: "Assistant professor", exp: "5"},{name: "Sam", designation: "Assistant professor", exp: "5"},{name: "John", designation: "Assistant professor", exp: "5"}],
+                services: ["General Psychiatry", "Depression Treatment", "Anxiety Disorders", "Addiction Treatment", "Counseling Services", "Child Psychiatry"],
+                pubStats: [{label: "Publications", value: "20+"}],
+                pubHighlights: ["Depression management"],
+                pubYearwise: [{year: "2023", title: "Mental health interventions", journal: "Psychiatry Review", type: "Research"}],
+                research: ["Mental health awareness", "Addiction treatment"],
+                events: ["World Mental Health Day"],
+                achievements: ["Excellence in Mental Health"],
+                gallery: [{name: "Consultation Room", icon: "fa-couch", event: "Psychiatry Dept", date: "Oct 2024"}]
+            },
             {
                 id: "anaesthesiology", name: "Anaesthesiology", icon: `<i class="material-symbols-outlined">masks</i>`, color: "#26c6da", colorDark: "#00acc1",
                 desc: "Comprehensive respiratory care with pulmonary function testing.",
