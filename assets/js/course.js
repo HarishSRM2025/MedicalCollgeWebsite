@@ -227,10 +227,11 @@
                         <div class="department-grid">
                             ${phase.departments.map(dept => `
                                 <div class="department-item">
+                                <a href="${dept.path}">
                                     <div class="department-name">
-                                        <a href="${dept.path}">${dept.name}</a>
-                                        
+                                        ${dept.name}
                                     </div>
+                                </a>
                                 </div>
                             `).join('')}
                         </div>
@@ -244,9 +245,11 @@
             const container = document.getElementById('pg-departments-grid');
             container.innerHTML = courseData.pg.departments.map(dept => `
                 <div class="department-item" style="background-color: var(--color-background-light);">
-                    <div class="department-name">
-                       <a href="${dept.path}">${dept.name}</a>
-                    </div>
+                    <a href="${dept.path}">
+                        <div class="department-name">
+                            ${dept.name}
+                        </div>
+                    </a>
                 </div>
             `).join('');
         }
