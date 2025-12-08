@@ -18,43 +18,43 @@
                 </li>
             `).join('');
         }
- function showDept(id = null) {
-    const params = new URLSearchParams(window.location.search);
+        function showDept(id = null) {
+            const params = new URLSearchParams(window.location.search);
 
-    // Prefer URL ?dept=... → otherwise use clicked value
-    const deptId = params.get("dept") || id;
+            // Prefer URL ?dept=... → otherwise use clicked value
+            const deptId = params.get("dept") || id;
 
-    // If still no department, STOP (first page load with no ID)
-    if (!deptId) return;
+            // If still no department, STOP (first page load with no ID)
+            if (!deptId) return;
 
-    // Find department
-    const d = depts.find(x => x.id === deptId);
-    if (!d) return;
+            // Find department
+            const d = depts.find(x => x.id.toLowerCase() === deptId.toLowerCase());
+            if (!d) return;
 
-    currentDept = deptId;
+            currentDept = deptId;
 
-    const det = document.getElementById('departmentDetail');
-    det.classList.remove('hidden');
-    det.classList.add('active');
+            const det = document.getElementById('departmentDetail');
+            det.classList.remove('hidden');
+            det.classList.add('active');
 
-    updateSidebarActive(deptId);
-    renderDetail(d);
+            updateSidebarActive(deptId);
+            renderDetail(d);
 
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-window.addEventListener("DOMContentLoaded", () => {
-    const params = new URLSearchParams(window.location.search);
-    const deptId = params.get("dept");
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        window.addEventListener("DOMContentLoaded", () => {
+            const params = new URLSearchParams(window.location.search);
+            const deptId = params.get("dept");
 
-    if (deptId) {
-        showDept(deptId);
-    }
-});
+            if (deptId) {
+                showDept(deptId);
+            }
+        });
 
 
         function updateSidebarActive(id) {
             document.querySelectorAll('.sidebar-nav a').forEach(a => a.classList.remove('active'));
-            const d = depts.find(x => x.id === id);
+            const d = depts.find(x => x.id.toLowerCase() === id.toLowerCase());
             if (d) {
                 document.querySelectorAll('.sidebar-nav a').forEach(a => {
                     if (a.textContent.trim().includes(d.name)) a.classList.add('active');
@@ -333,7 +333,7 @@ window.addEventListener("DOMContentLoaded", () => {
                                     ${d.gallery.map(img => `
                                         <div class="gallery-item">
                                             <div class="gallery-placeholder">
-                                                <img src="./assets/images/gallery/${img.path}">
+                                                <img src="./assets/images/gallery/${img.path}" alt='Not Given'>
                                             </div>
                                             <div class="gallery-overlay">
                                                 <div class="gallery-overlay-title">${img.name}</div>

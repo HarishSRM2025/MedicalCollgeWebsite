@@ -93,7 +93,7 @@
                 gallery: [{name: "Consultation Room", icon: "fa-couch", event: "Psychiatry Dept", date: "Oct 2024"}]
             },
               {
-                id: "Plastic & Reconstructive Surgery", name: "Plastic & Reconstructive Surgery", icon: `<i class="fas fa-user-alt"></i>`, color: "#e74c3c", colorDark: "#c0392b",
+                id: "Plastic and Reconstructive Surgery", name: "Plastic and Reconstructive Surgery", icon: `<i class="fas fa-user-alt"></i>`, color: "#e74c3c", colorDark: "#c0392b",
                 "desc": "The Department of Plastic and Reconstructive Surgery provides comprehensive curative, reconstructive, aesthetic and trauma-related surgical care. The unit is dedicated to evidence-based clinical practice, advanced surgical interventions, and academic excellence.",
 
                 "vision": "To make the Department of Plastic and Reconstructive Surgery a Centre of Excellence.",

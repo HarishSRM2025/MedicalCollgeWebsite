@@ -362,9 +362,9 @@ a{
         }
 
         .hero-section {
-            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+            background: linear-gradient(135deg, var(--color-accent-red) 0%, var(--color-accent-light1) 100%);
             border-radius: var(--radius-lg);
-            padding: var(--spacing-3xl);
+            padding: var(--spacing-xl);
             color: var(--color-white);
             margin-bottom: var(--spacing-xl);
             box-shadow: var(--shadow-lg);

@@ -1,11 +1,52 @@
 let doctorsData = [];
 let filteredDoctors = [];
 let currentPage = 1;
-const doctorsPerPage = 6;
+const doctorsPerPage = 9;
 
 // ✅ Excel file path
 const filePath = "./assets/excel/Staff_Doctor_Details(Responses).xlsx";
+const deptForLink=[
+  { "dept": "pre-clinical.html", "name": "Anatomy" },
+  { "dept": "pre-clinical.html", "name": "Physiology" },
+  { "dept": "pre-clinical.html", "name": "Biochemistry" },
 
+  { "dept": "para-clinical.html", "name": "Pathology" },
+  { "dept": "para-clinical.html", "name": "Microbiology" },
+  { "dept": "para-clinical.html", "name": "Pharmacology" },
+  { "dept": "para-clinical.html", "name": "Forensic Medicine" },
+  { "dept": "para-clinical.html", "name": "Community Medicine" },
+
+  { "dept": "boardspecialties.html", "name": "General Medicine" },
+  { "dept": "boardspecialties.html", "name": "Paediatrics" },
+  { "dept": "boardspecialties.html", "name": "Respiratory Medicine" },
+  { "dept": "boardspecialties.html", "name": "Dermatology, Venereology & Leprosy" },
+  { "dept": "boardspecialties.html", "name": "Psychiatry" },
+  { "dept": "boardspecialties.html", "name": "Emergency Medicine" },
+
+  { "dept": "surgeryspecialties.html", "name": "General Surgery" },
+  { "dept": "surgeryspecialties.html", "name": "Orthopaedics" },
+  { "dept": "surgeryspecialties.html", "name": "ENT" },
+  { "dept": "surgeryspecialties.html", "name": "Ophthalmology" },
+  { "dept": "surgeryspecialties.html", "name": "Obstetrics and Gynaecology" },
+  { "dept": "surgeryspecialties.html", "name": "Anaesthesiology" },
+  { "dept": "surgeryspecialties.html", "name": "Radiodiagnosis" },
+  { "dept": "surgeryspecialties.html", "name": "Dentistry" },
+
+  { "dept": "MedicalSuperSpecialties.html", "name": "Cardiology" },
+  { "dept": "MedicalSuperSpecialties.html", "name": "Neurology" },
+  { "dept": "MedicalSuperSpecialties.html", "name": "Nephrology" },
+  { "dept": "MedicalSuperSpecialties.html", "name": "Oncology" },
+  { "dept": "MedicalSuperSpecialties.html", "name": "Gastroenterology" },
+
+  { "dept": "SurgerySuperSpecialties.html", "name": "Cardio Vascular & Thoracic Surgery" },
+  { "dept": "SurgerySuperSpecialties.html", "name": "Neurosurgery" },
+  { "dept": "SurgerySuperSpecialties.html", "name": "Urology" },
+  { "dept": "SurgerySuperSpecialties.html", "name": "Surgical Oncology" },
+  { "dept": "SurgerySuperSpecialties.html", "name": "Surgical Gastroenterology" },
+  { "dept": "SurgerySuperSpecialties.html", "name": "Plastic and Reconstructive Surgery" },
+  { "dept": "SurgerySuperSpecialties.html", "name": "Vascular Surgery" },
+  { "dept": "SurgerySuperSpecialties.html", "name": "Paediatric Surgery" }
+]
 // ✅ Load everything when DOM is ready
 document.addEventListener("DOMContentLoaded", async () => {
   await loadDoctorsFromExcel();
@@ -281,7 +322,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             // Page numbers logic
             let pages = [];
             
-            if (totalPages <= 7) {
+            if (totalPages <= 10) {
                 // Show all pages if 7 or less
                 for (let i = 1; i <= totalPages; i++) {
                     pages.push(i);
@@ -350,7 +391,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         function createDoctorCard(doctor) {
             const card = document.createElement('div');
             card.className = 'doctor-card';
-            card.onclick = () => viewDoctorProfile(doctor.id);
             let imgPath = `./assets/images/doctors/${doctor["Contact Number"] == "9894489142" ? doctor["Contact Number"]+".jpg" : doctor["Contact Number"]+".JPG"}`;
 
             function checkImage(url, callback) {
@@ -359,6 +399,13 @@ document.addEventListener("DOMContentLoaded", async () => {
                 img.onerror = () => callback(false); // Image does not exist
                 img.src = url;
             }
+            let res='';
+            deptForLink.find((e)=>{
+                if(e.name===doctor.specialty){
+                    res=e.dept;
+                }
+            })
+            
 
             // Usage
             checkImage(imgPath, exists => {
@@ -367,7 +414,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                         <img src="${exists?imgPath:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGG7erz9q0Rya1nPGFfbz6LVLjyU-7md7hOQ&s"}" alt="${doctor.name}">
                     </div>
                     <div class="doctor-info">
-                        <span class="specialty-badge">${doctor.specialty}</span>
+
+                        <a href='${res}?dept=${doctor.specialty}' class="specialty-badge">${doctor.specialty}</a>
                         <h3 class="doctor-name">
                             ${doctor.name}
                             <i class="fas fa-check-circle verified-icon"></i>

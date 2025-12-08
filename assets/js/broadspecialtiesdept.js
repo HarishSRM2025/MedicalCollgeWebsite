@@ -513,27 +513,151 @@
 
             },
             {
-                id: "dermatology", name: "Dermatology", icon: "fa-hand-dots", color: "#e74c3c", colorDark: "#c0392b",
-                desc: "Expert care for skin, hair, and nail conditions with advanced cosmetic dermatology services.",
-                vision:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
-                 mission:["To provide state-of-art management options for patients with respiratory diseases, according to the latest evidence-based guidelines.","Train the students with focus on bench to bedside practice through rigorous implementation of the course along with innovative teaching-learning practices and to delve into dynamic clinical research.","To create awareness among patients, their caregivers and the general public about basic Respiratory illnesses and their symptoms.","To conduct patient empowerment programs so as to reduce morbidity or mortality and arrive at early diagnosis of chest diseases at an affordable cost."],
-                objectives:["Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro."],
-                infra: ["Dermatology consultation rooms", "Laser therapy unit", "Phototherapy equipment", "Dermoscopy facility", "Minor procedure room"],
-                faculty: [{name: "Ram", designation: "Assistant professor", exp: "5"},{name: "Sam", designation: "Assistant professor", exp: "5"},{name: "John", designation: "Assistant professor", exp: "5"}],
-                services_desc:"The Department offers diagnostic and consultative services for patient management across various specialties",
-                services: ["General Dermatology", "Cosmetic Dermatology", "Laser Treatments", "Hair Restoration", "Acne Treatment", "Psoriasis Care", "Vitiligo Treatment", "Chemical Peels"],
-                pubStats: [{label: "Publications", value: "28+"}, {label: "International", value: "12+"}],
-                pubHighlights: ["Advances in psoriasis treatment", "Laser therapy in acne scars", "Novel vitiligo treatments"],
-                pubYearwise: [
-                    {year: "2024", title: "Biologic therapy in psoriasis", journal: "Dermatology International", type: "Research"},
-                    {year: "2023", title: "Fractional CO2 laser in acne scars", journal: "Aesthetic Dermatology", type: "Clinical Study"}
+                id: "Dermatology, Venereology & Leprosy", 
+                name: "Dermatology, Venereology & Leprosy", 
+                icon: "fa-hand-dots", 
+                color: "#e74c3c", 
+                colorDark: "#c0392b",
+                "desc": "The Department of Dermatology, Venereology & Leprology provides comprehensive diagnosis, treatment, prevention, and counselling services for skin, hair, nail, STI and leprosy disorders, supported by modern diagnostic, procedural and laser facilities that meet NMC, NACO and NLEP standards.",
+                "vision": "To develop ethical, skilled, and compassionate Dermatologists excelling in evidence-based care for skin, hair, nail, STI and leprosy disorders, while fostering research, innovation, and stigma-free, patient-centred healing.",
+
+                "mission": "To provide competency-based dermatology training, ensure excellence in diagnostics and procedures, deliver ethical and patient-centred care, promote evidence-based practice, support national STI and leprosy programs, encourage interdisciplinary learning, and cultivate professionalism, communication, leadership, and continuous academic growth.",
+
+                "objectives": [
+                    "To train students in accurate diagnosis and management of skin, hair, nail, STI and leprosy disorders.",
+                    "To ensure proficiency in essential dermatology procedures such as biopsy, KOH, slit skin smear, cryotherapy, electrocautery and laser techniques.",
+                    "To cultivate ethical, empathetic, and stigma-free care across all DVL conditions.",
+                    "To develop strong clinical reasoning and evidence-based decision-making skills.",
+                    "To integrate public health principles in the prevention and control of STIs and leprosy.",
+                    "To promote research skills through case discussions, journal clubs, and scientific projects.",
+                    "To encourage interdisciplinary collaboration for comprehensive patient care.",
+                    "To enhance communication skills for counselling, confidentiality and shared decision-making.",
+                    "To foster continuous academic growth through self-learning, competency tracking and feedback-based improvement.",
+                    "To prepare competent dermatologists capable of independent practice, teaching and community service."
                 ],
-                research: ["Novel vitiligo treatments", "Laser therapy advances", "Immunotherapy in skin diseases"],
-                events: ["Skin Cancer Screening Camp", "World Psoriasis Day"],
-                achievements: ["Excellence in Cosmetic Dermatology"],
-                gallery: [
-                    {name: "Consultation Room", icon: "fa-stethoscope", event: "Derma OPD", date: "Jan 20, 2024"},
-                    {name: "Laser Unit", icon: "fa-bolt", event: "Laser Therapy Center", date: "Feb 14, 2024"}
+
+                "infrastructure": [
+                    "Well-structured Dermatology OPD with multiple consultation rooms equipped with dermatoscopes, privacy screens and diagnostic tools.",
+                    "Dedicated female examination area with nursing staff support.",
+                    "Minor procedure room for biopsies, cryotherapy, electrocautery, RF procedures, intralesional injections and emergency care.",
+                    "Air-conditioned laser suite with CO₂ laser, Nd:YAG laser, RF cautery, hair removal laser, smoke evacuator and safety protocols.",
+                    "Phototherapy room with whole-body NB-UVB unit, protection gear and dedicated dosing chart.",
+                    "Side laboratory for rapid dermatological diagnostics including KOH, Gram & Giemsa staining, slit skin smear, dark field microscopy and centrifuge facilities.",
+                    "NACO-standard STI clinic with counselling cubicle, syndromic management kits and dark-field microscopy.",
+                    "Inpatient ward with separate male/female beds, isolation rooms, procedure trolleys and phototherapy support.",
+                    "Demonstration room with AV aids, smart board and seating for 30–40 students.",
+                    "Department library with updated textbooks, journals, dermoscopy image bank and case archives."
+                ],
+
+                "faculty": [
+                    { "name": "Dr. R. Gnanasekaran", "designation": "Professor", "exp": "9" },
+                    { "name": "Dr. K. Akila", "designation": "Associate Professor", "exp": "7" },
+                    { "name": "Dr. S. Dharshini", "designation": "Assistant Professor", "exp": "2" },
+                    { "name": "Dr. R. S. Hari Vignesh", "designation": "Assistant Professor", "exp": "1" },
+                    { "name": "Dr. R. S. Seethalakshmi", "designation": "Senior Resident", "exp": "15" }
+                ],
+
+                "services": [
+                    "Outpatient care for skin, hair and nail disorders",
+                    "Paediatric dermatology services",
+                    "Chronic dermatoses follow-up",
+                    "Specialty Clinics: Psoriasis, Vitiligo, Autoimmune, Vesiculobullous, Leprosy, STI Clinic",
+                    "Procedural Dermatology: Biopsies, cryotherapy, electrocautery, RF cautery, IL injections, TCA CROSS, comedone extraction, wart/skin-tag removal, nail avulsion, vitiligo surgeries",
+                    "Laser Services: CO₂ laser, Q-Switched Nd:YAG, Triple Wavelength Hair Removal Laser, RF cautery",
+                    "Phototherapy: Whole-body NB-UVB therapy with documentation",
+                    "Diagnostic Services: KOH, slit skin smear, dark field microscopy, staining, VDRL testing",
+                    "Dermatopathology with histopathology & special stains",
+                    "Leprosy services under NLEP",
+                    "STI/HIV services under NACO guidelines",
+                    "Inpatient Care: 40 dermatology beds including ICU support",
+                    "24×7 Emergency Dermatology"
+                ],
+
+                "pubStats": [
+                    { "label": "Overall", "value": "4" },
+                    { "label": "International", "value": "3" },
+                    { "label": "National", "value": "1" }
+                ],
+
+                "pubHighlights": [
+                    "Autoimmune skin disorders & immunology",
+                    "Dermatology diagnostics & clinical outcomes",
+                    "STI and leprosy surveillance studies",
+                    "Dermatophytosis and mycology research",
+                    "Patterns of self-medication and patient behaviour"
+                ],
+
+                "pubYearwise": [
+                    {
+                        "year": 2023,
+                        "title": "Perceived Risks and Perceptions of Covid–19 Vaccination in Patients with Autoimmune Skin Diseases",
+                        "journal": "International Journal of Pharmaceutical and Clinical Research",
+                        "type": "International"
+                    }
+                ],
+
+                "research": [
+                    "Knowledge, attitude and practices among acne vulgaris patients – ICMR STS",
+                    "Lesional and perilesional mycological flora in dermatophytosis – Departmental project",
+                    "Self-medication patterns among dermatology OPD patients – ICMR STS"
+                ],
+
+                "events": [
+                    "Leprosy Day",
+                    "World Skin Health Day",
+                    "World Vitiligo Day",
+                    "World Psoriasis Day",
+                    "AIDS Day",
+                    "Skin Health Awareness Programs"
+                ],
+
+                "achievements": [
+                    "Postgraduate student research selected for ICMR grant",
+                    "Strengthened STI and NLEP program support",
+                    "Advanced procedural and laser dermatology services"
+                ],
+
+                "gallery": [
+                    { 
+                        "name": "Leprosy Day", 
+                        "date": "02-01-2024", 
+                        "path": "DVL/1.jpg" 
+                    },
+                    { 
+                        "name": "World Skin Health Day", 
+                        "date": "08-04-2024", 
+                        "path": "DVL/2.jpg" 
+                    },
+                    { 
+                        "name": "World Vitiligo Day", 
+                        "date": "27-06-2024", 
+                        "path": "DVL/3.jpg" 
+                    },
+                    { 
+                        "name": "World Psoriasis Day", 
+                        "date": "22-10-2024", 
+                        "path": "DVL/4.jpg" 
+                    },
+                    { 
+                        "name": "AIDS Day", 
+                        "date": "03-12-2024", 
+                        "path": "DVL/5.jpg" 
+                    },
+                    { 
+                        "name": "Leprosy Day", 
+                        "date": "03-02-2025", 
+                        "path": "DVL/6.jpg" 
+                    },
+                    { 
+                        "name": "World Skin Health Day", 
+                        "date": "08-04-2025", 
+                        "path": "DVL/7.jpg" 
+                    },
+                    { 
+                        "name": "World Vitiligo Day", 
+                        "date": "10-06-2025", 
+                        "path": "DVL/8.jpg"
+                     }
                 ]
             },
             {
@@ -774,7 +898,7 @@
                 ]
             },
             {
-                id: "respiratory", name: "Respiratory Medicine", icon: "fa-lungs", color: "#26c6da", colorDark: "#00acc1",
+                id: "Respiratory Medicine", name: "Respiratory Medicine", icon: "fa-lungs", color: "#26c6da", colorDark: "#00acc1",
                 desc: "Respiratory Medicine Department specializes in the diagnosis, treatment and prevention of diseases affecting the lungs and entire respiratory system. Our commitment is to manage a comprehensive range of conditions- from common respiratory ailments to complex, life-threatening diseases- with expertise and compassion.",
                 vision:"We provide outstanding clinical care, which is comprehensive, affordable, accessible and delivered compassionately, to the patient & nurture the students with knowledge, skills, and attitude essential to make them professional, compassionate & competent physician.",
                 mission:["To provide state-of-art management options for patients with respiratory diseases, according to the latest evidence-based guidelines.","Train the students with focus on bench to bedside practice through rigorous implementation of the course along with innovative teaching-learning practices and to delve into dynamic clinical research.","To create awareness among patients, their caregivers and the general public about basic Respiratory illnesses and their symptoms.","To conduct patient empowerment programs so as to reduce morbidity or mortality and arrive at early diagnosis of chest diseases at an affordable cost."],

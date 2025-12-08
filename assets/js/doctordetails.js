@@ -26,8 +26,33 @@ function loadDoctorData() {
 
     // Profile Image
     const profileImg = document.getElementById('profileImage');
+    const contact = doctorData["Contact Number"];
+    const imgPathLower = `./assets/images/doctors/${contact}.jpg`;
+    const imgPathUpper = `./assets/images/doctors/${contact}.JPG`;
 
-    profileImg.src = `./assets/images/doctors/${doctorData["Contact Number"] == "9894489142" ? doctorData["Contact Number"]+".jpg" : doctorData["Contact Number"]+".JPG"}`
+    const tempImg = new Image();
+
+    // Try lowercase .jpg first
+    tempImg.src = imgPathLower;
+
+    tempImg.onload = function () {
+        profileImg.src = imgPathLower;
+    };
+
+    tempImg.onerror = function () {
+        // Try uppercase .JPG
+        const tempImg2 = new Image();
+        tempImg2.src = imgPathUpper;
+
+        tempImg2.onload = function () {
+            profileImg.src = imgPathUpper;
+        };
+
+        tempImg2.onerror = function () {
+            // Fallback to template image
+            profileImg.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGG7erz9q0Rya1nPGFfbz6LVLjyU-7md7hOQ&s";
+        };
+    };
 
     // Summary
     document.getElementById('profileSummary').textContent =

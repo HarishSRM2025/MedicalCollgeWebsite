@@ -563,13 +563,13 @@
                 ],
 
                 faculty: [
-                    { name: "Dr. RAJENDRA KUMAR R", designation: "Professor & Head", exp: 22 },
-                    { name: "Dr. A. DOMINIC INFANT RAJ", designation: "Professor", exp: 10 },
-                    { name: "Dr. A. ASWATH", designation: "Assistant Professor", exp: 6 },
-                    { name: "Dr. S. VIGNESHWARAN", designation: "Assistant Professor", exp: "2 Years 8 Months" },
-                    { name: "Dr. PRABHA K", designation: "Assistant Professor", exp: "4 Years 3 Months" },
-                    { name: "Dr. VIJAYARAGAVAN M", designation: "Assistant Professor", exp: "2 Years 2 Months" },
-                    { name: "Dr. PITCHAI MUTHU N", designation: "Assistant Professor", exp: "1 Year 5 Months" },
+                    { name: "Dr. RAJENDRA KUMAR R", designation: "Professor & Head", exp: "22" },
+                    { name: "Dr. A. DOMINIC INFANT RAJ", designation: "Professor", exp: "10" },
+                    { name: "Dr. A. ASWATH", designation: "Assistant Professor", exp: "6" },
+                    { name: "Dr. S. VIGNESHWARAN", designation: "Assistant Professor", exp: "2" },
+                    { name: "Dr. PRABHA K", designation: "Assistant Professor", exp: "4" },
+                    { name: "Dr. VIJAYARAGAVAN M", designation: "Assistant Professor", exp: "2" },
+                    { name: "Dr. PITCHAI MUTHU N", designation: "Assistant Professor", exp: "1" },
                     { name: "Dr. SAKTHIMANI", designation: "Senior Resident", exp: "3 Months" }
                 ],
 
@@ -682,13 +682,13 @@
                 ],
 
                 faculty: [
-                    { name: "Dr. Hemalatha. K", designation: "Professor & HOD", exp: "12 years 4 months" },
-                    { name: "Dr. Suguna", designation: "Professor", exp: "9 years 3 months" },
-                    { name: "Dr. Prabha Thangaraj", designation: "Associate Professor", exp: "8 years" },
-                    { name: "Dr. Divya Rajasekaran", designation: "Associate Professor", exp: "" },
-                    { name: "Dr. Hariharan. S", designation: "Associate Professor", exp: "6 years 7 months" },
-                    { name: "Dr. Sowmiya", designation: "Assistant Professor", exp: "2 years 4 months 16 days" },
-                    { name: "Dr. Mohamed Aarif", designation: "Assistant Professor", exp: "2 years 27 days" },
+                    { name: "Dr. Hemalatha. K", designation: "Professor & HOD", exp: "12" },
+                    { name: "Dr. Suguna", designation: "Professor", exp: "9" },
+                    { name: "Dr. Prabha Thangaraj", designation: "Associate Professor", exp: "8" },
+                    { name: "Dr. Divya Rajasekaran", designation: "Associate Professor", exp: "7" },
+                    { name: "Dr. Hariharan. S", designation: "Associate Professor", exp: "6" },
+                    { name: "Dr. Sowmiya", designation: "Assistant Professor", exp: "2" },
+                    { name: "Dr. Mohamed Aarif", designation: "Assistant Professor", exp: "2" },
                     { name: "Dr. KB Sharavanakumaran", designation: "Assistant Professor", exp: "1 year 11 months 25 days" },
                     { name: "Dr. Ramees M. Sali", designation: "Assistant Professor", exp: "2 years" },
                     { name: "Dr. Bhavani. R", designation: "Assistant Professor", exp: "1 year 6 months" },
@@ -696,7 +696,7 @@
                     { name: "Dr. Sakthivel", designation: "Senior Resident", exp: "1 year" },
                     { name: "Dr. Thirumagal", designation: "Senior Resident", exp: "8 months" },
                     { name: "Dr. Nagaveni", designation: "Senior Resident", exp: "6 months" },
-                    { name: "Mr. Bharathi", designation: "Statistician / Tutor", exp: "2 years 6 months" }
+                    { name: "Mr. Bharathi", designation: "Statistician / Tutor", exp: "2" }
                 ],
 
                 services: [

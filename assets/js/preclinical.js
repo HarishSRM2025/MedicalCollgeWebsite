@@ -45,7 +45,7 @@
                     { "name": "Dr.P.Veena lakshmi", "designation": "Associate Professor", "exp": "6" },
                     { "name": "Dr.K.N.Manju shree", "designation": "Assistant Professor", "exp": "1" },
                     { "name": "Mr.M.Veeramuthu", "designation": "Assistant Professor", "exp": "13" },
-                    { "name": "Dr.Joselyn poogodi", "designation": "Senior Resident", "exp": "0.5" }
+                    { "name": "Dr.Joselyn poogodi", "designation": "Senior Resident", "exp": "0" }
                 ],
 
                 "services_desc": "The department provides a strong foundation in knowledge about human body structure, preparing students to excel in clinical practice and research.",
@@ -172,7 +172,6 @@
                     }
                 ]
                 },
-
 
             {
                 "id": "physiology",

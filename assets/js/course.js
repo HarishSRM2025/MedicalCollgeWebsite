@@ -244,12 +244,10 @@
         function renderPGDepartments() {
             const container = document.getElementById('pg-departments-grid');
             container.innerHTML = courseData.pg.departments.map(dept => `
-                <div class="department-item" style="background-color: var(--color-background-light);">
-                    <a href="${dept.path}">
-                        <div class="department-name">
-                            ${dept.name}
-                        </div>
-                    </a>
+                <div class="department-item" style="background-color: var(--color-background-light);" onclick="location.href='${dept.path}'">
+                    <div class="department-name">
+                        ${dept.name}
+                    </div>
                 </div>
             `).join('');
         }
