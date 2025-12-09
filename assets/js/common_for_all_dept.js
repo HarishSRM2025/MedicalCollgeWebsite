@@ -39,7 +39,9 @@
 
             updateSidebarActive(deptId);
             renderDetail(d);
-
+            const url = new URL(window.location);
+            url.searchParams.delete("dept");
+            window.history.replaceState({}, "", url.pathname + url.search);
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
         window.addEventListener("DOMContentLoaded", () => {
