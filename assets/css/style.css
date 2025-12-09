@@ -1701,7 +1701,14 @@ body {
     }
 
     .footer-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
+    }
+    .doc-profile-header {
+        background: var(--color-white);
+        border-radius: var(--radius-lg);
+        padding:var(--spacing-xl) 0!important;
+        box-shadow: var(--shadow-lg);
+        margin-bottom: var(--spacing-2xl);
     }
     
     .hero-main-image {
@@ -9112,10 +9119,6 @@ grid-template-columns: 1fr;
 
             .doc-quick-stats {
                 justify-content: center;
-            }
-
-            .doc-content-grid {
-                grid-template-columns: 1fr;
             }
 
             .doc-doctor-name {
