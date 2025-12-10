@@ -10074,3 +10074,847 @@ grid-template-columns: 1fr;
             border-radius: 20px;
             overflow: hidden;
         }
+
+         .irpc-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--gap-medium);
+            margin-bottom: var(--spacing-5xl);
+        }
+
+        .irpc-info-card {
+            background: var(--color-white);
+            padding: var(--padding-card);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-lg);
+            transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+        }
+
+        .irpc-info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .irpc-info-card-icon {
+            width: var(--size-icon-xl);
+            height: var(--size-icon-xl);
+            background: var(--color-primary-light);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: var(--spacing-lg);
+            color: var(--color-primary);
+            font-size: var(--font-4xl);
+        }
+
+        .irpc-info-card h3 {
+            font-size: var(--font-2xl);
+            color: var(--color-text-primary);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .irpc-info-card p {
+            color: var(--color-text-secondary);
+            font-size: var(--font-base);
+            line-height: var(--line-height-loose-xl);
+        }
+
+        /* Activities Section */
+        .irpc-activities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: var(--gap-medium);
+        }
+
+        .irpc-activity-card {
+            background: var(--color-white);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+            position: relative;
+        }
+
+        .irpc-activity-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-2xl);
+        }
+
+        .irpc-activity-card:hover .irpc-activity-image img {
+            transform: scale(1.05);
+        }
+
+        .irpc-activity-image {
+            width: 100%;
+            height: 260px;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+        }
+
+        .irpc-activity-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.6) 100%);
+            z-index: 1;
+        }
+
+        .irpc-activity-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform var(--transition-medium);
+        }
+
+        .irpc-activity-image-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+        }
+
+        .irpc-activity-image i {
+            font-size: var(--font-8xl);
+            color: var(--color-white);
+            opacity: 0.9;
+            z-index: 2;
+            position: relative;
+        }
+
+        .irpc-activity-content {
+            padding: var(--spacing-2xl);
+        }
+
+        .irpc-activity-date {
+            display: inline-block;
+            background: var(--color-primary);
+            color: var(--color-white);
+            padding: var(--spacing-sm) var(--spacing-lg);
+            border-radius: var(--radius-sm);
+            font-size: var(--font-sm);
+            margin-bottom: var(--spacing-lg);
+            font-weight: 600;
+        }
+
+        .irpc-activity-card h3 {
+            font-size: var(--font-xl);
+            color: var(--color-text-primary);
+            margin-bottom: var(--spacing-md);
+            font-weight: 700;
+            line-height: var(--line-height-normal);
+        }
+
+        .irpc-activity-card p {
+            color: var(--color-text-secondary);
+            font-size: var(--font-md);
+            line-height: var(--line-height-loose-xl);
+        }
+
+        /* Projects Section */
+        .irpc-projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: var(--gap-medium);
+        }
+
+        .irpc-project-card {
+            background: var(--color-white);
+            padding: var(--padding-card);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-lg);
+            border-left: var(--border-thick) solid var(--color-primary);
+            transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+        }
+
+        .irpc-project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .irpc-project-header {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: start;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .irpc-project-title {
+            flex: 1;
+        }
+
+        .irpc-project-title h3 {
+            font-size: var(--font-xl);
+            color: var(--color-text-primary);
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .irpc-project-pi {
+            font-size: var(--font-sm);
+            color: var(--color-text-secondary);
+        }
+
+        .irpc-project-status {
+            padding: var(--spacing-xs) var(--spacing-md);
+            border-radius: var(--radius-sm);
+            font-size: var(--font-sm);
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .status-completed {
+            background: var(--color-secondary-light);
+            color: var(--color-secondary);
+        }
+
+        .status-ongoing {
+            background: var(--color-orange-light);
+            color: var(--color-orange);
+        }
+
+        .status-pending {
+            background: var(--color-accent-light);
+            color: var(--color-accent);
+        }
+
+        .irpc-project-description {
+            color: var(--color-text-secondary);
+            font-size: var(--font-md);
+            line-height: var(--line-height-loose-xl);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .irpc-project-meta {
+            display: flex;
+            gap: var(--spacing-xl);
+            flex-wrap: wrap;
+        }
+
+        .irpc-project-meta-item {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            font-size: var(--font-sm);
+            color: var(--color-text-secondary);
+        }
+
+        .irpc-project-meta-item i {
+            color: var(--color-primary);
+        }
+
+        /* Collaborations Section */
+        .irpc-collaboration-tabs {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-4xl);
+        }
+
+        .irpc-tab-btn {
+            padding: var(--spacing-md) var(--spacing-2xl);
+            background: var(--color-white);
+            border: 2px solid var(--color-primary);
+            color: var(--color-primary);
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            font-size: var(--font-lg);
+            font-weight: 600;
+            transition: all var(--transition-fast);
+        }
+
+        .irpc-tab-btn:hover {
+            background: var(--color-primary-light);
+        }
+
+        .irpc-tab-btn.irpc-active {
+            background: var(--color-primary);
+            color: var(--color-white);
+        }
+
+        .irpc-collaboration-content {
+            display: none;
+        }
+
+        .irpc-collaboration-content.irpc-active {
+            display: block;
+        }
+
+        .irpc-collaboration-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: var(--gap-medium);
+        }
+
+        .irpc-collaboration-card {
+            background: var(--color-white);
+            padding: var(--padding-card);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            text-align: center;
+            transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .irpc-collaboration-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: var(--gradient-1);
+        }
+
+        .irpc-collaboration-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-2xl);
+        }
+
+        .irpc-collaboration-logo {
+            width: 120px;
+            height: 120px;
+            border-radius: var(--radius-md);
+            background: var(--color-background-light);
+            margin: 0 auto var(--spacing-xl);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid var(--color-primary-light);
+            transition: all var(--transition-fast);
+        }
+
+        .irpc-collaboration-card:hover .irpc-collaboration-logo {
+            border-color: var(--color-primary);
+            transform: scale(1.05);
+        }
+
+        .irpc-collaboration-logo img {
+            width: 90%;
+            height: 90%;
+            object-fit: contain;
+        }
+
+        .irpc-collaboration-logo-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--gradient-1);
+            border-radius: var(--radius-sm);
+        }
+
+        .irpc-collaboration-logo i {
+            font-size: var(--font-6xl);
+            color: var(--color-white);
+        }
+
+        .irpc-collaboration-card h3 {
+            font-size: var(--font-xl);
+            color: var(--color-text-primary);
+            margin-bottom: var(--spacing-sm);
+            font-weight: 700;
+        }
+
+        .irpc-collaboration-card p {
+            color: var(--color-text-secondary);
+            font-size: var(--font-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--spacing-sm);
+        }
+
+        .irpc-collaboration-card p i {
+            color: var(--color-primary);
+            font-size: var(--font-lg);
+        }
+
+        /* Researchers Section */
+        .irpc-researchers-hierarchy {
+            margin-bottom: var(--spacing-6xl);
+        }
+
+        .irpc-hierarchy-level {
+            margin-bottom: var(--spacing-5xl);
+        }
+
+        .irpc-hierarchy-title {
+            text-align: center;
+            font-size: var(--font-4xl);
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-3xl);
+            font-weight: 700;
+            position: relative;
+            padding-bottom: var(--spacing-lg);
+        }
+
+        .irpc-hierarchy-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: var(--color-secondary);
+            border-radius: var(--radius-sm);
+        }
+
+        .irpc-researchers-grid {
+            display: grid;
+            /* grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: var(--gap-large); */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: var(--gap-medium);
+        }
+
+        .irpc-researcher-card {
+            background: var(--color-white);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+            cursor: pointer;
+            width: 100%;
+            max-width: 350px;
+        }
+
+        .irpc-researcher-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-2xl);
+        }
+
+        .irpc-researcher-card:hover .irpc-researcher-profile-pic {
+            transform: scale(1.05);
+            box-shadow: 0 10px 40px rgba(0, 102, 204, 0.3);
+        }
+
+        .irpc-researcher-image-wrapper {
+            background: var(--gradient-2);
+            padding: var(--spacing-4xl) var(--spacing-xl) var(--spacing-2xl);
+            text-align: center;
+            position: relative;
+        }
+
+        .irpc-researcher-profile-pic {
+            width: 160px;
+            height: 160px;
+            border-radius: var(--radius-full);
+            background: var(--color-white);
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 5px solid var(--color-white);
+            box-shadow: var(--shadow-xl);
+            transition: all var(--transition-fast);
+            overflow: hidden;
+        }
+
+        .irpc-researcher-profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: var(--radius-full);
+        }
+
+        .irpc-researcher-profile-pic i {
+            font-size: var(--font-7xl);
+            color: var(--color-primary);
+        }
+
+        .-irpc-researcher-info {
+            padding: var(--spacing-2xl);
+            text-align: center;
+        }
+
+        .irpc-researcher-name {
+            font-size: var(--font-2xl);
+            color: var(--color-text-primary);
+            margin-bottom: var(--spacing-sm);
+            font-weight: 700;
+            line-height: var(--line-height-tight);
+        }
+
+        .irpc-researcher-position {
+            display: inline-block;
+            background: var(--color-primary-light);
+            color: var(--color-primary);
+            padding: var(--spacing-xs) var(--spacing-lg);
+            border-radius: var(--radius-2xl);
+            font-size: var(--font-sm);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: var(--letter-spacing-tight);
+            margin: var(--spacing-sm);
+        }
+
+        .irpc-researcher-specialization {
+            font-size: var(--font-md);
+            color: var(--color-text-secondary);
+            line-height: var(--line-height-loose-xl);
+            margin-bottom: var(--spacing-xl);
+            min-height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .irpc-researcher-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--spacing-sm);
+            padding-top: var(--spacing-xl);
+            border-top: 2px solid var(--color-background-light);
+        }
+
+        .irpc-stat-item {
+            text-align: center;
+            padding: var(--spacing-sm) 0;
+        }
+
+        .irpc-stat-number {
+            font-size: var(--font-4xl);
+            color: var(--color-primary);
+            font-weight: 700;
+            display: block;
+            line-height: 1;
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .irpc-stat-label {
+            font-size: var(--font-xs);
+            color: var(--color-text-secondary);
+            text-transform: uppercase;
+            letter-spacing: var(--letter-spacing-tight);
+            font-weight: 600;
+            display: block;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: var(--z-fixed);
+            overflow-y: auto;
+        }
+
+        .modal.irpc-active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--spacing-xl);
+        }
+
+        .irpc-modal-content {
+            background: var(--color-white);
+            border-radius: var(--radius-lg);
+            max-width: 900px;
+            width: 100%;
+            max-height: 80vh;
+            overflow-y: auto;
+            position: relative;
+            animation: modalSlideIn 0.3s ease;
+        }
+
+        @keyframes modalSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .irpc-modal-close {
+            position: absolute;
+            top: var(--spacing-lg);
+            right: var(--spacing-lg);
+            width: 40px;
+            height: 40px;
+            background: var(--color-accent);
+            border: none;
+            border-radius: var(--radius-full);
+            color: var(--color-white);
+            font-size: var(--font-xl);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all var(--transition-fast);
+            z-index: 10;
+        }
+
+        .irpc-modal-close:hover {
+            background: var(--color-accent-light1);
+            transform: rotate(90deg);
+        }
+
+        .irpc-modal-header {
+            background: var(--gradient-2);
+            padding: var(--spacing-4xl);
+            text-align: center;
+            position: relative;
+        }
+
+        .irpc-modal-profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: var(--radius-full);
+            background: var(--color-white);
+            margin: 0 auto var(--spacing-xl);
+            border: 5px solid var(--color-white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-xl);
+            overflow: hidden;
+        }
+
+        .irpc-modal-profile-image i {
+            font-size: var(--font-8xl);
+            color: var(--color-primary);
+        }
+
+        .irpc-modal-header h2 {
+            color: var(--color-white);
+            font-size: var(--font-4xl);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .irpc-modal-header p {
+            color: var(--color-white);
+            font-size: var(--font-xl);
+            opacity: var(--opacity-90);
+        }
+
+        .irpc-modal-body {
+            padding: var(--spacing-4xl);
+        }
+
+        .irpc-profile-section {
+            margin-bottom: var(--spacing-4xl);
+        }
+
+        .irpc-profile-section-title {
+            font-size: var(--font-2xl);
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-xl);
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+            padding-bottom: var(--spacing-md);
+            border-bottom: 2px solid var(--color-primary-light);
+        }
+
+        .irpc-profile-section-title i {
+            font-size: var(--font-xl);
+        }
+
+        .profile-list {
+            list-style: none;
+        }
+
+        .profile-list li {
+            padding: var(--spacing-md) 0;
+            border-bottom: 1px solid var(--color-background-light);
+            color: var(--color-text-secondary);
+            line-height: var(--line-height-loose-xl);
+        }
+
+        .profile-list li:last-child {
+            border-bottom: none;
+        }
+
+        .profile-list li strong {
+            color: var(--color-text-primary);
+            display: inline-block;
+            margin-right: var(--spacing-sm);
+        }
+
+        .interest-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-md);
+        }
+
+        .interest-tag {
+            background: var(--color-primary-light);
+            color: var(--color-primary);
+            padding: var(--spacing-sm) var(--spacing-lg);
+            border-radius: var(--radius-2xl);
+            font-size: var(--font-sm);
+            font-weight: 500;
+        }
+
+        /* Patents Section */
+        .irpc-patents-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: var(--gap-large);
+        }
+
+        .irpc-patent-card {
+            background: var(--color-white);
+            padding: var(--padding-card);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            overflow: hidden;
+            transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+        }
+
+        .irpc-patent-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 6px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--color-gold), var(--color-accent-yellow));
+        }
+
+        .irpc-patent-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-2xl);
+        }
+
+        .irpc-patent-header {
+            display: flex;
+            align-items: start;
+            gap: var(--spacing-xl);
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .irpc-patent-icon {
+            width: var(--size-icon-xl);
+            height: var(--size-icon-xl);
+            background: linear-gradient(135deg, var(--color-accent-yellow), var(--color-gold));
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-white);
+            font-size: var(--font-3xl);
+            flex-shrink: 0;
+            box-shadow: var(--shadow-md);
+        }
+
+        .irpc-patent-title-section {
+            flex: 1;
+        }
+
+        .irpc-patent-card h3 {
+            font-size: var(--font-xl);
+            color: var(--color-text-primary);
+            margin-bottom: var(--spacing-md);
+            font-weight: 700;
+            line-height: var(--line-height-normal);
+        }
+
+        .irpc-patent-number {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            font-size: var(--font-sm);
+            color: var(--color-text-secondary);
+            background: var(--color-background-light);
+            padding: var(--spacing-xs) var(--spacing-md);
+            border-radius: var(--radius-sm);
+            font-family: 'Courier New', monospace;
+            font-weight: 600;
+        }
+
+        .irpc-patent-number i {
+            color: var(--color-gold);
+        }
+
+        .irpc-patent-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: var(--spacing-xl);
+            border-top: 2px solid var(--color-background-light);
+            margin-top: var(--spacing-xl);
+        }
+
+        .irpc-patent-status {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--spacing-md);
+            padding: var(--spacing-sm);
+            background: linear-gradient(135deg, var(--color-secondary), var(--color-green-light));
+            color: var(--color-white);
+            border-radius: var(--radius-sm);
+            font-size: var(--font-sm);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: var(--letter-spacing-tight);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .irpc-patent-status i {
+            font-size: var(--font-lg);
+        }
+
+        .irpc-patent-meta {
+            display: flex;
+            gap: var(--spacing-lg);
+        }
+
+        .irpc-patent-meta-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .irpc-patent-meta-number {
+            font-size: var(--font-2xl);
+            font-weight: 700;
+            color: var(--color-gold);
+        }
+
+        .irpc-patent-meta-label {
+            font-size: var(--font-xs);
+            color: var(--color-text-secondary);
+            text-transform: uppercase;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+           
+            .irpc-collaboration-tabs {
+                flex-direction: column;
+            }
+
+            .irpc-projects-grid,
+            .irpc-collaboration-grid,
+            .irpc-patents-grid,
+            .irpc-activities-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .irpc-modal-body {
+                padding: var(--spacing-xl);
+            }
+        }

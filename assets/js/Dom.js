@@ -120,7 +120,17 @@
               <li><a href="infrastructure.html#gym">Gym</a></li>
             </ul>
           </li>
-          <li><a href="research.html">Research & Innovation</a></li>
+          <li class="has-dropdown" data-dropdown="research">
+            <a href="research.html">Research & Innovation <span class="arrow dropdown-trigger">&#9654;</span></a>
+            <ul class="dropdown">
+              <li><a href="IRPC.html">IRPC</a></li>
+              <li><a href="IRPC.html#IRPC-Activities">Activities</a></li>
+              <li><a href="IRPC.html#IRPC-Projects">Projects</a></li>
+              <li><a href="IRPC.html#IRPC-Patents">Patents</a></li>
+              <li><a href="IRPC.html#IRPC-Collabration">Collabrations</a></li>
+              <li><a href="IRPC.html#IRPC-Board">Board Members</a></li>
+            </ul>
+          </li>
           <li class="has-dropdown" data-dropdown="media">
             <a href="./media.html">Media & OutReach <span class="arrow dropdown-trigger">&#9654;</span></a>
             <ul class="dropdown">
