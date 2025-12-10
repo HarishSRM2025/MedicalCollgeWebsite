@@ -10809,7 +10809,7 @@ grid-template-columns: 1fr;
         .irpc-patent-icon {
             width: var(--size-icon-xl);
             height: var(--size-icon-xl);
-            background: linear-gradient(135deg, var(--color-accent-yellow), var(--color-gold));
+            background: linear-gradient(135deg, var(--color-accent-yellow), rgb(133, 109, 3));
             border-radius: var(--radius-md);
             display: flex;
             align-items: center;
@@ -10844,9 +10844,10 @@ grid-template-columns: 1fr;
             font-family: 'Courier New', monospace;
             font-weight: 600;
         }
+       
 
         .irpc-patent-number i {
-            color: var(--color-gold);
+            color: var(--color-accent-yellow);
         }
 
         .irpc-patent-footer {
@@ -10917,4 +10918,22 @@ grid-template-columns: 1fr;
             .irpc-modal-body {
                 padding: var(--spacing-xl);
             }
+            .irpc-patent-card{
+                padding: 1rem;
+            }
+            .irpc-patent-footer {
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+                gap: 10px;
+                padding-top: var(--spacing-sm);
+                border-top: 2px solid var(--color-background-light);
+                margin-top: var(--spacing-xl);
+            }
+            .irpc-patent-status{
+                width: 90%;
+                text-align: center;
+                justify-content: center;
+            }
         }
+        
