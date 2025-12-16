@@ -1075,7 +1075,7 @@ body {
     max-width: var(--container-sm);
     margin: var(--spacing-4xl) auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--spacing-2xl);
 }
 
@@ -7876,6 +7876,7 @@ grid-template-columns: 1fr;
             }
 
             .lib-librarian-profile {
+                display: grid;
                 grid-template-columns: 1fr;
                 gap: var(--spacing-xl);
                 text-align: center;
@@ -9923,6 +9924,12 @@ grid-template-columns: 1fr;
             .infra-stats-bar {
                 margin: -2rem 1rem 3rem;
             }
+            .library-overall{
+                margin: 1.5rem 0;
+                padding:var(--padding-card) 0 !important;
+                box-shadow: var(--shadow-lg);
+                border-radius:var(--radius-lg)
+            }
         }
         .lib-link i{
             transform:rotate(0deg);
@@ -10012,6 +10019,9 @@ grid-template-columns: 1fr;
                 width:120px;
                 height:120px;
                 border-radius:180px;
+            }
+            .library-overall h2{
+                margin-left: 20px;
             }
             .specialty-card div{
                 text-align:center;
@@ -10622,6 +10632,7 @@ grid-template-columns: 1fr;
             align-items: center;
             justify-content: center;
             padding: var(--spacing-xl);
+            z-index: 1001;
         }
 
         .irpc-modal-content {
@@ -10647,9 +10658,9 @@ grid-template-columns: 1fr;
         }
 
         .irpc-modal-close {
-            position: absolute;
+            position: sticky;
             top: var(--spacing-lg);
-            right: var(--spacing-lg);
+            left: 90%;
             width: 40px;
             height: 40px;
             background: var(--color-accent);
@@ -10672,20 +10683,28 @@ grid-template-columns: 1fr;
 
         .irpc-modal-header {
             background: var(--gradient-2);
-            padding: var(--spacing-4xl);
-            text-align: center;
+            padding: var(--spacing-2xl);
+            /* text-align: center; */
             position: relative;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            gap:  var(--spacing-lg);
+            /* position: absolute; */
+            top: -50px;
+            width: 100%;
+            margin-top: 0;
         }
 
         .irpc-modal-profile-image {
-            width: 150px;
-            height: 150px;
+            width: 120px;
+            height: 120px;
             border-radius: var(--radius-full);
             background: var(--color-white);
-            margin: 0 auto var(--spacing-xl);
+            /* margin: 0 auto var(--spacing-xl);     */
             border: 5px solid var(--color-white);
             display: flex;
-            align-items: center;
+            align-items: start;
             justify-content: center;
             box-shadow: var(--shadow-xl);
             overflow: hidden;
@@ -10699,7 +10718,7 @@ grid-template-columns: 1fr;
         .irpc-modal-header h2 {
             color: var(--color-white);
             font-size: var(--font-4xl);
-            margin-bottom: var(--spacing-sm);
+            /* margin-bottom: var(--spacing-sm); */
         }
 
         .irpc-modal-header p {
@@ -10709,11 +10728,24 @@ grid-template-columns: 1fr;
         }
 
         .irpc-modal-body {
-            padding: var(--spacing-4xl);
+            padding: var(--spacing-2xl);
+            /* top: 190px; */
         }
 
         .irpc-profile-section {
-            margin-bottom: var(--spacing-4xl);
+            margin-bottom: var(--spacing-2xl);
+        }
+        
+        .irpc-profile-section li::before {
+            content: "✔";
+            /* position:; */
+            margin: 5px;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+            background-color: #4caf4f23;
+            padding: 5px 9px;
+            border-radius: 50px;
         }
 
         .irpc-profile-section-title {
@@ -10724,7 +10756,7 @@ grid-template-columns: 1fr;
             align-items: center;
             gap: var(--spacing-md);
             padding-bottom: var(--spacing-md);
-            border-bottom: 2px solid var(--color-primary-light);
+            border-bottom: 0.2px solid #cfcfcf;
         }
 
         .irpc-profile-section-title i {
@@ -10935,5 +10967,21 @@ grid-template-columns: 1fr;
                 text-align: center;
                 justify-content: center;
             }
+            .irpc-modal-header{
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .irpc-modal-header h2{
+                font-size: var(--font-xl);
+            }   
+            .irpc-modal-header p{
+                font-size: var(--font-md);
+            }
+            .irpc-modal-close {
+                left: 80%;
+            }
         }
-        
+        .white{
+            color:white;
+        }

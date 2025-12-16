@@ -63,14 +63,12 @@
               <li><a href="./aboutus.html#vision">Vision & Mission</a></li>
               <li><a href="./aboutus.html#leadership">Leadership</a></li>
               <li class="has-submenu" data-submenu="milestones">
-                <a href="./aboutus.html#milestones">Milestones & Accreditations <span class="arrow submenu-trigger">&#9654;</span></a>
+                <a href="./aboutus.html#milestones">Accreditations <span class="arrow submenu-trigger">&#9654;</span></a>
                 <ul class="sub-dropdown">
                   <li><a href="#">NAAC</a></li>
-                  <li><a href="#">IQAC</a></li>
-                  <li><a href="#">NABH Updates</a></li>
-                  <li><a href="#">Environment & Social Initiatives</a></li>
-                  <li><a href="#">Green Campus</a></li>
-                  <li><a href="#">CSR & Sustainability</a></li>
+                  <li><a href="#">NABH</a></li>
+                  <li><a href="#">NABL</a></li>
+                  <li><a href="#">PM JAY</a></li>
                 </ul>
               </li>
               <li><a href="./aboutus.html#compliance">Statutory Compliance</a></li>
@@ -104,7 +102,7 @@
               </ul>
               </li>
               <li><a href="./academics.html#specialties">Medical Education Unit</a></li>
-              <li><a href="./academics.html#examcell">Examination Cell</a></li>
+              <li><a href="./academics.html#student">Student Corner</a></li>
               </ul>
               </li>
               <li class="has-dropdown" data-dropdown="hospital">
@@ -119,6 +117,7 @@
            <li class="has-dropdown" data-dropdown="media">
             <a href="infrastructure.html">Infrastructure <span class="arrow dropdown-trigger">&#9654;</span></a>
             <ul class="dropdown">
+              <li><a href="library.html">Library</a></li>
               <li><a href="infrastructure.html#hostel">Hostel</a></li>
               <li><a href="infrastructure.html#sports">Sports</a></li>
               <li><a href="infrastructure.html#transport">Transport</a></li>

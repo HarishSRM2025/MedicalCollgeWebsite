@@ -237,21 +237,155 @@
                 ]
      },
      {
-                id: "Microbiology", name: "Microbiology", icon: "fa-virus-covid", color: "#27ae60", colorDark: "#229954",
-                desc: "Comprehensive internal medicine care for all age groups.",
-                vision:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
-                mission:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
-                objectives:["Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro."],
-                infra: ["OPD rooms", "Inpatient wards", "ICU", "Procedure room"],
-                faculty: [{name: "Ram", designation: "Assistant professor", exp: "5"},{name: "Sam", designation: "Assistant professor", exp: "5"},{name: "John", designation: "Assistant professor", exp: "5"}],
-                services: ["General Consultation", "Diabetes Care", "Hypertension", "Infectious Diseases", "Respiratory Medicine", "Gastroenterology", "Cardiology", "Nephrology"],
-                pubStats: [{label: "Publications", value: "30+"}],
-                pubHighlights: ["Diabetes management"],
-                pubYearwise: [{year: "2023", title: "Diabetes protocols", journal: "Medicine Today", type: "Research"}],
-                research: ["Chronic disease management"],
-                events: ["World Diabetes Day"],
-                achievements: ["Best Medicine Dept"],
-                gallery: [{name: "OPD", icon: "fa-clinic-medical", event: "OPD", date: "Jan 2024"}]
+                id: "Microbiology", 
+                name: "Microbiology", 
+                icon: "fa-virus-covid", 
+                color: "#27ae60", 
+                colorDark: "#229954",
+                desc: "The Department of Microbiology, established in 2009, is dedicated to excellence in education, diagnosis, and research in infectious diseases. It provides strong foundations in bacteriology, virology, mycology, and parasitology with emphasis on clinical correlation, laboratory diagnosis, prevention, and control. The department bridges bench-to-bedside practices and supports infection control, antimicrobial stewardship, and vaccination programs.",
+                vision: "To provide excellent diagnostic and support services to patients, community, and clinical colleagues, maintain high standards of training for medical graduates and healthcare workers, and foster an environment that empowers faculty and staff to engage in translational research and focused areas of excellence.",
+
+                mission: [
+                    "To update knowledge through interactive platforms such as seminars, conferences, journal clubs, and academic carnivals.",
+                    "To undertake research and collaborate with academic, clinical, and research faculty at local, national, and international levels."
+                ],
+
+                objectives: [
+                    "Impart knowledge and skills to undergraduate, postgraduate, nursing, and allied health science students.",
+                    "Ensure postgraduate training in ICUs, Respiratory Medicine, CSSD, ICTC, Molecular Biology, Mycology, and Virology.",
+                    "Participate in disease containment through notifications, awareness programs, antibiotic policies, vaccination, and biomedical waste management.",
+                    "Provide infection control guidelines to healthcare workers.",
+                    "Foster research on emerging infections, opportunistic infections, and antimicrobial resistance."
+                ],
+
+                infra_desc: "The Department of Microbiology is equipped with modern infrastructure to support teaching, diagnostics, and round-the-clock clinical laboratory services.",
+
+                infra: [
+                    "Spacious lecture halls, demonstration rooms, and practical halls",
+                    "Museum and departmental library",
+                    "24/7 Clinical Microbiology laboratory",
+                    "Automated culture and diagnostic systems"
+                ],
+
+                faculty: [
+                    { name: "Dr. P. Chitra Rajalakshmi", designation: "Professor & Head", exp: 17 },
+                    { name: "Dr. R. Saraswathi", designation: "Professor", exp: 12 },
+                    { name: "Dr. A. Anupriya", designation: "Professor", exp: 12 },
+                    { name: "Dr. J. Lalithambigai", designation: "Associate Professor", exp: 10 },
+                    { name: "Dr. Diego Edwin", designation: "Associate Professor", exp: 10 },
+                    { name: "Dr. R. Dineshraj", designation: "Associate Professor", exp: 8 },
+                    { name: "Dr. Anitha K.", designation: "Associate Professor", exp: 7 },
+                    { name: "Dr. M. Mahendran", designation: "Assistant Professor", exp: 6 },
+                    { name: "Dr. P. Sankari", designation: "Assistant Professor", exp: 4 },
+                    { name: "Dr. Thiyagarajan Brihadishwaran", designation: "Assistant Professor", exp: 2 },
+                    { name: "Dr. Pravin Stany Abraham", designation: "Senior Resident", exp: 1 },
+                    { name: "Dr. Velvizhi S.", designation: "Senior Resident", exp: 0 },
+                    { name: "Dr. T. Thilagawathi", designation: "Senior Resident", exp: 0 },
+                    { name: "Dr. Revathi K. T.", designation: "Senior Resident", exp: 0 },
+                    { name: "Mr. Vallab Ganesh Bharatwaraj", designation: "Tutor", exp: 20 }
+                ],
+
+                services: [
+                    "Bacteriology diagnostic services",
+                    "Serology services",
+                    "Mycology diagnostic services",
+                    "Virology diagnostic services",
+                    "Mycobacteriology services",
+                    "Molecular Biology diagnostics",
+                    "Hospital infection control support",
+                    "Antimicrobial stewardship guidance"
+                ],
+
+                pubStats: [
+                    { label: "Overall", value: 157 },
+                    { label: "International", value: 99 },
+                    { label: "National", value: 58 }
+                ],
+
+                pubHighlights: [
+                    "Collaborative and multidisciplinary research publications",
+                    "Consistent and quality publications every year",
+                    "High citation impact research",
+                    "Publications in Nature group journals"
+                ],
+
+                pubYearwise: [
+                    {
+                        year: 2024,
+                        title: "Determination of baseline Widal titre among apparently healthy individuals of South India",
+                        journal: "International Journal of Pharmaceutical and Clinical Research",
+                        type: "International"
+                    },
+                    {
+                        year: 2024,
+                        title: "Antimicrobial susceptibility pattern of E. coli causing urinary tract infection with special reference to fluoroquinolone resistance",
+                        journal: "International Journal of Pharmaceutical and Clinical Research",
+                        type: "International"
+                    },
+                    {
+                        year: 2024,
+                        title: "Molecular characterization of Escherichia coli causing urinary tract infections through next generation sequencing",
+                        journal: "Cureus",
+                        type: "International"
+                    },
+                    {
+                        year: 2024,
+                        title: "Post COVID-19: analysis of reasons for mask wearing intention",
+                        journal: "International Journal of Pharmaceutical Sciences",
+                        type: "International"
+                    },
+                    {
+                        year: 2024,
+                        title: "Knowledge, attitude and practice towards hepatitis B vaccination among medical and nursing students in South India",
+                        journal: "Journal of Xidian University",
+                        type: "International"
+                    },
+                    {
+                        year: 2025,
+                        title: "Scrub typhus – the danger of being undetected: laboratory investigations and contemporary infections",
+                        journal: "Asian Journal of Pharmaceutical and Clinical Research",
+                        type: "International"
+                    },
+                    {
+                        year: 2025,
+                        title: "Association between prolonged use of electronic gadgets and neck shoulder pain syndrome among college students",
+                        journal: "METZSET Journal",
+                        type: "International"
+                    }
+                ],
+
+                research: [
+                    "Molecular biology collaborations and translational research",
+                    "Identification and study of multidrug resistant organisms",
+                    "Antimicrobial resistance and stewardship research",
+                    "Serological studies with biobanking and data accessibility",
+                    "Emerging and re-emerging infectious diseases research"
+                ],
+
+                events: [
+                    "Guest Lecture – Hepatitis B – 26.07.2024",
+                    "CME – Breaking Rabies Boundaries – 21.09.2024",
+                    "Guest Lecture – Antibiotic Awareness – 16.11.2024",
+                    "Public Awareness Programme – National Vaccination Day – 19.03.2025",
+                    "Guest Lecture – Hand Hygiene – 05.05.2025",
+                    "UNICORA 2025 – National Conference on Advances in Microscopy – 07.11.2025 & 08.11.2025",
+                    "CAHO Onsite Training – Antimicrobial Stewardship – 13.12.2025"
+                ],
+
+                achievements: [
+                    "Organized UNICORA – National Conference and Workshop annually",
+                    "Published departmental and collaborative articles in peer-reviewed indexed journals"
+                ],
+
+                gallery: [
+                    { name: "Guest Lecture on Hepatitis B", date: "26.07.2024", path: "Microbiology/1.jpg" },
+                    { name: "CME on Breaking Rabies Boundaries", date: "21.09.2024", path: "Microbiology/2.jpg" },
+                    { name: "Guest Lecture on Antibiotic Awareness", date: "16.11.2024", path: "Microbiology/3.jpg" },
+                    { name: "Public Awareness Programme – National Vaccination Day", date: "19.03.2025", path: "Microbiology/4.jpg" },
+                    { name: "Guest Lecture on Hand Hygiene", date: "05.05.2025", path: "Microbiology/5.jpg" },
+                    { name: "UNICORA 2025 – National Conference on Advances in Microscopy", date: "07.11.2025", path: "Microbiology/6.jpg" },
+                    { name: "CAHO Onsite Training Program – Antimicrobial Stewardship", date: "13.12.2025", path: "Microbiology/7.jpg" }
+                ]
      },
      {
                 id: "Pharmacology",

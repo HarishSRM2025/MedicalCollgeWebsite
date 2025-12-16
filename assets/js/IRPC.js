@@ -531,8 +531,8 @@ const activities = [
                                             <span class="irpc-stat-label">Projects</span>
                                         </div>
                                         <div class="irpc-stat-item">
-                                            <span class="irpc-stat-number">${researcher.citations}</span>
-                                            <span class="irpc-stat-label">Citations</span>
+                                            <span class="irpc-stat-number">₹${researcher.citations}</span>
+                                            <span class="irpc-stat-label">Fund</span>
                                         </div>
                                     </div>
                                 </div>
