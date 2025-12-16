@@ -651,7 +651,7 @@
                 ]
      },
      {
-                id: "CommunityMedicine",
+                id: "Community Medicine",
                 name: "Community Medicine",
                 icon: "fa-users",
                 color: "#824cafff",

@@ -695,10 +695,29 @@
         color: #0052a3;
       }
        .footer-container {
-        grid-template-columns: 1fr 1fr;
-    }
+        grid-template-columns:1fr;
+      }
+      nav ul {
+          flex-direction: column;
+          gap:30px;
+          align-items:space-between;
+      }
       
     }
+    @media (max-width: 768px) {
+
+        .menu-toggle {
+            display: flex;
+        }
+        
+      
+
+        .nav-links.active {
+            transform: translateY(0);
+            opacity: 1;
+            pointer-events: all;
+        }
+      }
 
     @media (max-width: 576px) {
       .quick-link {

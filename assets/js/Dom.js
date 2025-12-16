@@ -147,7 +147,7 @@
               <li><a href="./videogallery.html">Video Gallery</a></li>
             </ul>
           </li>
-          <li><a href="#" class="nmc-nav">NMC</a></li>
+          <li><a href="nmc.html" class="nmc-nav">NMC</a></li>
         </ul>
       </nav>
     </div>

@@ -473,10 +473,25 @@ a{
             border-radius: var(--radius-md);
             padding: var(--spacing-xl);
             transition: var(--transition);
-            cursor: pointer;
         }
 
+       
+        
         .document-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--color-primary);
+        }
+         .nmc .document-card {
+            background: linear-gradient(45deg, var(--primary-color) 0%, white 0%);
+            border-radius: var(--radius-md);
+            padding: var(--spacing-xl);
+            transition: var(--transition);
+        }
+        .nmc .document-card:hover{
+            background: linear-gradient(45deg, var(--primary-color) 11%, white 0%);
+        }
+        .nmc .document-card:hover {
             transform: translateY(-5px);
             box-shadow: var(--shadow-lg);
             border-color: var(--color-primary);
@@ -829,6 +844,9 @@ a{
         width: var(--size-icon-md);
         height: var(--size-icon-md);
         font-size: var(--font-lg);
+    }
+     .sidebar-title {
+        flex-direction:column;
     }
 }
 

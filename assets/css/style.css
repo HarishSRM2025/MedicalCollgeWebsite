@@ -5529,7 +5529,7 @@ grid-template-columns: 1fr;
             transition: max-height var(--transition);
             max-height: 300px;
             overflow-y:scroll ;
-            padding-right: 10px;
+            padding-right:20px;
         }
 
         .filter-options.collapsed {
@@ -10123,7 +10123,7 @@ grid-template-columns: 1fr;
         /* Activities Section */
         .irpc-activities-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
             gap: var(--gap-medium);
         }
 
