@@ -71,7 +71,7 @@
                   <li><a href="#">PM JAY</a></li>
                 </ul>
               </li>
-              <li><a href="./aboutus.html#compliance">Statutory Compliance</a></li>
+              <li><a href="./aboutus.html#compliance">Awards & Recognition</a></li>
             </ul>
           </li>
           <li class="has-dropdown" data-dropdown="academics">
