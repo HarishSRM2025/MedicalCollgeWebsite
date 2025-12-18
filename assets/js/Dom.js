@@ -109,6 +109,7 @@
               <a href="./hospital.html">Hospital Services <span class="arrow dropdown-trigger">&#9654;</span></a>
               <ul class="dropdown">
               <li><a href="./doctors.html">Doctors</a></li>
+              <li><a href="./pharmacy.html">Pharmacy</a></li>
               <li><a href="./bloodcamp.html">Blood Bank</a></li>
               <li><a href="./hospital.html#services">Supporting Services</a></li>
               <li><a href="./hospital.html#camps">Camps</a></li>
