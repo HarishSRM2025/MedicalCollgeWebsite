@@ -109,10 +109,12 @@
               <a href="./hospital.html">Hospital Services <span class="arrow dropdown-trigger">&#9654;</span></a>
               <ul class="dropdown">
               <li><a href="./doctors.html">Doctors</a></li>
+              <li><a href="./Specialities.html">Specialities</a></li>
               <li><a href="./pharmacy.html">Pharmacy</a></li>
               <li><a href="./bloodcamp.html">Blood Bank</a></li>
               <li><a href="./hospital.html#services">Supporting Services</a></li>
-              <li><a href="./hospital.html#camps">Camps</a></li>
+              <li><a href="./pharmacy.html">Pharmacy</a></li>
+              <li><a href="./transport.html">Transport</a></li>
             </ul>
           </li>
            <li class="has-dropdown" data-dropdown="media">

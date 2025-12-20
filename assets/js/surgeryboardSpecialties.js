@@ -912,25 +912,25 @@
                     {
                         "name": "CME on Ethicon (Medical Ethics)",
                         "event": "Obstetrics & Gynaecology",
-                        "path": "OBG/1.jpg",
+                        "path": "Obstetrics_gynaecology/1.jpg",
                         "date": "20.01.2024"
                     },
                     {
                         "name": "Workshop on 6P’s",
                         "event": "Obstetrics & Gynaecology",
-                        "path": "OBG/2.jpg",
+                        "path": "Obstetrics_gynaecology/2.jpg",
                         "date": "11.09.2024"
                     },
                     {
                         "name": "CME on Prevention of Cancer Cervix",
                         "event": "Obstetrics & Gynaecology",
-                        "path": "OBG/3.jpg",
+                        "path": "Obstetrics_gynaecology/3.jpg",
                         "date": "14.12.2024"
                     },
                     {
                         "name": "Guest Lecture on Aneuploidy",
                         "event": "Obstetrics & Gynaecology",
-                        "path": "OBG/4.jpg",
+                        "path": "Obstetrics_gynaecology/4.jpg",
                         "date": "28.02.2025"
                     }
                 ]
@@ -1060,21 +1060,122 @@
                 ]
             },
             {
-                id: "Radiodiagnosis", name: "Radio Diagnosis", icon: `<i class="material-symbols-outlined">rib_cage</i>`, color: "#dace26ff", colorDark: "#857c06ff",
-                desc: "Comprehensive respiratory care with pulmonary function testing.",
-                vision:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
-                mission:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque impedit earum, exercitationem eligendi saepe magni iure, voluptatum ipsam cumque adipisci quasi asperiores debitis dolor, cum doloribus quod perspiciatis non modi!",
-                objectives:["Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro."],
-                infra: ["OPD rooms", "Inpatient wards", "ICU", "Procedure room"],
-                faculty: [{name: "Ram", designation: "Assistant professor", exp: "5"},{name: "Sam", designation: "Assistant professor", exp: "5"},{name: "John", designation: "Assistant professor", exp: "5"}],
-                services: ["Asthma Management", "COPD Care", "TB Treatment", "Bronchoscopy", "Pulmonary Function Tests", "Sleep Studies"],
-                pubStats: [{label: "Publications", value: "19+"}],
-                pubHighlights: ["COPD management"],
-                pubYearwise: [{year: "2023", title: "Asthma treatment protocols", journal: "Respiratory Medicine", type: "Research"}],
-                research: ["Asthma protocols", "TB treatment"],
-                events: ["World COPD Day"],
-                achievements: ["Excellence in Pulmonary Care"],
-                gallery: [{name: "PFT Lab", icon: "fa-wind", event: "Respiratory Lab", date: "Dec 2023"}]
+                id: "radiology",
+                name: "Radio Diagnosis",
+                icon: `<i class="material-symbols-outlined">rib_cage</i>`, color: "#dace26ff", colorDark: "#857c06ff",
+
+                desc: "The Department of Radiology provides comprehensive diagnostic and interventional imaging services, supporting accurate clinical decision-making through advanced imaging technologies and expert interpretation.",
+
+                "vision": "To deliver excellence in diagnostic and interventional radiology services, education, and research using state-of-the-art imaging technology.",
+                "mission": "To provide accurate, timely and patient-centered imaging services, train undergraduate and postgraduate students in advanced radiological techniques, promote innovative research in imaging sciences, and support clinical departments with integrated diagnostic and interventional expertise.",
+
+                objectives: [
+                    "To provide multidisciplinary oral health care for a wide variety of patients including patients with special needs.",
+                    "To function effectively with care and compassion and in harmony with interdisciplinary health care teams.",
+                    "To utilize the values of professional ethics, lifelong learning and adaptability."
+                ],
+
+               "infra_desc": "The department is equipped with modern imaging facilities to support diagnostic and interventional radiology services.",
+                "infra": [
+                    "3 Tesla MRI Scanner – Siemens Vida",
+                    "Cardiac CT capable CT Scanner – Siemens Go All",
+                    "Digital Radiography and Fluoroscopy Units",
+                    "Ultrasound systems with Doppler and Elastography",
+                    "PACS and RIS integrated reporting systems",
+                    "Dedicated Interventional Radiology Suite"
+                ],
+
+                "faculty": [
+                    { "name": "Dr V Senthilnathan", "designation": "Professor & HOD", "exp": "6 Years 10 Months" },
+                    { "name": "Dr Krishnakumar M", "designation": "Professor", "exp": "5 Years 11 Months" },
+                    { "name": "Dr Govardhanan", "designation": "Professor", "exp": "2 Years 9 Months" },
+                    { "name": "Dr C Ravindran", "designation": "Professor", "exp": "10 Years 2 Months" },
+                    { "name": "Dr A M Anand", "designation": "Professor", "exp": "2 Years 11 Months" },
+                    { "name": "Dr K A Dharan Venkatesh", "designation": "Associate Professor", "exp": "2 Years 10 Months" },
+                    { "name": "Dr S Saraswathi", "designation": "Associate Professor", "exp": "6 Months" },
+                    { "name": "Dr B Ananda Kumar", "designation": "Assistant Professor", "exp": "2 Years 11 Months" },
+                    { "name": "Dr Azmin", "designation": "Assistant Professor", "exp": "7 Months" },
+                    { "name": "Dr Ganesh", "designation": "Assistant Professor", "exp": "7 Months" },
+                    { "name": "Dr Sathya Priya", "designation": "Assistant Professor", "exp": "9 Days" },
+                    { "name": "Dr Balaji", "designation": "Senior Resident", "exp": "8 Months" },
+                    { "name": "Dr Shri Devi", "designation": "Senior Resident", "exp": "8 Months" },
+                    { "name": "Dr Firdhous Begum", "designation": "Senior Resident", "exp": "14 Days" },
+                    { "name": "Dr Dinesh Kumar", "designation": "Senior Resident", "exp": "10 Days" },
+                    { "name": "Dr Arun R", "designation": "Senior Resident", "exp": "12 Days" }
+                ],
+
+                "services_desc": "The department offers comprehensive diagnostic, interventional, and emergency radiology services with round-the-clock availability.",
+                "services": [
+                    "MRI – Brain, Spine, Musculoskeletal, Abdomen, Pelvis, Vascular and Specialized Imaging",
+                    "CT Imaging – Neuro, Chest, Abdomen, Pelvis, Musculoskeletal and Vascular Studies",
+                    "CT-guided biopsies, FNAC and drainage procedures",
+                    "Ultrasound and Doppler imaging including obstetric, vascular and musculoskeletal studies",
+                    "USG-guided interventional procedures and nerve blocks",
+                    "Digital X-ray and Fluoroscopy procedures (MCU, IVP, Barium, HSG, Fistulogram)",
+                    "Interventional Radiology procedures",
+                    "24/7 Emergency Radiology Services"
+                ],
+
+                "publication_overview": "Faculty members actively publish research papers in national and international radiology journals.",
+                "pubStats": [
+                    { "label": "Overall", "value": "30" },
+                    { "label": "International", "value": "22" },
+                    { "label": "National", "value": "8" }
+                ],
+
+                "pubYearwise": [
+                    {
+                        "year": "2025",
+                        "title": "Volumetric analysis of the pancreas in Autopsy Vs CECT: An observational study with insight into T2DM related changes.",
+                        "journal": "Journal of Clinical and Diagnostic Research",
+                        "type": "International"
+                    },
+                    {
+                        "year": "2025",
+                        "title": "Prevalence of Asymptomatic Gallstone during Routine Ultrasonography and its Associated Factors: A Cross-sectional Study from a Tertiary Care Teaching Hospital.",
+                        "journal": "GAIMS Journal of Medical Sciences",
+                        "type": "International"
+                    }
+                ],
+
+                "research_desc": "The department undertakes active clinical and translational research in advanced imaging techniques and workflow optimization.",
+                "research": [
+                    "Musculoskeletal MRI studies",
+                    "Neuro imaging research",
+                    "Oncology imaging protocols",
+                    "AI-assisted image analysis and workflow optimization",
+                    "Radiation dose reduction strategies and imaging protocol optimization"
+                ],
+
+                "events_desc": "The department regularly organizes academic and outreach programs to enhance radiology education and awareness.",
+                "events": [
+                    "Annual CME on Advances in Radiology",
+                    "Workshops on Interventional Radiology Techniques",
+                    "Resident academic programs, seminars and case discussions",
+                    "Community outreach programs for imaging awareness"
+                ],
+
+                "achievements_desc": "Key milestones and recognitions achieved by the department.",
+                "achievements": [
+                    "NABH and NABL accredited imaging facilities",
+                    "Faculty awards at state and national radiology conferences",
+                    "Successful implementation of PACS system"
+                ],
+
+                "gallery": [
+                    {
+                        "name": "MRI Suite",
+                        "event": "Radiology Department",
+                        "path": "Radiology/1.jpg",
+                        "date": "10 Mar 2025"
+                    },
+                    {
+                        "name": "CME – Advances in Radiology",
+                        "event": "Radiology Department",
+                        "path": "Radiology/2.jpg",
+                        "date": "05 Aug 2025"
+                    }
+                ]
             },
             {
                 id: "dentistry",
@@ -1218,7 +1319,6 @@
                     }
                 ]
             }
-
         ];
 
        
