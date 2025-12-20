@@ -23,7 +23,7 @@
             ],
             "services": {
                 "title": "Services",
-                "description": "We have one main pharmacy which runs in our college hospital campus. Additionally we have two pharmacies running at rural health centre (vazhadi) and another at urban health centre (samayapuram). Our main pharmacy consists of",
+                "description": "We have one main pharmacy on campus and two more at the Rural Health Centre (Vazhadi) and Urban Health Centre (Samayapuram), and the main pharmacy includes",
                 "items": [
                     {
                         "title": "Main Store",
@@ -133,23 +133,23 @@
                         <div class="pharm-stat-card">
                             <div class="pharm-stat-number">${stat.number}</div>
                             <div class="pharm-stat-label">${stat.label}</div>
-                            <p class="pharm-stat-description">${stat.description}</p>
+                            <span class="pharm-stat-description">${stat.description}</span>
                         </div>
                     `).join('')}
                 </div>
 
                 <!-- Services Section -->
                 <section class="pharm-section">
-                    <div class="pharm-container">
+                    <div class="pharm-container section-header">
                         <h2 class="pharm-section-title">${data.services.title}</h2>
-                        <p style="text-align: center; color: var(--color-text-secondary); max-width: 900px; margin: 0 auto var(--spacing-3xl); font-size: var(--font-lg);">
+                        <h5 style="text-align: center; color: var(--color-text-secondary); margin: 0 auto var(--spacing-3xl); font-size: var(--font-lg);">
                             ${data.services.description}
-                        </p>
+                        </h5>
                         <div class="pharm-services-grid">
                             ${data.services.items.map(service => `
                                 <div class="pharm-service-card">
                                     <h3>${service.title}</h3>
-                                    <p>${service.description}</p>
+                                    <span>${service.description}</span>
                                 </div>
                             `).join('')}
                         </div>
@@ -158,13 +158,13 @@
 
                 <!-- Licenses Section -->
                 <section class="pharm-section hospital-services">
-                    <div class="pharm-container">
+                    <div class="pharm-container section-header">
                         <h2 class="pharm-section-title">${data.licenses.title}</h2>
                         <div class="pharm-info-grid">
                             ${data.licenses.items.map(license => `
                                 <div class="pharm-info-card">
                                     <h3>${license.title}</h3>
-                                    <p>${license.description}</p>
+                                    <span>${license.description}</span>
                                 </div>
                             `).join('')}
                         </div>
@@ -173,13 +173,13 @@
 
                 <!-- Administration Section -->
                 <section class="pharm-section">
-                    <div class="pharm-container">
+                    <div class="pharm-container section-header">
                         <h2 class="pharm-section-title">${data.administration.title}</h2>
                         <div class="pharm-info-grid">
                             ${data.administration.items.map(item => `
                                 <div class="pharm-info-card">
                                     <h3>${item.title}</h3>
-                                    <p>${item.description}</p>
+                                    <span>${item.description}</span>
                                 </div>
                             `).join('')}
                         </div>
@@ -188,13 +188,13 @@
 
                 <!-- Pricing Section -->
                 <section class="pharm-section hospital-services">
-                    <div class="pharm-container">
+                    <div class="pharm-container section-header">
                         <h2 class="pharm-section-title">${data.pricing.title}</h2>
                         <div class="pharm-info-grid">
                             ${data.pricing.items.map(item => `
                                 <div class="pharm-info-card">
                                     <h3>${item.title}</h3>
-                                    <p>${item.description}</p>
+                                    <span>${item.description}</span>
                                 </div>
                             `).join('')}
                         </div>
@@ -203,13 +203,13 @@
 
                 <!-- Staff Pattern Section -->
                 <section class="pharm-section">
-                    <div class="pharm-container">
+                    <div class="pharm-container section-header">
                         <h2 class="pharm-section-title">${data.staffPattern.title}</h2>
                         <div class="pharm-info-grid">
                             ${data.staffPattern.items.map(item => `
                                 <div class="pharm-info-card">
                                     <h3>${item.title}</h3>
-                                    <p>${item.description}</p>
+                                    <span>${item.description}</span>
                                 </div>
                             `).join('')}
                         </div>
@@ -218,13 +218,13 @@
 
                 <!-- Additional Services Section -->
                 <section class="pharm-section hospital-services">
-                    <div class="pharm-container">
+                    <div class="pharm-container section-header">
                         <h2 class="pharm-section-title">${data.additionalServices.title}</h2>
                         <div class="pharm-services-columns">
                             ${data.additionalServices.columns.map(column => `
                                 <div class="pharm-service-column">
                                     <h3>${column.title}</h3>
-                                    <p>${column.description}</p>
+                                    <span>${column.description}</span>
                                     ${column.items.length > 0 ? `
                                         <ul>
                                             ${column.items.map(item => `<li>${item}</li>`).join('')}
@@ -238,13 +238,13 @@
 
                 <!-- Future Plans Section -->
                 <section class="pharm-section">
-                    <div class="pharm-container">
+                    <div class="pharm-container section-header">
                         <h2 class="pharm-section-title">${data.futurePlans.title}</h2>
                         <div class="pharm-services-columns">
                             ${data.futurePlans.columns.map(column => `
                                 <div class="pharm-service-column" style="background: var(--color-white); color: var(--color-text-primary); border: 2px solid var(--color-background-light);">
                                     <h3 style="color: var(--color-primary);">${column.title}</h3>
-                                    <p style="opacity: 1; color: var(--color-text-secondary);">${column.description}</p>
+                                    <span style="opacity: 1; color: var(--color-text-secondary);">${column.description}</span>
                                 </div>
                             `).join('')}
                         </div>
