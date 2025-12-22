@@ -86,8 +86,8 @@
                 </ul>
               </li>
               <li><a href="./programsandcourse.html">Programs & Course Outcomes</a></li>
-              <li class='pdf'><a href="./assets/pdf/Medical+Graduate+Attributes.pdf" target='_blank'>Medical Graduate Attributes</a><i class='fa fa-file-pdf'></i></li>
-              <li class='pdf'><a href="./assets/pdf/UPDATE-Committee-11.10.25.pdf" target='_blank'>Committee</a><i class='fa fa-file-pdf'></i></li>
+              <li class='pdf'><a href="./assets/pdf/Medical+Graduate+Attributes.pdf" target='_blank'>Medical Graduate Attributes</a><img src="./assets/images/pdficon.png" alt="" width="20px" ></li>
+              <li class='pdf'><a href="./assets/pdf/UPDATE-Committee-11.10.25.pdf" target='_blank'>Committee</a><img src="./assets/images/pdficon.png" alt="" width="20px" ></li>
               <li class='pdf'><a href="./biethics.html">Bio Ethics</a></li>
               <li class="has-submenu" data-dropdown="departments">
                 <a href="#">Departments <span class="arrow dropdown-trigger">&#9654;</span></a>
